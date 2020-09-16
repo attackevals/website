@@ -1,0 +1,85 @@
+footer .footer-link {
+  color: #ffffff;
+}
+
+footer * {
+  font-family: 'Sentinel-Book', Georgia, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-footer {
+  color: #fff;
+  background-color: #6241c5;
+  border-color: #fff;
+}
+
+.btn-footer:hover {
+  color: #fff;
+  background-color: #6241c5;
+  border-color: #fff;
+}
+
+.btn-footer.focus,
+.btn-footer:focus {
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+
+.btn-footer.disabled,
+.btn-footer:disabled {
+  color: #fff;
+  background-color: #6241c5;
+  border-color: #6241c5
+}
+
+.btn-footer:not(:disabled):not(.disabled).active,
+.btn-footer:not(:disabled):not(.disabled):active,
+.show>.btn-footer.dropdown-toggle {
+  color: #fff;
+  background-color: #6241c5;
+  border-color: #6241c5
+}
+
+.btn-footer:not(:disabled):not(.disabled).active:focus,
+.btn-footer:not(:disabled):not(.disabled):active:focus,
+.show>.btn-footer.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+
+.footer>.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.footer {
+  /* background-color: #062f4f; */
+  background-color: #6241c5;
+  color: white;
+  font-family: 'Sentinel-Book', Georgia, sans-serif;
+  font-weight: 400;
+}
+
+/* mobile responsive footer stuff */
+.footer-responsive-break {
+  display: none;
+}
+
+.footer-float-right-responsive {
+  float: right;
+}
+
+.footer {
+  clear: both;
+  /* prevent things from floating into the footer */
+}
+
+@media screen and (max-width: 767.8px) {
+  .footer-responsive-break {
+    display: block;
+  }
+
+  .footer-float-right-responsive {
+    float: none;
+  }
+}
+

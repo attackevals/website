@@ -1,0 +1,269 @@
+.dropdown {
+  float: left;
+}
+
+.divCalibration_Main {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.divCalibration_breadcrumbs_tags {
+  width: 100%;
+  padding: 5px;
+  padding-right: 20px;
+  /*background-color: #f3f3f3;*/
+  background-color: white;
+  position: sticky;
+  top: 78px;
+  z-index: 1000;
+}
+
+.spanOperationalFlow-techcomparison {
+  font-size: 30px;
+  padding-left: 5px;
+
+  color: #596775;
+}
+
+.tableCalibration_Main {
+  width: 100%;
+}
+
+.tdCalibration_OperationalFlow {
+  width: 22%;
+  border-right: 1px solid lightgray;
+  vertical-align: top;
+}
+
+.divCalibration_OperationalFlow {
+  padding: 5px;
+  margin-left: 10px;
+  height: 700px;
+  overflow: auto;
+
+  position: sticky;
+  top: 120px;
+}
+
+.divCalibration_OF_Step,
+.divCalibration_OF_Step_Selected {
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.aCalibration_OF_Step {
+  color: black;
+  font-size: 14px;
+}
+
+.aCalibration_OF_Step:hover {
+  text-decoration: none;
+}
+
+.divCalibration_OF_Step_Selected {
+  background-color: #d7e5ee;
+}
+
+.tdCalibration_Results {
+  width: 72%;
+  height: 1px;
+}
+
+.divCalibration_Results {
+  padding: 15px;
+  /* height: 100%; */
+}
+
+.spanCalibration_Results_StepHeader {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.spanCalibration_Results_ProcedureHeader {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.spanCalibration_Results_Procedure {
+  font-size: 15px;
+}
+
+.tableCalibration_Results_Header {
+  width: 100%;
+  position: sticky;
+  top: 111px;
+}
+
+.trCalibration_Results_HeaderBar {
+  background-color: #6241c5;
+}
+
+.tdCalibration_Vendor_Header {
+  font-size: 15px;
+  color: white;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+}
+
+.tdCalibration_DetectionTypesAndNotes_Header {
+  width: 91%;
+  height: 1px;
+}
+
+.tableCalibration_DetectionTypesAndNotes_Header {
+  width: 100%;
+  height: 100%;
+}
+
+.tdCalibrationDetectionTypes_Header {
+  font-size: 15px;
+  color: white;
+  width: 35%;
+  padding: 5px;
+  text-align: center;
+}
+
+.tdCalibration_DetectionNotes_Header {
+  font-size: 15px;
+  color: white;
+  width: 63%;
+  padding: 5px;
+  text-align: center;
+}
+
+.trCalibration_Results {
+  border-top: 5px solid lightgray;
+}
+
+.tdCalibration_Vendor {
+  font-size: 13px;
+  width: 9%;
+  padding: 5px;
+  text-align: center;
+}
+
+.tdCalibration_DetectionTypesAndNotes {
+  width: 58%;
+  height: 1px;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.tableCalibration_DetectionTypesAndNotes {
+  width: 100%;
+  height: 100%;
+}
+
+.tdCalibration_DetectionTypes {
+  font-size: 13px;
+  width: 35%;
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid lightgray;
+}
+
+.tdCalibration_DetectionNotes {
+  font-size: 13px;
+  width: 65%;
+  padding: 5px;
+}
+
+.border-top-grey-dotted {
+  border-top: 2px dotted lightgray;
+}
+
+.tdInnerDetectionNotesSum {}
+
+.tdInnerDetectionNotesSum a span {
+  display: none;
+}
+
+.tdInnerDetectionNotesSum a:hover span {
+  display: block;
+  position: absolute;
+
+  margin: 0px;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+  background: white;
+  text-align: left;
+  border: 1px solid #666;
+  z-index: 2;
+  max-width: 600px;
+
+  cursor: default;
+}
+
+.tc_round_dropdown {
+  margin-left: 50px;
+}
+
+.tc_div_controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tc_divVendorCards {
+  width: 100%;
+  overflow: auto;
+}
+
+.tc_divAddVendorCard {
+  height: 50px;
+  width: 25%;
+  text-align: center;
+  font-size: 35px;
+  background-color: #6241c5;
+  color: white;
+  margin-top: 10px;
+}
+
+.tc_divAddVendorCard:hover {
+  cursor: pointer;
+}
+
+.tc_tableVendorCard {
+  border: 1px solid #aaaaaa;
+  width: 100%;
+  height: 30px;
+  border-collapse: separate;
+  background: lightgray;
+  margin-bottom: 10px;
+}
+
+.tc_th_vendor_dropdown {
+  border-top: 1px solid #aaaaaa;
+  width: 20%;
+  padding: 5px;
+}
+
+.tc_th_config_and_remove {
+  text-align: right;
+}
+
+.tc_a_config_link {
+  margin: 0;
+}
+
+.tc_a_remove_card {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.tc_td_detections {
+  border-top: 1px solid #aaaaaa;
+}
+
+.tc_img_detection_icon {
+  max-width: 16px;
+  width: 16px;
+  margin-left: 10px;
+}
+
+.tc_vendor_card_tbody {
+  background-color: #eeeeee;
+}

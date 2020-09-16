@@ -1,0 +1,425 @@
+// SCSS for Static FAQ-like pages
+.faq {
+  line-height: 2rem;
+}
+
+// Operational Flow arrows
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+dropdown_arrow {
+ border: solid black;
+ border-width: 0 3px 3px 0;
+ display: inline-block;
+ padding: 3px;
+}
+
+#hide_show {
+    transform: rotate(-0deg);
+    -webkit-transform: rotate(-0deg);
+  }
+  
+// About page
+.card-title {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+// shared on many miscellaneous static pages
+.bg-accord-light {
+  background-color: #f8f9fa;
+}
+
+.bg-accord-dark {
+  background-color: #e9ecef;
+}
+
+table {
+  empty-cells: hide;
+}
+
+.table-light {
+  background-color: #f3f3f3;
+}
+
+.divFAQBody {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.spanIssueTitle {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+}
+
+.pIssuePageDescription {
+  width: 40%;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.tableIssues {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tdIssuesHeader {
+  width: 47%;
+  text-align: center;
+  /*border: 2px solid purple;*/
+}
+
+.tdIssuesHeaderDivider {
+  width: 6%;
+}
+
+.spanKnownIssuesIcon {
+  color: #f1c232;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.spanResolvedIssuesIcon {
+  color: #38761d;
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.spanIssuesHeaderText,
+.spanKnownIssuesIcon,
+.spanResolvedIssuesIcon {
+  line-height: 50px;
+}
+
+.spanIssuesHeaderText {
+  font-size: 20px;
+}
+
+.divIssue {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tdIssueSubmissionDate {
+  width: 30%;
+}
+
+.aIssueLink {
+  font-size: 16px;
+}
+
+.spanIssueSubmissionDate {
+  font-size: 13px;
+  float: right;
+  text-align: center;
+}
+
+.pIssueBody {
+  font-size: 13px;
+}
+
+.tdIssuesColumn {
+  width: 47%;
+  height: 1px;
+  vertical-align: top;
+}
+
+#divKnownIssues,
+#divResolvedIssues {}
+
+.div_issue_label {
+  font-family: 'Sentinel-Book';
+  color: white;
+  font-size: 12px;
+  border-radius: 15px;
+  text-align: center;
+  padding: 3px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.div_no_issues {
+  border: 1px solid darkgray;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.accordion-panels .card+.card {
+  margin-top: .25rem !important;
+}
+
+.accordion-panels .card-header {
+  /* expand panel header */
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.accordion-panels .card-header h5 {
+  /* expand panel title */
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.accordion-panels .card-header:after {
+  /* expand panel icon */
+  margin-left: auto;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.accordion-panels .card-header:not(.collapsed):after {
+  /* rotate icon 180 */
+  transform: rotate(-180deg);
+}
+
+.accordion-panels .card-body>*:last-child {
+  /* last child of accordion panel body should not have lower margin because of panel padding */
+  margin-bottom: 0 !important;
+}
+
+.clean-sections h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 25px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.overview_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.pb-container {
+  width: 100%;
+}
+
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.progressbar li:before {
+  width: 34px;
+  height: 34px;
+  line-height: 30px;
+  border: 3px solid #6241c5;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #6241c5;
+  color: white;
+  font-weight: bold;
+}
+
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active {
+  color: #6241c5;
+}
+
+.progressbar li.active:before {
+  border-color: #6241c5;
+}
+
+.progressbar li.active+li:after {
+  background-color: #6241c5;
+}
+
+.progressbar li.prog-doing:before {
+  content: "\2609";
+}
+
+.progressbar li.prog-complete:before {
+  content: "\2713";
+}
+
+.progressbar li.prog-incomplete-1:before {
+  content: "1";
+  background-color: white;
+  color: #6241c5;
+}
+
+.progressbar li.prog-incomplete-2:before {
+  content: "2";
+  background-color: white;
+  color: #6241c5;
+}
+
+.progressbar li.prog-incomplete-3:before {
+  content: "3";
+  background-color: white;
+  color: #6241c5;
+}
+
+.progressbar li.prog-incomplete-4:before {
+  content: "4";
+  background-color: white;
+  color: #6241c5;
+}
+
+.progressbar li.prog-complete-4:before {
+  content: "\2713";
+  background-color: white;
+  color: #6241c5;
+}
+
+.overview_note {
+  font-size: 13px;
+}
+
+.vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.vendor-block {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .img-container {
+        margin: 10px;
+        img { 
+          height: 75px;
+          width: auto;
+          margin: auto;
+        }
+    }
+}
+
+.vendor-block {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .ics-img-container {
+      margin: 10px;
+      img { 
+        height: 100px;
+        width: auto;
+        margin: auto;
+      }
+  }
+}
+
+.apt29-logo {
+  height: 75px;
+  width: auto;
+}
+
+.apt3-logo {
+  height: 85px;
+  width: auto;
+}
+
+.overview-card-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.table_opflow_step {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.th_opflow_step,
+.td_opflow_step {
+  border-right: 1px solid black;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.right:after {
+  transition: all 0.2s ease;
+  transform: rotate(-45deg);
+}
+
+.false-anchor {
+  margin-top: -80px; 
+  position: absolute;
+}
+
+.resource-card {
+  border: 1px solid lightgrey; 
+  text-align: center;
+}
+
+.resource-title {
+  background-color: #6241c5; 
+  color: white; 
+  padding: 10px;
+  height: 85px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.resource-image {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.div-resource-image {
+  height:175px;
+}
+
+.bg-engenuity-dark {
+  background-color: #1c242a !important;
+}
+
+.nav-link-white {
+  font-size: 1rem;
+  color: white;
+  display: block;
+  padding: .5rem 1rem;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}

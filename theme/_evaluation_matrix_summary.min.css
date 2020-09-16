@@ -1,0 +1,264 @@
+.divEvaluationSummaryBody-ems {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+  .divEvaluationSummaryBody-ems li + li {
+    margin-top: 10px; }
+
+    .labSubheader-ems {
+      font-size: 24px; }
+
+      .tdInnerDetectionNotesSum-ems {
+        font-size: 13px; }
+
+        .tdInnerDetectionNotesSum-ems a span {
+          display: none; }
+
+          .tdInnerDetectionNotesSum-ems a:hover span {
+            display: block;
+            position: absolute;
+            margin: 0px;
+            padding: 10px;
+            color: black;
+            font-weight: normal;
+            background: white;
+            text-align: left;
+            border: 1px solid #666;
+            z-index: 2;
+            max-width: 600px;
+            cursor: default; }
+
+            .aFootnote {
+              color: #666666;
+              font-size: 11px; }
+
+              .aFootnote:hover {
+                color: #666666;
+                cursor: default;
+                text-decoration: none; }
+
+                .tableMatrixLegendExport-ems {
+                  width: 100%; }
+
+                  .divDisclaimer-ems {
+                    font-size: 12px;
+                    width: 40%; }
+
+                    .divLegend-ems {
+                      display: none;
+                      width: 100%;
+                      background-color: #d7e5ee;
+                      padding: 10px;
+                      position: sticky;
+                      top: 78px; }
+
+                      .tableLegend-ems {
+                        width: 100%; }
+
+                        .tdLegendBigIcon-ems {
+                          text-align: center; }
+
+                          .tableLegendSummary-ems {
+                            width: 100%; }
+
+                            .divLegendIcon-ems {
+                              vertical-align: top;
+                              padding: 5px;
+                              text-align: center;
+                              display: inline-block; }
+
+                              .spanLegendIconText-ems {
+                                font-size: 14px; }
+
+                                .tdLegendCategoryDivider-ems {
+                                  width: 30px; }
+
+                                  .tdMatrixLabel-ems {
+                                    width: 70%;
+                                    text-align: left; }
+
+                                    .spanMatrixLabel-ems {
+                                      font-size: 20px; }
+
+                                      .pGreyedOutText-ems {
+                                        color: darkgrey;
+                                        font-size: 12px;
+                                        margin: 0px;
+                                        padding: 0px; }
+
+                                        .pBlueLinkedText-ems {
+                                          color: #3366BB;
+                                          font-size: 12px;
+                                          margin: 0px;
+                                          padding: 0px; }
+
+                                          .tdLegendExport-ems {
+                                            width: 30%;
+                                            text-align: right;
+                                            vertical-align: bottom; }
+
+                                            .aLegendExport-ems {
+                                              font-size: 13px; }
+
+                                              .divMatrix-ems {
+                                                width: 100%; }
+
+                                                .tableMatrixHeaders-ems {
+                                                  width: 100%;
+                                                  height: 50px;
+                                                  position: sticky;
+                                                  top: 78px; }
+
+                                                  .trTactics-ems, .aTactic-ems {
+                                                    font-size: 13px;
+                                                    color: white;
+                                                    background-color: #6241c5;
+                                                    text-align: center; }
+
+                                                    .aTactic-ems:hover {
+                                                      color: white; }
+
+                                                      .tdTechnique-ems, .tdInScopeTechnique-ems {
+                                                        border: 1px solid lightgrey;
+                                                        padding: 2px;
+                                                        text-align: center;
+                                                        width: 9%; }
+
+                                                        .tdInScopeTechnique-ems:hover {
+                                                          outline: 2px solid #6241c5; }
+
+                                                          .spanTechnique-ems {
+                                                            font-size: 10px;
+                                                            color: lightgrey; }
+
+                                                            .aInScopeTechnique-ems, .spanTechnique-ems {
+                                                              font-size: 10px;
+                                                              display: block; }
+
+                                                              #tableMatrix a .spanEdgePopup-ems {
+                                                                display: none; }
+
+                                                                #tableMatrix a .spanPopup-ems {
+                                                                  display: none; }
+
+                                                                  #tableMatrix a:hover .spanPopup-ems {
+                                                                    display: block;
+                                                                    position: absolute;
+                                                                    margin: 0px;
+                                                                    padding: 10px;
+                                                                    color: black;
+                                                                    font-weight: normal;
+                                                                    background: white;
+                                                                    text-align: left;
+                                                                    border: 1px solid #666;
+                                                                    z-index: 2;
+                                                                    cursor: default; }
+
+                                                                    #tableMatrix a:hover .spanEdgePopup-ems {
+                                                                      display: block;
+                                                                      position: absolute;
+                                                                      right: 0;
+                                                                      margin: 0px;
+                                                                      padding: 10px;
+                                                                      color: black;
+                                                                      font-weight: normal;
+                                                                      background: white;
+                                                                      text-align: left;
+                                                                      border: 1px solid #666;
+                                                                      z-index: 2;
+                                                                      cursor: default; }
+
+                                                                      .tablePopup-ems, .thPopup-ems, .tdPopup-ems, .tdPopupMore-ems {
+                                                                        border: none; }
+
+                                                                        .thPopup-ems, .tdPopup-ems, .tdPopupStep-ems, .tdPopupProcedure-ems {
+                                                                          padding: 8px;
+                                                                          font-size: 13px; }
+
+                                                                          .tdPopupStep-ems {
+                                                                            max-width: 70px; }
+
+                                                                            .tdPopupProcedure-ems {
+                                                                              max-width: 200px;
+                                                                              overflow-wrap: break-word;
+                                                                              word-wrap: break-word;
+                                                                              word-break: break-word; }
+
+                                                                              .thPopup-ems {
+                                                                                font-weight: bold; }
+
+                                                                                .tdPopupMore-ems {
+                                                                                  text-align: center; }
+
+                                                                                  .tableMatrixHeaders-withlegend-ems {
+                                                                                    width: 100%;
+                                                                                    height: 50px;
+                                                                                    position: sticky;
+                                                                                    top: 215px; }
+
+                                                                                    .spanDetectionIconSeparator-ems {
+                                                                                      font-size: 20px;
+                                                                                      color: black;
+                                                                                      text-decoration: none;
+                                                                                      margin-left: 3px; }
+
+                                                                                      .matrix_icon {
+                                                                                        max-width: 18px;
+                                                                                        width: 18px;
+                                                                                        margin-left: 5px;
+                                                                                        margin-bottom: 10px; }
+
+                                                                                        @media screen and (max-width:1641px) {
+                                                                                          .tableMatrixHeaders-withlegend-ems {
+                                                                                            top: 270px;   }
+}
+
+@media screen and (max-width:903px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 335px;   }
+}
+
+@media screen and (max-width:836px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 362px;   }
+}
+
+@media screen and (max-width:797px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 405px;   }
+}
+
+@media screen and (max-width:667px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 475px;   }
+}
+
+@media screen and (max-width:612px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 500px;   }
+}
+
+@media screen and (max-width:570px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 565px;   }
+}
+
+@media screen and (max-width:556px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 585px;   }
+}
+
+@media screen and (max-width:556px) {
+  .tableMatrixHeaders-withlegend-ems {
+    top: 605px;   }
+}
+
+@media screen and (max-width:423px) {
+  .tableMatrixHeaders-ems {
+    top: 115px;   }
+    .divLegend-ems {
+      top: 115px;   }
+      .tableMatrixHeaders-withlegend-ems {
+        top: 650px;   }
+}

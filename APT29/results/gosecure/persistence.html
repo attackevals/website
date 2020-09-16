@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62667723-5"></script>
+    <script src="/theme/scripts/analytics.js"></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6cdcfaf1">
+
+    <link rel="stylesheet" type="text/css" href="/theme/_tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/_opflow.min.css?17c3b3e2">
+</head>
+
+<body>
+    <header class='pb-5'>
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top border-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto'>
+            
+            <li class="dropdown-submenu">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <!-- <ul class="dropdown-menu drop_menu_side"> -->
+                        <ul class="dropdown-menu drop_menu_side_right">                            
+                            <li><a class="dropdown-item" href="/adversary-emulation.html">Adversary Emulation</a></li>
+                            <li><a class="dropdown-item" href="/evaluation-process.html">Evaluation Process</a></li>
+                            <li><a class="dropdown-item" href="/setup-and-configuration.html">Setup and Configuration</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=APT3">Results</a></li>
+                            <li><a class="dropdown-item" href="/APT3">Overview</a></li>
+                            <li><a class="dropdown-item" href="/APT3/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/APT3/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/APT3/scope.html">Technique Scope</a></li>
+                            <li><a class="dropdown-item" href="/APT3/operational-flow.html">Operational Flow</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                        
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=APT29">Results</a></li>
+                            <li><a class="dropdown-item" href="/APT29">Overview</a></li>
+                            <li><a class="dropdown-item" href="/APT29/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/APT29/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/APT29/scope.html">Technique Scope</a></li>
+                            <li><a class="dropdown-item" href="/APT29/operational-flow.html">Operational Flow</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=carbanak-fin7">Participants</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/">Overview</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/protection-categories.html">Protection Categories</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/scope.html">Technique Scope</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
+                            <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href='/technique_comparison.html'>Technique Comparison Tool </a>
+                    <a class="dropdown-item" href='/vendor_comparison.html'>Vendor Comparison Tool </a>
+                    <a class="dropdown-item" href='/do-it-yourself.html'>Do It Yourself Evaluations</a>
+                    <a class="dropdown-item" href='/data_analysis_tool.html'>Data Analysis Tool</a>
+                    <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
+                        ATT&CK Arsenal
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>  
+            </li>
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations.html">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about.html">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ.html">FAQ</a>                    
+                        <a class="dropdown-item" href="/issues.html">Issue Tracker</a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated.html'><strong>Get Evaluated</strong></a></li>
+          </ul>
+        </div>
+</nav>
+    </header>
+    <div id='content'>
+<div class='divProcedureSummaryBody-tacticsummary'>
+    <div style='width: 100%; padding-top: 20px;'>
+        <table style='width: 100%;'>
+            <tr>
+                <td style='width: 100%;'>
+                    <div style="padding: 0px; width: 100%;"> 
+                        <span class="spanBreadcrumbs-results"> 
+                            <a href='/'> Home </a> &nbsp;>&nbsp; 
+                            <a href='/APT29'>APT29</a> &nbsp;>&nbsp;
+                            <a href='/enterprise/evaluations.html?round=APT29'>Results </a> &nbsp;>&nbsp;
+                            <a href='/APT29/results/gosecure'>GoSecure </a> &nbsp;>&nbsp; 
+                            Persistence
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <table class='tableMain-tacticsummary'>
+            <tr>
+                <td class='tdMainLeftPane-tacticsummary'>
+                    <table class='tableHeaderLegend-tacticsummary'>
+                        <tr>
+                            <td class='tdMainLabel-tacticsummary' colspan='2'>
+                                <span class='labSubheader-tacticsummary'>
+                                    Tactic Results: Persistence (TA0003)
+                                </span>
+                                <span class='tdInnerDetectionNotesSum-tacticsummary'>
+                                    <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
+                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'>
+                                            <strong style="font-size:16px">Tactic Page Information</strong><br />
+                                            <hr syle="border:2px solid black;" />
+                                            The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
+                                        </span>
+                                    </a>
+                                </span>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br />
+                                <div class='divDisclaimer-tacticsummary'>
+                                    <em>MITRE Engenuity does not assign scores, rankings, or ratings. The evaluation results are available to the public, so other organizations may provide their own analysis and interpretation - these are not endorsed or validated by MITRE.</em>
+                                </div>
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class='tdMainLabel-tacticsummary'>
+                                <a href="/APT29/results/gosecure/configuration.html">Vendor Configuration</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td class='tdLegend-tacticsummary'>
+                                <a href="/APT29/results/gosecure/allresults.html" class='aLegendExport-tacticsummary'>All Results</a>
+                                <a class='aLegendExport-tacticsummary pl-3' href='/GoSecure.1.APT29.1_Results.json'>JSON</a>
+                                
+                                <a class='aLegendExport-tacticsummary pl-3' href='#' onclick='show_legend();'>
+                                    Legend
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class='divLegend-tacticsummary' id='divLegend'>
+                        <table class='tableLegend-tacticsummary'>
+                            <tr>
+                                <td class='tdLegendBigIcon-tacticsummary'>
+                                    <a href='/APT29/detection-categories.html'><h5><i class="fas fa-info-circle"></i></h5></a>
+                                </td>
+                                <td class='tdLegendSummary-tacticsummary'>
+                                    <h5> Legend </h5>
+                                </td>
+                                <td style='text-align: right;'>
+                                    <h5 id="closeLegend" onclick="hide_legend();"><i class="fas fa-times"></i></h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class='tdLegendBigIcon-tacticsummary'>
+                                </td>
+                                <td class='tdLegendSummary-tacticsummary'>
+                                    <table class='tableLegendSummary-tacticsummary'>
+                                        <tr>
+                                            <td style='width:50%'>
+                                                <h8><b>Main Detection Categories:</b></h8>
+                                            </td>
+                                            <td style='width: 50%'>
+                                                <h8><b>Detection Modifiers:</b></h8>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style='width: 50%'>
+                                                <div class='divLegendIcon-tacticsummary' id='None'>
+                                                    <img class="ml-1" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>None</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Telemetry'>
+                                                    <img class="ml-1" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_telemetry.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Telemetry</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='IndicatorOfCompromise'>
+                                                    <i class='fas fa-fingerprint' title='Indicator of Compromise'></i>
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Indicator of<br>Compromise</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='GeneralBehavior'>
+                                                    <i class='fas fa-user-alt' title='General Behavior'></i>
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>General<br> Behavior</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='MSSP'>
+                                                    <img class="ml-1" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_mssp.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>MSSP</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='General'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>General</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Tactic'>
+                                                    <img class="ml-1" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_tactic.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Tactic</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Specific'>
+                                                    <i class='fas fa-bullseye' title='Specific Behavior'></i>
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Specific<br> Behavior</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Technique'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Technique</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Enrichment'>
+                                                    <i class='far fa-plus-square' title='Enrichment'></i>
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Enrichment</span>
+                                                </div>
+                                            </td>
+                                            <td style='width: 50%'>
+                                                <div class='divLegendIcon-tacticsummary' id='Tainted'>
+                                                    <i class='fas fa-link' title='Tainted'></i>
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Tainted</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Alert'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Alert</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Correlated'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Correlated</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Delayed'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Delayed</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Host'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Host<br> Interrogation</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Residual'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_residual_artifact.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Residual<br> Artifact</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Configuration'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Configuration<br> Change</span>
+                                                </div>
+                                                <div class='divLegendIcon-tacticsummary' id='Innovative'>
+                                                    <img class="ml-1" width="20px" height="20px" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_distinction.svg">
+                                                    <br />
+                                                    <span class='spanLegendIconText-tacticsummary'>Innovative</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <table class='tableHeaderBar-tacticsummary' id='tableHeaderBar'>
+                        <tr class='trHeaderBar-tacticsummary'>
+                            <td class='td1AHeader-tacticsummary'>
+                                <table class='table2-tacticsummary'>
+                                    <tr>
+                                        <td class='td2TechniqueHeader-tacticsummary'>
+                                            Technique
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class='td1B-tacticsummary'>
+                                <table class='table2-tacticsummary'>
+                                    <tr>
+                                        <td class='td2ProceduresHeader-tacticsummary-apt29'>Procedures</td>
+                                        <td class='td2CriteriaHeader-tacticsummary'>Criteria</td>
+                                        <td class='td2StepsHeader-tacticsummary'>
+                                            Step
+                                        </td>
+                                        <td class='tdDetectionTypesAndNotesHeader-tacticsummary' colspan='2'>
+                                            <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                    <td class='tdDetectionTypeHeader-tacticsummary'>
+                                                        Detection Type
+                                                    </td>
+                                                    <td class='tdDetectionNotesHeader-tacticsummary'>
+                                                        Detection Notes
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class='table1-tacticsummary'>
+						<tr class='tr1-tacticsummary'>
+							<td class='td1A-tacticsummary'>
+								<table class='table2-tacticsummary'>
+									<tr>
+										<td class='td2Technique-tacticsummary'>
+                                                <a class="aTechnique-tacticsummary" href="/APT29/results/gosecure/createaccount.html">
+                                                    Create Account
+												<br />(T1136)
+											</a>
+										</td>
+                        			</tr>
+                    			</table>
+                			</td>
+							<td class='td1B-tacticsummary'>
+								<table class='table2-tacticsummary'>
+
+
+
+
+
+                                        <tr class='tr2NoBottomBorder-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Added a new user to the remote host Scranton (10.0.1.4) using net.exe
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    net.exe adding the user Toby 
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        20.B.3
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionTypeDotted-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Technique (Alert)
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotesDotted-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                A Technique alert detection (orange indicator) called "Create Account (Net Use Command)" was generated for net.exe with the command-line arguments to add the new user Toby.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-11551.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Telemetry
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_telemetry.svg" title="Telemetry">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                Telemetry showed wsmprovhost.exe spawning net.exe with the command-line arguments to add the new user Toby.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-11551.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class='table1-tacticsummary'>
+						<tr class='tr1-tacticsummary'>
+							<td class='td1A-tacticsummary'>
+								<table class='table2-tacticsummary'>
+									<tr>
+										<td class='td2Technique-tacticsummary'>
+                                                <a class="aTechnique-tacticsummary" href="/APT29/results/gosecure/registryrunkeysorstartupfolder.html">
+                                                    Registry Run Keys / Startup Folder
+												<br />(T1060)
+											</a>
+										</td>
+                        			</tr>
+                    			</table>
+                			</td>
+							<td class='td1B-tacticsummary'>
+								<table class='table2-tacticsummary'>
+
+
+
+
+
+                                        <tr class='tr2-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Created a LNK file (hostui.lnk) in the Startup folder that executes on login
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    powershell.exe creating the file hostui.lnk in the Startup folder
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        5.B.1
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionTypeDotted-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Technique (Alert)
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotesDotted-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                A Technique alert detection (orange indicator) called "Registry Run Keys or Startup Folder" was generated due to the creation of hostui.lnk in the Startup folder.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-10937.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Telemetry
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_telemetry.svg" title="Telemetry">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                Telemetry showed the creation of hostui.lnk in the Startup folder.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-10937.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+
+
+
+
+                                        <tr class='tr2-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Executed LNK payload (hostui.lnk) in Startup Folder on user login
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Evidence that the file hostui.lnk (which executes hostui.bat as a byproduct) was executed from the Startup Folder
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        10.B.1
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                None
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                No detection capability demonstrated for this procedure, though execution of hostui.bat was observed.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-11100.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+
+
+
+
+                                        <tr class='tr2NoBottomBorder-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Established Registry Run key persistence using PowerShell
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Addition of the Webcache subkey in HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        11.A.11
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionTypeDotted-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Technique (Alert)
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotesDotted-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                A Technique alert detection (green indicator) called "Registry Run Keys / Startup Folder" was generated due to Run key persistence added into the Registry
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-11331.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Telemetry
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_telemetry.svg" title="Telemetry">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                Telemetry showed powershell.exe adding Run key persistence into the Registry
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-11331.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class='table1-tacticsummary'>
+						<tr class='tr1-tacticsummary'>
+							<td class='td1A-tacticsummary'>
+								<table class='table2-tacticsummary'>
+									<tr>
+										<td class='td2Technique-tacticsummary'>
+                                                <a class="aTechnique-tacticsummary" href="/APT29/results/gosecure/windowsmanagementinstrumentationeventsubscription.html">
+                                                    Windows Management Instrumentation Event Subscription
+												<br />(T1084)
+											</a>
+										</td>
+                        			</tr>
+                    			</table>
+                			</td>
+							<td class='td1B-tacticsummary'>
+								<table class='table2-tacticsummary'>
+
+
+
+
+
+                                        <tr class='tr2-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Established WMI event subscription persistence using PowerShell
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        15.A.2
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                MSSP (Delayed (Manual))
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_mssp.svg" title="MSSP"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                An MSSP detection occurred for WMI event subscription being used for a persistence mechanism. 
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-12716.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+
+
+
+
+                                        <tr class='tr2NoBottomBorder-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Executed WMI persistence on user login
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    The WMI process (wmiprvse.exe) executing powershell.exe
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        20.A.2
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                None
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                No detection capability demonstrated for this procedure.
+
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class='table1-tacticsummary'>
+						<tr class='tr1-tacticsummary'>
+							<td class='td1A-tacticsummary'>
+								<table class='table2-tacticsummary'>
+									<tr>
+										<td class='td2Technique-tacticsummary'>
+                                                <a class="aTechnique-tacticsummary" href="/APT29/results/gosecure/newservice.html">
+                                                    New Service
+												<br />(T1050)
+											</a>
+										</td>
+                        			</tr>
+                    			</table>
+                			</td>
+							<td class='td1B-tacticsummary'>
+								<table class='table2-tacticsummary'>
+
+
+
+
+
+                                        <tr class='tr2NoBottomBorder-tacticsummary'>
+                            
+                                                    <td class='td2Procedures-apt29-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    Created a new service (javamtsup) that executes a service binary (javamtsup.exe) at system startup
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Criteria-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    powershell.exe creating the Javamtsup service
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2Steps-tacticsummary'>
+                                                        <table class='table3-tacticsummary'>
+                                                            <tr class='tr3-tacticsummary'>
+                                                                <td class='td3-tacticsummary'>
+                                                                    <span style="font-size: 12px; font-weight: bold;">
+                                                                        5.A.1
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td class='td2DetectionTypesAndNotes-tacticsummary' colspan='2'>
+                                                        <table class='tableDetectionTypesAndNotes-tacticsummary'>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionTypeDotted-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Technique (Alert)
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotesDotted-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                A Technique alert detection (green indicator) called New Service was generated due to the creation of the javamtsup service. 
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-10920.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class='trDetectionTypesAndNotes-tacticsummary'>
+                                                                <td class='tdDetectionType-tacticsummary'>
+                                                                    <table class='tableSummaryDetectionIcons-tacticsummary'>
+                                                                        <tr>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary'>
+
+
+                                Telemetry
+                                                                            </td>
+                                                                            <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
+                                                                                <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_telemetry.svg" title="Telemetry">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+
+
+                                                                <td class='tdDetectionNotes-tacticsummary'>
+                            
+
+                                                                    <table class='table3-tacticsummary'>
+                                                                        <tr class='tr3-tacticsummary'>
+                                                                            <td class='tdInnerDetectionNotes-tacticsummary'>
+                                                                                Telemetry showed a registry event and service creation of javamtsup.
+
+
+                                                                                <a href='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure-APT29-10920.png' target='_blank'>
+                                                                                    [1]
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                
+
+
+
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+				
+				</td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var r1_exclusive = ['IndicatorOfCompromise', 'Specific', 'Enrichment', 'Tainted', 'GeneralBehavior'];
+	var r2_exclusive = ['Tactic', 'Technique', 'MSSP', 'Host', 'Residual', 'Alert', 'Correlated', 'Innovative', 'General'];
+    var url_string = window.location.href;
+	
+    document.onload = organize_legend();
+
+    function organize_legend() {
+        if(url_string.includes('APT3')) {
+			for (i=0; i < r2_exclusive.length; i++) {
+				var div = document.getElementById(r2_exclusive[i]);
+				div.remove();
+			}
+        } else {
+			for (i=0; i < r1_exclusive.length; i++) {
+				var div = document.getElementById(r1_exclusive[i]);
+				div.remove();
+			}
+        }
+    }
+
+    function show_legend()
+    {
+        var divLegend = document.getElementById('divLegend');
+        var tableHeaderBar = document.getElementById('tableHeaderBar');
+
+        divLegend.style.display = 'Block';
+        tableHeaderBar.className = 'tableHeaderBar-withlegend-tacticsummary';
+    }
+
+    function hide_legend()
+    {
+        var divLegend = document.getElementById('divLegend');
+        var tableHeaderBar = document.getElementById('tableHeaderBar');
+
+        divLegend.style.display = 'None';
+        tableHeaderBar.className = 'tableHeaderBar-tacticsummary';
+    }
+
+</script>
+</div>
+
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use.html">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy.html">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2020, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact.html" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/theme/scripts/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

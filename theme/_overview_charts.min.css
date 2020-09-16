@@ -1,0 +1,69 @@
+.divEvaluationSummaryBody-oc {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px; }
+
+  .divEvaluationSummaryBody-oc li + li {
+    margin-top: 10px; }
+
+    .labSubheader-oc {
+      font-size: 24px; }
+
+      .tdInnerDetectionNotesSum-oc {
+        font-size: 13px; }
+
+        .tdInnerDetectionNotesSum-oc a span {
+          display: none; }
+
+          .tdInnerDetectionNotesSum-oc a:hover span {
+            display: block;
+            position: absolute;
+            margin: 0px;
+            padding: 10px;
+            color: black;
+            font-weight: normal;
+            background: white;
+            text-align: left;
+            border: 1px solid #666;
+            z-index: 2;
+            max-width: 600px;
+            cursor: default; }
+
+            .aFootnote {
+              color: #666666;
+              font-size: 11px; }
+
+              .aFootnote:hover {
+                color: #666666;
+                cursor: default;
+                text-decoration: none; }
+
+                .tableMatrixLegendExport-oc {
+                  width: 100%; }
+
+                  .divDisclaimer-oc {
+                    font-size: 12px;
+                    width: 40%; }
+
+                    .tdLegendExport-oc {
+                      width: 30%;
+                      text-align: right;
+                      vertical-align: bottom; }
+
+                      .aLegendExport-oc {
+                        font-size: 13px; }
+
+                        .divCharts-oc {
+                          margin-top: 5px;
+                          width: 100%; }
+
+                          .divChartsTop-oc {
+                            display: flex;
+                            flex-direction: row; }
+
+                            .shadow {
+                              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+                              .card-title {
+                                font-size: 1.1rem;
+                                color: #000000; }

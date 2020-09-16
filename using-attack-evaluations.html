@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62667723-5"></script>
+    <script src="/theme/scripts/analytics.js"></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6cdcfaf1">
+
+ </head>
+
+<body>
+    <header class='pb-5'>
+        <nav class='navbar navbar-expand-lg navbar-dark fixed-top border-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto'>
+            
+            <li class="dropdown-submenu">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <!-- <ul class="dropdown-menu drop_menu_side"> -->
+                        <ul class="dropdown-menu drop_menu_side_right">                            
+                            <li><a class="dropdown-item" href="/adversary-emulation.html">Adversary Emulation</a></li>
+                            <li><a class="dropdown-item" href="/evaluation-process.html">Evaluation Process</a></li>
+                            <li><a class="dropdown-item" href="/setup-and-configuration.html">Setup and Configuration</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=APT3">Results</a></li>
+                            <li><a class="dropdown-item" href="/APT3">Overview</a></li>
+                            <li><a class="dropdown-item" href="/APT3/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/APT3/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/APT3/scope.html">Technique Scope</a></li>
+                            <li><a class="dropdown-item" href="/APT3/operational-flow.html">Operational Flow</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                        
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=APT29">Results</a></li>
+                            <li><a class="dropdown-item" href="/APT29">Overview</a></li>
+                            <li><a class="dropdown-item" href="/APT29/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/APT29/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/APT29/scope.html">Technique Scope</a></li>
+                            <li><a class="dropdown-item" href="/APT29/operational-flow.html">Operational Flow</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/enterprise/evaluations.html?round=carbanak-fin7">Participants</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/">Overview</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/detection-categories.html">Detection Categories</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/protection-categories.html">Protection Categories</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="/carbanak-fin7/scope.html">Technique Scope</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
+                            <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href='/technique_comparison.html'>Technique Comparison Tool </a>
+                    <a class="dropdown-item" href='/vendor_comparison.html'>Vendor Comparison Tool </a>
+                    <a class="dropdown-item" href='/do-it-yourself.html'>Do It Yourself Evaluations</a>
+                    <a class="dropdown-item" href='/data_analysis_tool.html'>Data Analysis Tool</a>
+                    <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
+                        ATT&CK Arsenal
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>  
+            </li>
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations.html">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about.html">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ.html">FAQ</a>                    
+                        <a class="dropdown-item" href="/issues.html">Issue Tracker</a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated.html'><strong>Get Evaluated</strong></a></li>
+          </ul>
+        </div>
+</nav>
+    </header>
+    <div id='content'><div class="bg-light container-fluid">
+     <div class="row" style="flex-wrap: nowrap;">
+          <div class="col-lg-2 bg-engenuity-dark">
+               <nav id="sidebar" class="navbar bg-engenuity-dark" style="top: 70px; position: sticky;">
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link-white using-evals-navlink using-evals-navmain" href="#who-we-are">Who We Are</a>
+                         <a class="nav-link-white using-evals-navlink using-evals-navmain" href="#user-guide">User Guide</a>
+                         <a class="nav-link-white using-evals-navlink using-evals-navmain" href="#interpreting">Interpreting Our Results</a>
+                         <a class="nav-link-white using-evals-navlink using-evals-navmain" href="#key-things">Key Things to Know Before You Begin</a>
+                         <a class="nav-link-white using-evals-navlink using-evals-navmain" href="#resources">Additional Resources</a>
+                         <nav class="nav nav-pills flex-column">
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Detection Theory</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Tools to Use the
+                                   Results</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Adversary Emulation
+                                   Content</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Adversary Emulation
+                                   Content</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Carbanak+FIN7 (Enterprise)
+                                   Emulation</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Triton Emulation (ICS)
+                                   Content</a>
+                              <a class="nav-link-white using-evals-navlink using-evals-navsub ml-3 my-1" href="#resources">Prior Round Content</a>
+                         </nav>
+                    </nav>
+               </nav>
+          </div>
+          <div class="col-lg-10 pt-5 pl-0 pr-0">
+               <div style="width: 80%;" class="ml-5">
+                    <h2><b>Getting Started</b></h2>
+                    <h6 style="color: gray;">Using ATT&CK Evaluations</h6>
+                    
+                    <div data-spy="scroll" data-target="#sidebar" data-offset="0">
+                         <div class="false-anchor" id="who-we-are"> </div>
+                         <br>
+                         <h4><b>Who We Are</b></h4>
+                         <p>
+                              MITRE Engenuity evaluates cybersecurity products using an open methodology based
+                              on the
+                              ATT&CK®
+                              knowledge base. Our goals are to improve organizations against known adversary
+                              behaviors
+                              by:
+                         </p>
+
+                         <div class="container">
+                              <div class="row">
+                                   <div class="col-xl-4 text-center"><img
+                                             src="https://d1zq5d3dtjfcoj.cloudfront.net/Empowered_Brain.png">
+                                        <div class="text-left"><span
+                                                  style="font-size: 1.3rem; font-weight: bold; color: rgb(98, 60, 192);">Empowering
+                                                  end-users</span> with objective insights into how to use
+                                             participating
+                                             security products</div>
+                                   </div>
+                                   <div class="col-xl-4 text-center"><img
+                                             src="https://d1zq5d3dtjfcoj.cloudfront.net/Lock_and_Shield.png">
+                                        <div class="text-left"><span
+                                                  style="font-size: 1.3rem; font-weight: bold; color: rgb(98, 60, 192);">Providing
+                                                  transparency</span> around the true capabilities of
+                                             participating
+                                             security
+                                             products</div>
+                                   </div>
+                                   <div class="col-xl-4 text-center"><img
+                                             src="https://d1zq5d3dtjfcoj.cloudfront.net/Transparent_Window.png">
+                                        <div class="text-left"><span
+                                                  style="font-size: 1.3rem; font-weight: bold; color: rgb(98, 60, 192);">Driving
+                                                  vendors</span> to enhance their capabilities</div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <br>
+                         <p>
+                              These evaluations are not a competitive analysis. We show the detections we
+                              observed
+                              without
+                              providing a “winner.” Because there is no singular way for analyzing, ranking,
+                              or rating
+                              the
+                              solutions, we instead show how each vendor approaches threat defense within the
+                              context of
+                              ATT&CK.
+                         </p>
+                         <p>
+                              MITRE Engenuity’s evaluation methodology is publicly available, and the results
+                              are
+                              publicly
+                              released. MITRE will continue to evolve the ATT&CK Evaluation methodology and
+                              content to
+                              ensure
+                              a fair, transparent, and useful evaluation process.
+                         </p>
+                         <br>
+                    </div>
+               </div>
+
+               <div class="false-anchor" id="user-guide"> </div>
+
+               <div class="container-fluid text-white" style="background-color: rgb(98, 60, 192); text-align: left; padding-left:0">
+                    <br>
+                    <h4 class="ml-5"><b> User Guide </b></h4>
+                    <div style="width: 70%; text-align: center; margin: 0 auto;">
+                         <div class="row justify-content-left">
+                              <div class="col-xl-3 pb-4">
+                                   <div style="text-align: left;">
+                                        <a
+                                             href="https://d1zq5d3dtjfcoj.cloudfront.net/Using-Results-to-Evaluate-Endpoint-Detection-Products_Booklet.pdf"><img
+                                                  src="https://d1zq5d3dtjfcoj.cloudfront.net/user_guide_cover.png"
+                                                  style="height: 250px;"></a>
+                                   </div>
+                              </div>
+                              <div class="col-xl-9 div_vertically_centered text-left">
+                                   <div class="row">
+                                        <p style="font-size: 1.2rem;">
+                                             This guide helps you understand how to use the evaluation results
+                                             to
+                                             assess security products and select an endpoint threat detection
+                                             tool.
+                                             In this guide, we address using ATT&CK Evaluations to inform two
+                                             of
+                                             the key questions:
+                                             <ul style="font-size: 1.2rem;">
+                                                  <li>
+                                                       Does this tool detect known threats to your
+                                                       organization
+                                                       (i.e., ATT&CK technique coverage)?
+                                                  </li>
+                                                  <li>
+                                                       How does the tool present the data to your analysts
+                                                       (i.e.,
+                                                       Graphical User Interface)?”
+                                                  </li>
+                                             </ul>
+                                        </p>
+                                        <br>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <br><br>
+               <div style="width: 80%;" class="ml-5">
+                    <div class="false-anchor" id="interpreting"> </div>
+                    <h4><b>Interpreting Our Results</b></h4>
+                    <p>
+                         The ATT&CK Evaluation methodology and results can assist organizations as they make
+                         critical
+                         decisions about which vendor capabilities best suit their needs. These evaluation
+                         results
+                         describe how product users could address specific ATT&CK Technique implementations
+                         under
+                         perfect circumstances with knowledge of what the adversary did and without
+                         environmental
+                         noise.
+                         Our evaluations look at each vendor’s capabilities within their own context, while
+                         doing
+                         so in
+                         a way that is consistent across all vendors who participate.
+                    </p>
+                    <p>
+                         By looking at the capabilities of these products and weighing their unique
+                         constraints,
+                         organizations may be able to “down-select” products that appear to best meet their
+                         requirements. Decision makers should consider other factors that we are not
+                         accounting for
+                         when
+                         determining which tool best fits their needs as our evaluations are narrowly focused
+                         on
+                         the
+                         technical ability to defend against specific adversaries. For additional guidance on
+                         how
+                         to
+                         leverage our results to compare vendor performance, please see our
+                         <a
+                              href="https://d1zq5d3dtjfcoj.cloudfront.net/Using-Results-to-Evaluate-Endpoint-Detection-Products_Booklet.pdf">Using
+                              Results to Evaluate Endpoint Detection Products</a> guide.
+                    </p>
+                    <p>
+                         As many use our results to develop their own scores, rankings, or ratings, we
+                         encourage
+                         you to
+                         consider how those analyses relate to your unique requirements. We have released a
+                         number
+                         of
+                         tools on this site to help you with your analysis. We also encourage you to use our
+                         methodologies to test the solutions in your own environment. This allows false
+                         positives,
+                         environmental noise, and system impact to be considered in a way that is tailored to
+                         your
+                         organization, as well as provide your analysts an opportunity to get hands-on with
+                         the
+                         user
+                         interfaces.
+                    </p>
+                    <center>
+                         <img style="width:75%;" src="https://d1zq5d3dtjfcoj.cloudfront.net/using-evals-chart.png">
+                    </center>                   
+                    <br><br><br>
+                    <div class="false-anchor" id="key-things"> </div>
+                    <h4><b>Key Things to Know Before You Begin</b></h4>
+                    <p>
+                         <span style="color: rgb(98, 60, 192)"><b>ATT&CK Evaluations are a starting point. </b></span>
+                         We use an open-book and minimally sized environment to understand baseline
+                         capabilities of
+                         solutions. Operationalization of these solutions is important to consider in the
+                         context
+                         of
+                         your organization, including false positive generation.
+                    </p>
+                    <p>
+                         <span style="color: rgb(98, 60, 192)"><b>There are no scores or winners. </b></span>
+                         The goal of ATT&CK Evaluations is to show the different capabilities of each vendor.
+                    </p>
+                    <p>
+                         <span style="color: rgb(98, 60, 192)"><b>Counting has limitations. </b></span>
+                         We don’t think any single way to count is right for everyone. As we’ve described, you
+                         should
+                         consider your own needs and then consider scoring based on those.
+                    </p>
+                    <p>
+                         <span style="color: rgb(98, 60, 192)"><b>Not all techniques are created equal. </b></span>
+                         A technique detection for Credential Dumping may not have same value as a technique
+                         for
+                         Process
+                         Discovery, due to the severity of the action. The category gives you a general idea,
+                         but
+                         you
+                         should dive into the details to understand the technique and detection.
+                    </p>
+                    <p>
+                         <span style="color: rgb(98, 60, 192)"><b>Not all procedures are created equal. </b></span>
+                         Process Discovery (T1057) via Command-Line Interface (T1059) can be detected with
+                         most
+                         process
+                         monitoring. Process Discovery via API (T1106) would need API monitoring. A vendor
+                         could
+                         have a
+                         detection for one but not the other.
+                    </p>
+               </div>
+               <br><br>
+               <div style="width: 80%;" class="ml-5">
+                    <div class="false-anchor" id="resources"> </div>
+                    <h4><b>Additional Resources</b></h4>
+                    <div class="container-fluid">
+                         <div class="row mt-4">
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>DETECTION THEORY</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7-Detection-Categories.png' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/would-a-detection-by-any-other-name-detect-as-well-part-1-1577eba255bc">
+                                                  Part 1: Would a Detection by Any Other Name Detect as Well?
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/would-a-detection-by-any-other-name-detect-as-well-part-2-2b2cf9180e21">
+                                                  Part 2: Would a Detection by Any Other Name Detect as Well?
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/dissecting-a-detection-part-1-19fd8f00266c">
+                                                  Dissecting a Detection: An Analysis of ATT&CK Evaluations
+                                                  Data
+                                                  (Sources) Part 1 of 2
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/dissecting-a-detection-part-2-74844e86e2b0">
+                                                  Actionable Detections: An Analysis of ATT&CK Evaluations
+                                                  Data
+                                                  Part 2
+                                                  of 2
+                                             </a>
+                                        </li>
+                                        <ul>
+
+                              </div>
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>TOOLS TO USE THE RESULTS</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/using-evals-tools-for-results.png' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a href="/vendor_comparison.html">
+                                                  Vendor Comparison Tool
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a href="/technique_comparison.html">
+                                                  Technique Comparison Tool
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a href="/data_analysis_tool.html">
+                                                  Joystick Data Analysis Tool
+                                             </a>
+                                        </li>
+                                        <ul>
+                              </div>
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>ADVERSARY EMULATION CONTENT</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/using-evals-apt3.png' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a href="https://github.com/mitre-attack/attack-arsenal">
+                                                  APT29 Plan and Scripts at ATT&CK Arsenal
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a href="/do-it-yourself.html">
+                                                  DIY Evals with CALDERA
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library">
+                                                  Center for Threat Informed Defense Adversary Emulation Library (External)
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a href="https://attack.mitre.org/resources/adversary-emulation-plans/">
+                                                  Original APT3 Plan on ATT&CK (External)
+                                             </a>
+                                        </li>
+                                        <ul>
+
+                              </div>
+                         </div>
+                         <div class="row mt-4">
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>CARBANAK+FIN7 EMULATION (ENTERPRISE) CONTENT</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak.jpg' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/announcing-2020s-attack-evaluation-6755650b68c2">
+                                                  Announcement
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-engenuity/getting-ready-for-the-carbanak-and-fin7-evaluations-441df646756e">
+                                                  Methodology Update
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>TRITON EMULATION (ICS) CONTENT</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/ICS_Triton.jpg' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-engenuity/att-ck-evaluations-expands-to-industrial-control-systems-af83bc2fec53">
+                                                  Announcement
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-engenuity/announcing-the-att-ck-evaluations-for-ics-fall-2020-cohort-19fb6a1df164">
+                                                  Cohort Announcement
+                                             </a>
+                                        </li>
+                                        <ul>
+                              </div>
+                              <div class="col">
+                                   <div class="resource-card">
+                                        <div class="resource-title">
+                                             <h6>PRIOR ROUND CONTENT</h6>
+                                        </div>
+                                        <div class="div-resource-image">
+                                             <span class="helper"></span><img class="resource-image"
+                                                  src='https://d1zq5d3dtjfcoj.cloudfront.net/Attack_hacker.svg' />
+                                        </div>
+                                   </div>
+                                   <ul style="list-style: none; padding-inline-start: 10px;">
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/mitres-att-ck-based-evaluations-for-security-vendors-are-underway-3300a6f63990">
+                                                  APT3 Announcement (Enterprise)
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/first-round-of-mitre-att-ck-evaluations-released-15db64ea970d">
+                                                  APT3 Results (Enterprise)
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/attack-evals-round-2-c3ea383ba55d">
+                                                  APT29 Announcement (Enterprise)
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/attack-evaluations-round-2-methodology-and-site-updates-98f5305c2121">
+                                                  APT29 Methodology Update (Enterprise)
+                                             </a>
+                                        </li>
+                                        <li class="mt-2">
+                                             <a
+                                                  href="https://medium.com/mitre-attack/attack-apt29-results-released-cd30b3686ad9">
+                                                  APT29 Results (Enterprise)
+                                             </a>
+                                        </li>
+                                        <ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <br>
+          </div>
+     </div>
+</div>
+</div>
+
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use.html">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy.html">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2020, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact.html" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="/theme/scripts/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

@@ -1,0 +1,1489 @@
+.gray-text {
+  color: #99958F; }
+
+  .EvalCard-results {
+    transition: all 0.5s ease;
+    height: 250px;
+    width: 250px;
+    background-size: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px;
+    float: left;
+    border: 3px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s; }
+
+    .EvalCard-results:hover {
+      transition: all 0.5s ease;
+      border: 3px solid #6241c5; }
+
+      .EvalCard-results-preview {
+        transition: all 0.5s ease;
+        height: 250px;
+        width: 250px;
+        background-size: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 20px;
+        float: left;
+        border: 3px solid #e4e2e2;
+        border-radius: 10px;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+        .EvalCard-results-preview:hover {
+          transition: all 0.5s ease;
+          border: 3px solid #6241c5; }
+
+          .comingSoon {
+            font-size: 150%;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            background-color: #f3f3f3;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            opacity: 1; }
+
+            .labEvalName-results {
+              color: black;
+              font-size: 13px;
+              float: left; }
+
+              .labDateStamp-results {
+                color: black;
+                font-size: 13px;
+                float: right; }
+
+                .divLogo-results {
+                  text-align: center;
+                  height: 200px; }
+
+                  .vendorlogo-results {
+                    max-width: 95%;
+                    max-height: 90%; }
+
+                    .vendorlogo-results-preview {
+                      max-width: 95%;
+                      max-height: 90%;
+                      opacity: 0.5; }
+
+                      .divTags-results {
+                        width: 100%; }
+
+                        #txtSearch-results {
+                          font-size: 16px;
+                          width: 300px;
+                          border-radius: 0px;
+                          border-right: none; }
+
+                          #imgSearch-results {
+                            width: 10%;
+                            height: 10%; }
+
+                            #imgSearch-results:hover {
+                              cursor: pointer; }
+
+                              #btnRound-results {
+                                background-color: transparent;
+                                text-decoration: underline;
+                                font-size: 24px; }
+
+                                #spanRound-results {
+                                  text-decoration: underline;
+                                  font-size: 24px; }
+
+                                  #labSearchResults-results {
+                                    font-size: 24px;
+                                    font-weight: bold; }
+
+                                    .spanRoundLabel-results {
+                                      font-size: 22px; }
+
+                                      .spanRoundTr-results {
+                                        -webkit-animation: fadeIn 1s;
+                                        animation: fadeIn 1s; }
+
+                                        @font-face {
+                                          font-family: 'Gilroy';
+                                          src: url("fonts/Gilroy/Gilroy-Regular.otf") format("OpenType");
+                                          font-weight: 400;
+                                          font-style: normal; }
+
+                                          @font-face {
+                                            font-family: 'Gilroy';
+                                            src: url("fonts/Gilroy/Gilroy-Bold.otf") format("OpenType");
+                                            font-weight: 700;
+                                            font-style: normal; }
+
+                                            @font-face {
+                                              font-family: 'Gilroy';
+                                              src: url("fonts/Gilroy/Gilroy-ExtraBold.otf") format("OpenType");
+                                              font-weight: 800;
+                                              font-style: normal; }
+
+                                              @font-face {
+                                                font-family: 'Gilroy';
+                                                src: url("fonts/Gilroy/Gilroy-Light.otf") format("OpenType");
+                                                font-weight: 300;
+                                                font-style: normal; }
+
+                                                @font-face {
+                                                  font-family: 'Knockout';
+                                                  src: url("fonts/Knockout/Knockout-HTF30-JuniorWelterwt.otf") format("OpenType");
+                                                  font-weight: 300;
+                                                  font-style: normal; }
+
+                                                  @font-face {
+                                                    font-family: 'Sentinel-Book';
+                                                    src: url("fonts/Sentinel/Sentinel-Book.otf") format("OpenType");
+                                                    font-weight: 400;
+                                                    font-style: normal; }
+
+                                                    @font-face {
+                                                      font-family: 'Sentinel-Book';
+                                                      src: url("fonts/Sentinel/Sentinel-BookItalic.otf") format("OpenType");
+                                                      font-weight: 400;
+                                                      font-style: italic; }
+
+                                                      @font-face {
+                                                        font-family: 'Sentinel-Light';
+                                                        src: url("fonts/Sentinel/Sentinel-Light.woff2") format("OpenType");
+                                                        font-weight: 400;
+                                                        font-style: normal; }
+
+                                                        body {
+                                                          height: 100%;
+                                                          color: #39434C;
+                                                          font-family: 'Sentinel-Book', Georgia, serif;
+                                                          font-weight: 400; }
+
+                                                          h1 {
+                                                            font-family: 'Gilroy', Arial, sans-serif;
+                                                            font-weight: 800;
+                                                            letter-spacing: 0.5pt;
+                                                            text-transform: uppercase; }
+
+                                                            h2 {
+                                                              font-family: 'Gilroy', Arial, sans-serif;
+                                                              font-weight: 400;
+                                                              letter-spacing: 0.5pt; }
+
+                                                              h3, h4, h5, h6 {
+                                                                font-family: 'Gilroy', Arial, sans-serif;
+                                                                font-weight: 400;
+                                                                letter-spacing: 0.5pt; }
+
+                                                                .sub-h5 {
+                                                                  font-size: 1.15rem; }
+
+                                                                  .sub-h6 {
+                                                                    font-size: 0.9rem; }
+
+                                                                    select {
+                                                                      font-family: 'Gilroy', Arial, sans-serif;
+                                                                      font-weight: 400; }
+
+                                                                      .breadcrumb {
+                                                                        background-color: white; }
+
+                                                                        a {
+                                                                          color: #4F7CAC; }
+
+                                                                          #content {
+                                                                            margin-top: 20px;
+                                                                            width: 100%;
+                                                                            min-height: calc(92vh - 149px) !important; }
+
+                                                                            .spanBreadcrumbs-results {
+                                                                              font-size: 90%;
+                                                                              font-family: 'Gilroy', Arial, sans-serif;
+                                                                              font-weight: 400;
+                                                                              letter-spacing: 0.5pt; }
+
+                                                                              .divEvaluationSummaryBody {
+                                                                                width: 95%;
+                                                                                margin: 0 auto;
+                                                                                padding-top: 20px; }
+
+                                                                                .btn-engenuity-purple {
+                                                                                  color: #fff;
+                                                                                  background-color: #6241c5;
+                                                                                  border-color: 1px solid #6241c5;
+                                                                                  font-family: 'Gilroy', Arial, sans-serif; }
+
+                                                                                  .btn-engenuity-purple:hover {
+                                                                                    color: #fff;
+                                                                                    background-image: none;
+                                                                                    border-color: 1px solid #fff; }
+
+                                                                                    .footer-links-left {
+                                                                                      font-family: 'Sentinel-Book', Georgia, serif;
+                                                                                      font-size: 1rem;
+                                                                                      color: black;
+                                                                                      text-align: left;
+                                                                                      letter-spacing: 0px;
+                                                                                      opacity: 1;
+                                                                                      margin: 0; }
+
+                                                                                      strong {
+                                                                                        font-weight: bold; }
+
+                                                                                        @-webkit-keyframes fadeIn {
+                                                                                          from {
+                                                                                            opacity: 0;   }
+                                                                                            to {
+                                                                                              opacity: 1;   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;   }
+    to {
+      opacity: 1;   }
+}
+
+@media screen and (max-height: 740px) {
+  .using-evals-navlink {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;   }
+}
+
+@media screen and (max-height: 680px) {
+  .using-evals-navlink {
+    padding-top: 0 !important;   }
+}
+
+@media screen and (max-height: 630px) {
+  .using-evals-navsub {
+    margin-left: 0px !important;   }
+    .using-evals-navmain {
+      margin-left: -10px !important;   }
+}
+
+@media screen and (max-height: 580px) {
+  .using-evals-navsub {
+    margin-left: -10px !important;   }
+    .using-evals-navmain {
+      margin-left: -20px !important;   }
+}
+
+@media screen and (max-width: 1500px) {
+  .using-evals-navlink {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;   }
+    .using-evals-navsub {
+      margin-left: 0px !important;   }
+      .using-evals-navmain {
+        margin-left: -10px !important;   }
+}
+
+@media screen and (max-width: 1420px) {
+  .using-evals-navlink {
+    padding-top: 0 !important;   }
+    .using-evals-navsub {
+      margin-left: -10px !important;   }
+      .using-evals-navmain {
+        margin-left: -20px !important;   }
+}
+
+@media screen and (max-width: 1340px) {
+  .using-evals-navsub {
+    margin-left: -15px !important;   }
+    .using-evals-navmain {
+      margin-left: -25px !important;   }
+}
+
+.navbar-white {
+  background-color: white; }
+
+  .navbar-white > a > .nav-link {
+    color: white; }
+
+    .nav-tabs {
+      border-bottom: none; }
+
+      .nav-tabs .nav-link {
+        color: black;
+        font-family: "Gilroy", Arial, sans-serif; }
+
+        .nav-tabs .nav-link:focus, .nav-tabs .nav-link.active {
+          border: none;
+          border-top-left-radius: 0rem;
+          border-top-right-radius: 0rem;
+          text-decoration: underline; }
+
+          .nav-tabs .nav-link:hover:not(.active) {
+            text-decoration: underline;
+            border: 1px solid transparent;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem; }
+
+            .nav-link {
+              font-size: 1rem;
+              padding: 0.3rem 1rem;
+              color: #596877; }
+
+              .nav-link.expand-title {
+                font-size: 1.1rem;
+                color: black; }
+
+                .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+                  border: 1px solid transparent;
+                  border-top-left-radius: 0.25rem;
+                  border-top-right-radius: 0.25rem; }
+
+                  .dropdown-item:focus, .dropdown-item:hover {
+                    text-decoration: underline;
+                    background-color: transparent; }
+
+                    .dropdown-item {
+                      color: black;
+                      font-family: "Gilroy", Arial, sans-serif; }
+
+                      .dropdown-menu {
+                        background-color: white; }
+
+                        .dropdown:hover > .dropdown-menu {
+                          display: block; }
+
+                          .external-icon {
+                            width: 15px;
+                            margin-top: -5px; }
+
+                            .dropdown-menu-right {
+                              right: 0;
+                              left: auto; }
+
+                              .dropdown-submenu {
+                                position: relative; }
+
+                                .drop_menu_side {
+                                  top: 0;
+                                  right: 100%;
+                                  left: auto;
+                                  float: right;
+                                  margin-top: -6px;
+                                  margin-right: -1px !important;
+                                  -webkit-border-radius: 0 6px 6px 6px;
+                                  -moz-border-radius: 0 6px 6px;
+                                  border-radius: 0 6px 6px 6px; }
+
+                                  .drop_menu_side_right {
+                                    top: 0;
+                                    right: auto;
+                                    left: 100%;
+                                    float: right;
+                                    margin-top: -6px;
+                                    margin-left: -1px !important;
+                                    -webkit-border-radius: 0 6px 6px 6px;
+                                    -moz-border-radius: 0 6px 6px;
+                                    border-radius: 0 6px 6px 6px; }
+
+                                    .dropdown-submenu:hover > .dropdown-menu {
+                                      display: block; }
+
+                                      .dropdown-submenu2:hover > .dropdown-menu {
+                                        display: block; }
+
+                                        .dropdown-submenu2 > a:after {
+                                          display: block;
+                                          float: right;
+                                          width: 0;
+                                          height: 0;
+                                          border-color: transparent;
+                                          border-style: solid;
+                                          border-width: 5px 0 5px 5px;
+                                          border-left-color: #ccc;
+                                          margin-top: 5px;
+                                          margin-right: -10px; }
+
+                                          .dropdown .dropbtn {
+                                            font-size: 16px;
+                                            border: none;
+                                            outline: none;
+                                            padding: 14px 16px;
+                                            background-color: inherit;
+                                            font-family: inherit;
+                                            margin: 0; }
+
+                                            footer .footer-link {
+                                              color: #ffffff; }
+
+                                              footer * {
+                                                font-family: 'Sentinel-Book', Georgia, sans-serif;
+                                                font-weight: 400;
+                                                font-style: normal; }
+
+                                                .btn-footer {
+                                                  color: #fff;
+                                                  background-color: #6241c5;
+                                                  border-color: #fff; }
+
+                                                  .btn-footer:hover {
+                                                    color: #fff;
+                                                    background-color: #6241c5;
+                                                    border-color: #fff; }
+
+                                                    .btn-footer.focus, .btn-footer:focus {
+                                                      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+
+                                                      .btn-footer.disabled, .btn-footer:disabled {
+                                                        color: #fff;
+                                                        background-color: #6241c5;
+                                                        border-color: #6241c5; }
+
+                                                        .btn-footer:not(:disabled):not(.disabled).active,
+                                                        .btn-footer:not(:disabled):not(.disabled):active,
+                                                        .show > .btn-footer.dropdown-toggle {
+                                                          color: #fff;
+                                                          background-color: #6241c5;
+                                                          border-color: #6241c5; }
+
+                                                          .btn-footer:not(:disabled):not(.disabled).active:focus,
+                                                          .btn-footer:not(:disabled):not(.disabled):active:focus,
+                                                          .show > .btn-footer.dropdown-toggle:focus {
+                                                            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+
+                                                            .footer > .container-fluid {
+                                                              padding-right: 0 !important;
+                                                              padding-left: 0 !important; }
+
+                                                              .footer {
+                                                                background-color: #6241c5;
+                                                                color: white;
+                                                                font-family: 'Sentinel-Book', Georgia, sans-serif;
+                                                                font-weight: 400; }
+
+                                                                .footer-responsive-break {
+                                                                  display: none; }
+
+                                                                  .footer-float-right-responsive {
+                                                                    float: right; }
+
+                                                                    .footer {
+                                                                      clear: both; }
+
+                                                                      @media screen and (max-width: 767.8px) {
+                                                                        .footer-responsive-break {
+                                                                          display: block;   }
+                                                                          .footer-float-right-responsive {
+                                                                            float: none;   }
+}
+
+.bg-light {
+  background-color: #f3f3f3 !important; }
+
+  .bg-mitre-engenuity-dark {
+    background-color: #1C242A; }
+
+    .bg-mitre-engenuity-purple {
+      background-color: #6241C5; }
+
+      .mitre-engenuity-purple {
+        color: #6241C5; }
+
+        .p_home {
+          font-family: 'Sentinel-Light', Georgia, serif;
+          text-align: left;
+          font-size: 1.4rem;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1; }
+
+          .p_home_top {
+            font-family: 'Sentinel-Light', Georgia, serif;
+            text-align: left;
+            font-size: 1.6rem;
+            letter-spacing: 0px;
+            color: #000000;
+            opacity: 1; }
+
+            .h2_home {
+              font-size: 2rem; }
+
+              .div_mailing {
+                width: 90%;
+                right: 0; }
+
+                @media screen and (max-width:1665px) {
+                  .p_home {
+                    font-size: 1.2rem;   }
+                    .p_home_top {
+                      font-size: 1.4rem;   }
+                      .h2_home {
+                        font-size: 1.8rem;   }
+}
+
+@media screen and (max-width:1550px) {
+  .p_home {
+    font-size: 1.1rem;   }
+    .p_home_top {
+      font-size: 1.3rem;   }
+      .h2_home {
+        font-size: 1.7rem;   }
+}
+
+@media screen and (max-width:1425px) {
+  .p_home {
+    font-size: 1rem;   }
+    .p_home_top {
+      font-size: 1.2rem;   }
+      .h2_home {
+        font-size: 1.6rem;   }
+}
+
+@media screen and (max-width:1364px) {
+  .p_home {
+    font-size: 1rem;   }
+    .p_home_top {
+      font-size: 1.3rem;   }
+      .h2_home {
+        font-size: 1.5rem;   }
+}
+
+@media screen and (max-width:1199px) {
+  .p_home {
+    font-size: 1.3rem;   }
+    .p_home_top {
+      font-size: 1.5rem;   }
+      .h2_home {
+        font-size: 1.9rem;   }
+        .div_mailing {
+          width: 100%;   }
+}
+
+.div_p_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left; }
+
+  #div_rounds {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+    .div_round_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      text-align: left; }
+
+      .h3_round_header {
+        font-family: Gilroy;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 0; }
+
+        .p_round_subtext {
+          font-family: 'Sentinel-Light', Georgia, serif;
+          text-align: left;
+          font-size: 16px;
+          letter-spacing: 0px;
+          color: #FFFFFF;
+          opacity: 1; }
+
+          .div_round_card_container {
+            display: flex;
+            flex-direction: row; }
+
+            .img_round_card {
+              height: 220px;
+              max-width: 310px; }
+
+              .span_round_caption {
+                color: white;
+                font-family: 'Sentinel-Light';
+                font-size: 1.2rem;
+                font-weight: bold; }
+
+                #img_close-up-coding {
+                  width: 90%;
+                  height: 100%; }
+
+                  #img_bright-binary {
+                    width: 90%;
+                    height: 100%; }
+
+                    #img_high-speed-binary {
+                      width: 100%;
+                      height: 100%; }
+
+                      .div_vertically_centered {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center; }
+
+                        .btn_submit_custom {
+                          text-align: center;
+                          font-family: Roboto;
+                          letter-spacing: 0px;
+                          color: #FFFFFF;
+                          opacity: 1;
+                          background-color: #1C242A; }
+
+                          .hbspt-form .hs-form-iframe {
+                            width: 100% !important; }
+
+                            .faq {
+                              line-height: 2rem; }
+
+                              .right {
+                                transform: rotate(-45deg);
+                                -webkit-transform: rotate(-45deg); }
+
+                                dropdown_arrow {
+                                  border: solid black;
+                                  border-width: 0 3px 3px 0;
+                                  display: inline-block;
+                                  padding: 3px; }
+
+                                  #hide_show {
+                                    transform: rotate(0deg);
+                                    -webkit-transform: rotate(0deg); }
+
+                                    .card-title {
+                                      font-size: 1.1rem;
+                                      color: #000000; }
+
+                                      .bg-accord-light {
+                                        background-color: #f8f9fa; }
+
+                                        .bg-accord-dark {
+                                          background-color: #e9ecef; }
+
+                                          table {
+                                            empty-cells: hide; }
+
+                                            .table-light {
+                                              background-color: #f3f3f3; }
+
+                                              .divFAQBody {
+                                                width: 80%;
+                                                margin: 0 auto; }
+
+                                                .spanIssueTitle {
+                                                  background-color: transparent;
+                                                  border: none;
+                                                  color: black;
+                                                  font-size: 24px; }
+
+                                                  .pIssuePageDescription {
+                                                    width: 40%;
+                                                    font-size: 13px;
+                                                    margin-top: 10px; }
+
+                                                    .tableIssues {
+                                                      width: 80%;
+                                                      margin: 0 auto; }
+
+                                                      .tdIssuesHeader {
+                                                        width: 47%;
+                                                        text-align: center; }
+
+                                                        .tdIssuesHeaderDivider {
+                                                          width: 6%; }
+
+                                                          .spanKnownIssuesIcon {
+                                                            color: #f1c232;
+                                                            font-size: 25px;
+                                                            vertical-align: middle; }
+
+                                                            .spanResolvedIssuesIcon {
+                                                              color: #38761d;
+                                                              font-size: 25px;
+                                                              vertical-align: middle; }
+
+                                                              .spanIssuesHeaderText, .spanKnownIssuesIcon, .spanResolvedIssuesIcon {
+                                                                line-height: 50px; }
+
+                                                                .spanIssuesHeaderText {
+                                                                  font-size: 20px; }
+
+                                                                  .divIssue {
+                                                                    border: 1px solid darkgray;
+                                                                    padding: 10px;
+                                                                    margin-bottom: 20px; }
+
+                                                                    .tdIssueSubmissionDate {
+                                                                      width: 30%; }
+
+                                                                      .aIssueLink {
+                                                                        font-size: 16px; }
+
+                                                                        .spanIssueSubmissionDate {
+                                                                          font-size: 13px;
+                                                                          float: right;
+                                                                          text-align: center; }
+
+                                                                          .pIssueBody {
+                                                                            font-size: 13px; }
+
+                                                                            .tdIssuesColumn {
+                                                                              width: 47%;
+                                                                              height: 1px;
+                                                                              vertical-align: top; }
+
+                                                                              .div_issue_label {
+                                                                                font-family: 'Sentinel-Book';
+                                                                                color: white;
+                                                                                font-size: 12px;
+                                                                                border-radius: 15px;
+                                                                                text-align: center;
+                                                                                padding: 3px;
+                                                                                width: 100px;
+                                                                                border: 1px solid black;
+                                                                                display: inline-block; }
+
+                                                                                .div_no_issues {
+                                                                                  border: 1px solid darkgray;
+                                                                                  padding: 10px;
+                                                                                  margin-bottom: 20px;
+                                                                                  font-size: 16px;
+                                                                                  text-align: center; }
+
+                                                                                  .accordion-panels .card + .card {
+                                                                                    margin-top: 0.25rem !important; }
+
+                                                                                    .accordion-panels .card-header {
+                                                                                      cursor: pointer;
+                                                                                      display: flex;
+                                                                                      flex-direction: row; }
+
+                                                                                      .accordion-panels .card-header h5 {
+                                                                                        display: inline-block;
+                                                                                        flex-grow: 1; }
+
+                                                                                        .accordion-panels .card-header:after {
+                                                                                          margin-left: auto;
+                                                                                          content: '';
+                                                                                          width: 24px;
+                                                                                          height: 24px;
+                                                                                          background-repeat: no-repeat;
+                                                                                          display: inline-block;
+                                                                                          vertical-align: top;
+                                                                                          background-position: center;
+                                                                                          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+                                                                                          z-index: 1;
+                                                                                          transition: all 0.2s ease; }
+
+                                                                                          .accordion-panels .card-header:not(.collapsed):after {
+                                                                                            transform: rotate(-180deg); }
+
+                                                                                            .accordion-panels .card-body > *:last-child {
+                                                                                              margin-bottom: 0 !important; }
+
+                                                                                              .clean-sections h2 {
+                                                                                                text-align: center;
+                                                                                                border-bottom: 1px solid black;
+                                                                                                margin: 25px;
+                                                                                                width: 100%;
+                                                                                                margin-left: 0;
+                                                                                                margin-right: 0; }
+
+                                                                                                .overview_card {
+                                                                                                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+                                                                                                  .boldText {
+                                                                                                    font-weight: bold; }
+
+                                                                                                    .pb-container {
+                                                                                                      width: 100%; }
+
+                                                                                                      .progressbar li {
+                                                                                                        list-style-type: none;
+                                                                                                        width: 25%;
+                                                                                                        float: left;
+                                                                                                        font-size: 12px;
+                                                                                                        position: relative;
+                                                                                                        text-align: center; }
+
+                                                                                                        .progressbar li:before {
+                                                                                                          width: 34px;
+                                                                                                          height: 34px;
+                                                                                                          line-height: 30px;
+                                                                                                          border: 3px solid #6241c5;
+                                                                                                          display: block;
+                                                                                                          text-align: center;
+                                                                                                          margin: 0 auto 10px auto;
+                                                                                                          border-radius: 50%;
+                                                                                                          background-color: #6241c5;
+                                                                                                          color: white;
+                                                                                                          font-weight: bold; }
+
+                                                                                                          .progressbar li:after {
+                                                                                                            width: 100%;
+                                                                                                            height: 2px;
+                                                                                                            content: '';
+                                                                                                            position: absolute;
+                                                                                                            background-color: #7d7d7d;
+                                                                                                            top: 15px;
+                                                                                                            left: -50%;
+                                                                                                            z-index: -1; }
+
+                                                                                                            .progressbar li:first-child:after {
+                                                                                                              content: none; }
+
+                                                                                                              .progressbar li.active {
+                                                                                                                color: #6241c5; }
+
+                                                                                                                .progressbar li.active:before {
+                                                                                                                  border-color: #6241c5; }
+
+                                                                                                                  .progressbar li.active + li:after {
+                                                                                                                    background-color: #6241c5; }
+
+                                                                                                                    .progressbar li.prog-doing:before {
+                                                                                                                      content: "☉"; }
+
+                                                                                                                      .progressbar li.prog-complete:before {
+                                                                                                                        content: "✓"; }
+
+                                                                                                                        .progressbar li.prog-incomplete-1:before {
+                                                                                                                          content: "1";
+                                                                                                                          background-color: white;
+                                                                                                                          color: #6241c5; }
+
+                                                                                                                          .progressbar li.prog-incomplete-2:before {
+                                                                                                                            content: "2";
+                                                                                                                            background-color: white;
+                                                                                                                            color: #6241c5; }
+
+                                                                                                                            .progressbar li.prog-incomplete-3:before {
+                                                                                                                              content: "3";
+                                                                                                                              background-color: white;
+                                                                                                                              color: #6241c5; }
+
+                                                                                                                              .progressbar li.prog-incomplete-4:before {
+                                                                                                                                content: "4";
+                                                                                                                                background-color: white;
+                                                                                                                                color: #6241c5; }
+
+                                                                                                                                .progressbar li.prog-complete-4:before {
+                                                                                                                                  content: "✓";
+                                                                                                                                  background-color: white;
+                                                                                                                                  color: #6241c5; }
+
+                                                                                                                                  .overview_note {
+                                                                                                                                    font-size: 13px; }
+
+                                                                                                                                    .vertical-center {
+                                                                                                                                      margin-top: auto;
+                                                                                                                                      margin-bottom: auto; }
+
+                                                                                                                                      .vendor-block {
+                                                                                                                                        text-align: center;
+                                                                                                                                        display: flex;
+                                                                                                                                        justify-content: space-evenly;
+                                                                                                                                        flex-wrap: wrap; }
+                                                                                                                                        .vendor-block .img-container {
+                                                                                                                                          margin: 10px; }
+                                                                                                                                          .vendor-block .img-container img {
+                                                                                                                                            height: 75px;
+                                                                                                                                            width: auto;
+                                                                                                                                            margin: auto; }
+
+.vendor-block {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .vendor-block .ics-img-container {
+    margin: 10px; }
+    .vendor-block .ics-img-container img {
+      height: 100px;
+      width: auto;
+      margin: auto; }
+
+.apt29-logo {
+  height: 75px;
+  width: auto; }
+
+  .apt3-logo {
+    height: 85px;
+    width: auto; }
+
+    .overview-card-container {
+      width: 90%;
+      margin: 0 auto; }
+
+      .table_opflow_step {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 10px;
+        margin-bottom: 30px; }
+
+        .th_opflow_step, .td_opflow_step {
+          border-right: 1px solid black;
+          padding: 5px;
+          font-size: 12px;
+          font-weight: bolder; }
+
+          .right:after {
+            transition: all 0.2s ease;
+            transform: rotate(-45deg); }
+
+            .false-anchor {
+              margin-top: -80px;
+              position: absolute; }
+
+              .resource-card {
+                border: 1px solid lightgrey;
+                text-align: center; }
+
+                .resource-title {
+                  background-color: #6241c5;
+                  color: white;
+                  padding: 10px;
+                  height: 85px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center; }
+
+                  .resource-image {
+                    vertical-align: middle;
+                    max-width: 100%;
+                    max-height: 100%; }
+
+                    .div-resource-image {
+                      height: 175px; }
+
+                      .bg-engenuity-dark {
+                        background-color: #1c242a !important; }
+
+                        .nav-link-white {
+                          font-size: 1rem;
+                          color: white;
+                          display: block;
+                          padding: 0.5rem 1rem; }
+
+                          .helper {
+                            display: inline-block;
+                            height: 100%;
+                            vertical-align: middle; }
+
+                            .dropdown {
+                              float: left; }
+
+                              .divCalibration_Main {
+                                width: 95%;
+                                margin: 0 auto;
+                                padding-top: 20px; }
+
+                                .divCalibration_breadcrumbs_tags {
+                                  width: 100%;
+                                  padding: 5px;
+                                  padding-right: 20px;
+                                  background-color: white;
+                                  position: sticky;
+                                  top: 78px;
+                                  z-index: 1000; }
+
+                                  .spanOperationalFlow-techcomparison {
+                                    font-size: 30px;
+                                    padding-left: 5px;
+                                    color: #596775; }
+
+                                    .tableCalibration_Main {
+                                      width: 100%; }
+
+                                      .tdCalibration_OperationalFlow {
+                                        width: 22%;
+                                        border-right: 1px solid lightgray;
+                                        vertical-align: top; }
+
+                                        .divCalibration_OperationalFlow {
+                                          padding: 5px;
+                                          margin-left: 10px;
+                                          height: 700px;
+                                          overflow: auto;
+                                          position: sticky;
+                                          top: 120px; }
+
+                                          .divCalibration_OF_Step, .divCalibration_OF_Step_Selected {
+                                            padding: 5px;
+                                            padding-left: 20px; }
+
+                                            .aCalibration_OF_Step {
+                                              color: black;
+                                              font-size: 14px; }
+
+                                              .aCalibration_OF_Step:hover {
+                                                text-decoration: none; }
+
+                                                .divCalibration_OF_Step_Selected {
+                                                  background-color: #d7e5ee; }
+
+                                                  .tdCalibration_Results {
+                                                    width: 72%;
+                                                    height: 1px; }
+
+                                                    .divCalibration_Results {
+                                                      padding: 15px; }
+
+                                                      .spanCalibration_Results_StepHeader {
+                                                        font-size: 18px;
+                                                        font-weight: bold; }
+
+                                                        .spanCalibration_Results_ProcedureHeader {
+                                                          font-size: 15px;
+                                                          font-weight: bold; }
+
+                                                          .spanCalibration_Results_Procedure {
+                                                            font-size: 15px; }
+
+                                                            .tableCalibration_Results_Header {
+                                                              width: 100%;
+                                                              position: sticky;
+                                                              top: 111px; }
+
+                                                              .trCalibration_Results_HeaderBar {
+                                                                background-color: #6241c5; }
+
+                                                                .tdCalibration_Vendor_Header {
+                                                                  font-size: 15px;
+                                                                  color: white;
+                                                                  width: 20%;
+                                                                  padding: 5px;
+                                                                  text-align: center; }
+
+                                                                  .tdCalibration_DetectionTypesAndNotes_Header {
+                                                                    width: 91%;
+                                                                    height: 1px; }
+
+                                                                    .tableCalibration_DetectionTypesAndNotes_Header {
+                                                                      width: 100%;
+                                                                      height: 100%; }
+
+                                                                      .tdCalibrationDetectionTypes_Header {
+                                                                        font-size: 15px;
+                                                                        color: white;
+                                                                        width: 35%;
+                                                                        padding: 5px;
+                                                                        text-align: center; }
+
+                                                                        .tdCalibration_DetectionNotes_Header {
+                                                                          font-size: 15px;
+                                                                          color: white;
+                                                                          width: 63%;
+                                                                          padding: 5px;
+                                                                          text-align: center; }
+
+                                                                          .trCalibration_Results {
+                                                                            border-top: 5px solid lightgray; }
+
+                                                                            .tdCalibration_Vendor {
+                                                                              font-size: 13px;
+                                                                              width: 9%;
+                                                                              padding: 5px;
+                                                                              text-align: center; }
+
+                                                                              .tdCalibration_DetectionTypesAndNotes {
+                                                                                width: 58%;
+                                                                                height: 1px;
+                                                                                border-left: 1px solid lightgray;
+                                                                                border-right: 1px solid lightgray; }
+
+                                                                                .tableCalibration_DetectionTypesAndNotes {
+                                                                                  width: 100%;
+                                                                                  height: 100%; }
+
+                                                                                  .tdCalibration_DetectionTypes {
+                                                                                    font-size: 13px;
+                                                                                    width: 35%;
+                                                                                    padding: 5px;
+                                                                                    text-align: center;
+                                                                                    border-right: 1px solid lightgray; }
+
+                                                                                    .tdCalibration_DetectionNotes {
+                                                                                      font-size: 13px;
+                                                                                      width: 65%;
+                                                                                      padding: 5px; }
+
+                                                                                      .border-top-grey-dotted {
+                                                                                        border-top: 2px dotted lightgray; }
+
+                                                                                        .tdInnerDetectionNotesSum a span {
+                                                                                          display: none; }
+
+                                                                                          .tdInnerDetectionNotesSum a:hover span {
+                                                                                            display: block;
+                                                                                            position: absolute;
+                                                                                            margin: 0px;
+                                                                                            padding: 10px;
+                                                                                            color: black;
+                                                                                            font-weight: normal;
+                                                                                            background: white;
+                                                                                            text-align: left;
+                                                                                            border: 1px solid #666;
+                                                                                            z-index: 2;
+                                                                                            max-width: 600px;
+                                                                                            cursor: default; }
+
+                                                                                            .tc_round_dropdown {
+                                                                                              margin-left: 50px; }
+
+                                                                                              .tc_div_controls {
+                                                                                                width: 100%;
+                                                                                                display: flex;
+                                                                                                flex-direction: column; }
+
+                                                                                                .tc_divVendorCards {
+                                                                                                  width: 100%;
+                                                                                                  overflow: auto; }
+
+                                                                                                  .tc_divAddVendorCard {
+                                                                                                    height: 50px;
+                                                                                                    width: 25%;
+                                                                                                    text-align: center;
+                                                                                                    font-size: 35px;
+                                                                                                    background-color: #6241c5;
+                                                                                                    color: white;
+                                                                                                    margin-top: 10px; }
+
+                                                                                                    .tc_divAddVendorCard:hover {
+                                                                                                      cursor: pointer; }
+
+                                                                                                      .tc_tableVendorCard {
+                                                                                                        border: 1px solid #aaaaaa;
+                                                                                                        width: 100%;
+                                                                                                        height: 30px;
+                                                                                                        border-collapse: separate;
+                                                                                                        background: lightgray;
+                                                                                                        margin-bottom: 10px; }
+
+                                                                                                        .tc_th_vendor_dropdown {
+                                                                                                          border-top: 1px solid #aaaaaa;
+                                                                                                          width: 20%;
+                                                                                                          padding: 5px; }
+
+                                                                                                          .tc_th_config_and_remove {
+                                                                                                            text-align: right; }
+
+                                                                                                            .tc_a_config_link {
+                                                                                                              margin: 0; }
+
+                                                                                                              .tc_a_remove_card {
+                                                                                                                margin-right: 5px;
+                                                                                                                margin-left: 15px; }
+
+                                                                                                                .tc_td_detections {
+                                                                                                                  border-top: 1px solid #aaaaaa; }
+
+                                                                                                                  .tc_img_detection_icon {
+                                                                                                                    max-width: 16px;
+                                                                                                                    width: 16px;
+                                                                                                                    margin-left: 10px; }
+
+                                                                                                                    .tc_vendor_card_tbody {
+                                                                                                                      background-color: #eeeeee; }
+
+                                                                                                                      .divProcedureSummaryBody-techsummary {
+                                                                                                                        width: 95%;
+                                                                                                                        margin: 0 auto;
+                                                                                                                        padding-top: 20px; }
+
+                                                                                                                        .tableMain-techsummary {
+                                                                                                                          width: 100%; }
+
+                                                                                                                          .tdMainLeftPane-techsummary {
+                                                                                                                            width: 75%;
+                                                                                                                            vertical-align: top;
+                                                                                                                            padding-right: 10px; }
+
+                                                                                                                            .tableHeaderLegend-techsummary {
+                                                                                                                              width: 100%;
+                                                                                                                              vertical-align: top;
+                                                                                                                              margin-top: 15px; }
+
+                                                                                                                              .tdMainLabel-techsummary {
+                                                                                                                                width: 60%; }
+
+                                                                                                                                .labSubheader-techsummary {
+                                                                                                                                  font-size: 24px; }
+
+                                                                                                                                  .tdInnerDetectionNotesSum-techsummary {
+                                                                                                                                    font-size: 13px; }
+
+                                                                                                                                    .tdInnerDetectionNotesSum-techsummary a span {
+                                                                                                                                      display: none; }
+
+                                                                                                                                      .tdInnerDetectionNotesSum-techsummary a:hover span {
+                                                                                                                                        display: block;
+                                                                                                                                        position: absolute;
+                                                                                                                                        margin: 0px;
+                                                                                                                                        padding: 10px;
+                                                                                                                                        color: black;
+                                                                                                                                        font-weight: normal;
+                                                                                                                                        background: white;
+                                                                                                                                        text-align: left;
+                                                                                                                                        border: 1px solid #666;
+                                                                                                                                        z-index: 2;
+                                                                                                                                        max-width: 600px;
+                                                                                                                                        cursor: default; }
+
+                                                                                                                                        .aFootnote {
+                                                                                                                                          color: #666666;
+                                                                                                                                          font-size: 11px; }
+
+                                                                                                                                          .aFootnote:hover {
+                                                                                                                                            color: #666666;
+                                                                                                                                            cursor: default;
+                                                                                                                                            text-decoration: none; }
+
+                                                                                                                                            .divDisclaimer-techsummary {
+                                                                                                                                              font-size: 12px;
+                                                                                                                                              width: 60%; }
+
+                                                                                                                                              .tdLegend-techsummary {
+                                                                                                                                                width: 40%;
+                                                                                                                                                text-align: right; }
+
+                                                                                                                                                .aLegendExport-techsummary {
+                                                                                                                                                  font-size: 13px; }
+
+                                                                                                                                                  .divLegend-techsummary {
+                                                                                                                                                    display: none;
+                                                                                                                                                    width: 100%;
+                                                                                                                                                    background-color: #d7e5ee;
+                                                                                                                                                    padding: 10px;
+                                                                                                                                                    position: sticky;
+                                                                                                                                                    top: 78px; }
+
+                                                                                                                                                    .tableLegend-techsummary {
+                                                                                                                                                      width: 100%; }
+
+                                                                                                                                                      .tdLegendBigIcon-techsummary {
+                                                                                                                                                        text-align: center; }
+
+                                                                                                                                                        .tableLegendSummary-techsummary {
+                                                                                                                                                          width: 100%;
+                                                                                                                                                          font-size: 13px; }
+
+                                                                                                                                                          .divLegendIcon-techsummary {
+                                                                                                                                                            vertical-align: top;
+                                                                                                                                                            padding: 5px;
+                                                                                                                                                            text-align: center;
+                                                                                                                                                            display: inline-block; }
+
+                                                                                                                                                            .spanLegendIconText-techsummary {
+                                                                                                                                                              font-size: 14px; }
+
+                                                                                                                                                              .tableHeaderBar-techsummary {
+                                                                                                                                                                width: 100%;
+                                                                                                                                                                height: 50px;
+                                                                                                                                                                position: sticky;
+                                                                                                                                                                top: 78px; }
+
+                                                                                                                                                                .trHeaderBar-techsummary {
+                                                                                                                                                                  font-size: 13px;
+                                                                                                                                                                  color: white;
+                                                                                                                                                                  background-color: #6241c5;
+                                                                                                                                                                  text-align: center; }
+
+                                                                                                                                                                  .tableHeaderBar-withlegend-techsummary {
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                    height: 50px;
+                                                                                                                                                                    position: sticky;
+                                                                                                                                                                    top: 215px; }
+
+                                                                                                                                                                    .tdAllHeaders-techsummary {
+                                                                                                                                                                      width: 100%;
+                                                                                                                                                                      border-collapse: collapse;
+                                                                                                                                                                      padding: 0px; }
+
+                                                                                                                                                                      .table2-techsummary {
+                                                                                                                                                                        width: 100%;
+                                                                                                                                                                        height: 100%; }
+
+                                                                                                                                                                        .td2StepsHeader-techsummary {
+                                                                                                                                                                          width: 6%; }
+
+                                                                                                                                                                          .tdDetectionTypesAndNotesHeader-techsummary {
+                                                                                                                                                                            width: 42%; }
+
+                                                                                                                                                                            .tableDetectionTypesAndNotes-techsummary {
+                                                                                                                                                                              width: 100%;
+                                                                                                                                                                              border: none;
+                                                                                                                                                                              height: 100%; }
+
+                                                                                                                                                                              .tdDetectionTypeHeader-techsummary {
+                                                                                                                                                                                width: 40%;
+                                                                                                                                                                                font-size: 13px; }
+
+                                                                                                                                                                                .tdDetectionNotesHeader-techsummary {
+                                                                                                                                                                                  width: 60%;
+                                                                                                                                                                                  font-size: 13px; }
+
+                                                                                                                                                                                  .table1-techsummary {
+                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                    border: 3px solid lightgray;
+                                                                                                                                                                                    margin-top: 5px;
+                                                                                                                                                                                    margin-bottom: 15px;
+                                                                                                                                                                                    outline: 0px solid #6241c5;
+                                                                                                                                                                                    transition: all 0.2s ease; }
+
+                                                                                                                                                                                    .tr1-techsummary {
+                                                                                                                                                                                      text-align: center; }
+
+                                                                                                                                                                                      .td1B-techsummary {
+                                                                                                                                                                                        width: 87%;
+                                                                                                                                                                                        border-collapse: collapse;
+                                                                                                                                                                                        padding: 0px;
+                                                                                                                                                                                        height: 0px; }
+
+                                                                                                                                                                                        .tr2NoBottomBorder-techsummary {
+                                                                                                                                                                                          text-align: center; }
+
+                                                                                                                                                                                          .td2Procedures-techsummary-apt3 {
+                                                                                                                                                                                            width: 20%;
+                                                                                                                                                                                            font-size: 10px;
+                                                                                                                                                                                            border-right: 3px solid lightgray;
+                                                                                                                                                                                            padding: 0px; }
+
+                                                                                                                                                                                            .td2Procedures-techsummary-apt29 {
+                                                                                                                                                                                              width: 10%;
+                                                                                                                                                                                              font-size: 10px;
+                                                                                                                                                                                              border-right: 3px solid lightgray;
+                                                                                                                                                                                              padding: 0px; }
+
+                                                                                                                                                                                              .table3-techsummary {
+                                                                                                                                                                                                margin: 0 auto; }
+
+                                                                                                                                                                                                .td3-techsummary {
+                                                                                                                                                                                                  font-size: 10px;
+                                                                                                                                                                                                  max-width: 130px;
+                                                                                                                                                                                                  overflow-wrap: break-word;
+                                                                                                                                                                                                  word-wrap: break-word;
+                                                                                                                                                                                                  word-break: break-word; }
+
+                                                                                                                                                                                                  .td2Criteria-techsummary-apt29 {
+                                                                                                                                                                                                    width: 10%;
+                                                                                                                                                                                                    font-size: 10px;
+                                                                                                                                                                                                    border-right: 3px solid lightgray;
+                                                                                                                                                                                                    padding: 0px; }
+
+                                                                                                                                                                                                    .td2Steps-techsummary {
+                                                                                                                                                                                                      width: 6%;
+                                                                                                                                                                                                      font-size: 10px;
+                                                                                                                                                                                                      border-right: 3px solid lightgray; }
+
+                                                                                                                                                                                                      .spanProcedureSummaryStep-techsummary {
+                                                                                                                                                                                                        font-size: 12px;
+                                                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                                                        color: blue; }
+
+                                                                                                                                                                                                        .spanProcedureSummaryStep-techsummary:hover {
+                                                                                                                                                                                                          cursor: pointer;
+                                                                                                                                                                                                          text-decoration: underline;
+                                                                                                                                                                                                          color: purple; }
+
+                                                                                                                                                                                                          .td2DetectionTypesAndNotes-techsummary {
+                                                                                                                                                                                                            width: 42%;
+                                                                                                                                                                                                            font-size: 10px;
+                                                                                                                                                                                                            padding: 0px;
+                                                                                                                                                                                                            height: 0px; }
+
+                                                                                                                                                                                                            .tdDetectionTypeDotted-techsummary {
+                                                                                                                                                                                                              width: 40%;
+                                                                                                                                                                                                              font-size: 10px;
+                                                                                                                                                                                                              border-right: 3px solid lightgray;
+                                                                                                                                                                                                              border-bottom: 3px dotted lightgray;
+                                                                                                                                                                                                              padding: 0px; }
+
+                                                                                                                                                                                                              .tdDetectionType-techsummary {
+                                                                                                                                                                                                                width: 40%;
+                                                                                                                                                                                                                font-size: 10px;
+                                                                                                                                                                                                                border-right: 3px solid lightgray;
+                                                                                                                                                                                                                padding: 0px; }
+
+                                                                                                                                                                                                                .tableSummaryDetectionIcon-techsummary {
+                                                                                                                                                                                                                  display: inline-block;
+                                                                                                                                                                                                                  font-size: 10px; }
+
+                                                                                                                                                                                                                  .tdSummaryDetectionIcons-techsummary {
+                                                                                                                                                                                                                    font-size: 13px;
+                                                                                                                                                                                                                    display: inline-block; }
+
+                                                                                                                                                                                                                    .tdDetectionNotes-techsummary {
+                                                                                                                                                                                                                      width: 60%;
+                                                                                                                                                                                                                      font-size: 10px;
+                                                                                                                                                                                                                      padding: 0px; }
+
+                                                                                                                                                                                                                      .tdInnerDetectionNotes-techsummary {
+                                                                                                                                                                                                                        font-size: 12px;
+                                                                                                                                                                                                                        text-align: left;
+                                                                                                                                                                                                                        padding: 5px; }
+
+                                                                                                                                                                                                                        .tdInnerDetectionNotes-techsummary a span {
+                                                                                                                                                                                                                          display: none; }
+
+                                                                                                                                                                                                                          .tdInnerDetectionNotes-techsummary a:hover span {
+                                                                                                                                                                                                                            display: block;
+                                                                                                                                                                                                                            position: absolute;
+                                                                                                                                                                                                                            margin: 0px;
+                                                                                                                                                                                                                            padding: 10px;
+                                                                                                                                                                                                                            color: black;
+                                                                                                                                                                                                                            font-weight: normal;
+                                                                                                                                                                                                                            background: white;
+                                                                                                                                                                                                                            text-align: left;
+                                                                                                                                                                                                                            border: 1px solid #666;
+                                                                                                                                                                                                                            z-index: 2;
+                                                                                                                                                                                                                            max-width: 400px;
+                                                                                                                                                                                                                            cursor: default; }
+
+                                                                                                                                                                                                                            .tdMainRightPane-techsummary {
+                                                                                                                                                                                                                              width: 25%;
+                                                                                                                                                                                                                              height: 0px;
+                                                                                                                                                                                                                              vertical-align: top; }
+
+                                                                                                                                                                                                                              .divOperationalFlow-techsummary {
+                                                                                                                                                                                                                                background-color: #FFFFFF;
+                                                                                                                                                                                                                                border: 3px solid gray;
+                                                                                                                                                                                                                                margin-top: 15px;
+                                                                                                                                                                                                                                position: sticky;
+                                                                                                                                                                                                                                right: 20px;
+                                                                                                                                                                                                                                top: 90px;
+                                                                                                                                                                                                                                max-width: 400px;
+                                                                                                                                                                                                                                max-height: 720px;
+                                                                                                                                                                                                                                overflow: auto;
+                                                                                                                                                                                                                                padding: 10px; }
+
+                                                                                                                                                                                                                                .spanOperationalFlow-techsummary {
+                                                                                                                                                                                                                                  font-size: 30px;
+                                                                                                                                                                                                                                  padding-left: 5px;
+                                                                                                                                                                                                                                  color: #596775; }
+
+                                                                                                                                                                                                                                  .tdDetectionNotesDotted-techsummary {
+                                                                                                                                                                                                                                    width: 60%;
+                                                                                                                                                                                                                                    font-size: 10px;
+                                                                                                                                                                                                                                    border-bottom: 3px dotted lightgray;
+                                                                                                                                                                                                                                    padding: 0px; }
+
+                                                                                                                                                                                                                                    .td2ProceduresHeader-techsummary-apt3 {
+                                                                                                                                                                                                                                      width: 20%; }
+
+                                                                                                                                                                                                                                      .td2ProceduresHeader-techsummary-apt29 {
+                                                                                                                                                                                                                                        width: 10%; }
+
+                                                                                                                                                                                                                                        .td2CriteriaHeader-techsummary-apt29 {
+                                                                                                                                                                                                                                          width: 10%; }
+
+                                                                                                                                                                                                                                          @media screen and (max-width:423px) {
+                                                                                                                                                                                                                                            .tableHeaderBar-techsummary {
+                                                                                                                                                                                                                                              top: 115px;   }
+                                                                                                                                                                                                                                              .divLegend-techsummary {
+                                                                                                                                                                                                                                                top: 115px;   }
+}
+
+.calibration_detection_icon {
+  max-width: 14px;
+  width: 14px;
+  margin-left: 2px; }

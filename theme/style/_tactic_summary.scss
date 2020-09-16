@@ -1,0 +1,431 @@
+.divProcedureSummaryBody-tacticsummary {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.tableMain-tacticsummary {
+  width: 100%;
+}
+
+.tdMainLeftPane-tacticsummary {
+  width: 75%;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.tableHeaderLegend-tacticsummary {
+  width: 100%;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+.tdMainLabel-tacticsummary {
+  width: 60%;
+}
+
+.labSubheader-tacticsummary {
+  font-size: 24px;
+}
+
+.tdInnerDetectionNotesSum-tacticsummary {
+  font-size: 13px;
+}
+
+.tdInnerDetectionNotesSum-tacticsummary a span {
+  display: none;
+}
+
+.tdInnerDetectionNotesSum-tacticsummary a:hover span {
+  display: block;
+  position: absolute;
+
+  margin: 0px;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+  background: white;
+  text-align: left;
+  border: 1px solid #666;
+  z-index: 2;
+  max-width: 600px;
+
+  cursor: default;
+}
+
+.aFootnote {
+  color: #666666;
+  font-size: 11px;
+}
+
+.aFootnote:hover {
+  color: #666666;
+  cursor: default;
+  text-decoration: none;
+}
+
+.divDisclaimer-tacticsummary {
+  font-size: 12px;
+  width: 60%;
+}
+
+.tdLegend-tacticsummary {
+  width: 40%;
+  text-align: right;
+}
+
+.aLegendExport-tacticsummary {
+  font-size: 13px;
+}
+
+.divLegend-tacticsummary {
+  display: none;
+  width: 100%;
+  /*background-color: #e6f2ff;*/
+  background-color: #d7e5ee;
+  padding: 10px;
+
+  position: sticky;
+  top: 78px;
+}
+
+.tableLegend-tacticsummary {
+  width: 100%;
+}
+
+.tdLegendBigIcon-tacticsummary {
+  text-align: center;
+}
+
+.tdLegendSummary-tacticsummary {
+}
+
+.tableLegendSummary-tacticsummary {
+  width: 100%;
+  font-size: 13px;
+}
+
+.divLegendIcon-tacticsummary {
+  vertical-align: top;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.spanLegendIconText-tacticsummary {
+  font-size: 14px;
+}
+
+.tableHeaderBar-tacticsummary {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 78px;
+}
+
+.trHeaderBar-tacticsummary {
+  font-size: 13px;
+  color: white;
+  background-color: #6241c5;
+  text-align: center;
+}
+
+.td1AHeader-tacticsummary {
+  width: 12%;
+}
+
+.table2-tacticsummary {
+  width: 100%;
+  height: 100%;
+}
+
+.td2TechniqueHeader-tacticsummary {
+  font-size: 13px;
+}
+
+.td1B-tacticsummary {
+  width: 87%;
+  border-collapse: collapse;
+  padding: 0px;
+  height: 0px;
+}
+
+.td2StepsHeader-tacticsummary {
+  width: 5%;
+  font-size: 13px;
+}
+
+.tdDetectionTypesAndNotesHeader-tacticsummary {
+  width: 50%;
+}
+
+.tableDetectionTypesAndNotes-tacticsummary {
+  width: 100%;
+  border: none;
+  height: 100%;
+}
+
+.tdDetectionTypeHeader-tacticsummary {
+  width: 40%;
+  font-size: 13px;
+}
+
+.tdDetectionNotesHeader-tacticsummary {
+  width: 60%;
+  font-size: 13px;
+}
+
+.table1-tacticsummary {
+  width: 100%;
+  border: 3px solid lightgray;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  outline: 0px solid #6241c5;
+
+  transition: all .2s ease;
+
+  /*transition: all .5s ease;*/
+}
+
+.table1-tacticsummary:hover {
+  /*border: 4px solid #c63f1e;*/
+  outline: 3px solid #6241c5;
+  transition: all .2s ease;
+}
+
+.tr1-tacticsummary {
+  text-align: center;
+}
+
+.td1A-tacticsummary {
+  width: 12%;
+  border: 3px solid lightgray;
+  font-size: 10px;
+}
+
+.td2Technique-tacticsummary {
+  width: 100%;
+}
+
+.aTechnique-tacticsummary {
+  font-size: 14px;
+}
+
+.tr2-tacticsummary {
+  text-align: center;
+  border-bottom: 3px solid lightgray;
+}
+
+.tr2NoBottomBorder-tacticsummary {
+  text-align: center;
+}
+
+.td2Procedures-apt3-tacticsummary {
+  width: 18%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+  padding: 0px;
+}
+
+.table3-tacticsummary {
+  margin: 0 auto;
+}
+
+.tr3-tacticsummary {
+}
+
+.td3-tacticsummary {
+  /*border: 1px solid black;*/
+  font-size: 10px;
+  max-width: 130px;
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  /*-ms-word-break: break-all;*/
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  /*word-break: break-all;*/
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+}
+
+.td2Steps-tacticsummary {
+  width: 5%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+}
+
+.spanProcedureSummaryStep-tacticsummary {
+  font-size: 12px;
+  font-weight: bold;
+  color: blue;
+}
+
+.spanProcedureSummaryStep-tacticsummary:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: purple;
+}
+
+.td2DetectionTypesAndNotes-tacticsummary {
+  width: 50%;
+  font-size: 10px;
+  /* border-right: 3px solid lightgray; */
+  padding: 0px;
+  height: 0px;
+}
+
+.td2ProceduresHeader-tacticsummary-apt3 {
+  width: 18%;
+  font-size: 13px;
+}
+
+.td2ProceduresHeader-tacticsummary-apt29 {
+  width: 10%;
+  font-size: 13px;
+}
+
+.td2CriteriaHeader-tacticsummary {
+  width: 8%;
+  font-size: 13px;
+}
+
+.td2Procedures-apt29-tacticsummary {
+  width: 10%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+  padding: 0px;
+}
+
+.td2Criteria-tacticsummary {
+  width: 8%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+}
+
+.tdDetectionTypeDotted-tacticsummary {
+  width: 40%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+  border-bottom: 3px dotted lightgray;
+  padding: 0px;
+}
+
+.tdDetectionType-tacticsummary {
+  width: 40%;
+  font-size: 10px;
+  border-right: 3px solid lightgray;
+  padding: 0px;
+}
+
+.tableSummaryDetectionIcons-tacticsummary {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.tdSummaryDetectionIcons-tacticsummary {
+  font-size: 13px;
+  display: inline-block;
+}
+
+.tdDetectionNotesDotted-tacticsummary {
+  width: 60%;
+  font-size: 10px;
+  border-bottom: 3px dotted lightgray;
+  padding: 0px;
+}
+
+.tdDetectionNotes-tacticsummary {
+  width: 60%;
+  font-size: 10px;
+  padding: 0px;
+}
+
+.tdInnerDetectionNotes-tacticsummary {
+  font-size: 12px;
+  text-align: left;
+  padding: 5px;
+}
+
+.tdInnerDetectionNotes-tacticsummary a span {
+  display: none;
+}
+
+.tdInnerDetectionNotes-tacticsummary a:hover span {
+  display: block;
+  position: absolute;
+
+  margin: 0px;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+  background: white;
+  text-align: left;
+  border: 1px solid #666;
+  z-index: 2;
+  max-width: 400px;
+
+  cursor: default;
+}
+
+
+.tdMainRightPane-tacticsummary {
+  width: 25%;
+  height: 0px;
+  vertical-align: top;
+}
+
+.divOperationalFlow-tacticsummary {
+  /*background-color: #00334f;*/
+  background-color: #FFFFFF;
+  border: 3px solid gray;
+
+  margin-top: 15px;
+
+  position: sticky;
+  right: 20px;
+  /*top: 100px;*/
+  top: 90px;
+
+  max-width: 400px;
+  max-height: 720px;
+
+  overflow: auto;
+  padding: 10px;
+}
+
+.spanOperationalFlow-tacticsummary {
+  font-size: 30px;
+  padding-left: 5px;
+
+  color: #596775;
+}
+
+.calibration_detection_icon {
+  /* max-width: 18px;
+  width: 18px; */
+
+  max-width: 14px;
+  width: 14px;
+  margin-left: 2px;
+}
+
+
+
+
+
+@media screen and (max-width:423px) {
+  .tableMatrixHeaders,
+  .tableHeaderBar-tacticsummary {
+    top: 115px;
+  }
+
+  .divLegend-tacticsummary {
+    top: 115px;
+  }
+
+  .tableMatrixHeaders-withlegend {
+    top: 650px;
+  }
+}
