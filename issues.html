@@ -153,7 +153,7 @@
 	<br />
 	<p class='pIssuePageDescription'>
 		These are the issues that the MITRE Engenuity ATT&CK Evaluations team is aware of and have resolved. If you need to submit an issue, please go to our 
-		<a href="https://github.com/mitre-attack/attack-evals/issues" target="_blank">ATT&CK Evaluations Git Repository. </a>
+		<a href="https://github.com/attackevals/website/issues" target="_blank">ATT&CK Evaluations Git Repository. </a>
 	</p>
 	<br />
 
@@ -272,15 +272,15 @@
 			no_issues_HTML += 		"<span class='span_no_issues'>";
 			no_issues_HTML += 			"There are currently no open issues.";
 			no_issues_HTML += 			"<br />";
-			no_issues_HTML += 			" To submit a new issue, please visit our <a href='https://github.com/mitre-attack/attack-evals/issues' target='_blank'>ATT&CK Evaluations Git Repository. </a>";
+			no_issues_HTML += 			" To submit a new issue, please visit our <a href='https://github.com/attackevals/website/issues' target='_blank'>ATT&CK Evaluations Git Repository. </a>";
 			no_issues_HTML += 		"</span>";
 			no_issues_HTML += "</div>";
 
 			return no_issues_HTML;
 		}
 
-	  	var open_issues_url = "https://api.github.com/repos/mitre-attack/attack-evals/issues?state=open";
-	  	var closed_issues_url = "https://api.github.com/repos/mitre-attack/attack-evals/issues?state=closed";
+	  	var open_issues_url = "https://api.github.com/repos/attackevals/website/issues?state=open";
+	  	var closed_issues_url = "https://api.github.com/repos/attackevals/website/issues?state=closed";
 		var open_issues_json = JSON.parse(get_github_data(open_issues_url));
 		var closed_issues_json = JSON.parse(get_github_data(closed_issues_url));
 		var i = 0;
@@ -383,7 +383,7 @@
 		for (i = 0; i < issues_sorted_by_resolution_date.length; i++) 
 		{
 			issue_number = issues_sorted_by_resolution_date[i]["number"];
-			comments_url = "https://api.github.com/repos/mitre-attack/attack-evals/issues/" + issue_number + "/comments";
+			comments_url = "https://api.github.com/repos/attackevals/website/issues/" + issue_number + "/comments";
 			comments_json = JSON.parse(get_github_data(comments_url));
 
 			if (issues_sorted_by_resolution_date[i]["comments"] > 1)
