@@ -238,6 +238,7 @@
         let step_bar_colors_APT29 = ["#185b85", "#007a9a", "#ffbb05", "#00978d", "#05ae6a", "#95bd2a"];
         let step_chart_labels = [];
         let step_chart_datasets = [];
+        let max_y_label = 0;
         let i = 0;
 
         // Get Chart Data specific to this evaluation.
@@ -275,6 +276,19 @@
             }
         }
 
+        // Get the max bar value to set chart's suggested max height
+        for (i = 0; i < step_chart_datasets[0]["data"].length; i++) {
+            let sum_detections = 0;
+            
+            for (dtype of step_chart_datasets) {
+                sum_detections += dtype["data"][i];
+            }
+
+            if (sum_detections > max_y_label) {
+                max_y_label = sum_detections;
+            }
+        }
+
         // Instantiate Step Chart
         var stepChart = new Chart(ctx, {
             type: 'bar',
@@ -284,7 +298,7 @@
             },
             options: {
                 scales: {
-                    yAxes: [{ stacked: true, ticks: {beginAtZero: true}}],
+                    yAxes: [{ stacked: true, ticks: {beginAtZero: true, suggestedMax: max_y_label + .1}}],
                     xAxes: [{ stacked: true, ticks: {beginAtZero: true}}]
             }
             }
@@ -297,6 +311,7 @@
         let substep_bar_colors_APT29 = ["#185b85", "#007a9a", "#ffbb05", "#00978d", "#05ae6a", "#95bd2a"];
         let substep_chart_labels = [];
         let substep_chart_datasets = [];
+        let max_y_label = 0;
         let i = 0;
 
         // Get Chart Data specific to this evaluation.
@@ -325,6 +340,18 @@
             }
         }
 
+        for (i = 0; i < substep_chart_datasets[0]["data"].length; i++) {
+            let sum_detections = 0;
+            
+            for (dtype of substep_chart_datasets) {
+                sum_detections += dtype["data"][i];
+            }
+
+            if (sum_detections > max_y_label) {
+                max_y_label = sum_detections;
+            }
+        }
+
         // Instantiate Step Chart
         var substepChart = new Chart(ctx2, {
             type: 'bar',
@@ -334,7 +361,7 @@
             },
             options: {
                 scales: {
-                    yAxes: [{ stacked: true, ticks: {beginAtZero: true}}],
+                    yAxes: [{ stacked: true, ticks: {beginAtZero: true, suggestedMax: max_y_label + .1}}],
                     xAxes: [{ stacked: true, ticks: {beginAtZero: true}}]
             }
             }
