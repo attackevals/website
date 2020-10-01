@@ -410,68 +410,71 @@
                                             font-family: inherit;
                                             margin: 0; }
 
-                                            footer .footer-link {
-                                              color: #ffffff; }
+                                            .box-shadow-bottom {
+                                              box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25); }
 
-                                              footer * {
-                                                font-family: 'Sentinel-Book', Georgia, sans-serif;
-                                                font-weight: 400;
-                                                font-style: normal; }
+                                              footer .footer-link {
+                                                color: #ffffff; }
 
-                                                .btn-footer {
-                                                  color: #fff;
-                                                  background-color: #6241c5;
-                                                  border-color: #fff; }
+                                                footer * {
+                                                  font-family: 'Sentinel-Book', Georgia, sans-serif;
+                                                  font-weight: 400;
+                                                  font-style: normal; }
 
-                                                  .btn-footer:hover {
+                                                  .btn-footer {
                                                     color: #fff;
                                                     background-color: #6241c5;
                                                     border-color: #fff; }
 
-                                                    .btn-footer.focus, .btn-footer:focus {
-                                                      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+                                                    .btn-footer:hover {
+                                                      color: #fff;
+                                                      background-color: #6241c5;
+                                                      border-color: #fff; }
 
-                                                      .btn-footer.disabled, .btn-footer:disabled {
-                                                        color: #fff;
-                                                        background-color: #6241c5;
-                                                        border-color: #6241c5; }
+                                                      .btn-footer.focus, .btn-footer:focus {
+                                                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 
-                                                        .btn-footer:not(:disabled):not(.disabled).active,
-                                                        .btn-footer:not(:disabled):not(.disabled):active,
-                                                        .show > .btn-footer.dropdown-toggle {
+                                                        .btn-footer.disabled, .btn-footer:disabled {
                                                           color: #fff;
                                                           background-color: #6241c5;
                                                           border-color: #6241c5; }
 
-                                                          .btn-footer:not(:disabled):not(.disabled).active:focus,
-                                                          .btn-footer:not(:disabled):not(.disabled):active:focus,
-                                                          .show > .btn-footer.dropdown-toggle:focus {
-                                                            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+                                                          .btn-footer:not(:disabled):not(.disabled).active,
+                                                          .btn-footer:not(:disabled):not(.disabled):active,
+                                                          .show > .btn-footer.dropdown-toggle {
+                                                            color: #fff;
+                                                            background-color: #6241c5;
+                                                            border-color: #6241c5; }
 
-                                                            .footer > .container-fluid {
-                                                              padding-right: 0 !important;
-                                                              padding-left: 0 !important; }
+                                                            .btn-footer:not(:disabled):not(.disabled).active:focus,
+                                                            .btn-footer:not(:disabled):not(.disabled):active:focus,
+                                                            .show > .btn-footer.dropdown-toggle:focus {
+                                                              box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 
-                                                              .footer {
-                                                                background-color: #6241c5;
-                                                                color: white;
-                                                                font-family: 'Sentinel-Book', Georgia, sans-serif;
-                                                                font-weight: 400; }
+                                                              .footer > .container-fluid {
+                                                                padding-right: 0 !important;
+                                                                padding-left: 0 !important; }
 
-                                                                .footer-responsive-break {
-                                                                  display: none; }
+                                                                .footer {
+                                                                  background-color: #6241c5;
+                                                                  color: white;
+                                                                  font-family: 'Sentinel-Book', Georgia, sans-serif;
+                                                                  font-weight: 400; }
 
-                                                                  .footer-float-right-responsive {
-                                                                    float: right; }
+                                                                  .footer-responsive-break {
+                                                                    display: none; }
 
-                                                                    .footer {
-                                                                      clear: both; }
+                                                                    .footer-float-right-responsive {
+                                                                      float: right; }
 
-                                                                      @media screen and (max-width: 767.8px) {
-                                                                        .footer-responsive-break {
-                                                                          display: block;   }
-                                                                          .footer-float-right-responsive {
-                                                                            float: none;   }
+                                                                      .footer {
+                                                                        clear: both; }
+
+                                                                        @media screen and (max-width: 767.8px) {
+                                                                          .footer-responsive-break {
+                                                                            display: block;   }
+                                                                            .footer-float-right-responsive {
+                                                                              float: none;   }
 }
 
 .bg-light {
