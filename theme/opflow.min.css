@@ -1,8 +1,14 @@
 .divOFInScopeSubstep {
-  background-color: #F3F3F3; }
+  background-color: #f0f1f2;
+  border-style: groove;
+  margin: 5px;
+  padding: 5px; }
 
   .divOFSelectedSubstep {
-    background-color: #6241c5; }
+    background-color: #6241c5;
+    border-style: groove;
+    margin: 5px;
+    padding: 5px; }
 
     .pOFStep {
       padding-top: 40px;
@@ -46,20 +52,29 @@
                   line-height: 20px;
                   color: #FFFFFF; }
 
-                  .pOFProcedure {
+                  .pOFSelectedProcedure {
                     padding-left: 100px;
                     font-size: 14px;
                     line-height: 20px;
                     overflow-wrap: break-word;
                     word-wrap: break-word;
                     word-break: break-word;
-                    color: #596775; }
+                    color: #FFFFFF; }
 
-                    .pOFInScopeProcedure {
+                    .pOFProcedure {
                       padding-left: 100px;
                       font-size: 14px;
                       line-height: 20px;
                       overflow-wrap: break-word;
                       word-wrap: break-word;
                       word-break: break-word;
-                      color: #6241c5; }
+                      color: #596775; }
+
+                      .pOFInScopeProcedure {
+                        padding-left: 100px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        overflow-wrap: break-word;
+                        word-wrap: break-word;
+                        word-break: break-word;
+                        color: #6241c5; }

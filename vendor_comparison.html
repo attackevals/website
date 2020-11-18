@@ -494,6 +494,7 @@
         var url_obj = new URL(url_string);
 
         selected_round = url_obj.searchParams.get("round");
+        if (selected_round != undefined ) selected_round = selected_round.toUpperCase();
         
         if (url_obj.searchParams.get("vendors")) {
             var vendors = url_obj.searchParams.get("vendors").split(",");

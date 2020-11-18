@@ -144,9 +144,49 @@
 <div class="text-center pt-5">
     <h1>404</h1>
     <h4>Oh no! It looks like the page you're looking for doesn't exist.</h4>
+    <h5 id="redirectOption"></h5>
     <p class="gray-text pt-4">If you think you reached this page because of an error, please create an issue on our <span class="font-weight-bold"><a href="https://github.com/mitre-attack/attack-evals/issues">GitHub Issue Tracker</a>!</span></p>
 </div>
 <!--startindex-->
+
+<script type="text/javascript">
+    var redirectList = [
+        '/APT3/',
+        '/APT29/',
+        '/TRITON/',
+    ]
+    
+    document.onload = checkForRedirects();
+
+    function checkForRedirects() {
+        console.log(window.location.pathname)
+        var domain = "https://attackevals.mitre-engenuity.org"
+        var path = window.location.pathname
+        var resultRedirect = "";
+        redirectList.forEach(function (url, index) {
+            let lowerPath = path.toLowerCase();
+            let lowerUrl = url.toLowerCase();
+            // URLs match
+            if (lowerPath == lowerUrl) {
+                resultRedirect = url
+            }
+            // URLs are subset
+            else if (lowerPath.includes(lowerUrl)) {
+                resultRedirect = path.replace(path.substring(0, url.length), url);
+            }
+        })
+        
+        if(resultRedirect == "") {
+            var redirectAnchor = document.createElement("a");
+            redirectAnchor.setAttribute("href", domain + resultRedirect);
+
+            redirectAnchor.innerText = domain + resultRedirect + "?"
+            document.getElementById("redirectOption").innerText = "Were you looking for ";
+            document.getElementById("redirectOption").append(redirectAnchor);
+        }
+    }
+</script>
+
 </div>
 
 <footer>
