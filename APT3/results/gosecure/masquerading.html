@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/technique_summary.min.css?e6379b15">
+    <link rel="stylesheet" type="text/css" href="/theme/technique_summary.min.css?b88ee9ff">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -417,10 +416,12 @@
                                                                     <td class='tdInnerDetectionNotes-techsummary'>
                                                                         Telemetry showed powershell.exe executing sc.exe to create a new service named AdobeUpdater with binPath pointed to cmd.exe with arguments to run update.vbs and suspicious service description, which could assist an analyst in determining this was not a legitimate Adobe product. The telemetry was tainted by the parent \"Powershell executed remote commands alert\".
 
-                                                                        <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                            <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                            </span>
+                                                                        <a class="aFootnote" href="javascript:void(0);">
+                                                                            <i class="fas fa-info-circle">
+                                                                                <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                    Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                </span>
+                                                                            </i>
                                                                         </a>
 
 
@@ -496,10 +497,12 @@
                                                                     <td class='tdInnerDetectionNotes-techsummary'>
                                                                         No detection capability demonstrated for this procedure, though telemetry later identified recycler.exe as WinRAR during execution (no detections identified it as WinRAR upon file copy).
 
-                                                                        <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                            <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                            </span>
+                                                                        <a class="aFootnote" href="javascript:void(0);">
+                                                                            <i class="fas fa-info-circle">
+                                                                                <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                    Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                </span>
+                                                                            </i>
                                                                         </a>
 
 
@@ -570,10 +573,12 @@
                                                                     <td class='tdInnerDetectionNotes-techsummary'>
                                                                         The capability showed recycler.exe creating old.rar in the Recycle Bin and enriched the data with "Data Exfiltration Archiving" due to the archive file being created. The enrichment was tainted by parent "Powershell executed encoded command" alerts.
 
-                                                                        <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                            <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                The conditions contributing to Enrichment may have been added to the capability's detection after the start of the evaluation, so the detection is identified as a configuration change. See Configuration page for details.
-                                                                            </span>
+                                                                        <a class="aFootnote" href="javascript:void(0);">
+                                                                            <i class="fas fa-info-circle">
+                                                                                <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                    The conditions contributing to Enrichment may have been added to the capability's detection after the start of the evaluation, so the detection is identified as a configuration change. See Configuration page for details.
+                                                                                </span>
+                                                                            </i>
                                                                         </a>
 
 
@@ -619,10 +624,12 @@
                                                                     <td class='tdInnerDetectionNotes-techsummary'>
                                                                         Telemetry showed powershell.exe creating recycler.exe and executing the command-line arguments including the -hp flag indicating WinRAR utility execution with compression and encryption. The telemetry was tainted by parent "Powershell executed encoded commands" and "Policy Dropper Behavior" alerts.
 
-                                                                        <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                            <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                            </span>
+                                                                        <a class="aFootnote" href="javascript:void(0);">
+                                                                            <i class="fas fa-info-circle">
+                                                                                <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                    Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                </span>
+                                                                            </i>
                                                                         </a>
 
 

@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -1088,7 +1087,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2049,10 +2048,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell extracting and executing the code embedded within monkey.png. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-15011.png' target='_blank'>
@@ -2153,10 +2154,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the addition of the DelegateExecute Registry Value. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10257.png' target='_blank'>
@@ -2857,10 +2860,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the file write of the ZIP by PowerShell. The detection was correlated to a parent alert for Bypass User Account Control of control.exe spawning powershell.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10291.png' target='_blank'>
@@ -3243,7 +3248,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -3598,10 +3603,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing $env:TEMP. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10305.png' target='_blank'>
@@ -3705,10 +3712,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing $env:USERNAME. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10305.png' target='_blank'>
@@ -3812,10 +3821,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing $env:COMPUTERNAME. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10306.png' target='_blank'>
@@ -3919,10 +3930,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing $env:USERDOMAIN. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10306.png' target='_blank'>
@@ -4026,10 +4039,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing $PID. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10305.png' target='_blank'>
@@ -4133,10 +4148,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing Gwmi Win32_OperatingSystem. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10306.png' target='_blank'>
@@ -4240,10 +4257,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing Get-WmiObject...​ -Class AntiVirusProduct. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10305.png' target='_blank'>
@@ -4347,10 +4366,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique detection called "GenericSoftwareSystemDiscovery" was generated when WMI was used to query information about firewall products. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-15008.png' target='_blank'>
@@ -4389,10 +4410,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing Get-WmiObject...​ -Class FireWallProduct. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10306.png' target='_blank'>
@@ -4496,10 +4519,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing the NetUserGetGroups API. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10313.png' target='_blank'>
@@ -4705,10 +4730,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing the NetUserGetLocalGroups API. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10312.png' target='_blank'>
@@ -4914,10 +4941,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell command used to create the new service javamtsup. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10338.png' target='_blank'>
@@ -5492,7 +5521,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5615,10 +5644,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe triggered a ScreenshotTakenETW event. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10405.png' target='_blank'>
@@ -5719,10 +5750,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe executing Get-Clipboard. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10413.png' target='_blank'>
@@ -5863,10 +5896,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell calling the GetAsyncKeyState API. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10414.png' target='_blank'>
@@ -6310,10 +6345,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell Copy-Item to a remote adversary WebDav network share (192.168.0.4). The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10426.png' target='_blank'>
@@ -6853,10 +6890,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a packed executable written event for python.exe. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        A FileSubType_decimal value of 4 is a PE_PACKER_UPX reference in documentation.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            A FileSubType_decimal value of 4 is a PE_PACKER_UPX reference in documentation.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10458.png' target='_blank'>
@@ -9440,10 +9479,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -9541,10 +9582,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -9642,10 +9685,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -9743,10 +9788,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -9844,10 +9891,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -9945,10 +9994,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -10046,10 +10097,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            PowerShell script block content for this step was collected on sensor, but at execution time did not meet confidence threshold to be sent to cloud for further analysis.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -12966,10 +13019,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell script block executing $env:UserName. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10656.png' target='_blank'>
@@ -13110,10 +13165,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10655.png' target='_blank'>
@@ -13322,10 +13379,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell executing the ConvertSidToStringSid API function. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10666.png' target='_blank'>
@@ -13531,10 +13590,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique detection called “GenericWinRMLateralMovement” was generated when powershell.exe executed Invoke-WinRMSession to connect to remote host NewYork (10.0.0.4) with credentials for user MScott. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10672.png' target='_blank'>
@@ -13576,10 +13637,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10679.png' target='_blank'>
@@ -13683,10 +13746,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a successful logon on NewYork (10.0.0.4) as user MScott. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10679.png' target='_blank'>
@@ -14538,10 +14603,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell compressing collection via ZipFile.CreateFromDirectory .NET method and the subsequent ZipFileWritten event. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10701.png' target='_blank'>
@@ -14642,10 +14709,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell appending the GIF file header to the compressed file. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10701.png' target='_blank'>
@@ -14848,10 +14917,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell executing Copy-Item to exfiltrate data to a previously mapped OneDrive account. The detection was correlated to a parent grouping of malicious activity.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        All activity associated with an alert is grouped and correlated via the relevant detection tree.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            All activity associated with an alert is grouped and correlated via the relevant detection tree.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10704.png' target='_blank'>

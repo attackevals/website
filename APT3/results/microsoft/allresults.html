@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -456,10 +455,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the user execution sequence of Resume Viewer.exe with multiple files written and subsequently executed.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Resume Viewer.exe was audited by Exploit Guard and the vendor stated that the audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Resume Viewer.exe was audited by Exploit Guard and the vendor stated that the audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-1.A.1-1.png' target='_blank'>
@@ -861,10 +862,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        DNS requests were observed (no detection showed port 53 specifically).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            DNS requests were observed (no detection showed port 53 specifically).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-1.C.1-1.png' target='_blank'>
@@ -938,10 +941,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry from showed DNS requests to freegoogleadsenseinfo.com (C2 domain).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor stated that DNS telemetry is captured but it was not immediately visible in the portal. The vendor made changes to the portal during the test to enable by default the visibility of these events.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor stated that DNS telemetry is captured but it was not immediately visible in the portal. The vendor made changes to the portal during the test to enable by default the visibility of these events.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-1.C.1-1.png' target='_blank'>
@@ -3330,10 +3335,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for process injection.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Process Injection attempt was audited by Exploit Guard. Vendor states that the Exploit Guard audit events demonstrate that execution would have been prevented if Export Address Table (EAF) was enabled in blocking mode.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Process Injection attempt was audited by Exploit Guard. Vendor states that the Exploit Guard audit events demonstrate that execution would have been prevented if Export Address Table (EAF) was enabled in blocking mode.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-3.C.1-1.png' target='_blank'>
@@ -3927,10 +3934,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched data showing a svchost.exe process opening lsass.exe with a description that it was accessing credentials (tainted by parent process injection event that occurred from svchost.exe). Exploit Guard audited the process open and credential extraction event.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode. Vendor stated that Credential Guard can also mitigate this attack if enabled.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode. Vendor stated that Credential Guard can also mitigate this attack if enabled.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-5.A.1-3.png' target='_blank'>
@@ -4057,10 +4066,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed svchost.exe accessing lsass.exe and dumping credentials (tainted by parent alert on sensitive credential memory read for the first credential dump). Exploit Guard audited process open and credential extraction event.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-5.A.1-3.png' target='_blank'>
@@ -4163,10 +4174,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched data showing a svchost.exe process opening lsass.exe with a description that it was accessing credentials (tainted by parent process injection event that occurred from svchost.exe). Exploit Guard audited the process open and credential extraction event.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode. Vendor stated that Credential Guard can also mitigate this attack if enabled.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode. Vendor stated that Credential Guard can also mitigate this attack if enabled.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-5.A.2-1.png' target='_blank'>
@@ -4287,10 +4300,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed svchost.exe accessing lsass.exe and dumping credentials (tainted by parent alert on sensitive credential memory read for the first credential dump). Exploit Guard audited process open and credential extraction event.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the Exploit Guard audit events demonstrate that execution would have been prevented if Attack Surface Reduction (ASR) was enabled in blocking mode.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-5.A.2-2.png' target='_blank'>
@@ -4945,10 +4960,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed data for account Jesse creation after configuration change to enable collection of event ID 4720.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Visibility of account creation data was verified in retesting at the end of the evaluation after vendor adjusted data collection configuration and visibility of account creation.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Visibility of account creation data was verified in retesting at the end of the evaluation after vendor adjusted data collection configuration and visibility of account creation.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-7.A.1-1.png' target='_blank'>
@@ -5759,15 +5776,19 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed events indicating "explorer.exe is reading user keystrokes."
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor stated that Input Capture telemetry is captured but it was not immediately visible in the user portal. The vendor made changes to the portal during the test to enable the visibility of these events.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor stated that Input Capture telemetry is captured but it was not immediately visible in the user portal. The vendor made changes to the portal during the test to enable the visibility of these events.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Telemetry also showed cmd.exe injecting into explorer.exe to facilitate the keylogging, but this did not identify input capture specifically so was not counted as a detection.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Telemetry also showed cmd.exe injecting into explorer.exe to facilitate the keylogging, but this did not identify input capture specifically so was not counted as a detection.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-8.C.1-3.png' target='_blank'>
@@ -5940,10 +5961,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched an explorer.exe process with ScreenshotTaken.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor stated that screen capture telemetry is captured but it was not immediately visible in the portal. The vendor made changes to the portal during the test to enable by default the visibility of these events, so this detection is identified as a configuration change.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor stated that screen capture telemetry is captured but it was not immediately visible in the portal. The vendor made changes to the portal during the test to enable by default the visibility of these events, so this detection is identified as a configuration change.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-8.D.1-1.png' target='_blank'>
@@ -6206,10 +6229,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor stated that by default WDATP monitored activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of the evaluation. Subsequently, the vendor made changes to enable the visibility of .vsdx events by default, which is now available in WDATP.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor stated that by default WDATP monitored activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of the evaluation. Subsequently, the vendor made changes to enable the visibility of .vsdx events by default, which is now available in WDATP.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -7102,10 +7127,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 An Indicator of Compromise alert was generated on the C2 domain.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Vendor added detection for evaluation C2 domain using the standard customer-facing custom detection capabilities of the product.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Vendor added detection for evaluation C2 domain using the standard customer-facing custom detection capabilities of the product.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-11.B.1-3.png' target='_blank'>
@@ -7736,10 +7763,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.D.1-1.png' target='_blank'>
@@ -9456,10 +9485,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.E.1-2.png' target='_blank'>
@@ -9612,10 +9643,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.F.1-1.png' target='_blank'>
@@ -9762,10 +9795,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.E.1-4.png' target='_blank'>
@@ -9912,10 +9947,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.E.1-4.png' target='_blank'>
@@ -10062,10 +10099,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed Specific Behavior alert called "Reconnaissance using directory services queries" was generated for domain user enumeration.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor noted this was an Azure Advanced Threat Protection alert.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor noted this was an Azure Advanced Threat Protection alert.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.E.1-4.png' target='_blank'>
@@ -10113,10 +10152,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-12.E.1-4.png' target='_blank'>
@@ -10269,10 +10310,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-13.A.1-1.png' target='_blank'>
@@ -10419,10 +10462,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-13.A.1-3.png' target='_blank'>
@@ -10569,10 +10614,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed General Behavior alert was generated for "Suspicious sequence of exploration activities".
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Alert is based on the correlation of a chain of related behaviors across multiple steps.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Alert is based on the correlation of a chain of related behaviors across multiple steps.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-13.B.2-1.png' target='_blank'>
@@ -11190,10 +11237,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making API calls consistent with keylogger behavior. Telemetry also showed execution of Get-Keystrokes Empire PowerShell cmdlet (tainted by alert on PowerShell script with suspicious content).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Vendor stated that Input Capture telemetry is captured but it was not immediately visible in the portal. Vendor made changes to the portal during the test to enable by default the visibility of these events.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Vendor stated that Input Capture telemetry is captured but it was not immediately visible in the portal. Vendor made changes to the portal during the test to enable by default the visibility of these events.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-15.A.1-2.png' target='_blank'>
@@ -11465,10 +11514,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed Specific Behavior alert was generated based on brute force attempt by accessing remote SMB shares with different accounts.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The alert spans multiple login attempts.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The alert spans multiple login attempts.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-16.A.1-6.png' target='_blank'>
@@ -11610,10 +11661,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed Specific Behavior alert was generated based on brute force attempt by accessing remote SMB shares with different accounts.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The alert spans multiple login attempts.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The alert spans multiple login attempts.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-16.A.1-6.png' target='_blank'>
@@ -11852,10 +11905,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A delayed Specific Behavior alert was generated based on brute force attempt by accessing remote SMB shares with different accounts.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The alert spans multiple login attempts.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The alert spans multiple login attempts.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-16.B.1-1.png' target='_blank'>
@@ -11979,10 +12034,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated based on brute force attempt by accessing remote SMB shares with different accounts.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The alert spans multiple login attempts.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The alert spans multiple login attempts.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-16.B.1-1.png' target='_blank'>
@@ -13991,10 +14048,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure, though data showed PowerShell Copy-Item cmdlet execution (no information available about what file is being copied or where the data is coming from).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Vendor states that by default WDATP monitors activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of test.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Vendor states that by default WDATP monitors activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of test.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-18.B.1-1.png' target='_blank'>
@@ -14069,10 +14128,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure, though data showed PowerShell Copy-Item cmdlet execution (no information available about what file is being copied or where the data is coming from).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Vendor states that by default WDATP monitors activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of test.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Vendor states that by default WDATP monitors activities around all the most used documents (doc, xls, ppt pdf, etc) at the time of test.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/MS-18.B.1-1.png' target='_blank'>

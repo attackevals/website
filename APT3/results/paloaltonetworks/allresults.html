@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -574,10 +573,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General Behavior alert was generated based on rundll32.exe executing update.dat, identified as a suspicious DLL and malware. The alert was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the capability would have prevented execution of update.dat.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the capability would have prevented execution of update.dat.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-1.A.1-4.png' target='_blank'>
@@ -846,10 +847,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched a file being created in the Startup folder with the correct ATT&CK Technique (Registry Run Keys / Start Folder). The data was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The logic to produce the enrichment was configured after the start of the evaluation so it is identified as a config change.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The logic to produce the enrichment was configured after the start of the evaluation so it is identified as a config change.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-1.B.1-1.png' target='_blank'>
@@ -1029,10 +1032,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed port 53 command and control traffic. The telemetry was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-1.C.1-1.png' target='_blank'>
@@ -1109,10 +1114,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -1184,10 +1191,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -1861,10 +1870,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched the execution of a specific API call as process enumeration and suspicious activity. The data was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-2.C.1-1.png' target='_blank'>
@@ -3796,10 +3807,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched the execution of a specific API call as process enumeration and suspicious activity. The data was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-3.B.1-1.png' target='_blank'>
@@ -3897,10 +3910,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for PowerShell injecting shellcode. The alert was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-3.C.1-1.png' target='_blank'>
@@ -4657,10 +4672,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for a suspicious handle being opened to lsass.exe to dump passwords. The alert was tagged with the correct ATT&CK Technique (Credential Dumping). 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the capability would have prevented this behavior.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the capability would have prevented this behavior.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-5.A.1-1.png' target='_blank'>
@@ -4735,10 +4752,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for a suspicious handle being opened to lsass.exe. The alert was tagged with a related ATT&CK Technique (Credential Dumping). 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the capability would have prevented this behavior.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the capability would have prevented this behavior.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-5.A.1-1.png' target='_blank'>
@@ -5330,10 +5349,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed port 80 command and control traffic.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-6.B.1-1.png' target='_blank'>
@@ -6272,10 +6293,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for a commonly abused host process scheduling a task. The alert was tainted by a parent process injection alert on cmd.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the capability would have prevented the creation of the scheduled task.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the capability would have prevented the creation of the scheduled task.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-7.C.1-1.png' target='_blank'>
@@ -6323,10 +6346,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for the creation of a new scheduled task. The alert was tainted by a parent process injection alert on cmd.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated the capability would have prevented the creation of the scheduled task.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated the capability would have prevented the creation of the scheduled task.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-7.C.1-1.png' target='_blank'>
@@ -6852,10 +6877,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched the execution of a specific API call as process enumeration and suspicious activity. The data was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-8.B.1-1.png' target='_blank'>
@@ -7292,10 +7319,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -7389,10 +7418,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a file read event for the .vsdx file from the network shared drive.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-9.B.1-1.png' target='_blank'>
@@ -7467,10 +7498,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure, though port 53 network traffic to/from freegoogleadsenseinfo.com (C2 domain) was observed.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-9.B.1-2.png' target='_blank'>
@@ -8438,10 +8471,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 General Behavior alerts were generated for PowerShell making network connections to the internet as well as Wscript connecting to an external network. The alerts were tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -8486,10 +8521,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 The capability enriched the port 443 network connection with the correct ATT&CK Technique (Commonly Used Port). The data was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -8534,10 +8571,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed port 443 network connections to www.freegoogleadsenseinfo.com (C2 domain). The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -8617,10 +8656,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -8692,10 +8733,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -15087,10 +15130,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a file read event for update.vbs. The telemetry was tainted by a parent alert on wscript.exe 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-16.K.1-1.png' target='_blank'>
@@ -16012,10 +16057,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed file write events overwriting magnify.exe in the system directory as well as the change in the hash of the file. The telemetry was tainted by a parent alert on cmd.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-17.C.1-1.png' target='_blank'>
@@ -16116,10 +16163,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed an event with the execution of the Get-ChildItem command. The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-18.A.1-1.png' target='_blank'>
@@ -16289,10 +16338,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Specific Behavior alert was generated for a script engine reading files from network locations. The alert was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-18.B.1-1.png' target='_blank'>
@@ -16432,10 +16483,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the MD5 and SHA256 hash values of recycler.exe when it was written to disk, which an analyst could use to determine recycler.exe was actually WinRAR. The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.A.1-1.png' target='_blank'>
@@ -16596,10 +16649,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the file create and write events for recycler.exe. The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.A.1-1.png' target='_blank'>
@@ -17107,10 +17162,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the file delete event for old.rar. The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.D.1-1.png' target='_blank'>
@@ -17208,10 +17265,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the file delete event for recycler.exe. The telemetry was tainted by a parent alert on wscript.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.D.1-1.png' target='_blank'>

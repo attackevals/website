@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -449,10 +448,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure, though telemetry later identified recycler.exe as WinRAR during execution (no detections identified it as WinRAR upon file copy).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -630,10 +631,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe creating autoupdate.vbs (tainted by parent Powershell executed remote commands alerts) .
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-16.E.1-1.png' target='_blank'>
@@ -714,10 +717,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A General Behavior alert called "Policy Dropper Behavior" was generated based on three events occurring in the same parent process within a set time frame, a network connection (TCP Outbound to 192.168.0.5 over 443) followed by an executable file create (powershell.exe creating recycler.exe) followed by a process spawning from that executable (powershell.exe creating the recycler.exe process).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The capability may have been modified after the start of the evaluation to create this alert, so the detection is identified as a configuration change. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The capability may have been modified after the start of the evaluation to create this alert, so the detection is identified as a configuration change. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-19.A.1-1.png' target='_blank'>
@@ -756,10 +761,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe creating recycler.exe. The telemetry was tainted by parent \"Powershell executed encoded commands\" and \"Policy Dropper Behavior\" alerts.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-19.A.1-1.png' target='_blank'>
@@ -1080,10 +1087,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe creating an outbound connection to 192.168.0.5 (C2 server) over TCP port 443.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-11.B.1-1.png' target='_blank'>
@@ -1185,10 +1194,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure, though telemetry showed an outbound network connection over TCP port 443 (no protocol was identified for this traffic).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-11.B.1-1.png' target='_blank'>
@@ -1515,10 +1526,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure, though telemetry showed an outbound network connection over TCP port 443 (no protocol was identified for this traffic).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-11.B.1-1.png' target='_blank'>

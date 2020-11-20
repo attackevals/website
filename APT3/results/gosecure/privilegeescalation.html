@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -440,10 +439,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing sc.exe to create a new service named AdobeUpdater with binPath pointed to cmd.exe with arguments to run update.vbs and suspicious service description, which could assist an analyst in determining this was not a legitimate Adobe product. The telemetry was tainted by the parent \"Powershell executed remote commands alert\".
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-16.I.1-1.png' target='_blank'>
@@ -563,10 +564,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe making an HTTP GET request over port 8080 to freegoogleadsenseinfo.com (C2 domain) for the file wdbypass (tainted by the parent "Powershell executed encoded commands" alert).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-14.A.1-2.png' target='_blank'>
@@ -686,10 +689,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Specific Behavior alert was generated based on DLL injection for powershell.exe injecting into cmd.exe. The detection was labeled with Process Hijacking and Privilege Escalation and tainted by the parent "Powershell process created" alert.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The vendor noted all DLL injection conditions are labeled with Privilege Escalation. The vendor also noted Privilege Escalation is one of ten "Capabilities" that are part of the taxonomy.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The vendor noted all DLL injection conditions are labeled with Privilege Escalation. The vendor also noted Privilege Escalation is one of ten "Capabilities" that are part of the taxonomy.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-3.C.1-1.png' target='_blank'>
@@ -1043,10 +1048,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure, though an alert called "PowerShell executed encoded commands" triggered due to svchost.exe creating powershell.exe with the -enc command-line argument.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-14.A.1-1.png' target='_blank'>
@@ -1166,10 +1173,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe making an HTTP GET request over port 8080 to freegoogleadsenseinfo.com (C2 domain) for the file wdbypass (tainted by the parent "Powershell executed encoded commands" alert).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-14.A.1-2.png' target='_blank'>
@@ -1262,10 +1271,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 An alert called "Windows Service Registry Key modified" and a Specific Behavior alert called "New Windows service created" were generated due to the AdobeUpdater service being created in the Registry.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The capability may have been modified after the start of the evaluation to create these alerts, so the detection is identified as a configuration change. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The capability may have been modified after the start of the evaluation to create these alerts, so the detection is identified as a configuration change. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-16.I.1-1.png' target='_blank'>
@@ -1304,10 +1315,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing sc.exe to create a new service named AdobeUpdater with binPath pointed to cmd.exe with arguments to run update.vbs and suspicious service description. The telemetry was tainted by the parent \"Powershell executed remote commands alert\".
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-16.I.1-1.png' target='_blank'>
@@ -1430,10 +1443,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe making an HTTP GET request over port 8080 to freegoogleadsenseinfo.com (C2 domain) for the file wdbypass (tainted by the parent "Powershell executed encoded commands" alert).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor modified configurations between scenario one and two, but MITRE assesses the change did not significantly affect results for this detection. See Configuration page for details.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CT-14.A.1-2.png' target='_blank'>

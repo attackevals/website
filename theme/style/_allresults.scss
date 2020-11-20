@@ -36,6 +36,12 @@
   display: none;
 }
 
+.tdInnerDetectionNotes {
+  font-size: 13px;
+  text-align: left;
+  padding: 5px;
+}
+
 .tdInnerDetectionNotes a span {
   display: none;
 }
@@ -352,8 +358,8 @@
   padding: 3px;
 }
 
-.tr3-allresults {
-}
+// .tr3-allresults {
+// }
 
 .tdMainRightPane-allresults {
   width: 25%;

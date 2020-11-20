@@ -164,11 +164,6 @@
   border-right: 1px solid lightgray;
 }
 
-.tdCalibration_DetectionNotes {
-  font-size: 13px;
-  width: 65%;
-  padding: 5px;
-}
 
 .border-top-grey-dotted {
   border-top: 2px dotted lightgray;
@@ -180,7 +175,17 @@
   display: none;
 }
 
-.tdInnerDetectionNotesSum a:hover span {
+.tdCalibration_DetectionNotes {
+  font-size: 13px;
+  width: 65%;
+  padding: 5px;
+}
+
+.tdCalibration_DetectionNotes a span {
+  display: none;
+}
+
+.tdCalibration_DetectionNotes a:hover span {
   display: block;
   position: absolute;
 

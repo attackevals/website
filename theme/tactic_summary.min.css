@@ -180,7 +180,7 @@
                                                                                   margin: 0 auto; }
 
                                                                                   .td3-tacticsummary {
-                                                                                    font-size: 10px;
+                                                                                    font-size: 12px;
                                                                                     max-width: 130px;
                                                                                     overflow-wrap: break-word;
                                                                                     word-wrap: break-word;
@@ -188,7 +188,7 @@
 
                                                                                     .td2Steps-tacticsummary {
                                                                                       width: 5%;
-                                                                                      font-size: 10px;
+                                                                                      font-size: 12px;
                                                                                       border-right: 3px solid lightgray; }
 
                                                                                       .spanProcedureSummaryStep-tacticsummary {
@@ -263,7 +263,7 @@
                                                                                                                   padding: 0px; }
 
                                                                                                                   .tdInnerDetectionNotes-tacticsummary {
-                                                                                                                    font-size: 12px;
+                                                                                                                    font-size: 13px;
                                                                                                                     text-align: left;
                                                                                                                     padding: 5px; }
 

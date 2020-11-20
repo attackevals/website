@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -431,7 +430,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert)
+                                Technique (Alert, Configuration Change (Detections))
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -449,10 +448,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection for "powershellprocessdiscovery" was generated due to powershell.exe executing Get-Process.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1058.png' target='_blank'>
@@ -488,15 +489,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing Get-Process.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -650,10 +655,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection (red indicator) was generated for the execution of a PowerShell process discovery command. The detection was correlated to a parent alert on rcs.3aka3.doc for the execution of a rogue unusual executable.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-13435.png' target='_blank'>
@@ -692,10 +699,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing Get-Process.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1071.png' target='_blank'>
@@ -813,10 +822,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi query for Win32_Process.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -913,7 +924,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert)
+                                Technique (Alert, Configuration Change (Detections))
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -931,10 +942,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection was generated for the execution of a PowerShell process discovery command.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1115.png' target='_blank'>
@@ -1015,10 +1028,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert was generated for the execution of a PowerShell process discovery command.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1103.png' target='_blank'>
@@ -1057,15 +1072,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed PowerShell executing Get-Process.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -1146,7 +1165,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert, Correlated)
+                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -1164,10 +1183,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection (yellow indicator) was generated for PowerShell enumerating files and directories using environment variables. The detection was correlated to a parent alert on rcs.3aka3.doc for the execution of a rogue unusual executable.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1054.png' target='_blank'>
@@ -1206,10 +1227,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing ChildItem.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1118.png' target='_blank'>
@@ -1348,7 +1371,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert)
+                                Technique (Alert, Configuration Change (Detections))
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -1366,10 +1389,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection was generated for PowerShell enumerating files and directories using environment variables.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1130.png' target='_blank'>
@@ -1405,15 +1430,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing ChildItem.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -1491,10 +1520,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed PowerShell executing Get-Item for the current path.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1095.png' target='_blank'>
@@ -1575,10 +1606,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed PowerShell enumeration of System32.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1099.png' target='_blank'>
@@ -1799,10 +1832,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi query for Win32_ComputerSystem.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -2032,10 +2067,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed PowerShell executing the ConvertSidToStringSid API function.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1107.png' target='_blank'>
@@ -2119,7 +2156,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert)
+                                Technique (Alert, Configuration Change (Detections))
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -2137,10 +2174,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection (red indicator) was generated for getting the plug and play devices via Windows Management Instrumentation.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1093.png' target='_blank'>
@@ -2176,15 +2215,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi query for Win32_PnPEntity.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -2399,10 +2442,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi query for Win32_ComputerSystem.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -2738,7 +2783,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Alert, Correlated)
+                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2756,10 +2801,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique detection (yellow indicator) was generated for Windows Management Instrumentation being used for AV discovery. The detection was correlated to a parent alert on rcs.3aka3.doc for the execution of a rogue unusual executable.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1121.png' target='_blank'>
@@ -2798,15 +2845,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe executing Get-WmiObject...​ -Class AntiVirusProduct. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -2942,7 +2993,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Correlated, Alert)
+                                Technique (Alert, Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2997,10 +3048,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed PowerShell gwmi query for AntiVirusProduct.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -3291,10 +3344,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection (red indicator) was generated for getting the BIOS version via Windows Management Instrumentation.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1090.png' target='_blank'>
@@ -3330,15 +3385,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi queries for Win32_BIOS and Win32_ComputerSystem.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -3514,10 +3573,12 @@ query for Win32_BIOS
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection was generated for getting the BIOS version via Windows Management Instrumentation.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1090.png' target='_blank'>
@@ -3553,15 +3614,19 @@ query for Win32_BIOS
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the PowerShell gwmi queries for Win32_BIOS.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -3660,10 +3725,12 @@ query for Win32_BIOS
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed script block with registry query for installed software.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1101.png' target='_blank'>
@@ -3744,10 +3811,12 @@ query for Win32_BIOS
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed scriptblock with registry query for installed software.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            PowerShell script block logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1101.png' target='_blank'>
@@ -3849,10 +3918,12 @@ query for Win32_BIOS
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed powershell.exe establishing a connection identified as LDAP over port 389 to NewYork (10.0.0.4).
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The logic for this detection was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The logic for this detection was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Bitdefender-APT29-1081.png' target='_blank'>

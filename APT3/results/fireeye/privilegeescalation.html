@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -440,10 +439,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The capability enriched the sc.exe command with an alert for SC Execution (Weak Signal). The alert was also tagged with a related ATT&CK Technique (T1007 - System Service Discovery) and the correct Tactic (Discovery).  
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         All five of the sc.exe events are rolled under the same SC Execution alert.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             All five of the sc.exe events are rolled under the same SC Execution alert.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-16.L.1-1.png' target='_blank'>
@@ -684,15 +685,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified a process injection from PowerShell.exe to cmd.exe. [FE5]
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         The vendor stated the process injection detection capability is a HX plugin that is only available within the Managed Defense Service, and the data is reported to  a separate cloud server which is not accessible to customers at this time.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             The vendor stated the process injection detection capability is a HX plugin that is only available within the Managed Defense Service, and the data is reported to  a separate cloud server which is not accessible to customers at this time.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-3.C.1-1.png' target='_blank'>
@@ -815,10 +820,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed a svchost.exe seclogon event for a token logon ID later used by a process whose group membership indicated high integrity. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-3.A.1-3.png' target='_blank'>
@@ -987,10 +994,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed execution of powershell.exe as a high integrity process as SYSTEM with a token login ID previously associated with user Debbie. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-3.A.1-3.png' target='_blank'>
@@ -1065,10 +1074,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed execution of powershell.exe as a high integrity process as SYSTEM with a token login ID previously associated with user Bob, which indicates UAC bypassing. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             A Configuration Change was made in order to collect Windows Event Logs for events 4627 (Group Membership Information) and 4673 (A privileged service was called).
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-14.A.1-7.png' target='_blank'>
@@ -1191,10 +1202,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a General Behavior occurred because it identified that the Empire instance communicated with freegoogleadsenseinfo.com (C2 domain) over port 8080.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-14.A.1-4.png' target='_blank'>
@@ -1333,15 +1346,19 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it observed the sc.exe command creating a new service called adobeupdater on Creeper from CodeRed. [FE5]
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         All five of the sc.exe events are rolled under the same SC Execution alert.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             All five of the sc.exe events are rolled under the same SC Execution alert.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-16.I.1-1.png' target='_blank'>

@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -499,10 +498,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General Behavior alert was generated based on the identification of Resume Viewer.exe as unknown malware by the Anti-Malware engine. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         Vendor stated that the capability would have prevented the execution of Resume Viewer.exe.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             Vendor stated that the capability would have prevented the execution of Resume Viewer.exe.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-1.A.1-10.png' target='_blank'>
@@ -547,10 +548,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed that Resume Viewer.exe was executed and running as a process. The telemetry was tainted by a parent alert on explorer.exe attempting to execute a file (Resume Viewer.exe) identified as malicious. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The provided screenshot was captured later in the evaluation and includes additional information appended to explorer.exe not relevant to this procedure.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The provided screenshot was captured later in the evaluation and includes additional information appended to explorer.exe not relevant to this procedure.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-1.A.1-10.png' target='_blank'>
@@ -716,10 +719,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry within the rundll32.exe injection alert also showed full command-line arguments of rundll32.exe executing update.dat. The telemetry was tainted by a parent alert on explorer.exe attempting to execute a file (Resume Viewer.exe) identified as malicious. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability and counted as a separate detection.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability and counted as a separate detection.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-1.A.1-200.png' target='_blank'>
@@ -3843,10 +3848,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed cmd.exe executing net with command-line arguments. command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-4.B.1-10.png' target='_blank'>
@@ -5532,10 +5539,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed cmd.exe executing dir with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-8.A.1-10.png' target='_blank'>
@@ -5670,10 +5679,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed cmd.exe executing tree with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-8.A.1-20.png' target='_blank'>
@@ -7424,10 +7435,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed ipconfig.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.A.2-1.png' target='_blank'>
@@ -7565,10 +7578,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed whoami.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.B.1-1.png' target='_blank'>
@@ -7709,10 +7724,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed qprocess.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.C.1-1.png' target='_blank'>
@@ -7853,10 +7870,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.D.1-100.png' target='_blank'>
@@ -9537,10 +9556,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed netstat.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.E.1.12-1.png' target='_blank'>
@@ -9678,10 +9699,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.F.1-100.png' target='_blank'>
@@ -9822,10 +9845,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.F.2-100.png' target='_blank'>
@@ -9966,10 +9991,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.G.1-100.png' target='_blank'>
@@ -10110,10 +10137,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-12.G.1-1.png' target='_blank'>
@@ -10254,10 +10283,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-13.A.1-100.png' target='_blank'>
@@ -10398,10 +10429,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-13.B.1-100.png' target='_blank'>
@@ -10539,10 +10572,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed netstat.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-13.B.2-10.png' target='_blank'>
@@ -11004,10 +11039,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making a network connection over port 8080. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-14.A.1-30.png' target='_blank'>
@@ -11457,10 +11494,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.A.1-10.png' target='_blank'>
@@ -11596,10 +11635,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.A.1-10.png' target='_blank'>
@@ -11745,10 +11786,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.B.1-20.png' target='_blank'>
@@ -11859,10 +11902,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.B.1-20.png' target='_blank'>
@@ -11974,10 +12019,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.B.1-20.png' target='_blank'>
@@ -12112,10 +12159,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.C.1-10.png' target='_blank'>
@@ -12252,10 +12301,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.D.1-100.png' target='_blank'>
@@ -12370,10 +12421,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.D.1-10.png' target='_blank'>
@@ -12894,10 +12947,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed sc.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-16.I.1-13.png' target='_blank'>
@@ -13561,10 +13616,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed takeown.exe executing with command-line arguments.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-17.B.1-10.png' target='_blank'>
@@ -14548,10 +14605,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the execution of ftp.exe and command-line arguments. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             The telemetry behind each enrichment is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -14877,10 +14936,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the execution of magnify.exe. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-20.A.1-10.png' target='_blank'>
@@ -15134,10 +15195,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the execution of whoami.exe. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                         For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                             For most alerts in the user interface, the telemetry behind it is separately available in the capability. This is counted as a separate detection because the functionality was showed to MITRE throughout the evaluation, though a screenshot was not taken in this instance.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/CR-20.B.1-10.png' target='_blank'>

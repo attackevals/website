@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -497,10 +496,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed explorer.exe executing rcs.3aka3.doc.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Vendor stated a protection capability would have blocked execution of the malicious file.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Vendor stated a protection capability would have blocked execution of the malicious file.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-7346.png' target='_blank'>
@@ -1989,10 +1990,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed rcs.3aka3.doc creating monkey.png, with the file path reversed due to the Unicode right-to-left override character.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9907.png' target='_blank'>
@@ -2075,7 +2078,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Alert, Delayed (Processing), Correlated)
+                                                                                                Technique (Alert, Correlated, Delayed (Processing))
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed">
@@ -2266,10 +2269,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the addition of the DelegateExecute Registry Value.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9910.png' target='_blank'>
@@ -2880,10 +2885,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the deletion of the command subkey.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9919.png' target='_blank'>
@@ -5842,10 +5849,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed file create event for a $RandomFileName.pfx file by powershell.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9927.png' target='_blank'>
@@ -6975,10 +6984,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe establishing a connection identified as LDAP over port 389 to NewYork (10.0.0.4).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9930.png' target='_blank'>
@@ -7079,10 +7090,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a connection to Scranton (10.0.1.4) over port 5985 via HTTP.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9931.png' target='_blank'>
@@ -7301,7 +7314,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Delayed (Processing), Alert)
+                                                                                                General (Alert, Delayed (Processing))
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed">
@@ -9702,10 +9715,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed cmd.exe deleting sdelete64.exe. Processing was triggered by human action and not initiated automatically.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-17698.png' target='_blank'>
@@ -11792,10 +11807,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making a network connection to the C2 (192.168.0.4) over port 443. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9867.png' target='_blank'>
@@ -11936,10 +11953,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe connecting and sending data to 192.168.0.4 via TLS.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9867.png' target='_blank'>
@@ -12080,10 +12099,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe connecting and sending data to 192.168.0.4 via TLS.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9867.png' target='_blank'>
@@ -12326,10 +12347,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe setting the file attributes of kxwn.lock.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9869.png' target='_blank'>
@@ -13141,10 +13164,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the addition of the DelegateExecute Registry value. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9870.png' target='_blank'>
@@ -13227,7 +13252,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -13424,10 +13449,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the deletion of the Registry value.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9871.png' target='_blank'>
@@ -14616,10 +14643,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell making a network connection to the domain controller NewYork (10.0.0.4) over LDAP port 389. Additionally, Oscar's Kerberos ticket was seen in memory on NewYork. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-17718.png' target='_blank'>
@@ -14958,10 +14987,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9872.png' target='_blank'>
@@ -15189,7 +15220,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Delayed (Processing), Alert)
+                                                                                                General (Alert, Delayed (Processing))
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed">
@@ -16313,10 +16344,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed net.exe with command-line arguments to connect to a OneDrive URL as well as net.exe subsequently making a network connection to public IPs over port 443.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The telemetry was acquired by manually initiating an export of endpoint-stored event data that was not automatically sent to the analysis system, which caused this detection to receive Delayed (Manual).
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-APT29-9839.png' target='_blank'>

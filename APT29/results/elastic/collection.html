@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -431,7 +430,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Correlated, Alert)
+                                Technique (Alert, Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -583,10 +582,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique detection for "Data Staged" was generated due to the NtCreateFile API being used to create Draft.zip. The event was correlated to a parent General detection for malicious file execution. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1679.png' target='_blank'>
@@ -1193,7 +1194,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Configuration Change (Detections), Correlated, Alert)
+                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -1211,10 +1212,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 A Technique alert detection (low severity) for "Screen Capture" was generated for powershell.exe calling the NtGdiCreateCompatibleBitmap API. The event was correlated to a parent General detection for malicious file execution.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-13630.png' target='_blank'>
@@ -1617,7 +1620,7 @@
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary'>
 
 
-                                Technique (Correlated, Alert)
+                                Technique (Alert, Correlated)
                                                                             </td>
                                                                             <td class='tdSummaryDetectionIcons-tacticsummary' style='padding-left: 5px;'>
                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">

@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -1635,10 +1634,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (green indicator; low severity) called Data Compressed was generated due to the creation of Draft.Zip by powershell.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Additional PowerShell logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Additional PowerShell logging was enabled after the start of the evaluation so the detection is identified as a Detection Configuration Change.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Kaspersky-APT29-3419.png' target='_blank'>
@@ -2089,7 +2090,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2700,10 +2701,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -2801,10 +2804,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -5813,10 +5818,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Unable to test because execution blocked by the vendor solution.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Unable to test because execution blocked by the vendor solution.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -6422,7 +6429,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -6558,7 +6565,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -7090,7 +7097,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">

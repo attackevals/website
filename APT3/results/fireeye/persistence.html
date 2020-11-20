@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -692,10 +691,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified the creation of a local user account for Jesse on Conficker. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-7.A.1-1.png' target='_blank'>
@@ -828,10 +829,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified the backdoor persisted by executing autoupdate.bat at system start due to its presence in the Startup directory.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-1.B.1-1.png' target='_blank'>
@@ -919,10 +922,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed autoupdate.bat being written to the Startup folder.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The alert mapped to two ATT&CK Techniques (T1059 - Command-Line Interface and T1105 - Remote File Copy), but they were not directly related to the Registry Run Keys / Startup Folder Technique under test in this procedure.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The alert mapped to two ATT&CK Techniques (T1059 - Command-Line Interface and T1105 - Remote File Copy), but they were not directly related to the Registry Run Keys / Startup Folder Technique under test in this procedure.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-1.B.1-1.png' target='_blank'>
@@ -1003,10 +1008,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified that autoupdate.bat persisted due to its presence in the startup directory. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-10.A.1-1.png' target='_blank'>
@@ -1376,10 +1383,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified that updater.dll persisted through the creation of a scheduled task. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-7.C.1-1.png' target='_blank'>
@@ -1497,10 +1506,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified the Resume Viewer Update Checker scheduled task executing updater.dll with rundll32.exe. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-10.A.2-1.png' target='_blank'>
@@ -1639,10 +1650,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified that the account Jesse was used to log in to Conficker as part of Lateral Movement.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-10.B.1-2.png' target='_blank'>
@@ -1873,10 +1886,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified magnifer.exe being overwritten with cmd.exe. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-17.C.1-1.png' target='_blank'>
@@ -1997,10 +2012,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified that the attacker replaced the magnifier.exe accessibility feature to launch a privileged command shell. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-20.A.1-3.png' target='_blank'>
@@ -2154,10 +2171,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified the user account Jesse logged on to Conficker via Remote Desktop Protocol. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-10.B.1-1.png' target='_blank'>
@@ -2315,10 +2334,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The Managed Defense Report indicated a Specific Behavior occurred because it identified the use of the Remote Desktop Protocol to connect to Creeper.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Managed Defense Reports are reports provided by FireEye's managed detection and response (MDR) service. FireEye provided reports to MITRE after the completion of the evaluation to mimic what they would produce in a real incident.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/FE-20.A.1-1.png' target='_blank'>

@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -578,7 +577,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Configuration Change (Detections), Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections))
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -596,10 +595,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (low severity) for "Process with Left-to-Right Encoding Character " was generated for rcs.3aka3.doc execution.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to add detection logic. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to add detection logic. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-18054.png' target='_blank'>
@@ -917,7 +918,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Configuration Change (Detections), Alert, Correlated)
+                                                                                                General (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -935,10 +936,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General alert detection (medium severity) was generated for a "Suspicious Parent of Built-in Shells." The detection was correlated to a parent alert for malicious file execution. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1674.png' target='_blank'>
@@ -1645,10 +1648,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique detection for "Data Staged" was generated due to the NtCreateFile API being used to create Draft.zip. The event was correlated to a parent General detection for malicious file execution. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1679.png' target='_blank'>
@@ -1786,10 +1791,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed file read event for Draft.zip and an existing C2 channel (192.168.0.5 over port TCP 1234).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1177.png' target='_blank'>
@@ -2073,7 +2080,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Configuration Change (Detections), Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2091,10 +2098,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique detection (red label) for "Registry Preparation of UAC Bypass" was generated due to the addition of the DelegateExecute Registry Value. The event was correlated to a parent General detection for malicious file execution. 
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1710.png' target='_blank'>
@@ -2353,7 +2362,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -2507,10 +2516,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Although telemetry showed a network connection over port 443 no protocol was identified for this traffic, so a detection does not apply.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -2884,7 +2895,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -4010,7 +4021,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -4149,7 +4160,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Tactic (Correlated, Alert)
+                                                                                                Tactic (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_tactic.svg" title="Tactic"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -4285,7 +4296,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Tactic (Correlated, Alert)
+                                                                                                Tactic (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_tactic.svg" title="Tactic"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -4538,10 +4549,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed Netapi32.dll loaded into powershell.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1243.png' target='_blank'>
@@ -4744,10 +4757,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed Netapi32.dll loaded into powershell.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1243.png' target='_blank'>
@@ -4833,7 +4848,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -4969,7 +4984,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5006,7 +5021,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5142,7 +5157,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Configuration Change (Detections))
+                                                                                                Technique (Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5160,10 +5175,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique detection for "ATT&CK 1081 Credentials in Files" was generated for accesschk.exe reading the Chrome database file for credentials . The event was correlated to a parent General detection for malicious file execution.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1720.png' target='_blank'>
@@ -5202,10 +5219,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed accesschk.exe reading the Chrome database file for credentials. The event was correlated to a parent General detection for malicious file execution.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-15105.png' target='_blank'>
@@ -5384,7 +5403,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5520,7 +5539,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5656,7 +5675,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5696,7 +5715,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Configuration Change (Detections), Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections))
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change">
@@ -5714,10 +5733,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (low severity) for "Credential Access: SAM Registry Reads" was generated for lsass.exe reading the SAM database through the registry.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1729.png' target='_blank'>
@@ -5756,10 +5777,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed lsass.exe accessing the NtOpenKey API. The event was correlated to a parent General detection for malicious file execution.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1729.png' target='_blank'>
@@ -5842,7 +5865,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Configuration Change (Detections), Correlated, Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -5860,10 +5883,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (low severity) for "Screen Capture" was generated for powershell.exe calling the NtGdiCreateCompatibleBitmap API. The event was correlated to a parent General detection for malicious file execution.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to loosen rule logic and/or black lists.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to loosen rule logic and/or black lists.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-13630.png' target='_blank'>
@@ -5983,7 +6008,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -6119,7 +6144,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -6747,7 +6772,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -7118,7 +7143,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -7418,7 +7443,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -7455,7 +7480,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -7789,7 +7814,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -8324,7 +8349,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -8460,7 +8485,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -8614,10 +8639,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed file read event for working.zip and an existing C2 channel (192.168.0.4 over TCP port 8443).  This event was correlated to a General detection for the execution of a malicious file (python.exe).
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-13617.png' target='_blank'>
@@ -8700,7 +8727,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Configuration Change (Detections), Correlated, Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -8718,10 +8745,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (high severity) for "ATT&CK T1107 File Deletion" was generated when sdelete64.exe made a NtSetInformationFile API call deleting rar.exe. This event was correlated to a Technique detection for the creation of psexesvc.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to add detection logic. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to add detection logic. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1766.png' target='_blank'>
@@ -8940,7 +8969,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Configuration Change (Detections), Correlated, Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -8958,10 +8987,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A Technique alert detection (high severity) for "ATT&CK T1107 File Deletion" was generated when sdelete64.exe made a NtSetInformationFile API call deleting Roaming\working.zip. This event was correlated to a Technique detection for the creation of psexesvc.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Configuration changes were made to increase detection capability, specifically additional API monitoring. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Configuration changes were made to increase detection capability, specifically additional API monitoring. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Elastic-APT29-1766.png' target='_blank'>
@@ -9081,7 +9112,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -9313,7 +9344,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -11622,7 +11653,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -11795,7 +11826,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -11934,7 +11965,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Configuration Change (Detections), Alert)
+                                                                                                Technique (Alert, Configuration Change (Detections), Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_configuration_change.svg" title="Configuration Change"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -12862,7 +12893,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -12961,7 +12992,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -13171,7 +13202,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -13879,7 +13910,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -14628,7 +14659,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                General (Correlated, Alert)
+                                                                                                General (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_general.svg" title="General"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -14764,7 +14795,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -14804,7 +14835,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">

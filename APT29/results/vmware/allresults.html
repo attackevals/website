@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?c33076b1">
+    <link rel="stylesheet" type="text/css" href="/theme/allresults.min.css?e6a9e800">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -174,7 +173,7 @@
                                 <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                     <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                         <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                        <hr syle="border:2px solid black;" />
+                                        <hr style="border:2px solid black;" />
                                         The ATT&CK All Results page displays the procedures, tested techniques, and detection results for all steps in an evaluation. The Procedure column contains a description of how the technique in the corresponding technique column was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                     </span>
                                 </a>
@@ -460,10 +459,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General alert detection (blue indicator) was generated for rcs.3aka3.doc being tagged as suspicious.  
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Suspect Malware from executing.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Suspect Malware from executing.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3707.png' target='_blank'>
@@ -777,10 +778,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed the rcs.3aka3.doc process connecting to 192.168.0.5 over TCP port 1234.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office Documents making network connections.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office Documents making network connections.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3709.png' target='_blank'>
@@ -1020,10 +1023,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed cmd.exe spawning from rcs.3aka3.doc​. The detection was correlated to a parent alert identifying rcs.3aka3.doc as suspicious.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office documents or untrusted applications spawning command interpreters.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office documents or untrusted applications spawning command interpreters.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3724.png' target='_blank'>
@@ -1201,10 +1206,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showing powershell.exe spawning from cmd.exe. The detection was correlated to a parent alert identifying rcs.3aka3.doc as suspicious.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office documents or untrusted applications spawning command interpreters.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Office documents or untrusted applications spawning command interpreters.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3727.png' target='_blank'>
@@ -2609,10 +2616,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe connecting to 192.168.0.5 on TCP port 443. The detection was correlated to a parent alert identifying rcs.3aka3.doc as suspicious.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell making network connections.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell making network connections.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3824.png' target='_blank'>
@@ -3155,10 +3164,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed a new powershell.exe spawning from powershell.exe. The detection was correlated to a parent alert identifying rcs.3aka3.doc as suspicious.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Powershell or untrusted applications spawning command interpreters.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking Powershell or untrusted applications spawning command interpreters.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3888.png' target='_blank'>
@@ -4044,7 +4055,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4143,7 +4154,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4242,7 +4253,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4341,7 +4352,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4440,7 +4451,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4539,7 +4550,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4638,7 +4649,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4737,7 +4748,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -4836,7 +4847,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -5040,7 +5051,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -5142,7 +5153,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -5244,7 +5255,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -5503,10 +5514,12 @@
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 No detection capability demonstrated for this procedure, though data showed a file write of the passwordsdb output.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        The vendor states that this activity would have been blocked. 
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            The vendor states that this activity would have been blocked. 
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-3981.png' target='_blank'>
@@ -6779,7 +6792,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -7156,7 +7169,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Tactic (Correlated, Alert)
+                                                                                                Tactic (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_tactic.svg" title="Tactic"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -7626,7 +7639,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -9277,7 +9290,7 @@
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Technique (Correlated, Alert)
+                                                                                                Technique (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_technique.svg" title="Technique"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -11718,10 +11731,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed powershell.exe making a network connection to the C2 (192.168.0.4) over TCP port 443.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell making network connections.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell making network connections.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-4110.png' target='_blank'>
@@ -13719,10 +13734,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 Telemetry showed PowerShell executing Get-Process.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            Though no image was captured, MITRE confirmed that the vendor has the capability to show available telemetry in a separate view.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                             </td>
@@ -14073,10 +14090,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General alert detection (red indicator) was generated for powershell.exe executing a fileless script or command.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell from executing untrusted applications or blocking PUP applications from executing. Credential dumping can be blocked by preventing untrusted applications from reading the memory of other processes.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking powershell from executing untrusted applications or blocking PUP applications from executing. Credential dumping can be blocked by preventing untrusted applications from reading the memory of other processes.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-4219.png' target='_blank'>
@@ -15046,7 +15065,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                Tactic (Correlated, Alert)
+                                                                                                Tactic (Alert, Correlated)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_tactic.svg" title="Tactic"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_alert.svg" title="Alert"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_correlated.svg" title="Correlated">
@@ -15182,7 +15201,7 @@ query for Win32_BIOS
                                                                                         <tr>
                                                                                             <td class='tdSummaryDetectionIcons-allresults'>
 
-                                                                                                None (Host Interrogation, Delayed (Manual))
+                                                                                                None (Delayed (Manual), Host Interrogation)
                                                                                             </td>
                                                                                             <td class='tdSummaryDetectionIcons-allresults' style='padding-left: 5px;'>
                                                                                                 <img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_none.svg" title="None"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_delayed.svg" title="Delayed"><img class="calibration_detection_icon" src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_host_interrogation.svg" title="Host Interrogation">
@@ -15472,10 +15491,12 @@ query for Win32_BIOS
                                                                                         <tr class='tr3-allresults'>
                                                                                             <td class='tdInnerDetectionNotes'>
                                                                                                 A General detection was generated for process injection by m.exe. The detection was correlated to a parent alert for a code drop of m.exe.
-                                                                                                <a class="aFootnote" href="javascript:void(0);"><i class="fas fa-info-circle"></i>
-                                                                                                    <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
-                                                                                                        According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking PUP applications from executing. Credential dumping can be prevented by implementing rules blocking untrusted applications reading the memory of another process.
-                                                                                                    </span>
+                                                                                                <a class="aFootnote" href="javascript:void(0);">
+                                                                                                    <i class="fas fa-info-circle">
+                                                                                                        <span class="spanPopup-footnotes" onclick="return false;" href="#"> 
+                                                                                                            According to the vendor, the VMware Carbon Black Cloud could be configured to prevent this activity by implementing rules blocking PUP applications from executing. Credential dumping can be prevented by implementing rules blocking untrusted applications reading the memory of another process.
+                                                                                                        </span>
+                                                                                                    </i>
                                                                                                 </a>
 
                                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-4274.png' target='_blank'>

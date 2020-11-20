@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -449,10 +448,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the MD5 and SHA256 hash values of recycler.exe when it was written to disk, which an analyst could use to determine recycler.exe was actually WinRAR. The telemetry was tainted by a parent alert on wscript.exe.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.A.1-1.png' target='_blank'>
@@ -878,10 +879,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed the file create and write events for recycler.exe. The telemetry was tainted by a parent alert on wscript.exe.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            The process tree showing taintedness is visible within the same UI but did not fit within the current frame.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-19.A.1-1.png' target='_blank'>
@@ -980,10 +983,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -1110,10 +1115,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed port 53 command and control traffic. The telemetry was tainted by a parent alert related to Resume Viewer.exe and suspicious execution of the Windows Scripting Engine.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-1.C.1-1.png' target='_blank'>
@@ -1188,10 +1195,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed port 80 command and control traffic.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-6.B.1-1.png' target='_blank'>
@@ -1263,10 +1272,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 General Behavior alerts were generated for PowerShell making network connections to the internet as well as Wscript connecting to an external network. The alerts were tainted by a parent alert on wscript.exe.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -1308,10 +1319,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The capability enriched the port 443 network connection with the correct ATT&CK Technique (Commonly Used Port). The data was tainted by a parent alert on wscript.exe.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -1353,10 +1366,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed port 443 network connections to www.freegoogleadsenseinfo.com (C2 domain). The telemetry was tainted by a parent alert on wscript.exe.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/PA-11.B.1-1.png' target='_blank'>
@@ -1464,10 +1479,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -1648,10 +1665,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>
@@ -1790,10 +1809,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 No detection capability demonstrated for this procedure.
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                        Vendor stated that more information would be available if their firewall appliance was installed and activated.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                            Vendor stated that more information would be available if their firewall appliance was installed and activated.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                             </td>

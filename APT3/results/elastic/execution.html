@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?1ff16dad">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?0edd8893">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?aa285199">
+    <link rel="stylesheet" type="text/css" href="/theme/tactic_summary.min.css?f805ccdc">
     <link rel="stylesheet" type="text/css" href="/theme/opflow.min.css?9684dde4">
 </head>
 
@@ -99,7 +99,6 @@
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/get-evaluated.html">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/ICS/evaluations.html">Participants</a></li>
                             <li><a class="dropdown-item" href="/TRITON/">Overview</a></li>
                         </ul>
@@ -173,7 +172,7 @@
                                     <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
                                         <span class='spanPopup-footnotes' onclick='return false;' href='#'>
                                             <strong style="font-size:16px">Tactic Page Information</strong><br />
-                                            <hr syle="border:2px solid black;" />
+                                            <hr style="border:2px solid black;" />
                                             The ATT&CK tactic page displays all tested techniques belonging to that tactic, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps. 
                                         </span>
                                     </a>
@@ -480,10 +479,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The capability enriched the execution of autoupdate.vbs with a related ATT&CK Technique (T1064 - Scripting) and Tactic (Execution). (tainted by parent PowerShell alert). 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-16-9.png' target='_blank'>
@@ -525,10 +526,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed cmd.exe execution and associated user context change (tainted by parent PowerShell alert). 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-16-9.png' target='_blank'>
@@ -1172,10 +1175,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The capability enriched whoami.exe with the correct ATT&CK Technique (T1033 - System Owner/User Discovery) and Tactic (Discovery). The enrichment was tainted by an alert on Windows File Name Mismatch-Accessibility Features. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-20-1.png' target='_blank'>
@@ -1214,10 +1219,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed whoami.exe was executed from magnify.exe. The telemetry was tainted by an alert on Windows File Name Mismatch-Accessibility Features. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-20-1.png' target='_blank'>
@@ -1350,10 +1357,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 The capability enriched sc.exe with the correct ATT&CK Technique (T1035 - Service Execution) and Tactic (Execution). The event was tainted by parent PowerShell with Unusual Arguments and PowerShell Network alerts.  
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-16-14.png' target='_blank'>
@@ -1392,10 +1401,12 @@
                                                                             <td class='tdInnerDetectionNotes-tacticsummary'>
                                                                                 Telemetry showed sc.exe execution to start the AdobeUpdater service on Creeper. The telemetry was tainted by parent PowerShell with Unusual Arguments and PowerShell Network alerts. 
 
-                                                                                <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
-                                                                                    <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
-                                                                                         Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
-                                                                                    </span>
+                                                                                <a class='aFootnote' href='javascript:void(0);'>
+                                                                                    <i class="fas fa-info-circle">
+                                                                                        <span class='spanPopup-footnotes' onclick='return false;' href='#'> 
+                                                                                             Telemetry is immediately available within the event tree and then can be enriched with ATT&CK Techniques and Tactics, so this is counted as two detections.
+                                                                                        </span>
+                                                                                    </i>
                                                                                 </a>
 
                                                                                 <a href='https://d1zq5d3dtjfcoj.cloudfront.net/EG-16-14.png' target='_blank'>

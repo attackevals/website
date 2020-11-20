@@ -1105,385 +1105,388 @@
                                                                                     text-align: center;
                                                                                     border-right: 1px solid lightgray; }
 
-                                                                                    .tdCalibration_DetectionNotes {
-                                                                                      font-size: 13px;
-                                                                                      width: 65%;
-                                                                                      padding: 5px; }
+                                                                                    .border-top-grey-dotted {
+                                                                                      border-top: 2px dotted lightgray; }
 
-                                                                                      .border-top-grey-dotted {
-                                                                                        border-top: 2px dotted lightgray; }
+                                                                                      .tdInnerDetectionNotesSum a span {
+                                                                                        display: none; }
 
-                                                                                        .tdInnerDetectionNotesSum a span {
-                                                                                          display: none; }
+                                                                                        .tdCalibration_DetectionNotes {
+                                                                                          font-size: 13px;
+                                                                                          width: 65%;
+                                                                                          padding: 5px; }
 
-                                                                                          .tdInnerDetectionNotesSum a:hover span {
-                                                                                            display: block;
-                                                                                            position: absolute;
-                                                                                            margin: 0px;
-                                                                                            padding: 10px;
-                                                                                            color: black;
-                                                                                            font-weight: normal;
-                                                                                            background: white;
-                                                                                            text-align: left;
-                                                                                            border: 1px solid #666;
-                                                                                            z-index: 2;
-                                                                                            max-width: 600px;
-                                                                                            cursor: default; }
+                                                                                          .tdCalibration_DetectionNotes a span {
+                                                                                            display: none; }
 
-                                                                                            .tc_round_dropdown {
-                                                                                              margin-left: 50px; }
+                                                                                            .tdCalibration_DetectionNotes a:hover span {
+                                                                                              display: block;
+                                                                                              position: absolute;
+                                                                                              margin: 0px;
+                                                                                              padding: 10px;
+                                                                                              color: black;
+                                                                                              font-weight: normal;
+                                                                                              background: white;
+                                                                                              text-align: left;
+                                                                                              border: 1px solid #666;
+                                                                                              z-index: 2;
+                                                                                              max-width: 600px;
+                                                                                              cursor: default; }
 
-                                                                                              .tc_div_controls {
-                                                                                                width: 100%;
-                                                                                                display: flex;
-                                                                                                flex-direction: column; }
+                                                                                              .tc_round_dropdown {
+                                                                                                margin-left: 50px; }
 
-                                                                                                .tc_divVendorCards {
+                                                                                                .tc_div_controls {
                                                                                                   width: 100%;
-                                                                                                  overflow: auto; }
+                                                                                                  display: flex;
+                                                                                                  flex-direction: column; }
 
-                                                                                                  .tc_divAddVendorCard {
-                                                                                                    height: 50px;
-                                                                                                    width: 25%;
-                                                                                                    text-align: center;
-                                                                                                    font-size: 35px;
-                                                                                                    background-color: #6241c5;
-                                                                                                    color: white;
-                                                                                                    margin-top: 10px; }
+                                                                                                  .tc_divVendorCards {
+                                                                                                    width: 100%;
+                                                                                                    overflow: auto; }
 
-                                                                                                    .tc_divAddVendorCard:hover {
-                                                                                                      cursor: pointer; }
+                                                                                                    .tc_divAddVendorCard {
+                                                                                                      height: 50px;
+                                                                                                      width: 25%;
+                                                                                                      text-align: center;
+                                                                                                      font-size: 35px;
+                                                                                                      background-color: #6241c5;
+                                                                                                      color: white;
+                                                                                                      margin-top: 10px; }
 
-                                                                                                      .tc_tableVendorCard {
-                                                                                                        border: 1px solid #aaaaaa;
-                                                                                                        width: 100%;
-                                                                                                        height: 30px;
-                                                                                                        border-collapse: separate;
-                                                                                                        background: lightgray;
-                                                                                                        margin-bottom: 10px; }
+                                                                                                      .tc_divAddVendorCard:hover {
+                                                                                                        cursor: pointer; }
 
-                                                                                                        .tc_th_vendor_dropdown {
-                                                                                                          border-top: 1px solid #aaaaaa;
-                                                                                                          width: 20%;
-                                                                                                          padding: 5px; }
+                                                                                                        .tc_tableVendorCard {
+                                                                                                          border: 1px solid #aaaaaa;
+                                                                                                          width: 100%;
+                                                                                                          height: 30px;
+                                                                                                          border-collapse: separate;
+                                                                                                          background: lightgray;
+                                                                                                          margin-bottom: 10px; }
 
-                                                                                                          .tc_th_config_and_remove {
-                                                                                                            text-align: right; }
+                                                                                                          .tc_th_vendor_dropdown {
+                                                                                                            border-top: 1px solid #aaaaaa;
+                                                                                                            width: 20%;
+                                                                                                            padding: 5px; }
 
-                                                                                                            .tc_a_config_link {
-                                                                                                              margin: 0; }
+                                                                                                            .tc_th_config_and_remove {
+                                                                                                              text-align: right; }
 
-                                                                                                              .tc_a_remove_card {
-                                                                                                                margin-right: 5px;
-                                                                                                                margin-left: 15px; }
+                                                                                                              .tc_a_config_link {
+                                                                                                                margin: 0; }
 
-                                                                                                                .tc_td_detections {
-                                                                                                                  border-top: 1px solid #aaaaaa; }
+                                                                                                                .tc_a_remove_card {
+                                                                                                                  margin-right: 5px;
+                                                                                                                  margin-left: 15px; }
 
-                                                                                                                  .tc_img_detection_icon {
-                                                                                                                    max-width: 16px;
-                                                                                                                    width: 16px;
-                                                                                                                    margin-left: 10px; }
+                                                                                                                  .tc_td_detections {
+                                                                                                                    border-top: 1px solid #aaaaaa; }
 
-                                                                                                                    .tc_vendor_card_tbody {
-                                                                                                                      background-color: #eeeeee; }
+                                                                                                                    .tc_img_detection_icon {
+                                                                                                                      max-width: 16px;
+                                                                                                                      width: 16px;
+                                                                                                                      margin-left: 10px; }
 
-                                                                                                                      .divProcedureSummaryBody-techsummary {
-                                                                                                                        width: 95%;
-                                                                                                                        margin: 0 auto;
-                                                                                                                        padding-top: 20px; }
+                                                                                                                      .tc_vendor_card_tbody {
+                                                                                                                        background-color: #eeeeee; }
 
-                                                                                                                        .tableMain-techsummary {
-                                                                                                                          width: 100%; }
+                                                                                                                        .divProcedureSummaryBody-techsummary {
+                                                                                                                          width: 95%;
+                                                                                                                          margin: 0 auto;
+                                                                                                                          padding-top: 20px; }
 
-                                                                                                                          .tdMainLeftPane-techsummary {
-                                                                                                                            width: 75%;
-                                                                                                                            vertical-align: top;
-                                                                                                                            padding-right: 10px; }
+                                                                                                                          .tableMain-techsummary {
+                                                                                                                            width: 100%; }
 
-                                                                                                                            .tableHeaderLegend-techsummary {
-                                                                                                                              width: 100%;
+                                                                                                                            .tdMainLeftPane-techsummary {
+                                                                                                                              width: 75%;
                                                                                                                               vertical-align: top;
-                                                                                                                              margin-top: 15px; }
+                                                                                                                              padding-right: 10px; }
 
-                                                                                                                              .tdMainLabel-techsummary {
-                                                                                                                                width: 60%; }
+                                                                                                                              .tableHeaderLegend-techsummary {
+                                                                                                                                width: 100%;
+                                                                                                                                vertical-align: top;
+                                                                                                                                margin-top: 15px; }
 
-                                                                                                                                .labSubheader-techsummary {
-                                                                                                                                  font-size: 24px; }
+                                                                                                                                .tdMainLabel-techsummary {
+                                                                                                                                  width: 60%; }
 
-                                                                                                                                  .tdInnerDetectionNotesSum-techsummary {
-                                                                                                                                    font-size: 13px; }
+                                                                                                                                  .labSubheader-techsummary {
+                                                                                                                                    font-size: 24px; }
 
-                                                                                                                                    .tdInnerDetectionNotesSum-techsummary a span {
-                                                                                                                                      display: none; }
+                                                                                                                                    .tdInnerDetectionNotesSum-techsummary {
+                                                                                                                                      font-size: 13px; }
 
-                                                                                                                                      .tdInnerDetectionNotesSum-techsummary a:hover span {
-                                                                                                                                        display: block;
-                                                                                                                                        position: absolute;
-                                                                                                                                        margin: 0px;
-                                                                                                                                        padding: 10px;
-                                                                                                                                        color: black;
-                                                                                                                                        font-weight: normal;
-                                                                                                                                        background: white;
-                                                                                                                                        text-align: left;
-                                                                                                                                        border: 1px solid #666;
-                                                                                                                                        z-index: 2;
-                                                                                                                                        max-width: 600px;
-                                                                                                                                        cursor: default; }
+                                                                                                                                      .tdInnerDetectionNotesSum-techsummary a span {
+                                                                                                                                        display: none; }
 
-                                                                                                                                        .aFootnote {
-                                                                                                                                          color: #666666;
-                                                                                                                                          font-size: 11px; }
+                                                                                                                                        .tdInnerDetectionNotesSum-techsummary a:hover span {
+                                                                                                                                          display: block;
+                                                                                                                                          position: absolute;
+                                                                                                                                          margin: 0px;
+                                                                                                                                          padding: 10px;
+                                                                                                                                          color: black;
+                                                                                                                                          font-weight: normal;
+                                                                                                                                          background: white;
+                                                                                                                                          text-align: left;
+                                                                                                                                          border: 1px solid #666;
+                                                                                                                                          z-index: 2;
+                                                                                                                                          max-width: 600px;
+                                                                                                                                          cursor: default; }
 
-                                                                                                                                          .aFootnote:hover {
+                                                                                                                                          .aFootnote {
                                                                                                                                             color: #666666;
-                                                                                                                                            cursor: default;
-                                                                                                                                            text-decoration: none; }
+                                                                                                                                            font-size: 11px; }
 
-                                                                                                                                            .divDisclaimer-techsummary {
-                                                                                                                                              font-size: 12px;
-                                                                                                                                              width: 60%; }
+                                                                                                                                            .aFootnote:hover {
+                                                                                                                                              color: #666666;
+                                                                                                                                              cursor: default;
+                                                                                                                                              text-decoration: none; }
 
-                                                                                                                                              .tdLegend-techsummary {
-                                                                                                                                                width: 40%;
-                                                                                                                                                text-align: right; }
+                                                                                                                                              .divDisclaimer-techsummary {
+                                                                                                                                                font-size: 12px;
+                                                                                                                                                width: 60%; }
 
-                                                                                                                                                .aLegendExport-techsummary {
-                                                                                                                                                  font-size: 13px; }
+                                                                                                                                                .tdLegend-techsummary {
+                                                                                                                                                  width: 40%;
+                                                                                                                                                  text-align: right; }
 
-                                                                                                                                                  .divLegend-techsummary {
-                                                                                                                                                    display: none;
-                                                                                                                                                    width: 100%;
-                                                                                                                                                    background-color: #d7e5ee;
-                                                                                                                                                    padding: 10px;
-                                                                                                                                                    position: sticky;
-                                                                                                                                                    top: 78px; }
+                                                                                                                                                  .aLegendExport-techsummary {
+                                                                                                                                                    font-size: 13px; }
 
-                                                                                                                                                    .tableLegend-techsummary {
-                                                                                                                                                      width: 100%; }
+                                                                                                                                                    .divLegend-techsummary {
+                                                                                                                                                      display: none;
+                                                                                                                                                      width: 100%;
+                                                                                                                                                      background-color: #d7e5ee;
+                                                                                                                                                      padding: 10px;
+                                                                                                                                                      position: sticky;
+                                                                                                                                                      top: 78px; }
 
-                                                                                                                                                      .tdLegendBigIcon-techsummary {
-                                                                                                                                                        text-align: center; }
+                                                                                                                                                      .tableLegend-techsummary {
+                                                                                                                                                        width: 100%; }
 
-                                                                                                                                                        .tableLegendSummary-techsummary {
-                                                                                                                                                          width: 100%;
-                                                                                                                                                          font-size: 13px; }
+                                                                                                                                                        .tdLegendBigIcon-techsummary {
+                                                                                                                                                          text-align: center; }
 
-                                                                                                                                                          .divLegendIcon-techsummary {
-                                                                                                                                                            vertical-align: top;
-                                                                                                                                                            padding: 5px;
-                                                                                                                                                            text-align: center;
-                                                                                                                                                            display: inline-block; }
+                                                                                                                                                          .tableLegendSummary-techsummary {
+                                                                                                                                                            width: 100%;
+                                                                                                                                                            font-size: 13px; }
 
-                                                                                                                                                            .spanLegendIconText-techsummary {
-                                                                                                                                                              font-size: 14px; }
+                                                                                                                                                            .divLegendIcon-techsummary {
+                                                                                                                                                              vertical-align: top;
+                                                                                                                                                              padding: 5px;
+                                                                                                                                                              text-align: center;
+                                                                                                                                                              display: inline-block; }
 
-                                                                                                                                                              .tableHeaderBar-techsummary {
-                                                                                                                                                                width: 100%;
-                                                                                                                                                                height: 50px;
-                                                                                                                                                                position: sticky;
-                                                                                                                                                                top: 78px; }
+                                                                                                                                                              .spanLegendIconText-techsummary {
+                                                                                                                                                                font-size: 14px; }
 
-                                                                                                                                                                .trHeaderBar-techsummary {
-                                                                                                                                                                  font-size: 13px;
-                                                                                                                                                                  color: white;
-                                                                                                                                                                  background-color: #6241c5;
-                                                                                                                                                                  text-align: center; }
+                                                                                                                                                                .tableHeaderBar-techsummary {
+                                                                                                                                                                  width: 100%;
+                                                                                                                                                                  height: 50px;
+                                                                                                                                                                  position: sticky;
+                                                                                                                                                                  top: 78px; }
 
-                                                                                                                                                                  .tableHeaderBar-withlegend-techsummary {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    position: sticky;
-                                                                                                                                                                    top: 215px; }
+                                                                                                                                                                  .trHeaderBar-techsummary {
+                                                                                                                                                                    font-size: 13px;
+                                                                                                                                                                    color: white;
+                                                                                                                                                                    background-color: #6241c5;
+                                                                                                                                                                    text-align: center; }
 
-                                                                                                                                                                    .tdAllHeaders-techsummary {
+                                                                                                                                                                    .tableHeaderBar-withlegend-techsummary {
                                                                                                                                                                       width: 100%;
-                                                                                                                                                                      border-collapse: collapse;
-                                                                                                                                                                      padding: 0px; }
+                                                                                                                                                                      height: 50px;
+                                                                                                                                                                      position: sticky;
+                                                                                                                                                                      top: 215px; }
 
-                                                                                                                                                                      .table2-techsummary {
+                                                                                                                                                                      .tdAllHeaders-techsummary {
                                                                                                                                                                         width: 100%;
-                                                                                                                                                                        height: 100%; }
+                                                                                                                                                                        border-collapse: collapse;
+                                                                                                                                                                        padding: 0px; }
 
-                                                                                                                                                                        .td2StepsHeader-techsummary {
-                                                                                                                                                                          width: 6%; }
+                                                                                                                                                                        .table2-techsummary {
+                                                                                                                                                                          width: 100%;
+                                                                                                                                                                          height: 100%; }
 
-                                                                                                                                                                          .tdDetectionTypesAndNotesHeader-techsummary {
-                                                                                                                                                                            width: 42%; }
+                                                                                                                                                                          .td2StepsHeader-techsummary {
+                                                                                                                                                                            width: 6%; }
 
-                                                                                                                                                                            .tableDetectionTypesAndNotes-techsummary {
-                                                                                                                                                                              width: 100%;
-                                                                                                                                                                              border: none;
-                                                                                                                                                                              height: 100%; }
+                                                                                                                                                                            .tdDetectionTypesAndNotesHeader-techsummary {
+                                                                                                                                                                              width: 42%; }
 
-                                                                                                                                                                              .tdDetectionTypeHeader-techsummary {
-                                                                                                                                                                                width: 40%;
-                                                                                                                                                                                font-size: 13px; }
+                                                                                                                                                                              .tableDetectionTypesAndNotes-techsummary {
+                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                border: none;
+                                                                                                                                                                                height: 100%; }
 
-                                                                                                                                                                                .tdDetectionNotesHeader-techsummary {
-                                                                                                                                                                                  width: 60%;
+                                                                                                                                                                                .tdDetectionTypeHeader-techsummary {
+                                                                                                                                                                                  width: 40%;
                                                                                                                                                                                   font-size: 13px; }
 
-                                                                                                                                                                                  .table1-techsummary {
-                                                                                                                                                                                    width: 100%;
-                                                                                                                                                                                    border: 3px solid lightgray;
-                                                                                                                                                                                    margin-top: 5px;
-                                                                                                                                                                                    margin-bottom: 15px;
-                                                                                                                                                                                    outline: 0px solid #6241c5;
-                                                                                                                                                                                    transition: all 0.2s ease; }
+                                                                                                                                                                                  .tdDetectionNotesHeader-techsummary {
+                                                                                                                                                                                    width: 60%;
+                                                                                                                                                                                    font-size: 13px; }
 
-                                                                                                                                                                                    .tr1-techsummary {
-                                                                                                                                                                                      text-align: center; }
+                                                                                                                                                                                    .table1-techsummary {
+                                                                                                                                                                                      width: 100%;
+                                                                                                                                                                                      border: 3px solid lightgray;
+                                                                                                                                                                                      margin-top: 5px;
+                                                                                                                                                                                      margin-bottom: 15px;
+                                                                                                                                                                                      outline: 0px solid #6241c5;
+                                                                                                                                                                                      transition: all 0.2s ease; }
 
-                                                                                                                                                                                      .td1B-techsummary {
-                                                                                                                                                                                        width: 87%;
-                                                                                                                                                                                        border-collapse: collapse;
-                                                                                                                                                                                        padding: 0px;
-                                                                                                                                                                                        height: 0px; }
+                                                                                                                                                                                      .tr1-techsummary {
+                                                                                                                                                                                        text-align: center; }
 
-                                                                                                                                                                                        .tr2NoBottomBorder-techsummary {
-                                                                                                                                                                                          text-align: center; }
+                                                                                                                                                                                        .td1B-techsummary {
+                                                                                                                                                                                          width: 87%;
+                                                                                                                                                                                          border-collapse: collapse;
+                                                                                                                                                                                          padding: 0px;
+                                                                                                                                                                                          height: 0px; }
 
-                                                                                                                                                                                          .td2Procedures-techsummary-apt3 {
-                                                                                                                                                                                            width: 20%;
-                                                                                                                                                                                            font-size: 10px;
-                                                                                                                                                                                            border-right: 3px solid lightgray;
-                                                                                                                                                                                            padding: 0px; }
+                                                                                                                                                                                          .tr2NoBottomBorder-techsummary {
+                                                                                                                                                                                            text-align: center; }
 
-                                                                                                                                                                                            .td2Procedures-techsummary-apt29 {
-                                                                                                                                                                                              width: 10%;
+                                                                                                                                                                                            .td2Procedures-techsummary-apt3 {
+                                                                                                                                                                                              width: 20%;
                                                                                                                                                                                               font-size: 10px;
                                                                                                                                                                                               border-right: 3px solid lightgray;
                                                                                                                                                                                               padding: 0px; }
 
-                                                                                                                                                                                              .table3-techsummary {
-                                                                                                                                                                                                margin: 0 auto; }
+                                                                                                                                                                                              .td2Procedures-techsummary-apt29 {
+                                                                                                                                                                                                width: 10%;
+                                                                                                                                                                                                font-size: 10px;
+                                                                                                                                                                                                border-right: 3px solid lightgray;
+                                                                                                                                                                                                padding: 0px; }
 
-                                                                                                                                                                                                .td3-techsummary {
-                                                                                                                                                                                                  font-size: 10px;
-                                                                                                                                                                                                  max-width: 130px;
-                                                                                                                                                                                                  overflow-wrap: break-word;
-                                                                                                                                                                                                  word-wrap: break-word;
-                                                                                                                                                                                                  word-break: break-word; }
+                                                                                                                                                                                                .table3-techsummary {
+                                                                                                                                                                                                  margin: 0 auto; }
 
-                                                                                                                                                                                                  .td2Criteria-techsummary-apt29 {
-                                                                                                                                                                                                    width: 10%;
-                                                                                                                                                                                                    font-size: 10px;
-                                                                                                                                                                                                    border-right: 3px solid lightgray;
-                                                                                                                                                                                                    padding: 0px; }
+                                                                                                                                                                                                  .td3-techsummary {
+                                                                                                                                                                                                    font-size: 12px;
+                                                                                                                                                                                                    max-width: 130px;
+                                                                                                                                                                                                    overflow-wrap: break-word;
+                                                                                                                                                                                                    word-wrap: break-word;
+                                                                                                                                                                                                    word-break: break-word; }
 
-                                                                                                                                                                                                    .td2Steps-techsummary {
-                                                                                                                                                                                                      width: 6%;
-                                                                                                                                                                                                      font-size: 10px;
-                                                                                                                                                                                                      border-right: 3px solid lightgray; }
+                                                                                                                                                                                                    .td2Criteria-techsummary-apt29 {
+                                                                                                                                                                                                      width: 10%;
+                                                                                                                                                                                                      font-size: 12px;
+                                                                                                                                                                                                      border-right: 3px solid lightgray;
+                                                                                                                                                                                                      padding: 0px; }
 
-                                                                                                                                                                                                      .spanProcedureSummaryStep-techsummary {
-                                                                                                                                                                                                        font-size: 12px;
-                                                                                                                                                                                                        font-weight: bold;
-                                                                                                                                                                                                        color: blue; }
+                                                                                                                                                                                                      .td2Steps-techsummary {
+                                                                                                                                                                                                        width: 6%;
+                                                                                                                                                                                                        font-size: 10px;
+                                                                                                                                                                                                        border-right: 3px solid lightgray; }
 
-                                                                                                                                                                                                        .spanProcedureSummaryStep-techsummary:hover {
-                                                                                                                                                                                                          cursor: pointer;
-                                                                                                                                                                                                          text-decoration: underline;
-                                                                                                                                                                                                          color: purple; }
+                                                                                                                                                                                                        .spanProcedureSummaryStep-techsummary {
+                                                                                                                                                                                                          font-size: 12px;
+                                                                                                                                                                                                          font-weight: bold;
+                                                                                                                                                                                                          color: blue; }
 
-                                                                                                                                                                                                          .td2DetectionTypesAndNotes-techsummary {
-                                                                                                                                                                                                            width: 42%;
-                                                                                                                                                                                                            font-size: 10px;
-                                                                                                                                                                                                            padding: 0px;
-                                                                                                                                                                                                            height: 0px; }
+                                                                                                                                                                                                          .spanProcedureSummaryStep-techsummary:hover {
+                                                                                                                                                                                                            cursor: pointer;
+                                                                                                                                                                                                            text-decoration: underline;
+                                                                                                                                                                                                            color: purple; }
 
-                                                                                                                                                                                                            .tdDetectionTypeDotted-techsummary {
-                                                                                                                                                                                                              width: 40%;
+                                                                                                                                                                                                            .td2DetectionTypesAndNotes-techsummary {
+                                                                                                                                                                                                              width: 42%;
                                                                                                                                                                                                               font-size: 10px;
-                                                                                                                                                                                                              border-right: 3px solid lightgray;
-                                                                                                                                                                                                              border-bottom: 3px dotted lightgray;
-                                                                                                                                                                                                              padding: 0px; }
+                                                                                                                                                                                                              padding: 0px;
+                                                                                                                                                                                                              height: 0px; }
 
-                                                                                                                                                                                                              .tdDetectionType-techsummary {
+                                                                                                                                                                                                              .tdDetectionTypeDotted-techsummary {
                                                                                                                                                                                                                 width: 40%;
                                                                                                                                                                                                                 font-size: 10px;
                                                                                                                                                                                                                 border-right: 3px solid lightgray;
+                                                                                                                                                                                                                border-bottom: 3px dotted lightgray;
                                                                                                                                                                                                                 padding: 0px; }
 
-                                                                                                                                                                                                                .tableSummaryDetectionIcon-techsummary {
-                                                                                                                                                                                                                  display: inline-block;
-                                                                                                                                                                                                                  font-size: 10px; }
+                                                                                                                                                                                                                .tdDetectionType-techsummary {
+                                                                                                                                                                                                                  width: 40%;
+                                                                                                                                                                                                                  font-size: 10px;
+                                                                                                                                                                                                                  border-right: 3px solid lightgray;
+                                                                                                                                                                                                                  padding: 0px; }
 
-                                                                                                                                                                                                                  .tdSummaryDetectionIcons-techsummary {
-                                                                                                                                                                                                                    font-size: 13px;
-                                                                                                                                                                                                                    display: inline-block; }
+                                                                                                                                                                                                                  .tableSummaryDetectionIcon-techsummary {
+                                                                                                                                                                                                                    display: inline-block;
+                                                                                                                                                                                                                    font-size: 10px; }
 
-                                                                                                                                                                                                                    .tdDetectionNotes-techsummary {
-                                                                                                                                                                                                                      width: 60%;
-                                                                                                                                                                                                                      font-size: 10px;
-                                                                                                                                                                                                                      padding: 0px; }
+                                                                                                                                                                                                                    .tdSummaryDetectionIcons-techsummary {
+                                                                                                                                                                                                                      font-size: 13px;
+                                                                                                                                                                                                                      display: inline-block; }
 
-                                                                                                                                                                                                                      .tdInnerDetectionNotes-techsummary {
-                                                                                                                                                                                                                        font-size: 12px;
-                                                                                                                                                                                                                        text-align: left;
-                                                                                                                                                                                                                        padding: 5px; }
+                                                                                                                                                                                                                      .tdDetectionNotes-techsummary {
+                                                                                                                                                                                                                        width: 60%;
+                                                                                                                                                                                                                        font-size: 10px;
+                                                                                                                                                                                                                        padding: 0px; }
 
-                                                                                                                                                                                                                        .tdInnerDetectionNotes-techsummary a span {
-                                                                                                                                                                                                                          display: none; }
+                                                                                                                                                                                                                        .tdInnerDetectionNotes-techsummary {
+                                                                                                                                                                                                                          font-size: 13px;
+                                                                                                                                                                                                                          text-align: left;
+                                                                                                                                                                                                                          padding: 5px; }
 
-                                                                                                                                                                                                                          .tdInnerDetectionNotes-techsummary a:hover span {
-                                                                                                                                                                                                                            display: block;
-                                                                                                                                                                                                                            position: absolute;
-                                                                                                                                                                                                                            margin: 0px;
-                                                                                                                                                                                                                            padding: 10px;
-                                                                                                                                                                                                                            color: black;
-                                                                                                                                                                                                                            font-weight: normal;
-                                                                                                                                                                                                                            background: white;
-                                                                                                                                                                                                                            text-align: left;
-                                                                                                                                                                                                                            border: 1px solid #666;
-                                                                                                                                                                                                                            z-index: 2;
-                                                                                                                                                                                                                            max-width: 400px;
-                                                                                                                                                                                                                            cursor: default; }
+                                                                                                                                                                                                                          .tdInnerDetectionNotes-techsummary a span {
+                                                                                                                                                                                                                            display: none; }
 
-                                                                                                                                                                                                                            .tdMainRightPane-techsummary {
-                                                                                                                                                                                                                              width: 25%;
-                                                                                                                                                                                                                              height: 0px;
-                                                                                                                                                                                                                              vertical-align: top; }
+                                                                                                                                                                                                                            .tdInnerDetectionNotes-techsummary a:hover span {
+                                                                                                                                                                                                                              display: block;
+                                                                                                                                                                                                                              position: absolute;
+                                                                                                                                                                                                                              margin: 0px;
+                                                                                                                                                                                                                              padding: 10px;
+                                                                                                                                                                                                                              color: black;
+                                                                                                                                                                                                                              font-weight: normal;
+                                                                                                                                                                                                                              background: white;
+                                                                                                                                                                                                                              text-align: left;
+                                                                                                                                                                                                                              border: 1px solid #666;
+                                                                                                                                                                                                                              z-index: 2;
+                                                                                                                                                                                                                              max-width: 400px;
+                                                                                                                                                                                                                              cursor: default; }
 
-                                                                                                                                                                                                                              .divOperationalFlow-techsummary {
-                                                                                                                                                                                                                                background-color: #FFFFFF;
-                                                                                                                                                                                                                                border: 3px solid gray;
-                                                                                                                                                                                                                                margin-top: 15px;
-                                                                                                                                                                                                                                position: sticky;
-                                                                                                                                                                                                                                right: 20px;
-                                                                                                                                                                                                                                top: 90px;
-                                                                                                                                                                                                                                max-width: 400px;
-                                                                                                                                                                                                                                max-height: 720px;
-                                                                                                                                                                                                                                overflow: auto;
-                                                                                                                                                                                                                                padding: 10px; }
+                                                                                                                                                                                                                              .tdMainRightPane-techsummary {
+                                                                                                                                                                                                                                width: 25%;
+                                                                                                                                                                                                                                height: 0px;
+                                                                                                                                                                                                                                vertical-align: top; }
 
-                                                                                                                                                                                                                                .spanOperationalFlow-techsummary {
-                                                                                                                                                                                                                                  font-size: 30px;
-                                                                                                                                                                                                                                  padding-left: 5px;
-                                                                                                                                                                                                                                  color: #596775; }
+                                                                                                                                                                                                                                .divOperationalFlow-techsummary {
+                                                                                                                                                                                                                                  background-color: #FFFFFF;
+                                                                                                                                                                                                                                  border: 3px solid gray;
+                                                                                                                                                                                                                                  margin-top: 15px;
+                                                                                                                                                                                                                                  position: sticky;
+                                                                                                                                                                                                                                  right: 20px;
+                                                                                                                                                                                                                                  top: 90px;
+                                                                                                                                                                                                                                  max-width: 400px;
+                                                                                                                                                                                                                                  max-height: 720px;
+                                                                                                                                                                                                                                  overflow: auto;
+                                                                                                                                                                                                                                  padding: 10px; }
 
-                                                                                                                                                                                                                                  .tdDetectionNotesDotted-techsummary {
-                                                                                                                                                                                                                                    width: 60%;
-                                                                                                                                                                                                                                    font-size: 10px;
-                                                                                                                                                                                                                                    border-bottom: 3px dotted lightgray;
-                                                                                                                                                                                                                                    padding: 0px; }
+                                                                                                                                                                                                                                  .spanOperationalFlow-techsummary {
+                                                                                                                                                                                                                                    font-size: 30px;
+                                                                                                                                                                                                                                    padding-left: 5px;
+                                                                                                                                                                                                                                    color: #596775; }
 
-                                                                                                                                                                                                                                    .td2ProceduresHeader-techsummary-apt3 {
-                                                                                                                                                                                                                                      width: 20%; }
+                                                                                                                                                                                                                                    .tdDetectionNotesDotted-techsummary {
+                                                                                                                                                                                                                                      width: 60%;
+                                                                                                                                                                                                                                      font-size: 10px;
+                                                                                                                                                                                                                                      border-bottom: 3px dotted lightgray;
+                                                                                                                                                                                                                                      padding: 0px; }
 
-                                                                                                                                                                                                                                      .td2ProceduresHeader-techsummary-apt29 {
-                                                                                                                                                                                                                                        width: 10%; }
+                                                                                                                                                                                                                                      .td2ProceduresHeader-techsummary-apt3 {
+                                                                                                                                                                                                                                        width: 20%; }
 
-                                                                                                                                                                                                                                        .td2CriteriaHeader-techsummary-apt29 {
+                                                                                                                                                                                                                                        .td2ProceduresHeader-techsummary-apt29 {
                                                                                                                                                                                                                                           width: 10%; }
 
-                                                                                                                                                                                                                                          @media screen and (max-width:423px) {
-                                                                                                                                                                                                                                            .tableHeaderBar-techsummary {
-                                                                                                                                                                                                                                              top: 115px;   }
-                                                                                                                                                                                                                                              .divLegend-techsummary {
+                                                                                                                                                                                                                                          .td2CriteriaHeader-techsummary-apt29 {
+                                                                                                                                                                                                                                            width: 10%; }
+
+                                                                                                                                                                                                                                            @media screen and (max-width:423px) {
+                                                                                                                                                                                                                                              .tableHeaderBar-techsummary {
                                                                                                                                                                                                                                                 top: 115px;   }
+                                                                                                                                                                                                                                                .divLegend-techsummary {
+                                                                                                                                                                                                                                                  top: 115px;   }
 }
 
 .calibration_detection_icon {
