@@ -67,3 +67,62 @@
                               .card-title {
                                 font-size: 1.1rem;
                                 color: #000000; }
+
+                                .donuts-block {
+                                  text-align: center;
+                                  display: flex;
+                                  justify-content: space-evenly;
+                                  flex-wrap: wrap; }
+                                  .donuts-block .donut-container {
+                                    margin-bottom: 35px;
+                                    height: 240px; }
+                                    .donuts-block .donut-container svg {
+                                      height: 185px;
+                                      width: auto;
+                                      margin: auto; }
+
+.donut-tooltip {
+  background: #1d252c;
+  box-shadow: 0 0 5px #999999;
+  color: white;
+  visibility: hidden;
+  font-size: 12px;
+  font-family: 'Gilroy', Arial, sans-serif;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  z-index: 10; }
+
+  .legend-block {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .legend-block .legend-container {
+      margin-left: 5px; }
+      .legend-block .legend-container svg {
+        height: auto;
+        width: 205px;
+        margin: auto; }
+        .legend-block .legend-container svg .legend-item {
+          font-size: 14px;
+          font-family: 'Gilroy', Arial, sans-serif;
+          font-weight: 400;
+          letter-spacing: 0.5pt; }
+
+.grid path {
+  stroke-width: 0; }
+
+  .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.4;
+    shape-rendering: crispEdges; }
+
+    .xTickCenter {
+      transform: translate(-15px, 50px) rotate(-65deg); }
+
+      .xTickLeft {
+        transform: translate(-20px, 50px) rotate(-65deg); }
+
+        .xTickRight {
+          transform: translate(-10px, 50px) rotate(-65deg); }
