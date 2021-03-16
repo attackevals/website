@@ -111,9 +111,6 @@
   /*background-color: #e6f2ff;*/
   background-color: #d7e5ee;
   padding: 10px;
-
-  position: sticky;
-  top: 78px;
 }
 
 .tableLegend-allresults {
@@ -147,15 +144,11 @@
 .tableHeaderBar-allresults {
   width: 100%;
   height: 50px;
-  position: sticky;
-  top: 78px;
 }
 
 .tableHeaderBar-withlegend-allresults {
   width: 100%;
   height: 50px;
-  position: sticky;
-  top: 215px;
 }
 
 .trHeaderBar-allresults {
@@ -374,10 +367,7 @@
 
   margin-top: 15px;
 
-  position: sticky;
   right: 20px;
-  /*top: 100px;*/
-  top: 90px;
 
   max-width: 400px;
   max-height: 720px;

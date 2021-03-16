@@ -177,66 +177,84 @@
                                                                 font-weight: 400;
                                                                 letter-spacing: 0.5pt; }
 
-                                                                .sub-h5 {
-                                                                  font-size: 1.15rem; }
+                                                                .div-cfp {
+                                                                  position: fixed;
+                                                                  top: 75px;
+                                                                  background-color: #6241c5;
+                                                                  width: 100%;
+                                                                  color: white;
+                                                                  z-index: 1029;
+                                                                  text-align: center;
+                                                                  height: 40px; }
+                                                                  .div-cfp .h5-cfp {
+                                                                    line-height: 40px;
+                                                                    vertical-align: middle; }
+                                                                    .div-cfp .h5-cfp .a-click-here {
+                                                                      color: white;
+                                                                      text-decoration: underline; }
+                                                                      .div-cfp .h5-cfp .a-click-here:hover {
+                                                                        cursor: pointer; }
 
-                                                                  .sub-h6 {
-                                                                    font-size: 0.9rem; }
+.sub-h5 {
+  font-size: 1.15rem; }
 
-                                                                    select {
-                                                                      font-family: 'Gilroy', Arial, sans-serif;
-                                                                      font-weight: 400; }
+  .sub-h6 {
+    font-size: 0.9rem; }
 
-                                                                      .breadcrumb {
-                                                                        background-color: white; }
+    select {
+      font-family: 'Gilroy', Arial, sans-serif;
+      font-weight: 400; }
 
-                                                                        a {
-                                                                          color: #4F7CAC; }
+      .breadcrumb {
+        background-color: white; }
 
-                                                                          #content {
-                                                                            margin-top: 20px;
-                                                                            width: 100%;
-                                                                            min-height: calc(92vh - 149px) !important; }
+        a {
+          color: #4F7CAC; }
 
-                                                                            .spanBreadcrumbs-results {
-                                                                              font-size: 90%;
-                                                                              font-family: 'Gilroy', Arial, sans-serif;
-                                                                              font-weight: 400;
-                                                                              letter-spacing: 0.5pt; }
+          #content {
+            margin-top: 45px;
+            width: 100%;
+            min-height: calc(92vh - 149px) !important; }
 
-                                                                              .divEvaluationSummaryBody {
-                                                                                width: 95%;
-                                                                                margin: 0 auto;
-                                                                                padding-top: 20px; }
+            .spanBreadcrumbs-results {
+              font-size: 90%;
+              font-family: 'Gilroy', Arial, sans-serif;
+              font-weight: 400;
+              letter-spacing: 0.5pt; }
 
-                                                                                .btn-engenuity-purple {
-                                                                                  color: #fff;
-                                                                                  background-color: #6241c5;
-                                                                                  border-color: 1px solid #6241c5;
-                                                                                  font-family: 'Gilroy', Arial, sans-serif; }
+              .divEvaluationSummaryBody {
+                width: 95%;
+                margin: 0 auto;
+                padding-top: 20px; }
 
-                                                                                  .btn-engenuity-purple:hover {
-                                                                                    color: #fff;
-                                                                                    background-image: none;
-                                                                                    border-color: 1px solid #fff; }
+                .btn-engenuity-purple {
+                  color: #fff;
+                  background-color: #6241c5;
+                  border-color: 1px solid #6241c5;
+                  font-family: 'Gilroy', Arial, sans-serif; }
 
-                                                                                    .footer-links-left {
-                                                                                      font-family: 'Sentinel-Book', Georgia, serif;
-                                                                                      font-size: 1rem;
-                                                                                      color: black;
-                                                                                      text-align: left;
-                                                                                      letter-spacing: 0px;
-                                                                                      opacity: 1;
-                                                                                      margin: 0; }
+                  .btn-engenuity-purple:hover {
+                    color: #fff;
+                    background-image: none;
+                    border-color: 1px solid #fff; }
 
-                                                                                      strong {
-                                                                                        font-weight: bold; }
+                    .footer-links-left {
+                      font-family: 'Sentinel-Book', Georgia, serif;
+                      font-size: 1rem;
+                      color: black;
+                      text-align: left;
+                      letter-spacing: 0px;
+                      opacity: 1;
+                      margin: 0; }
 
-                                                                                        @-webkit-keyframes fadeIn {
-                                                                                          from {
-                                                                                            opacity: 0;   }
-                                                                                            to {
-                                                                                              opacity: 1;   }
+                      strong {
+                        font-weight: bold; }
+
+                        @-webkit-keyframes fadeIn {
+                          from {
+                            opacity: 0;   }
+                            to {
+                              opacity: 1;   }
 }
 
 @keyframes fadeIn {
@@ -982,11 +1000,9 @@
 
                                 .divCalibration_breadcrumbs_tags {
                                   width: 100%;
-                                  padding: 5px;
+                                  padding-top: 20px;
                                   padding-right: 20px;
                                   background-color: white;
-                                  position: sticky;
-                                  top: 78px;
                                   z-index: 1000; }
 
                                   .spanOperationalFlow-techcomparison {
@@ -1043,9 +1059,7 @@
                                                             font-size: 15px; }
 
                                                             .tableCalibration_Results_Header {
-                                                              width: 100%;
-                                                              position: sticky;
-                                                              top: 111px; }
+                                                              width: 100%; }
 
                                                               .trCalibration_Results_HeaderBar {
                                                                 background-color: #6241c5; }
@@ -1259,9 +1273,7 @@
                                                                                                                                                       display: none;
                                                                                                                                                       width: 100%;
                                                                                                                                                       background-color: #d7e5ee;
-                                                                                                                                                      padding: 10px;
-                                                                                                                                                      position: sticky;
-                                                                                                                                                      top: 78px; }
+                                                                                                                                                      padding: 10px; }
 
                                                                                                                                                       .tableLegend-techsummary {
                                                                                                                                                         width: 100%; }
@@ -1284,9 +1296,7 @@
 
                                                                                                                                                                 .tableHeaderBar-techsummary {
                                                                                                                                                                   width: 100%;
-                                                                                                                                                                  height: 50px;
-                                                                                                                                                                  position: sticky;
-                                                                                                                                                                  top: 78px; }
+                                                                                                                                                                  height: 50px; }
 
                                                                                                                                                                   .trHeaderBar-techsummary {
                                                                                                                                                                     font-size: 13px;
@@ -1296,9 +1306,7 @@
 
                                                                                                                                                                     .tableHeaderBar-withlegend-techsummary {
                                                                                                                                                                       width: 100%;
-                                                                                                                                                                      height: 50px;
-                                                                                                                                                                      position: sticky;
-                                                                                                                                                                      top: 215px; }
+                                                                                                                                                                      height: 50px; }
 
                                                                                                                                                                       .tdAllHeaders-techsummary {
                                                                                                                                                                         width: 100%;

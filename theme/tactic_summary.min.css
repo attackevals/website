@@ -66,9 +66,7 @@
                               display: none;
                               width: 100%;
                               background-color: #d7e5ee;
-                              padding: 10px;
-                              position: sticky;
-                              top: 78px; }
+                              padding: 10px; }
 
                               .tableLegend-tacticsummary {
                                 width: 100%; }
@@ -91,9 +89,7 @@
 
                                         .tableHeaderBar-tacticsummary {
                                           width: 100%;
-                                          height: 50px;
-                                          position: sticky;
-                                          top: 78px; }
+                                          height: 50px; }
 
                                           .trHeaderBar-tacticsummary {
                                             font-size: 13px;
@@ -293,9 +289,7 @@
                                                                                                                             background-color: #FFFFFF;
                                                                                                                             border: 3px solid gray;
                                                                                                                             margin-top: 15px;
-                                                                                                                            position: sticky;
                                                                                                                             right: 20px;
-                                                                                                                            top: 90px;
                                                                                                                             max-width: 400px;
                                                                                                                             max-height: 720px;
                                                                                                                             overflow: auto;

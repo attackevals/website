@@ -10,12 +10,10 @@
 
 .divCalibration_breadcrumbs_tags {
   width: 100%;
-  padding: 5px;
+  padding-top: 20px;
   padding-right: 20px;
   /*background-color: #f3f3f3;*/
   background-color: white;
-  position: sticky;
-  top: 78px;
   z-index: 1000;
 }
 
@@ -91,8 +89,6 @@
 
 .tableCalibration_Results_Header {
   width: 100%;
-  position: sticky;
-  top: 111px;
 }
 
 .trCalibration_Results_HeaderBar {

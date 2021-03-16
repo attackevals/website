@@ -66,9 +66,7 @@
                               display: none;
                               width: 100%;
                               background-color: #d7e5ee;
-                              padding: 10px;
-                              position: sticky;
-                              top: 78px; }
+                              padding: 10px; }
 
                               .tableLegend-techsummary {
                                 width: 100%; }
@@ -91,9 +89,7 @@
 
                                         .tableHeaderBar-techsummary {
                                           width: 100%;
-                                          height: 50px;
-                                          position: sticky;
-                                          top: 78px; }
+                                          height: 50px; }
 
                                           .trHeaderBar-techsummary {
                                             font-size: 13px;
@@ -103,9 +99,7 @@
 
                                             .tableHeaderBar-withlegend-techsummary {
                                               width: 100%;
-                                              height: 50px;
-                                              position: sticky;
-                                              top: 215px; }
+                                              height: 50px; }
 
                                               .tdAllHeaders-techsummary {
                                                 width: 100%;

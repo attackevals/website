@@ -25,6 +25,28 @@ h3, h4, h5, h6 {
   letter-spacing: 0.5pt;
 }
 
+.div-cfp {
+  position: fixed;
+  top: 75px;
+  background-color: #6241c5;
+  width: 100%;
+  color: white;
+  z-index: 1029;
+  text-align: center;
+  height: 40px;
+  .h5-cfp {
+    line-height: 40px;
+    vertical-align: middle;
+    .a-click-here {
+      color: white;
+      text-decoration: underline;
+    }
+    .a-click-here:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .sub-h5 {
   font-size: 1.15rem;
 }
@@ -47,7 +69,7 @@ a {
 }
 
 #content {
-  margin-top: 20px;
+  margin-top: 45px;
   // margin-bottom: 20px;
   width: 100%;
   min-height: calc(92vh - 149px) !important;
