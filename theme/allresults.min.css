@@ -281,6 +281,8 @@
                                                                                                                           border: 3px solid gray;
                                                                                                                           margin-top: 15px;
                                                                                                                           right: 20px;
+                                                                                                                          position: sticky;
+                                                                                                                          top: 90px;
                                                                                                                           max-width: 400px;
                                                                                                                           max-height: 720px;
                                                                                                                           overflow: auto;
