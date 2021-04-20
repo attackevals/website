@@ -362,7 +362,7 @@
 
     </select>
 
-    <table style="width: 90%; margin: 0 auto;">
+    <table style="width: 90%; margin: 0 auto; height: 680px;">
         <tr>
             <th class="pl-3" style="width: 15%;"><h4>Tactics</h4></th>
             <th class="pl-3" style="width: 25%;"><h4>Techniques</h4></th>
@@ -370,7 +370,7 @@
             <th class="pl-3" style="width: 30%;"><h4>Substeps</h4></th>
         </tr>
         <tr>
-            <td style="border-right: 3px solid black; height: 1px; width: 15%;">
+            <td style="border-right: 3px solid black; height: 100%; width: 15%;">
                 <div style="height: 100%;" id="div_tactic_cells">
                         <div 
                             class="div_finder_cell"
@@ -624,8 +624,8 @@
                     
                 </div>
             </td>
-            <td style="border-right: 3px solid black; height: 1px; width: 25%;">
-                <div style="height: 100%; overflow-y: auto;" id="div_technique_cells">
+            <td style="vertical-align: top; border-right: 3px solid black; height: 100%; width: 25%;">
+                <div style="height: 700px; overflow-y: scroll;" id="div_technique_cells">
                             <div 
                             class="div_finder_cell" 
                             id="div_technique_TA0009_T1560"
@@ -4291,7 +4291,7 @@
                             </div>
                 </div>
             </td>
-            <td style="border-right: 3px solid black; height: 1px; width: 30%; display: none;" id="td_subtechniques">
+            <td style="vertical-align: top; border-right: 3px solid black; height: 100%; width: 30%; display: none;" id="td_subtechniques">
                 <div style="height: 100%;" id="div_subtechnique_cells">
                                 <div 
                                 class="div_finder_cell not_in_scope" 
@@ -12995,8 +12995,8 @@
                                 </div>
                 </div>
             </td>
-            <td style="height: 1px; width: 30%;">
-                <div id="div_substep_cells" style="height: 100%; overflow-y: auto;">
+            <td style="vertical-align: top; height: 100%; width: 30%;">
+                <div id="div_substep_cells" style="height: 700px; overflow-y: scroll;">
                                     <div 
                                         class="div_finder_substep_cell" 
                                         id="div_substep_TA0009_T1560_T1560_001_19_b_1_127"
@@ -32234,7 +32234,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
     window.onload = function() {
         var url_string = window.location.href;
         var urlParams = new URLSearchParams(window.location.search);
-        const round = urlParams.get('round')
+        const round = urlParams.get('adversary')
         const tactic = urlParams.get('tactic')
         const technique = urlParams.get('technique')
         const subtechnique = urlParams.get('subtechnique')
@@ -33285,12 +33285,13 @@ powershell.exe executing with the stolen token of explorer.exe </p>
 
         if (!cell.children[0].lastElementChild) {
             let link = document.createElement("a");
-            let icon = document.createElement("i");
+            let img = document.createElement("img");
             
             link.setAttribute("href", "/enterprise/participants/fireeye/" + evals_name);
-            icon.className = "fas fa-link fa-xs";
-            icon.style.marginLeft = "5px";
-            link.appendChild(icon);
+            img.src ="https://d1zq5d3dtjfcoj.cloudfront.net/Checklist3x.png";
+            img.style.marginLeft = "5px";
+            img.style.maxWidth = "20px";
+            link.append(img);
             
             cell.children[0].appendChild(link);
         } 

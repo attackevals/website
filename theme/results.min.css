@@ -45,7 +45,7 @@ html {
                         background-color: lavender; }
 
                         .tdDetectionType, .tdDetectionNote {
-                          height: 1px;
+                          height: 100%;
                           padding: 0; }
 
                           .tdDetectionType {
@@ -87,7 +87,7 @@ html {
                                       border: 1px solid #6241c5;
                                       margin-left: 20px;
                                       background-color: lightgray;
-                                      height: fit-content;
+                                      height: max-content;
                                       padding-bottom: 2rem;
                                       position: sticky;
                                       top: 150px;

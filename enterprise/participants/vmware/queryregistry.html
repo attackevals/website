@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
 
-    <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?e682b0b0">
+    <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
 
 <body>
@@ -207,6 +207,10 @@
                 <input type="checkbox" id="chk_apt29" onclick="filterResultsByRound(this.parentNode.parentNode);" data-adversary="apt29">
                 <label for="chk_apt29"">APT29</label>
             </div>
+            <div style="margin: 0 15px 0 15px;">
+                <input type="checkbox" id="chk_apt3" onclick="filterResultsByRound(this.parentNode.parentNode);" data-adversary="apt3">
+                <label for="chk_apt3"">APT3</label>
+            </div>
     </div>
     <br />
         <div id="div_carbanak_fin7_summary" style="display: none; flex-direction: row; margin-bottom: 50px;">
@@ -234,12 +238,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divStepCell">
                                     3.B.4
                                 </div>
                             </td>
-                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divAttackPatternCell">
                                     <p class="p_attack_pattern_header"> Tactic </p>
                                     <a class="a_attack_pattern_link" 
@@ -251,7 +255,7 @@
                                     </a>
                                 </div>
                             </td>
-                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
                                 <table style="width: 100%; height: 100%;">
                                     <tbody>
                                             <tr 
@@ -348,12 +352,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divStepCell">
                                     12.C.1
                                 </div>
                             </td>
-                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divAttackPatternCell">
                                     <p class="p_attack_pattern_header"> Tactic </p>
                                     <a class="a_attack_pattern_link" 
@@ -365,7 +369,7 @@
                                     </a>
                                 </div>
                             </td>
-                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
                                 <table style="width: 100%; height: 100%;">
                                     <tbody>
                                             <tr 
@@ -434,12 +438,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divStepCell">
                                     12.C.2
                                 </div>
                             </td>
-                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
                                 <div class="divAttackPatternCell">
                                     <p class="p_attack_pattern_header"> Tactic </p>
                                     <a class="a_attack_pattern_link" 
@@ -451,7 +455,7 @@
                                     </a>
                                 </div>
                             </td>
-                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
                                 <table style="width: 100%; height: 100%;">
                                     <tbody>
                                             <tr 
@@ -661,6 +665,760 @@
                                     <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbon Black-APT29-13956.png" 
                                         class="img_big"
                                         id="img__12_c_2_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+        </div>
+        <div id="div_apt3_summary" style="display: none; flex-direction: row; margin-bottom: 50px;">
+            <table class="mt-1 w-75 mx-auto">
+                <tbody>
+                    <tr>
+                        <td colspan=3 style="width: 100%">
+                            <h2 class="text-center">APT3</h2>
+                        </td>
+                    </tr>
+                        <tr class="text-center text-white bg-dark">
+                            <td style="width: 10%;"> 
+                                Step 
+                            </td>
+                            <td style="width: 25%;">
+                                ATT&CK Pattern
+                            </td>
+                            <td style="width: 65%;">
+                                <table class="w-100">
+                                    <tr>
+                                        <td style="width: 30%;"> Detection Type </td>
+                                        <td style="width: 70%;"> Detection Note </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    2.H.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="discovery.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Discovery (TA0007)
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_2_h_1_21_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="2_h_1_21" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_2_h_1_21_0"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        The capability enriched reg.exe with the correct ATT&CK Technique (T1012 - Query Registry).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_2_h_1_21_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="2_h_1_21" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_apt3_2_h_1_21_1"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        Telemetry within the process tree showed cmd.exe executing reg.exe with command-line arguments.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    6.A.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="discovery.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Discovery (TA0007)
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_6_a_1_35_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="6_a_1_35" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_6_a_1_35_0"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        The capability enriched reg.exe with the correct ATT&CK Technique (T1012 - Query Registry).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_6_a_1_35_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="6_a_1_35" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_apt3_6_a_1_35_1"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        Telemetry showed cmd.exe executing reg.exe with command-line arguments.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    12.E.1.7
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="discovery.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Discovery (TA0007)
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_12_e_1_7_77_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="12_e_1_7_77" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell">
+                                                    <a class="false_anchor" id="fa_apt3_12_e_1_7_77_0"></a>
+                                                        None
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell">
+                                                        Minimum detection criteria was not met for this procedure.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    13.C.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="discovery.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Discovery (TA0007)
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_13_c_1_92_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="13_c_1_92" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_13_c_1_92_0"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        The capability enriched reg.exe data with the correct ATT&CK Technique (Query Registry).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_13_c_1_92_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="13_c_1_92" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_apt3_13_c_1_92_1"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        Telemetry showed a process tree containing reg.exe with command-line arguments.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    17.A.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 100%; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="discovery.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Discovery (TA0007)
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 100%; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_17_a_1_118_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="17_a_1_118" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_17_a_1_118_0"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        The capability enriched reg.exe with the correct ATT&CK Technique (T1012 - Query Registry).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_17_a_1_118_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="17_a_1_118" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_apt3_17_a_1_118_1"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        Telemetry within the process tree showed reg.exe executing with command-line arguments.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+
+                    <div id="div_apt3_2_h_1_21_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Cobalt Strike: 'reg query' via cmd to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__2_h_1_21_0_0');"
+                                    onmouseout="hide_large_screenshot('img__2_h_1_21_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" 
+                                        class="img_big"
+                                        id="img__2_h_1_21_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__2_h_1_21_0_1');"
+                                    onmouseout="hide_large_screenshot('img__2_h_1_21_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" 
+                                        class="img_big"
+                                        id="img__2_h_1_21_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_2_h_1_21_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Cobalt Strike: 'reg query' via cmd to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__2_h_1_21_1_0');"
+                                    onmouseout="hide_large_screenshot('img__2_h_1_21_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-2.png" 
+                                        class="img_big"
+                                        id="img__2_h_1_21_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__2_h_1_21_1_1');"
+                                    onmouseout="hide_large_screenshot('img__2_h_1_21_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-2.H.1-1.png" 
+                                        class="img_big"
+                                        id="img__2_h_1_21_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_6_a_1_35_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Cobalt Strike: 'reg query' via cmd to remotely enumerate a specific Registry key on Conficker (10.0.0.5)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__6_a_1_35_0_0');"
+                                    onmouseout="hide_large_screenshot('img__6_a_1_35_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__6_a_1_35_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__6_a_1_35_0_1');"
+                                    onmouseout="hide_large_screenshot('img__6_a_1_35_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" 
+                                        class="img_big"
+                                        id="img__6_a_1_35_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_6_a_1_35_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Cobalt Strike: 'reg query' via cmd to remotely enumerate a specific Registry key on Conficker (10.0.0.5)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__6_a_1_35_1_0');"
+                                    onmouseout="hide_large_screenshot('img__6_a_1_35_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-2.png" 
+                                        class="img_big"
+                                        id="img__6_a_1_35_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__6_a_1_35_1_1');"
+                                    onmouseout="hide_large_screenshot('img__6_a_1_35_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-6.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__6_a_1_35_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_12_e_1_7_77_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Empire: WinEnum module included enumeration of system information via a Registry query
+                            </p>
+                        </div>
+                    </div>
+                    <div id="div_apt3_13_c_1_92_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Empire:'reg query' via PowerShell to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__13_c_1_92_0_0');"
+                                    onmouseout="hide_large_screenshot('img__13_c_1_92_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" 
+                                        class="img_big"
+                                        id="img__13_c_1_92_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__13_c_1_92_0_1');"
+                                    onmouseout="hide_large_screenshot('img__13_c_1_92_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" 
+                                        class="img_big"
+                                        id="img__13_c_1_92_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_13_c_1_92_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Empire:'reg query' via PowerShell to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__13_c_1_92_1_0');"
+                                    onmouseout="hide_large_screenshot('img__13_c_1_92_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-2.png" 
+                                        class="img_big"
+                                        id="img__13_c_1_92_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__13_c_1_92_1_1');"
+                                    onmouseout="hide_large_screenshot('img__13_c_1_92_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-13.C.1-1.png" 
+                                        class="img_big"
+                                        id="img__13_c_1_92_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_17_a_1_118_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Empire: 'reg query' via PowerShell to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__17_a_1_118_0_0');"
+                                    onmouseout="hide_large_screenshot('img__17_a_1_118_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__17_a_1_118_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__17_a_1_118_0_1');"
+                                    onmouseout="hide_large_screenshot('img__17_a_1_118_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" 
+                                        class="img_big"
+                                        id="img__17_a_1_118_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_17_a_1_118_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Empire: 'reg query' via PowerShell to enumerate a specific Registry key
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__17_a_1_118_1_0');"
+                                    onmouseout="hide_large_screenshot('img__17_a_1_118_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-2.png" 
+                                        class="img_big"
+                                        id="img__17_a_1_118_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__17_a_1_118_1_1');"
+                                    onmouseout="hide_large_screenshot('img__17_a_1_118_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/CB-17.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__17_a_1_118_1_1"
                                     />
                                 </a>
                                 <br>
