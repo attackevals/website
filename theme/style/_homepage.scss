@@ -174,7 +174,7 @@
   height: 100%;
 }
 
-#img_high-speed-binary {
+#img_world-puzzle {
   width: 100%;
   height: 100%;
 }
@@ -201,4 +201,86 @@
 
 .hbspt-form .hs-form-iframe {
   width: 100% !important;
+}
+
+.div-search {
+  margin: auto;
+  // width: 650px;
+  width: 100%;
+  position: relative;
+
+  .search-results {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+
+    .btn-search {
+      display: none;
+      width: 100% !important; 
+      color: black; 
+      border-color: #ced4da; 
+      background-color: white;
+    }
+  }
+}
+
+.img-search {
+  max-height:50px; 
+  width: auto;
+}
+
+.div-search-img {
+  margin-left: auto;
+  width: 100px;
+  text-align: center;
+}
+
+.div-search-text {
+  text-align: left;
+}
+
+.span-participated {
+  opacity: .8;
+}
+
+
+.div-search-field {
+  // width: 650px;
+  width: 100%;
+  position: relative;
+  .input-search {
+    height: 50px;
+  }
+  div {
+    .img-magnifying {
+      height: 50px;
+      width: 50px;
+      line-height:50px;
+      color: white;
+      background-color: #6241C5;
+    }
+  }
+}
+
+.search-label {
+  float: left;
+  font-size: 1.2rem;
+  font-family: "Gilroy", Arial, sans-serif;
+}
+
+.round-img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-center-banner {
+  position:absolute;
+  width: 100%;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6241C5;
+  color: white;
 }

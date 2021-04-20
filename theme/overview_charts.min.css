@@ -51,7 +51,7 @@
                       vertical-align: bottom; }
 
                       .aLegendExport-oc {
-                        font-size: 13px; }
+                        font-size: 1rem; }
 
                         .divCharts-oc {
                           margin-top: 5px;
@@ -94,6 +94,11 @@
   z-index: 10; }
 
   .legend-block {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -102,7 +107,7 @@
       margin-left: 5px; }
       .legend-block .legend-container svg {
         height: auto;
-        width: 205px;
+        width: 180px;
         margin: auto; }
         .legend-block .legend-container svg .legend-item {
           font-size: 14px;
@@ -110,19 +115,130 @@
           font-weight: 400;
           letter-spacing: 0.5pt; }
 
-.grid path {
-  stroke-width: 0; }
+.chart-axis-label {
+  font-size: 14px;
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5pt; }
 
-  .grid line {
-    stroke: lightgrey;
-    stroke-opacity: 0.4;
-    shape-rendering: crispEdges; }
+  .grid path {
+    stroke-width: 0; }
 
-    .xTickCenter {
-      transform: translate(-15px, 50px) rotate(-65deg); }
+    .grid line {
+      stroke: lightgrey;
+      stroke-opacity: 0.4;
+      shape-rendering: crispEdges; }
 
-      .xTickLeft {
-        transform: translate(-20px, 50px) rotate(-65deg); }
+      .xTickCenter {
+        transform: translate(-15px, 40px) rotate(-45deg); }
 
-        .xTickRight {
-          transform: translate(-10px, 50px) rotate(-65deg); }
+        .xTickLeft {
+          transform: translate(-20px, 40px) rotate(-45deg); }
+
+          .xTickRight {
+            transform: translate(-2px, 40px) rotate(-45deg); }
+
+            .results-graphs {
+              background-color: #f0f1f2;
+              width: 100% !important; }
+
+              .table-evaluationSummary {
+                table-layout: fixed;
+                width: 100%;
+                text-align: center;
+                font-size: 14px;
+                border-collapse: separate;
+                border-spacing: 0 8px; }
+
+                .table-evaluationSummaryBody {
+                  table-layout: fixed;
+                  width: 100%;
+                  text-align: center;
+                  font-size: 14px;
+                  border-collapse: separate;
+                  border-spacing: 8px 8px; }
+
+                  .trth-evaluationSummary {
+                    background-color: #1d252c;
+                    color: white;
+                    line-height: 30px; }
+                    .trth-evaluationSummary th {
+                      font-weight: normal !important; }
+
+.td-evaluationSummaryActiveRound {
+  line-height: 75px;
+  border: 1px solid #6241c5;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1.2rem; }
+  .td-evaluationSummaryActiveRound a {
+    color: #6241c5;
+    text-decoration: underline; }
+    .td-evaluationSummaryActiveRound a:hover {
+      color: #6241c5; }
+
+.td-evaluationSummaryActive {
+  line-height: 75px;
+  border: 1px solid #6241c5;
+  border-radius: 5px;
+  font-size: 1.2rem; }
+
+  .td-evaluationSummaryInactive {
+    line-height: 75px;
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    color: #b2b2b2;
+    font-size: 1.2rem; }
+
+    .td-evaluationSummaryInactiveRound {
+      line-height: 75px;
+      border: 1px solid #b2b2b2;
+      border-radius: 5px;
+      color: #b2b2b2;
+      font-size: 1.2rem; }
+
+      .div_finder_cell {
+        border-top: 2px solid lightgray;
+        border-left: 2px solid lightgray;
+        padding: 10px;
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+
+        .div_finder_cell:hover {
+          cursor: pointer;
+          background-color: lavender; }
+
+          .div_finder_substep_cell {
+            display: none;
+            border-top: 2px solid lightgray;
+            border-right: 2px solid lightgray;
+            padding: 10px;
+            font-size: 1.1rem;
+            word-wrap: break-word;
+            word-break: break-word; }
+
+            .lineHeightInherit {
+              line-height: inherit !important; }
+
+              .p_procedure_criteria {
+                margin-left: 25px; }
+
+                .not_in_scope {
+                  color: lightgray; }
+
+                  .not_in_scope:hover {
+                    cursor: default !important; }
+
+                    .div_eval_summary_cell {
+                      display: flex;
+                      flex-direction: column; }
+
+                      .tooltip-box {
+                        background-color: white;
+                        border: solid;
+                        border-color: #6241c5;
+                        border-width: 2px;
+                        border-radius: 5px;
+                        padding: 5px; }

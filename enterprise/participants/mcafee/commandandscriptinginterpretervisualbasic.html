@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-62667723-5'></script><script src='/theme/scripts/analytics.js'></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
+
+    <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?e682b0b0">
+</head>
+
+<body>
+    <header class='pb-5'>
+        <nav class='navbar navbar-expand-lg navbar-light fixed-top box-shadow-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto'>
+            
+            <li class="dropdown-submenu">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/methodology-overview.html">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                        
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Wizard Spider and <br> Sandworm (2021)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/participants/">
+                            View All Participants
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                            <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href='/technique_comparison.html'>Technique Comparison Tool </a>
+                    <a class="dropdown-item" href='/participant_comparison.html'>Participant Comparison Tool </a>
+                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
+                        ATT&CK Arsenal
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a> -->
+                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                        Emulation Plan Library 
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>  
+            </li>
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations.html">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about.html">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ.html">FAQ</a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated.html'><strong>Get Evaluated</strong></a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2021 ATT&CK Evaluations for Enterprise Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
+
+</header>
+<div id='content-width-lock'>
+    <div id='content'>
+<div class='divProcedureSummaryBody-techsummary'>
+    <div style='width: 100%; padding-top: 20px;'>
+        <table style='width: 100%;'>
+            <tr>
+                <td style='width: 100%;'>
+                    <div style="padding: 0px; width: 100%;"> 
+                        <span class="spanBreadcrumbs-results"> 
+                            <a href='/'>Home</a> &nbsp;>&nbsp; 
+                            <a href='/methodology-overview.html'>Enterprise</a> &nbsp;>&nbsp;
+                            <a href='/enterprise/participants/'>Participants</a> &nbsp;>&nbsp;
+                            <a href='/enterprise/participants/mcafee/' id='aOverviewBreadcrumbVendorname'>McAfee</a> &nbsp;>
+                            &nbsp;Command and Scripting Interpreter: Visual Basic (T1059.005)
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table class='tableMain-techsummary'>
+            <tr>
+                <td class='tdMainLeftPane-techsummary'>
+                    <table class='tableHeaderLegend-techsummary'>
+                        <tr>
+                            <td class='tdMainLabel-techsummary'>
+                                <h4 class="h4-summary">SUBTECHNIQUE RESULTS</h4>
+                                <h2>Command and Scripting Interpreter: Visual Basic (T1059.005)
+                                    <!-- <span class='tdInnerDetectionNotesSum-techsummary'>
+                                        <a class='aFootnote' href='javascript:void(0);'><i class="fas fa-info-circle"></i>
+                                            <span class='spanPopup-footnotes' onclick='return false;' href='#'>
+                                                <strong style="font-size:16px">Subtechnique Page Information</strong><br />
+                                                <hr style="border: 2px solid black;" />
+                                                The ATT&CK subtechnique page displays all tested subtechniques belonging to that subtechnique, as well as all procedures and their respective detections. The procedures are grouped by their technique. The Procedure column contains a description of how the technique was tested. The Step column is where in the operational flow the procedure occurred. Click the Step Number to view it in the Operational Flow panel. Detections are classified by one or more Detection Types, summarized by the Detection Notes, and may be supported by Screenshots. The Operational Flow panel provides the context around when a procedure was executed by showing all steps of the evaluation, including the tactics, techniques and procedures of the executed steps.
+                                            </span>
+                                        </a>
+                                    </span>      -->
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br />
+                                <div class='divDisclaimer-techsummary'>
+                                    <em>MITRE Engenuity does not assign scores, rankings, or ratings. The evaluation results are available to the public, so other organizations may provide their own analysis and interpretation - these are not endorsed or validated by MITRE.</em>
+                                </div>
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+            </tr>
+        </table>
+    </div>
+    <div id='div_filter_btns' style="display: flex; flex-direction: row; justify-content: center; font-size: 1.3rem;">
+        See subtechnique results for:&nbsp;
+            <div style="margin: 0 15px 0 15px;">
+                <input type="checkbox" id="chk_carbanak_fin7" onclick="filterResultsByRound(this.parentNode.parentNode);" data-adversary="carbanak_fin7">
+                <label for="chk_carbanak_fin7"">Carbanak+FIN7</label>
+            </div>
+            <div style="margin: 0 15px 0 15px;">
+                <input type="checkbox" id="chk_apt29" onclick="filterResultsByRound(this.parentNode.parentNode);" data-adversary="apt29">
+                <label for="chk_apt29"">APT29</label>
+            </div>
+            <div style="margin: 0 15px 0 15px;">
+                <input type="checkbox" id="chk_apt3" onclick="filterResultsByRound(this.parentNode.parentNode);" data-adversary="apt3">
+                <label for="chk_apt3"">APT3</label>
+            </div>
+    </div>
+    <br />
+        <div id="div_carbanak_fin7_summary" style="display: none; flex-direction: row; margin-bottom: 50px;">
+            <table class="mt-1 w-75 mx-auto">
+                <tbody>
+                    <tr>
+                        <td colspan=3 style="width: 100%">
+                            <h2 class="text-center">Carbanak+FIN7</h2>
+                        </td>
+                    </tr>
+                        <tr class="text-center text-white bg-dark">
+                            <td style="width: 10%;"> 
+                                Step 
+                            </td>
+                            <td style="width: 25%;">
+                                ATT&CK Pattern
+                            </td>
+                            <td style="width: 65%;">
+                                <table class="w-100">
+                                    <tr>
+                                        <td style="width: 30%;"> Detection Type </td>
+                                        <td style="width: 70%;"> Detection Note </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    1.A.3
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="execution.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Execution (TA0002)
+                                        </p>
+                                    </a>
+                                    <p class="p_attack_pattern_header"> Technique </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="commandandscriptinginterpreter.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Command and Scripting Interpreter (T1059) 
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_3_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_3" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_3_0"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_3_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_3" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_3_1"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Technique detection named "T1059" was generated when an Office application launched a child process that can execute scripts.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_3.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_3_2" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_3" 
+                                                data-detection_num="2"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_3_2"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Technique detection named "Command and Scripting Interpreter" (Yellow) was generated when unprotected.vbe was spawned from wscript.exe.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_3_3" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_3" 
+                                                data-detection_num="3"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_3_3"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                                (Delayed)
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        A Technique detection named "Scripting" was generated when scripting content was found during sandbox analysis of 1-list.rtf.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_4.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    1.A.7
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="execution.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Execution (TA0002)
+                                        </p>
+                                    </a>
+                                    <p class="p_attack_pattern_header"> Technique </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="commandandscriptinginterpreter.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Command and Scripting Interpreter (T1059) 
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_7_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_7" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_7_0"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_2.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[3]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_1_a_7_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="1_a_7" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_1_a_7_1"></a>
+                                                        Tactic
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        A Tactic detection named "Execution" (Orange) was generated when wscript.exe executed starter.vbs.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_3.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    8.A.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="execution.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Execution (TA0002)
+                                        </p>
+                                    </a>
+                                    <p class="p_attack_pattern_header"> Technique </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="commandandscriptinginterpreter.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Command and Scripting Interpreter (T1059) 
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_8_a_1_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="8_a_1" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_8_a_1_0"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        A Technique detection named "Executed script with wscript" was generated when wscript.exe spawned Java-Update.exe.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_8_a_1_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="8_a_1" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_8_a_1_1"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_9.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_8.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    11.A.4
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="execution.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Execution (TA0002)
+                                        </p>
+                                    </a>
+                                    <p class="p_attack_pattern_header"> Technique </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="commandandscriptinginterpreter.html?adversaries=carbanak_fin7"
+                                    >
+                                        <p>
+                                            Command and Scripting Interpreter (T1059) 
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_11_a_4_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="11_a_4" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_11_a_4_0"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        A Technique detection named "Executed suspicious JavaScript or VBScript via mshta application" (Orange) was generated when suspicoius script was executed via mshta.exe.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_11_a_4_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="11_a_4" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_11_a_4_1"></a>
+                                                        Technique
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Technique detection named "MSHTA acting as VBScript interpreter" (Yellow) was generated when mshta.exe was used to execute in-line VBScript.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="carbanak_fin7_11_a_4_2" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="carbanak_fin7" 
+                                                data-substep="11_a_4" 
+                                                data-detection_num="2"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_carbanak_fin7_11_a_4_2"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_8.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_6.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[3]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+
+                    <div id="div_carbanak_fin7_1_a_3_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes unprotected.vbe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_3_0_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_3_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_2.png" 
+                                        class="img_big"
+                                        id="img__1_a_3_0_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_1_a_3_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes unprotected.vbe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_3.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_3_1_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_3_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_3.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_3.png" 
+                                        class="img_big"
+                                        id="img__1_a_3_1_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_1_a_3_2" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes unprotected.vbe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_3_2_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_3_2_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3.png" 
+                                        class="img_big"
+                                        id="img__1_a_3_2_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_3_2_1');"
+                                    onmouseout="hide_large_screenshot('img__1_a_3_2_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_1.png" 
+                                        class="img_big"
+                                        id="img__1_a_3_2_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_1_a_3_3" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes unprotected.vbe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Sandbox
+                                        </li>
+                                </ul>
+                                <p class="p_detection_detail_header"> Footnotes </p>
+                                <ul>
+                                        <li>
+                                            Delayed results due to sandbox execution
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_4.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_3_3_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_3_3_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_4.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.3_4.png" 
+                                        class="img_big"
+                                        id="img__1_a_3_3_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_1_a_7_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes starter.vbs
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_7_0_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_7_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_1.png" 
+                                        class="img_big"
+                                        id="img__1_a_7_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_2.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_7_0_1');"
+                                    onmouseout="hide_large_screenshot('img__1_a_7_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_2.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_2.png" 
+                                        class="img_big"
+                                        id="img__1_a_7_0_1"
+                                    />
+                                </a>
+                                <br>
+                                [3]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_7_0_2');"
+                                    onmouseout="hide_large_screenshot('img__1_a_7_0_2');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7.png" 
+                                        class="img_big"
+                                        id="img__1_a_7_0_2"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_1_a_7_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe executes starter.vbs
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_3.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__1_a_7_1_0');"
+                                    onmouseout="hide_large_screenshot('img__1_a_7_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_3.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_1.A.7_3.png" 
+                                        class="img_big"
+                                        id="img__1_a_7_1_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_8_a_1_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe spawns Java-Update.exe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            File Monitoring
+                                        </li>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__8_a_1_0_0');"
+                                    onmouseout="hide_large_screenshot('img__8_a_1_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1.png" 
+                                        class="img_big"
+                                        id="img__8_a_1_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__8_a_1_0_1');"
+                                    onmouseout="hide_large_screenshot('img__8_a_1_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_1.png" 
+                                        class="img_big"
+                                        id="img__8_a_1_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_8_a_1_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                wscript.exe spawns Java-Update.exe
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_9.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__8_a_1_1_0');"
+                                    onmouseout="hide_large_screenshot('img__8_a_1_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_9.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_9.png" 
+                                        class="img_big"
+                                        id="img__8_a_1_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_8.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__8_a_1_1_1');"
+                                    onmouseout="hide_large_screenshot('img__8_a_1_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_8.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_8.A.1_8.png" 
+                                        class="img_big"
+                                        id="img__8_a_1_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_11_a_4_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                mshta.exe executes an embedded VBScript payload
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_4_0_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_4_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4.png" 
+                                        class="img_big"
+                                        id="img__11_a_4_0_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_11_a_4_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                mshta.exe executes an embedded VBScript payload
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_4_1_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_4_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_1.png" 
+                                        class="img_big"
+                                        id="img__11_a_4_1_0"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_carbanak_fin7_11_a_4_2" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Criteria </p>
+                            <p class="detection_detail_text">
+                                mshta.exe executes an embedded VBScript payload
+                            </p>
+                                <p class="p_detection_detail_header"> Data Sources </p>
+                                <ul>
+                                        <li>
+                                            Process Monitoring
+                                        </li>
+                                        <li>
+                                            DLL Monitoring
+                                        </li>
+                                </ul>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_4_2_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_4_2_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_5.png" 
+                                        class="img_big"
+                                        id="img__11_a_4_2_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_8.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_4_2_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_4_2_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_8.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_8.png" 
+                                        class="img_big"
+                                        id="img__11_a_4_2_1"
+                                    />
+                                </a>
+                                <br>
+                                [3]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_6.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_4_2_2');"
+                                    onmouseout="hide_large_screenshot('img__11_a_4_2_2');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_6.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_11.A.4_6.png" 
+                                        class="img_big"
+                                        id="img__11_a_4_2_2"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+        </div>
+        <div id="div_apt29_summary" style="display: none; flex-direction: row; margin-bottom: 50px;">
+            <table class="mt-1 w-75 mx-auto">
+                <tbody>
+                    <tr>
+                        <td colspan=3 style="width: 100%">
+                            <h2 class="text-center">APT29</h2>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td colspan=3 style="width: 100%">
+                                <hr>
+                                <h5 class="text-center">The subtechnique was not in scope.</h5>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="div_apt3_summary" style="display: none; flex-direction: row; margin-bottom: 50px;">
+            <table class="mt-1 w-75 mx-auto">
+                <tbody>
+                    <tr>
+                        <td colspan=3 style="width: 100%">
+                            <h2 class="text-center">APT3</h2>
+                        </td>
+                    </tr>
+                        <tr class="text-center text-white bg-dark">
+                            <td style="width: 10%;"> 
+                                Step 
+                            </td>
+                            <td style="width: 25%;">
+                                ATT&CK Pattern
+                            </td>
+                            <td style="width: 65%;">
+                                <table class="w-100">
+                                    <tr>
+                                        <td style="width: 30%;"> Detection Type </td>
+                                        <td style="width: 70%;"> Detection Note </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 10%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divStepCell">
+                                    11.A.1
+                                </div>
+                            </td>
+                            <td style="width: 25%; height: 1px; padding: 4px 0 4px 0;">
+                                <div class="divAttackPatternCell">
+                                    <p class="p_attack_pattern_header"> Tactic </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="execution.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Execution (TA0002)
+                                        </p>
+                                    </a>
+                                    <p class="p_attack_pattern_header"> Technique </p>
+                                    <a class="a_attack_pattern_link" 
+                                        href="commandandscriptinginterpreter.html?adversaries=apt3"
+                                    >
+                                        <p>
+                                            Command and Scripting Interpreter (T1059) 
+                                        </p>
+                                    </a>
+                                </div>
+                            </td>
+                            <td style="width: 65%; height: 1px; padding: 4px 0 4px 0;">
+                                <table style="width: 100%; height: 100%;">
+                                    <tbody>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_0" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="0"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_0"></a>
+                                                        Specific Behavior
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
+                                                        A Specific Behavior alert was generated for decoding and running encoded scripting sources from another process (wscript.exe). The alert was tagged with correct ATT&CK Tactic (Defense Evasion, Execution) and Techniques (PowerShell).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_1" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="1"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_1"></a>
+                                                        Specific Behavior
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Specific Behavior alert was generated for PowerShell commands being executed from another process (wscript.exe). The alert was tagged with correct ATT&CK Tactic (Execution) and Techniques (PowerShell).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_2" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="2"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_2"></a>
+                                                        Specific Behavior
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Specific Behavior alert was generated for PowerShell execution with a very long command line. The alert was tagged with correct ATT&CK Tactics (Defense Evasion, Execution) and Techniques (Scripting, PowerShell).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_3" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="3"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_3"></a>
+                                                        Specific Behavior
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        A Specific Behavior alert was generated for the VBScript interpreter launching a suspicious PowerShell process. The alert was tagged with the correct ATT&CK Tactics (Defense Evasion, Execution) and Techniques (Scripting, PowerShell).
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_4" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="4"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_4"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        The capability enriched powershell.exe with the correct ATT&CK Tactic (Execution) and Techniques (PowerShell) and a suspicious indicator that a PowerShell command was executed.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_5" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="5"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_5"></a>
+                                                        Enrichment
+                                                        <span class="span_modifiers">
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
+                                                        The capability enriched wscript.exe with the correct ATT&CK Tactics (Defense Evasion, Execution) and Techniques (Scripting, PowerShell) and a suspicious indicator that the VBScript interpreter was executed.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr 
+                                                class="tr_detection_row" 
+                                                id="apt3_11_a_1_59_6" 
+                                                onclick="show_detection_details(this);" 
+                                                data-adversary="apt3" 
+                                                data-substep="11_a_1_59" 
+                                                data-detection_num="6"
+                                            >
+                                                <td class="tdDetectionType">
+                                                            <div class="divDetectionTypeCell" style="border-top: 1px solid lightgray;">
+                                                    <a class="false_anchor" id="fa_apt3_11_a_1_59_6"></a>
+                                                        Telemetry
+                                                        <span class="span_modifiers">
+                                                                (Tainted)
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td class="tdDetectionNote">
+                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
+                                                        Telemetry showed wscript.exe (executing autoupdate.vbs) then spawning powershell.exe. The telemetry was tainted by a trace detection on wscript.exe.
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[1]
+                                                            </a>
+                                                            <a  
+                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                                                target="_blank"
+                                                                class="ml-1" style="text-decoration: none;">[2]
+                                                            </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+
+                    <div id="div_apt3_11_a_1_59_0" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_0_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_0_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_0_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_0_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_0_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_0_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_1" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_1_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_1_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_1_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_1_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_1_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_1_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_2" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_2_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_2_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_2_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_2_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_2_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_2_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_3" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_3_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_3_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_3_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_3_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_3_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_3_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_4" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_4_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_4_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_4_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_4_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_4_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_4_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_5" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_5_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_5_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_5_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_5_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_5_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_5_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+                    <div id="div_apt3_11_a_1_59_6" class="mt-1 div_detection_details">
+                        <div class="w-100 text-right p-3">
+                            <a href="javascript:void(0);" onclick="close_detection_detail(this)"><i class="fas fa-times" style="font-size: 30px;"></i></a>
+                        </div>
+                        <div class="mx-auto bg-white p-3 div_inner_detection_detail">
+                            <p class="p_detection_detail_header"> Procedure </p>
+                            <p class="detection_detail_text">
+                                Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)
+                            </p>
+                                [1]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_6_0');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_6_0');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-1.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_6_0"
+                                    />
+                                </a>
+                                <br>
+                                [2]
+                                <br>
+                                <a  href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png"
+                                    target="_blank"
+                                    onmouseover="show_large_screenshot('img__11_a_1_59_6_1');"
+                                    onmouseout="hide_large_screenshot('img__11_a_1_59_6_1');"
+                                >
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" class="img_preview" />
+                                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/MC-11.A.1-5.png" 
+                                        class="img_big"
+                                        id="img__11_a_1_59_6_1"
+                                    />
+                                </a>
+                                <br>
+                        </div>
+                    </div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    let current_detection_row_id;
+    let current_detection_detail_id;
+    let selected_rounds;
+    
+    document.onload = load_initial();
+
+    function load_initial() {
+        // Check if there is a selected row and detail in the url.
+        let url_string = window.location.href;
+        let url_obj = new URL(url_string);
+        let div_filter_btns = document.getElementById('div_filter_btns');
+
+        current_detection_row_id = url_obj.hash ? url_obj.hash.slice(1).toLowerCase() : "";
+        current_detection_detail_id = current_detection_row_id ? "div_" + current_detection_row_id : "";
+        selected_rounds = url_obj.searchParams.get("adversaries") ? url_obj.searchParams.get("adversaries").toLowerCase().split(',') : null;
+
+        if (selected_rounds) {
+            for (let round of selected_rounds) {
+                document.getElementById('chk_' + round).checked = true;
+                document.getElementById(`div_${round}_summary`).style.display = "flex";
+            }
+        }
+        else {
+            selected_rounds = []
+            for (let chk_btn_div of div_filter_btns.children) {
+                chk_btn_div.firstElementChild.checked = true;
+                document.getElementById(`div_${chk_btn_div.firstElementChild.getAttribute('data-adversary')}_summary`).style.display = "flex";
+                selected_rounds.push(chk_btn_div.firstElementChild.getAttribute('data-adversary'))
+            }
+        }
+
+        appendSelectedRoundsToPatternLinks();
+
+        if (current_detection_detail_id) {
+            show_detection_details(document.getElementById(current_detection_row_id));
+        }
+    }
+
+    function update_query_string() {
+        let url = window.location.href;
+        let query_string = selected_rounds.length > 0 ? '?adversaries=' + selected_rounds.join(',') : url.split("?")[0].split("#")[0];
+
+        if (current_detection_row_id) {
+            query_string += '#' + current_detection_row_id;
+        }
+
+        window.history.replaceState({}, "", query_string);
+    }
+
+    function show_large_screenshot(big_img_id) {
+        document.getElementById(big_img_id).style.display = "block";
+    }
+
+    function hide_large_screenshot(big_img_id) {
+        document.getElementById(big_img_id).style.display = "none";
+    }
+
+    function show_detection_details(tr) {
+        let substep = tr.getAttribute("data-substep");
+        let detection_num = tr.getAttribute("data-detection_num");
+        let adversary = tr.getAttribute("data-adversary");
+        let new_detection_detail_id = "div_" + adversary + "_" + substep + "_" + detection_num;
+
+        // Update the row styles and current id
+        if (current_detection_row_id) {
+            document.getElementById(current_detection_row_id).classList.remove('selected_row');
+        }
+        tr.classList.add('selected_row');
+        current_detection_row_id = tr.id;
+
+        // Update the detail styles and current id
+        if (current_detection_detail_id) {
+            document.getElementById(current_detection_detail_id).style.display = "none";
+        }
+        document.getElementById(new_detection_detail_id).style.display = "block";
+        current_detection_detail_id = new_detection_detail_id;
+    
+        update_query_string();
+    }
+
+    function close_detection_detail(anchor) {
+        let div_to_close = anchor.parentNode.parentNode;
+        div_to_close.style.display = 'none';
+        document.getElementById(current_detection_row_id).classList.remove('selected_row');
+
+        current_detection_detail_id = "";
+        current_detection_row_id = "";
+
+        update_query_string();
+    }
+
+    function filterResultsByRound(div_filter_btns) {
+        selected_rounds = [];
+        for (let div_chk of div_filter_btns.children) {
+            let elem = div_chk.firstElementChild;
+            if (elem.checked) {
+                selected_rounds.push(elem.getAttribute('data-adversary'));
+                document.getElementById(`div_${elem.getAttribute('data-adversary')}_summary`).style.display = 'flex';
+            }
+            else {
+                document.getElementById(`div_${elem.getAttribute('data-adversary')}_summary`).style.display = 'none';
+            }
+        }
+        appendSelectedRoundsToPatternLinks();
+        update_query_string();
+    }
+
+    function appendSelectedRoundsToPatternLinks() {
+        let patternLinks = document.querySelectorAll(".a_attack_pattern_link");
+        patternLinks.forEach(link => {
+            urlAndFilters = link.href.split("=");
+            urlAndFilters[urlAndFilters.length -1] = selected_rounds.join(',')
+            newPatternLink = urlAndFilters.join("=");
+            link.href = newPatternLink;
+        })
+    }
+</script>
+
+</div>
+</div>
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use.html">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy.html">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2021, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact.html" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

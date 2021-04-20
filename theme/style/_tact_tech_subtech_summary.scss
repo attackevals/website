@@ -1,0 +1,166 @@
+html {
+    scroll-padding-top: 250px;
+}
+
+.tr_detection_row:hover {
+    cursor: pointer;
+    background-color: lavender;
+}
+
+.tdDetectionType, .tdDetectionNote {
+    height: 1px; // Gives child element a height to use for 100% height.
+    padding: 0;
+}
+
+.tdDetectionType {
+    width: 25%;
+}
+
+.tdAttackPattern {
+    width: 25%;
+}
+
+.tdDetectionNote {
+    width: 50%;
+}
+
+.divStepCell {
+    height: 100%;
+    border: 1px solid #6241c5; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.divDetectionTypeCell {
+    border: 1px solid #6241c5;
+    height: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+.divAttackPatternCell {
+    height: 100%;
+    border: 1px solid #6241c5; 
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.divDetectionNoteCell {
+    border: 1px solid #6241c5;
+    height: 100%;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.div_detection_details {
+    width: 22%;
+    border: 1px solid #6241c5; 
+    margin-left: 20px;
+    background-color: lightgray;
+    height: fit-content;
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 150px;
+    display: none;
+}
+
+.div_inner_detection_detail {
+    width: 90%; 
+    border: 1px solid #6241c5;
+    max-height: 650px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.p_attack_pattern_header {
+    color: gray;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.a_attack_pattern_link {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.a_attack_pattern_link:hover {
+    text-decoration: none;
+    margin-left: 20px;
+}   
+
+.p_detection_detail_header {
+    color: #6241c5;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.detection_detail_text {
+    font-size: 1rem;
+    padding-left: 20px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.img_preview {
+    max-width: 200px;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.img_big {
+    max-width: 1000px;
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    border: 3px solid black;
+}
+
+.span_modifiers {
+    font-size: 1rem;
+}
+
+.selected_row {
+    background-color: lightgray;
+}
+
+.false_anchor {
+    position: relative;
+    top:-600px;
+    display: block;
+    height: 0;
+    width:0
+}
+
+.a_tacttech_text {
+    font-size: .75rem;
+    text-decoration: none;
+    margin-top: .5rem !important;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }

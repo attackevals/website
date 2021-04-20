@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-62667723-5'></script><script src='/theme/scripts/analytics.js'></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
+
+    <link rel="stylesheet" type="text/css" href="/theme/participants_enterprise.min.css?f9ee8e52">
+</head>
+
+<body>
+    <header class='pb-5'>
+        <nav class='navbar navbar-expand-lg navbar-light fixed-top box-shadow-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto'>
+            
+            <li class="dropdown-submenu">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/methodology-overview.html">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                        
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Wizard Spider and <br> Sandworm (2021)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/participants/">
+                            View All Participants
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                            <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2020)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href='/technique_comparison.html'>Technique Comparison Tool </a>
+                    <a class="dropdown-item" href='/participant_comparison.html'>Participant Comparison Tool </a>
+                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
+                        ATT&CK Arsenal
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a> -->
+                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                        Emulation Plan Library 
+                        &nbsp;<i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>  
+            </li>
+            <li class='nav-item dropdown'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations.html">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about.html">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ.html">FAQ</a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated.html'><strong>Get Evaluated</strong></a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2021 ATT&CK Evaluations for Enterprise Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
+
+</header>
+<div id='content-width-lock'>
+    <div id='content'><br>
+<div class="divEvaluationSummaryBody">
+    <div style="padding: 0px; width: 100%;"> 
+        <span class="spanBreadcrumbs-results"> 
+            <a href='/'>Home</a> &nbsp;>&nbsp; Enterprise Participants
+        </span>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <h2>Participants</h2>
+                    <p>
+                        MITRE Engenuity does not assign scores, rankings, or ratings. The evaluation results are available to the public, so other organizations may provide their own analysis and interpretation - these are not endorsed or validated by MITRE Engenuity.
+                    </p>
+                </div>
+                <div class="col-8">
+                    <div class="filters float-right">
+                        <div class="d-flex flex-row">
+                            <div style="margin: auto;">
+                                Filter By:
+                            </div>
+                            <div id="rounds-list" class="dropdown-check-list ml-4" tabindex="100">
+                                <span class="anchor" id="span-round">Evaluations</span>
+                                <ul id="round-items" class="items">
+                                        <li><input type="checkbox" onclick="applyFilters()" data-round="carbanak_fin7" checked/> Carbanak+FIN7 (2020) </li>
+                                        <li><input type="checkbox" onclick="applyFilters()" data-round="apt29" checked/> APT29 (2019) </li>
+                                        <li><input type="checkbox" onclick="applyFilters()" data-round="apt3" checked/> APT3 (2018) </li>
+                                </ul>
+                            </div>
+                            <div class="custom-control custom-checkbox ml-4" style="margin: auto;">
+                                <input type="checkbox" class="custom-control-input" id="protectionCheck" onchange="applyFilters()">
+                                <label class="custom-control-label" for="protectionCheck">Protection Results</label>
+                            </div>
+                            <div class="custom-control custom-checkbox ml-4" style="margin: auto;">
+                                <input type="checkbox" class="custom-control-input" id="linuxCheck" onchange="applyFilters()">
+                                <label class="custom-control-label" for="linuxCheck">Linux Environment</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Displayed rounds: 
+                        <span class="filter-box" id="display-carbanak_fin7" onclick="removeFilter(this)"> Carbanak+FIN7 (2020) <i class="fas fa-times" style="padding-left: 5px;"></i></span>
+                        <span class="filter-box" id="display-apt29" onclick="removeFilter(this)"> APT29 (2019) <i class="fas fa-times" style="padding-left: 5px;"></i></span>
+                        <span class="filter-box" id="display-apt3" onclick="removeFilter(this)"> APT3 (2018) <i class="fas fa-times" style="padding-left: 5px;"></i></span>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <div class="input-group" style="max-width: 20%; margin: auto;">
+                        <span class="input-group-prepend">
+                            <div class="input-group-text bg-transparent border-right-0"><i class="fa fa-search"></i></div>
+                        </span>
+                        <input class="form-control py-2 border-left-0 border" oninput="applyFilters()" type="search" placeholder="Participant Search" id="search-participants">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="vendor_cards">
+                <a href='/enterprise/participants/ahnlab/'>
+                    <div id='AhnLab' 
+                        class='EvalCard-results' 
+                        data-tags='ahnlab' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>AhnLab</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/AhnLab_CI.png' alt='AhnLab_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/bitdefender/'>
+                    <div id='Bitdefender' 
+                        class='EvalCard-results' 
+                        data-tags='bitdefender' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Bitdefender</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/LOGO_bitdefender_red_white.png' alt='Bitdefender_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/carbonblack/'>
+                    <div id='CarbonBlack' 
+                        class='EvalCard-results' 
+                        data-tags='carbonblackresponse' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Carbon Black</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/CarbonBlack_logo.jpg' alt='CarbonBlack_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/checkpoint/'>
+                    <div id='CheckPoint' 
+                        class='EvalCard-results' 
+                        data-tags='checkpoint' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Check Point</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/CheckPoint_stacked.png' alt='CheckPoint_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/cisco/'>
+                    <div id='Cisco' 
+                        class='EvalCard-results' 
+                        data-tags='cisco' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Cisco</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Cisco_Logo.png' alt='Cisco_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/crowdstrike/'>
+                    <div id='CrowdStrike' 
+                        class='EvalCard-results' 
+                        data-tags='crowdstrikefalconendpointprotectionstandardbundle' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>CrowdStrike</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/CS_logostacked-red.png' alt='CrowdStrike_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/cycraft/'>
+                    <div id='CyCraft' 
+                        class='EvalCard-results' 
+                        data-tags='cycraft' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>CyCraft</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/CyCraft-Logo_vertical_D.png' alt='CyCraft_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/cybereason/'>
+                    <div id='Cybereason' 
+                        class='EvalCard-results' 
+                        data-tags='cybereason' 
+                        data-had_rolling_eval='True' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Cybereason</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Cybereason_Logo.png' alt='Cybereason_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/cylance/'>
+                    <div id='Cylance' 
+                        class='EvalCard-results' 
+                        data-tags='cylance' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>BlackBerry Cylance</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Cylance_BB_Logo_RGB_Vert_BLK.png' alt='Cylance_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/cynet/'>
+                    <div id='Cynet' 
+                        class='EvalCard-results' 
+                        data-tags='cynet' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Cynet</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Cynet-Logo.png' alt='Cynet_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/eset/'>
+                    <div id='ESET' 
+                        class='EvalCard-results' 
+                        data-tags='eset' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>ESET</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/ESET-logo.png' alt='ESET_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/elastic/'>
+                    <div id='Elastic' 
+                        class='EvalCard-results' 
+                        data-tags='endgameelastic' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Elastic</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/elastic-logo-final.png' alt='Elastic_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/f-secure/'>
+                    <div id='F-Secure' 
+                        class='EvalCard-results' 
+                        data-tags='f-securecountercept' 
+                        data-had_rolling_eval='True' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>F-Secure</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/F-Secure_vertical-logo_RGB_blue.png' alt='F-Secure_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/fidelis/'>
+                    <div id='Fidelis' 
+                        class='EvalCard-results' 
+                        data-tags='fidelis' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Fidelis</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Fidelis_Green_Logo.png' alt='Fidelis_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/fireeye/'>
+                    <div id='FireEye' 
+                        class='EvalCard-results' 
+                        data-tags='fireeye' 
+                        data-had_rolling_eval='True' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>FireEye</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/fireeye-logo.png' alt='FireEye_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/fortinet/'>
+                    <div id='Fortinet' 
+                        class='EvalCard-results' 
+                        data-tags='fortinet' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Fortinet</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Fortinet_Logo_Black-Red.png' alt='Fortinet_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/gosecure/'>
+                    <div id='GoSecure' 
+                        class='EvalCard-results' 
+                        data-tags='gosecurecountertack' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>GoSecure</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure_L_h_red_cmyk.png' alt='GoSecure_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/hansight/'>
+                    <div id='HanSight' 
+                        class='EvalCard-results' 
+                        data-tags='hansight' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>HanSight</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/hansight_logo2.png' alt='HanSight_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/kaspersky/'>
+                    <div id='Kaspersky' 
+                        class='EvalCard-results' 
+                        data-tags='kaspersky' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Kaspersky</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Kaspersky_logotype_green.png' alt='Kaspersky_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/malwarebytes/'>
+                    <div id='Malwarebytes' 
+                        class='EvalCard-results' 
+                        data-tags='malwarebytes' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Malwarebytes</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/malwarebytes_logo.png' alt='Malwarebytes_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/mcafee/'>
+                    <div id='McAfee' 
+                        class='EvalCard-results' 
+                        data-tags='mcafee' 
+                        data-had_rolling_eval='True' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>McAfee</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/mcafee-stacked-logo-no-tag-rgb-20170327.png' alt='McAfee_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/microfocus/'>
+                    <div id='MicroFocus' 
+                        class='EvalCard-results' 
+                        data-tags='microfocus' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Micro Focus</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/ArcSight_blue.png' alt='MicroFocus_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/microsoft/'>
+                    <div id='Microsoft' 
+                        class='EvalCard-results' 
+                        data-tags='microsoftdefender' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Microsoft</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png' alt='Microsoft_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/opentext/'>
+                    <div id='OpenText' 
+                        class='EvalCard-results' 
+                        data-tags='opentext' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Open Text</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/OpenText-EnCase-Wordmark.png' alt='OpenText_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/paloaltonetworks/'>
+                    <div id='PaloAltoNetworks' 
+                        class='EvalCard-results' 
+                        data-tags='paloaltonetworks' 
+                        data-had_rolling_eval='True' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Palo Alto Networks</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Cortex-Logo.png' alt='PaloAltoNetworks_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/rsa/'>
+                    <div id='RSA' 
+                        class='EvalCard-results' 
+                        data-tags='rsa' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>RSA</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/RSA_logo.png' alt='RSA_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/reaqta/'>
+                    <div id='ReaQta' 
+                        class='EvalCard-results' 
+                        data-tags='reaqta' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>ReaQta</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/reaqta_r3.png' alt='ReaQta_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/secureworks/'>
+                    <div id='Secureworks' 
+                        class='EvalCard-results' 
+                        data-tags='secureworks' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,' 
+                        data-had_protections=false 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Secureworks</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Secureworks_Logo_final.png' alt='Secureworks_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/sentinelone/'>
+                    <div id='SentinelOne' 
+                        class='EvalCard-results' 
+                        data-tags='sentinelone' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>SentinelOne</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/sentinelone_icon_onwhite__4_.png' alt='SentinelOne_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/sophos/'>
+                    <div id='Sophos' 
+                        class='EvalCard-results' 
+                        data-tags='sophos' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=false>
+                        <span class='labEvalName-results'>Sophos</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/sophos-logo.png' alt='Sophos_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/symantec/'>
+                    <div id='Symantec' 
+                        class='EvalCard-results' 
+                        data-tags='symantec' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Symantec</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-Logo-APT29.png' alt='Symantec_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/trendmicro/'>
+                    <div id='TrendMicro' 
+                        class='EvalCard-results' 
+                        data-tags='trendmicro' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=true 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Trend Micro</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/TM_logo_red_2c.png' alt='TrendMicro_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/uptycs/'>
+                    <div id='Uptycs' 
+                        class='EvalCard-results' 
+                        data-tags='uptycs' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>Uptycs</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Uptycs_Logo_Stacked.png' alt='Uptycs_Logo' />
+                        </div>
+                    </div>
+                </a>
+                <a href='/enterprise/participants/vmware/'>
+                    <div id='VMware' 
+                        class='EvalCard-results' 
+                        data-tags='carbonblackvmware' 
+                        data-had_rolling_eval='False' 
+                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-had_protections=false 
+                        data-linux_participant=true>
+                        <span class='labEvalName-results'>VMware Carbon Black</span>
+                        <br><br>
+                        <div class='divLogo-results'>
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/VMware-logo.png' alt='VMware_Logo' />
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.onload = parseQueryString()
+
+    function parseQueryString() {
+        var url_string = window.location.href;
+        var urlParams = new URLSearchParams(window.location.search);
+        const roundParams = urlParams.get('rounds')
+        let displayed_rounds_ui = document.querySelectorAll('span.filter-box')
+        let round_filters = document.getElementById('round-items').querySelectorAll('input');
+        if (roundParams) {
+            params = roundParams.split(",");
+            displayed_rounds_ui.forEach(xBox => {
+                boxID = xBox.id.split("-")[1]
+                if(!params.includes(boxID))
+                    xBox.style.display = 'none';
+            })
+
+            round_filters.forEach(checkbox => {
+                if(params.includes(checkbox.dataset.round))
+                    checkbox.checked = true;
+                else
+                    checkbox.checked = false;
+            })
+            applyFilters()
+        }
+    }
+
+    function removeFilter(e) {
+        round_to_filter_out = e.id.split('-')[1]
+        e.style.display = "none";
+        round_filters = document.getElementById('round-items').querySelectorAll('input');
+        round_filters.forEach(checkbox => {
+            if (checkbox.dataset.round == round_to_filter_out) {
+                checkbox.checked = false;
+            }
+        });
+        applyFilters()
+    }
+
+	function executeSearchQuery(searchQuery, vendorCards) {
+        Array.from(vendorCards).forEach(vendorCard => {
+            if (vendorCard.style.display == 'block') {
+                if (vendorCard.dataset.tags.includes(searchQuery)) {
+                    vendorCard.style.display = 'block';
+                } else {
+                    vendorCard.style.display = 'none';
+                }
+            }
+        });
+	}
+
+
+    function applyFilters() {
+        vendorCards = document.getElementById('vendor_cards').getElementsByClassName('EvalCard-results')
+        round_filters = document.getElementById('round-items').querySelectorAll('input');
+        
+        protectionsFilter = $('#protectionCheck').is(':checked');
+        linuxFilter = $('#linuxCheck').is(':checked');
+
+        selected_round_filters = [];
+        round_filters.forEach(checkbox => {
+            if (checkbox.checked) {
+                selected_round_filters.push(checkbox.dataset.round);
+            }
+        });
+        let searchQuery = document.getElementById("search-participants").value;
+        console.log(searchQuery)
+
+        Array.from(vendorCards).forEach(vendorCard => {
+            vendorIncludedInFiltersSelected = false;
+            selected_round_filters.forEach(selected_round => {
+                if(vendorCard.dataset.round_inclusion.includes(selected_round)) {
+                    prots_enabled = (vendorCard.dataset.had_protections == 'true');
+                    linux_enabled = (vendorCard.dataset.linux_participant == 'true');
+                    if(protectionsFilter && linuxFilter) {
+                        if(prots_enabled && linux_enabled) {
+                            vendorIncludedInFiltersSelected = true;
+                        }
+                    }
+                    else if (protectionsFilter) {
+                        if(prots_enabled) {
+                            vendorIncludedInFiltersSelected = true;
+                        }
+                    }
+                    else if (linuxFilter) {
+                        if(linux_enabled) {
+                            vendorIncludedInFiltersSelected = true;
+                        }
+                    } 
+                    else {
+                        vendorIncludedInFiltersSelected = true;
+                    }
+                }
+            });
+            if (vendorIncludedInFiltersSelected) vendorCard.style.display = 'block';
+            else vendorCard.style.display = 'none';
+        });
+
+        if(searchQuery != undefined && searchQuery != '') executeSearchQuery(searchQuery, vendorCards);
+
+        displayed_rounds_ui = document.querySelectorAll('span.filter-box');
+        displayed_rounds_ui.forEach(xBox => {
+            displayBoxID = xBox.id.split('-')[1]
+            if (selected_round_filters.includes(displayBoxID))
+                xBox.style.display = null;
+            else 
+                xBox.style.display = 'none';
+        });
+        var newURL = window.location.origin + window.location.pathname + '?rounds=' + selected_round_filters.join(',');
+        window.history.replaceState({path:newURL},'',newURL);
+    }
+
+    var roundCheckList = document.getElementById('rounds-list');
+    var round_items = document.getElementById('round-items');
+
+    roundCheckList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+        if (round_items.classList.contains('visible')){
+            round_items.classList.remove('visible');
+            round_items.style.display = "none";
+        }
+        
+        else{
+            round_items.classList.add('visible');
+            round_items.style.display = "block";
+            round_items.style.position = "absolute";
+        }
+    }
+
+</script>
+
+
+</div>
+</div>
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use.html">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy.html">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2021, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact.html" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

@@ -1,0 +1,213 @@
+.EvalCard-results {
+    transition: all .5s ease;
+  
+    height: 250px;
+    width: 250px;
+  
+    background-size: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+    border: 3px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+  
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  .EvalCard-results:hover {
+    transition: all .5s ease;
+    border: 3px solid #6241c5;
+  }
+  
+  .EvalCard-results-preview {
+    transition: all .5s ease;
+  
+    height: 250px;
+    width: 250px;
+  
+    background-size: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px;
+    float: left;
+    border: 3px solid rgb(228, 226, 226);
+    border-radius: 10px;
+  
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  .EvalCard-results-preview:hover {
+    transition: all .5s ease;
+    border: 3px solid #6241c5;
+  }
+  
+  .comingSoon {
+    font-size: 150%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    opacity: 1;
+  }
+  
+  .labEvalName-results {
+    color: black;
+    font-size: 13px;
+    font-family: 'Gilroy', Arial, sans-serif;
+  }
+  
+  .labDateStamp-results {
+    color: black;
+    font-size: 13px;
+    float: right;
+  }
+  
+  .divLogo-results {
+    text-align: center;
+    height: 200px;
+  }
+  
+  .vendorlogo-results {
+    max-width: 95%;
+    max-height: 90%;
+  }
+  
+  .vendorlogo-results-preview {
+    max-width: 95%;
+    max-height: 90%;
+    opacity: .5;
+  }
+  
+  .divTags-results {
+    width: 100%;
+  }
+  
+  #txtSearch-results {
+    font-size: 16px;
+    width: 300px;
+    border-radius: 0px;
+    border-right: none;
+  }
+  
+  #imgSearch-results {
+    width: 10%;
+    height: 10%;
+  }
+  
+  #imgSearch-results:hover {
+    cursor: pointer;
+  }
+  
+  #btnRound-results {
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 24px;
+  }
+  
+  #spanRound-results {
+    text-decoration: underline;
+    font-size: 24px;
+  }
+  
+  #labSearchResults-results {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .spanRoundLabel-results {
+    font-size: 22px;
+  }
+  
+  .spanRoundTr-results {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .dropdown-check-list {
+    display: inline-block;
+  
+    .anchor {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      padding: 5px 50px 5px 10px;
+      border: 1px solid #ccc;
+    }
+  
+    .anchor:after {
+      position: absolute;
+      content: "";
+      border-left: 2px solid black;
+      border-top: 2px solid black;
+      padding: 5px;
+      right: 10px;
+      top: 20%;
+      -moz-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+  
+    .anchor:active:after {
+      right: 8px;
+      top: 21%;
+    }
+  
+    #span-round {
+      width: 225px;
+    }
+  
+    ul.items {
+      padding: 2px;
+      display: none;
+      margin: 0;
+      border: 1px solid #ccc;
+      border-top: none;
+      li {
+        list-style: none;
+        padding: 4px;
+      }
+    }
+  
+    #round-items {
+      width: 225px;
+    }
+  }
+  
+  .dropdown-check-list.visible .anchor {
+    color: #6241c5;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }
+  
+  .filter-box {
+    border: 1px solid #6241c5;
+    border-radius: 5px;
+    color: white;
+    background-color: #6241c5;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+  }
+  .filter-box:hover {
+    cursor: pointer;
+  }
+  
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:#6241c5;
+  }
+  
+  .form-control:focus {
+    outline: none !important;
+  }

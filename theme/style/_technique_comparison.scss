@@ -171,11 +171,29 @@
   display: none;
 }
 
+.tdInnerDetectionNotesSum a:hover span {
+  display: block;
+  position: absolute;
+
+  margin: 0px;
+  padding: 10px;
+  color: black;
+  font-weight: normal;
+  background: white;
+  text-align: left;
+  border: 1px solid #666;
+  z-index: 2;
+  max-width: 600px;
+
+  cursor: default;
+}
+
 .tdCalibration_DetectionNotes {
   font-size: 13px;
   width: 65%;
   padding: 5px;
 }
+
 
 .tdCalibration_DetectionNotes a span {
   display: none;
@@ -227,6 +245,20 @@
   cursor: pointer;
 }
 
+.tc_divAddRemoveButtons {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #6241c5;
+  color: white;
+  margin-top: 10px;
+  padding-top: 4px;
+}
+
+.tc_divAddRemoveButtons:hover {
+  cursor: pointer;
+}
 .tc_tableVendorCard {
   border: 1px solid #aaaaaa;
   width: 100%;
@@ -267,4 +299,15 @@
 
 .tc_vendor_card_tbody {
   background-color: #eeeeee;
+}
+
+.aFootnote {
+  color: #666666;
+  font-size: 11px;
+}
+
+.aFootnote:hover {
+  color: #666666;
+  cursor: default;
+  text-decoration: none;
 }

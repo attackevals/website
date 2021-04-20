@@ -1,0 +1,236 @@
+.diff_substep_label {
+  margin-bottom: 0; }
+
+  .hoverpointer {
+    cursor: pointer; }
+
+    .diff_vendor_select, .diff_filter {
+      margin: auto;
+      border-radius: 5px;
+      padding-left: 5px; }
+
+      .diff_td_substep_tech {
+        text-align: center;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        font-size: 14px;
+        border: 3px solid lightgrey;
+        width: 150px;
+        padding: 5px; }
+
+        .diff_td_procedure {
+          font-size: 14px;
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          word-break: break-word;
+          border: 3px solid lightgrey;
+          width: 350px;
+          padding: 5px; }
+
+          .diff_td_criteria {
+            font-size: 14px;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            word-break: break-word;
+            border: 3px solid lightgrey;
+            width: 350px;
+            padding: 5px; }
+
+            .diff_tr_header {
+              color: white;
+              background-color: #062f4f;
+              text-align: center;
+              height: 55px; }
+
+              .diff_table_detection {
+                width: 100%; }
+
+                .diff_tr_detections {
+                  width: 100%;
+                  display: flex; }
+
+                  .diff_td_dtype {
+                    flex: 2; }
+
+                    .diff_td_modifiers {
+                      flex: 1; }
+
+                      .diff_td_detections {
+                        width: 600px;
+                        vertical-align: top;
+                        border-right: 3px solid lightgray; }
+
+                        .diff_div_breadcrumbs_tags {
+                          width: 100%;
+                          padding-top: 20px;
+                          padding-right: 20px;
+                          background-color: white;
+                          top: 77px;
+                          z-index: 1000; }
+
+                          .diff_div_main {
+                            height: auto;
+                            margin-left: 10%; }
+
+                            .diff_menu_section {
+                              margin: auto;
+                              padding: 10px;
+                              border-bottom: 1px solid grey; }
+
+                              .diff_menu_section_last {
+                                margin: auto;
+                                padding: 10px; }
+
+                                .diff_div_user_options {
+                                  border: 1px solid grey;
+                                  position: -webkit-sticky;
+                                  position: sticky;
+                                  top: 14%;
+                                  height: 550px;
+                                  border-radius: 5px;
+                                  min-width: 260px; }
+
+                                  .diff_div_vendor_selects, .diff_div_filters {
+                                    display: block; }
+
+                                    .diff_div_step_tid_card {
+                                      width: 65%;
+                                      border-radius: 10px;
+                                      border: 2px solid lightgray;
+                                      padding: 10px;
+                                      margin-bottom: 20px;
+                                      transition: all 0.5s ease; }
+
+                                      .span_proc_crit_title {
+                                        display: inline-block;
+                                        margin-right: 20px;
+                                        font-size: 16px; }
+
+                                        .span_proc_crit {
+                                          font-size: 14px; }
+
+                                          .diff_step_tid_table {
+                                            margin: 0 auto;
+                                            width: 98%;
+                                            margin-bottom: 15px;
+                                            margin-top: 15px; }
+
+                                            .tr_diff_row {
+                                              display: flex; }
+
+                                              .th_diff_cell {
+                                                text-align: center;
+                                                display: flex;
+                                                align-items: center;
+                                                margin-right: 20px;
+                                                font-size: 30px; }
+
+                                                .th_v1_detection_cell, .th_v2_detection_cell {
+                                                  flex: 5;
+                                                  text-align: center;
+                                                  padding: 5px;
+                                                  font-size: 18px; }
+
+                                                  .td_diff_cell {
+                                                    text-align: center;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin-right: 20px;
+                                                    font-size: 30px;
+                                                    flex: 0.1; }
+
+                                                    .td_diff_proc_crit {
+                                                      flex: 5; }
+
+                                                      .td_v1_detection_cell, .td_v2_detection_cell {
+                                                        flex: 5;
+                                                        text-align: center;
+                                                        padding: 5px; }
+
+                                                        .hover-pointer:hover {
+                                                          cursor: pointer; }
+
+                                                          .tc_span_detection_note a span {
+                                                            display: none; }
+
+                                                            .tc_span_detection_note a:hover span {
+                                                              display: block;
+                                                              position: absolute;
+                                                              margin: 0px;
+                                                              padding: 10px;
+                                                              color: black;
+                                                              font-weight: normal;
+                                                              background: white;
+                                                              text-align: left;
+                                                              border: 1px solid #666;
+                                                              z-index: 2;
+                                                              max-width: 400px;
+                                                              cursor: default; }
+
+                                                              .diff_spanPopup_footnotes {
+                                                                width: 50%;
+                                                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+                                                                                                                                Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+                                                                #scrollUp {
+                                                                  line-height: 40px;
+                                                                  overflow: hidden;
+                                                                  z-index: 999;
+                                                                  display: none;
+                                                                  cursor: pointer;
+                                                                  position: fixed;
+                                                                  bottom: 20px;
+                                                                  left: 75%;
+                                                                  font-size: 30px;
+                                                                  color: #6241c5; }
+
+                                                                  #scrollUp:hover {
+                                                                    color: #0096D1; }
+
+                                                                    .diff_div_step_tid_card > .card > .card-header {
+                                                                      display: flex; }
+
+                                                                      .diff_div_step_tid_card > .card > .card-header:after {
+                                                                        margin-left: auto;
+                                                                        content: '';
+                                                                        width: 24px;
+                                                                        height: 24px;
+                                                                        background-repeat: no-repeat;
+                                                                        display: inline-block;
+                                                                        vertical-align: top;
+                                                                        background-position: center;
+                                                                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+                                                                        z-index: 1;
+                                                                        transition: all 0.2s ease; }
+
+                                                                        .diff_div_step_tid_card > .card > .card-header:not(.collapsed):after {
+                                                                          transform: rotate(-180deg); }
+
+                                                                          .card-header-text {
+                                                                            background-color: white;
+                                                                            border: none; }
+
+                                                                            .card-header-text-difference {
+                                                                              background-color: white;
+                                                                              border: none;
+                                                                              color: #6241c5;
+                                                                              font-weight: bold; }
+
+                                                                              .diff_div_step_tid_card > .card > .card-body > *:last-child {
+                                                                                margin-bottom: 0 !important; }
+
+                                                                                .diff_div_step_tid_card:hover {
+                                                                                  border: 2px solid gray; }
+
+                                                                                  #btnOpenCloseAll {
+                                                                                    margin-left: 10px;
+                                                                                    margin-right: 10px; }
+
+                                                                                    .aFootnote {
+                                                                                      color: #666666;
+                                                                                      font-size: 11px; }
+
+                                                                                      .aFootnote:hover {
+                                                                                        color: #666666;
+                                                                                        cursor: default;
+                                                                                        text-decoration: none; }
