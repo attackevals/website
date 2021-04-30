@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
 
     <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?e65c8aaf">
 </head>
@@ -44,7 +44,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -54,7 +54,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -63,7 +63,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
                             </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -296,8 +296,8 @@
         <div class="col-9"></div>
     </div>
     <br>
-    <label for="select-round-finder" class="control-label pt-2" style="font-size: 1.2rem;">Round:&nbsp;</label>
-    <select class="form-select mr-3 mb-4 p-2" style="width: 15%; border-radius: 5px;" name="select-round-finder" id="select-round-finder" onchange="roundSelected(this.value)">
+    <label for="select-adversary-finder" class="control-label pt-2" style="font-size: 1.2rem;">Round:&nbsp;</label>
+    <select class="form-select mr-3 mb-4 p-2" style="width: 15%; border-radius: 5px;" name="select-adversary-finder" id="select-adversary-finder" onchange="adversarySelected(this.value)">
             <option 
             value="apt29"
                 selected
@@ -314,7 +314,7 @@
             <th class="pl-3" style="width: 30%;"><h4>Substeps</h4></th>
         </tr>
         <tr>
-            <td style="border-right: 3px solid black; height: 100%; width: 15%;">
+            <td style="vertical-align: top; border-right: 3px solid black; height: 100%; width: 15%;">
                 <div style="height: 100%;" id="div_tactic_cells">
                         <div 
                             class="div_finder_cell"
@@ -12582,7 +12582,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "2_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12620,7 +12620,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "2_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12652,7 +12652,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "7_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12685,7 +12685,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "7_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12717,7 +12717,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_b_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12749,7 +12749,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_b_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12787,7 +12787,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "17_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12818,7 +12818,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1119"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "2_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12849,7 +12849,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1119"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12880,7 +12880,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1115"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "7_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12913,7 +12913,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1074"
                                         data-parent_subtechnique_id = "T1074_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12945,7 +12945,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1074"
                                         data-parent_subtechnique_id = "T1074_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "17_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12976,7 +12976,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "2_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13007,7 +13007,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "7_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13038,7 +13038,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13069,7 +13069,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "17_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13101,7 +13101,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1114"
                                         data-parent_subtechnique_id = "T1114_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "17_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13133,7 +13133,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "7_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13170,7 +13170,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1113"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "7_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13202,7 +13202,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13234,7 +13234,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_14"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13265,7 +13265,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1043"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "3_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13296,7 +13296,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1043"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_13"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13328,7 +13328,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13360,7 +13360,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_15"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13392,7 +13392,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "1_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13423,7 +13423,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "3_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13454,7 +13454,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13491,7 +13491,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "8_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13522,7 +13522,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13553,7 +13553,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13584,7 +13584,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13621,7 +13621,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1095"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "1_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13652,7 +13652,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1102"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "18_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13684,7 +13684,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1555"
                                         data-parent_subtechnique_id = "T1555_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "6_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13716,7 +13716,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "7_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13754,7 +13754,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1003"
                                         data-parent_subtechnique_id = "T1003_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "14_b_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13793,7 +13793,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1003"
                                         data-parent_subtechnique_id = "T1003_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_d_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13826,7 +13826,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1003"
                                         data-parent_subtechnique_id = "T1003_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "6_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13858,7 +13858,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1552"
                                         data-parent_subtechnique_id = "T1552_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "6_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13890,7 +13890,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1552"
                                         data-parent_subtechnique_id = "T1552_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "6_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13922,7 +13922,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13960,7 +13960,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "14_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13993,7 +13993,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1134"
                                         data-parent_subtechnique_id = "T1134_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "10_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14025,7 +14025,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14062,7 +14062,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_10"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14099,7 +14099,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_b_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14131,7 +14131,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1564"
                                         data-parent_subtechnique_id = "T1564_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14169,7 +14169,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14207,7 +14207,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14245,7 +14245,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_b_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14283,7 +14283,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14321,7 +14321,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14359,7 +14359,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_c_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14397,7 +14397,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_c_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14429,7 +14429,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_006"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "12_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14461,7 +14461,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1036"
                                         data-parent_subtechnique_id = "T1036_005"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "6_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14493,7 +14493,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1036"
                                         data-parent_subtechnique_id = "T1036_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "1_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14524,7 +14524,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "3_c_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14555,7 +14555,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14586,7 +14586,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14617,7 +14617,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "17_c_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14649,7 +14649,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1027"
                                         data-parent_subtechnique_id = "T1027_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14681,7 +14681,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1027"
                                         data-parent_subtechnique_id = "T1027_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14713,7 +14713,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1218"
                                         data-parent_subtechnique_id = "T1218_011"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14751,7 +14751,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1550"
                                         data-parent_subtechnique_id = "T1550_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14789,7 +14789,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14827,7 +14827,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14860,7 +14860,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1497"
                                         data-parent_subtechnique_id = "T1497_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14892,7 +14892,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "2_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14923,7 +14923,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14954,7 +14954,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14985,7 +14985,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_9"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15016,7 +15016,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "12_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15053,7 +15053,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1120"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15091,7 +15091,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1069"
                                         data-parent_subtechnique_id = "T1069_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_c_9"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15123,7 +15123,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1069"
                                         data-parent_subtechnique_id = "T1069_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_c_11"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15154,7 +15154,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15191,7 +15191,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15222,7 +15222,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "8_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15254,7 +15254,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_8"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15291,7 +15291,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "13_d_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15322,7 +15322,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15359,7 +15359,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1012"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "12_c_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15390,7 +15390,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1012"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "12_c_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15421,7 +15421,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "8_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15452,7 +15452,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "16_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15484,7 +15484,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1518"
                                         data-parent_subtechnique_id = "T1518_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_c_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15516,7 +15516,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1518"
                                         data-parent_subtechnique_id = "T1518_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_c_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15548,7 +15548,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1518"
                                         data-parent_subtechnique_id = "T1518_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "12_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15585,7 +15585,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15616,7 +15616,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15653,7 +15653,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15690,7 +15690,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "13_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15721,7 +15721,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15752,7 +15752,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_7"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15789,7 +15789,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "13_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15820,7 +15820,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15851,7 +15851,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "11_a_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15888,7 +15888,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "13_c_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15919,7 +15919,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "15_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15950,7 +15950,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "16_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15982,7 +15982,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1497"
                                         data-parent_subtechnique_id = "T1497_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16015,7 +16015,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "1_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16052,7 +16052,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "4_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16084,7 +16084,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "9_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16116,7 +16116,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_12"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16154,7 +16154,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16187,7 +16187,7 @@ query for Win32_BIOS </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "1_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16224,7 +16224,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1106"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_10"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16255,7 +16255,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1106"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "4_c_12"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16286,7 +16286,7 @@ query for Win32_BIOS </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1106"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "10_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16318,7 +16318,7 @@ CreateProcessWithToken API </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1106"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "16_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16356,7 +16356,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1569"
                                         data-parent_subtechnique_id = "T1569_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16388,7 +16388,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1569"
                                         data-parent_subtechnique_id = "T1569_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "10_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16420,7 +16420,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1204"
                                         data-parent_subtechnique_id = "T1204_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "1_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16452,7 +16452,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1204"
                                         data-parent_subtechnique_id = "T1204_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16489,7 +16489,7 @@ CreateProcessWithToken API </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1047"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "14_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16527,7 +16527,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0010"
                                         data-parent_technique_id = "T1048"
                                         data-parent_subtechnique_id = "T1048_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "7_b_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16558,7 +16558,7 @@ CreateProcessWithToken API </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0010"
                                     data-parent_technique_id = "T1041"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "2_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16589,7 +16589,7 @@ CreateProcessWithToken API </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0010"
                                     data-parent_technique_id = "T1041"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "9_b_8"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16621,7 +16621,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0010"
                                         data-parent_technique_id = "T1567"
                                         data-parent_subtechnique_id = "T1567_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "18_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16653,7 +16653,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16691,7 +16691,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16723,7 +16723,7 @@ CreateProcessWithToken API </p>
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0008"
                                     data-parent_technique_id = "T1570"
-                                    data-round_name = "apt29"
+                                    data-adversary_name = "apt29"
                                     data-substep = "16_d_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16755,7 +16755,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16799,7 +16799,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_006"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16843,7 +16843,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_006"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16881,7 +16881,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_006"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16919,7 +16919,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1550"
                                         data-parent_subtechnique_id = "T1550_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16957,7 +16957,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "5_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16995,7 +16995,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "10_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17027,7 +17027,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_11"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17065,7 +17065,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1136"
                                         data-parent_subtechnique_id = "T1136_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17115,7 +17115,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1543"
                                         data-parent_subtechnique_id = "T1543_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "5_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17148,7 +17148,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_015"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17180,7 +17180,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_015"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "14_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17212,7 +17212,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "15_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17256,7 +17256,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17294,7 +17294,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17332,7 +17332,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17365,7 +17365,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17403,7 +17403,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "14_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17436,7 +17436,7 @@ CreateProcessWithToken API </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1134"
                                         data-parent_subtechnique_id = "T1134_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "10_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17469,7 +17469,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "5_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17507,7 +17507,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "10_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17539,7 +17539,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "11_a_11"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17577,7 +17577,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1543"
                                         data-parent_subtechnique_id = "T1543_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "5_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17610,7 +17610,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_015"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "3_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17642,7 +17642,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_015"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "14_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17674,7 +17674,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "15_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17718,7 +17718,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_003"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "20_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17756,7 +17756,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "8_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17794,7 +17794,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "apt29"
+                                        data-adversary_name = "apt29"
                                         data-substep = "16_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17903,7 +17903,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         chart_columns: chart_col
     }
     
-    var currentRound = {"round_name": "apt29", "round_display_name": "APT29"};
+    var currentAdversary = {"round_name": "apt29", "round_display_name": "APT29"};
     var active_adversaries = [{'round_name': 'apt29', 'round_display_name': 'APT29'}];
     var stepChartHeight;
     var stepChartWidth;
@@ -17912,38 +17912,38 @@ powershell.exe executing with the stolen token of explorer.exe </p>
     var disabledStepChartDetections = [];
     var disabledSubstepChartDetections = [];
     var substepChartTicksHidden = false;
-    let finder_round;
+    let finder_adversary;
     let selected_tactic_cell_id;
     let selected_technique_cell_id;
     let selected_subtechnique_cell_id;
     let selected_procedure_cell_id;
-    let selected_round; 
+    let selected_adversary; 
 
     window.onload = function() {
         var url_string = window.location.href;
         var urlParams = new URLSearchParams(window.location.search);
-        const round = urlParams.get('adversary')
+        const adversary = urlParams.get('adversary')
         const tactic = urlParams.get('tactic')
         const technique = urlParams.get('technique')
         const subtechnique = urlParams.get('subtechnique')
-        switch (round) {
+        switch (adversary) {
             case "apt3":
             case "apt29":
             case "carbanak_fin7":
-                let round_matched_to_query = false;
+                let adversary_matched_to_query = false;
                 active_adversaries.forEach(activeRound => {
-                    if(activeRound['round_name'] == (round)) {
-                        roundSelected(round)
-                        round_matched_to_query = true
-                        $("#select-round-finder").val(round);
+                    if(activeRound['round_name'] == (adversary)) {
+                        adversarySelected(adversary)
+                        adversary_matched_to_query = true
+                        $("#select-adversary-finder").val(adversary);
                     }
                 })
-                if (!round_matched_to_query) {
-                    roundSelected(currentRound['round_name'])
+                if (!adversary_matched_to_query) {
+                    adversarySelected(currentAdversary['round_name'])
                 }
                 break;
             default:
-                roundSelected(currentRound['round_name'])
+                adversarySelected(currentAdversary['round_name'])
         }
 
         // Multiple if checks are necessary incase a wrong query string value is entered in the URL
@@ -17967,10 +17967,10 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
     }
 
-    function roundSelected (round_selected) {
-        selected_round = round_selected;
-        chart_header_left = (selected_round == 'carbanak_fin7') ? 'Carbanak Scenario' : 'Scenario 1';
-        chart_header_right = (selected_round == 'carbanak_fin7') ? 'FIN7 Scenario' : 'Scenario 2';
+    function adversarySelected (adversary_selected) {
+        selected_adversary = adversary_selected;
+        chart_header_left = (selected_adversary == 'carbanak_fin7') ? 'Carbanak Scenario' : 'Scenario 1';
+        chart_header_right = (selected_adversary == 'carbanak_fin7') ? 'FIN7 Scenario' : 'Scenario 2';
 
         $('#h4_step_breakdown_1').html(chart_header_left);
         $('#h4_step_breakdown_2').html(chart_header_right);
@@ -17979,8 +17979,8 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         $('#h4_coverage_breakdown_1').html(chart_header_left);
         $('#h4_coverage_breakdown_2').html(chart_header_right);
         
-        roundSelectedLoadCharts(round_selected);
-        changeFinderRound(round_selected);
+        adversarySelectedLoadCharts(adversary_selected);
+        changeFinderAdversary(adversary_selected);
         prev_tactic_id = selected_tactic_cell_id;
         prev_technique_id = selected_technique_cell_id;
         prev_subtechnique_id = selected_subtechnique_cell_id;
@@ -17999,16 +17999,16 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         updateQueryString(true);
 
         if(prev_tactic_id) {
-            new_round_tactic_id_scope = document.getElementById(prev_tactic_id).dataset.scoped_to;
-            if (new_round_tactic_id_scope.includes(round_selected)) {
+            new_adversary_tactic_id_scope = document.getElementById(prev_tactic_id).dataset.scoped_to;
+            if (new_adversary_tactic_id_scope.includes(adversary_selected)) {
                 select_tactic_cell(document.getElementById(prev_tactic_id));
                 if(prev_technique_id) {
-                    new_round_technique_id_scope = document.getElementById(prev_technique_id).dataset.scoped_to;
-                    if (new_round_technique_id_scope.includes(round_selected)) {
+                    new_adversary_technique_id_scope = document.getElementById(prev_technique_id).dataset.scoped_to;
+                    if (new_adversary_technique_id_scope.includes(adversary_selected)) {
                         select_technique_cell(document.getElementById(prev_technique_id));
                         if(prev_subtechnique_id) {
                             new_subtechnique_id_scope = document.getElementById(prev_subtechnique_id).dataset.scoped_to;
-                            if (new_subtechnique_id_scope.includes(round_selected)) {
+                            if (new_subtechnique_id_scope.includes(adversary_selected)) {
                                 select_subtechnique_cell(document.getElementById(prev_subtechnique_id));
                             }
                         }
@@ -18018,11 +18018,11 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
     }
 
-    function updateQueryString(new_round_selected) {
+    function updateQueryString(new_adversary_selected) {
         let url = window.location.href;
-        let query_string = '?adversary=' + selected_round;
+        let query_string = '?adversary=' + selected_adversary;
         
-        if(!new_round_selected) {
+        if(!new_adversary_selected) {
             if(selected_tactic_cell_id) {
                 selected_tactic_id = document.querySelector("#" + selected_tactic_cell_id).dataset.tactic_id;
                 query_string += '&tactic=' + selected_tactic_id;
@@ -18042,9 +18042,9 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         window.history.replaceState({},'',query_string);
     }
 
-    function roundSelectedLoadCharts(round_selected) {
-        if (round_selected == 'carbanak_fin7') data = CF7_chart_data;
-        else if (round_selected == 'apt29') data = APT29_chart_data;
+    function adversarySelectedLoadCharts(adversary_selected) {
+        if (adversary_selected == 'carbanak_fin7') data = CF7_chart_data;
+        else if (adversary_selected == 'apt29') data = APT29_chart_data;
         else data = APT3_chart_data;
         disabledStepChartDetections = [];
         disabledSubstepChartDetections = [];
@@ -18124,15 +18124,15 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
     }
 
-    function load_step_chart(chart_data, day) {
-        d3.select("#step_breakdown_" + day).select("svg").remove()
+    function load_step_chart(chart_data, scenario) {
+        d3.select("#step_breakdown_" + scenario).select("svg").remove()
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         // Dimensions for the svg
         let margin = ({top: 60, right: 30, bottom: 150, left: 45})
         if(!stepChartHeight) {
-            stepChartHeight = document.getElementById("step_breakdown_" + day).clientHeight
-            stepChartWidth = document.getElementById("step_breakdown_" + day).clientWidth-20
+            stepChartHeight = document.getElementById("step_breakdown_" + scenario).clientHeight
+            stepChartWidth = document.getElementById("step_breakdown_" + scenario).clientWidth-20
         }
         // Function to map the x/y axis ticks
         let yAxis = g => g
@@ -18143,7 +18143,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                 }));
         let xAxis = g => g
             .attr("transform", `translate(0,${stepChartHeight - margin.bottom})`)
-            .attr("id", "xTicks_" + day)
+            .attr("id", "xTicks_" + scenario)
             .call(d3.axisBottom(x).tickSizeOuter(0))
 
         // Color mapping between detection types and colors
@@ -18154,8 +18154,8 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         // Pre-Process the data so that we can use it in the stacked bar chart
         let chart_steps = []
 
-        day_key = 'Scenario_' + day
-        for(step of chart_data['steps'][day_key]) {
+        scenario_key = 'Scenario_' + scenario
+        for(step of chart_data['steps'][scenario_key]) {
             substep_data = {}
             substep_data.step = step.Step
             for(detection of chart_data['detection_types']) {
@@ -18200,7 +18200,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                 .ticks(10)
         }
 
-        const svg = d3.select("#step_breakdown_" + day)
+        const svg = d3.select("#step_breakdown_" + scenario)
             .append("svg")
             .attr("width", stepChartWidth)
             .attr("height", stepChartHeight)
@@ -18261,16 +18261,16 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             .text("Number of Detections");      
 
 
-        var tooltip = d3.select("#step_breakdown_" + day)
+        var tooltip = d3.select("#step_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
 
-        add_step_labels(chart_steps.map(d => d.step_name), day)
+        add_step_labels(chart_steps.map(d => d.step_name), scenario)
     }
 
-    function add_step_labels(step_names, day) {
-        var xAxis = document.getElementById('xTicks_' + day);
+    function add_step_labels(step_names, scenario) {
+        var xAxis = document.getElementById('xTicks_' + scenario);
         var ticks = xAxis.querySelectorAll('.tick');
         for (const [i, tick] of ticks.entries()) {
             textElement = tick.querySelector('text')
@@ -18326,14 +18326,14 @@ powershell.exe executing with the stolen token of explorer.exe </p>
 
 
 
-    function load_substep_chart(chart_data, day) {
-        d3.select("#substep_breakdown_" + day).select("svg").remove()
+    function load_substep_chart(chart_data, scenario) {
+        d3.select("#substep_breakdown_" + scenario).select("svg").remove()
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         // Dimensions for the svg
         let margin = ({top: 60, right: 30, bottom: 80, left: 45})
-        let height = document.getElementById("substep_breakdown_" + day).clientHeight
-        let width = document.getElementById("substep_breakdown_" + day).clientWidth -20
+        let height = document.getElementById("substep_breakdown_" + scenario).clientHeight
+        let width = document.getElementById("substep_breakdown_" + scenario).clientWidth -20
         // Function to map the x/y axis ticks
         let yAxis = g => g
             .attr("transform", `translate(${margin.left},0)`)
@@ -18356,8 +18356,8 @@ powershell.exe executing with the stolen token of explorer.exe </p>
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         let chart_substeps = []
-        day_key = "Scenario_" + day;
-        for(step of chart_data['steps'][day_key]) {
+        scenario_key = "Scenario_" + scenario;
+        for(step of chart_data['steps'][scenario_key]) {
             for(substep of step.Substeps) {
                 substep_data = {}
                 substep_data.substep = substep.Substep
@@ -18402,7 +18402,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                 .ticks(5)
         }
 
-        const svg = d3.select("#substep_breakdown_" + day)
+        const svg = d3.select("#substep_breakdown_" + scenario)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -18472,7 +18472,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             }
         });
 
-        var tooltip = d3.select("#substep_breakdown_" + day)
+        var tooltip = d3.select("#substep_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
@@ -18542,17 +18542,17 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
     }
 
-    function load_coverage_chart(chart_data, day) {
-        d3.select("#coverage_breakdown_" + day).select("svg").remove()
+    function load_coverage_chart(chart_data, scenario) {
+        d3.select("#coverage_breakdown_" + scenario).select("svg").remove()
 
-        if (selected_round == 'apt3') {
+        if (selected_adversary == 'apt3') {
             var margin = ({top: 30, right: 30, bottom: 70, left: 75});
         }
         else {
             var margin = ({top: 30, right: 30, bottom: 70, left: 45});
         }
-        let height = document.getElementById("coverage_breakdown_" + day).clientHeight - 20
-        let width = document.getElementById("coverage_breakdown_" + day).clientWidth
+        let height = document.getElementById("coverage_breakdown_" + scenario).clientHeight - 20
+        let width = document.getElementById("coverage_breakdown_" + scenario).clientWidth
         // Function to map the x/y axis ticks
         let yAxis = g => g
             .attr("transform", `translate(${margin.left},0)`)
@@ -18579,7 +18579,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             .range(colorRange)
 
         coverage_substeps = []
-        for(step of chart_data['steps']['Scenario_' + day]) {
+        for(step of chart_data['steps']['Scenario_' + scenario]) {
             for(substep of step.Substeps) {
                 substep_data = {};
                 substep_data.substep = substep.Substep;
@@ -18589,12 +18589,12 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
         var heatmap_data = []
         for (const [i, substep] of coverage_substeps.entries()) {
-            for (var dtype in chart_data['coverage_scenario' + day]) {
+            for (var dtype in chart_data['coverage_scenario' + scenario]) {
                 data_obj = {}
                 data_obj['substep'] = substep['substep']
                 data_obj['dtype'] = dtype
                 data_obj['dtype_total'] = substep['substepDetectionCounts'][dtype]
-                if(chart_data['coverage_scenario' + day][dtype].charAt(i) == '1') {
+                if(chart_data['coverage_scenario' + scenario][dtype].charAt(i) == '1') {
                     data_obj['presence'] = dtype
                 } else {
                     data_obj['presence'] = 'No Trace'
@@ -18619,7 +18619,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                 .ticks(coverage_substeps.length)
         }
 
-        const svg = d3.select("#coverage_breakdown_" + day)
+        const svg = d3.select("#coverage_breakdown_" + scenario)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -18650,7 +18650,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             }
         });
 
-        var tooltip = d3.select("#coverage_breakdown_" + day)
+        var tooltip = d3.select("#coverage_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
@@ -18835,7 +18835,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
 
         for (let substep_cell of substep_cells.children) {
             substep_cell.style.borderBottom = "none";
-            if (substep_cell.getAttribute("data-round_name") === finder_round) {
+            if (substep_cell.getAttribute("data-adversary_name") === finder_adversary) {
                 let parent_tactic_id = substep_cell.getAttribute("data-parent_tactic_id");
                 let parent_technique_id = substep_cell.getAttribute("data-parent_technique_id");
                 let parent_subtechnique_id = substep_cell.getAttribute("data-parent_subtechnique_id");
@@ -18928,43 +18928,43 @@ powershell.exe executing with the stolen token of explorer.exe </p>
     }
 
     // This logic and dropdown should be merged with the dropdown for charts
-    function changeFinderRound(round) {
-        finder_round = round;
+    function changeFinderAdversary(adversary) {
+        finder_adversary = adversary;
         
-        // Change scope to match round
+        // Change scope to match adversary
         let tactic_cells = document.getElementById("div_tactic_cells");
         let technique_cells = document.getElementById("div_technique_cells");
         let subtechnique_cells = document.getElementById("div_subtechnique_cells");
         let cell;
 
         for (cell of tactic_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "tactic");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
 
         for (cell of technique_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "technique");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
 
         for (cell of subtechnique_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "subtechnique");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
     }
 
@@ -19027,7 +19027,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         }
     }
 
-    function update_finder_links(cell, round) {
+    function update_finder_links(cell, adversary) {
         let use_nginx_links = false;
 
         if (cell.children[0].lastElementChild && cell.children[0].lastElementChild.tagName === 'A') {
@@ -19042,10 +19042,10 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                 }
 
                 if (old_href.indexOf("?") > -1) {
-                    link.setAttribute("href", old_href.slice(0, old_href.indexOf("?")) + "?adversaries=" + round);
+                    link.setAttribute("href", old_href.slice(0, old_href.indexOf("?")) + "?adversaries=" + adversary);
                 }
                 else {
-                    link.setAttribute("href", old_href + "?adversaries=" + round);
+                    link.setAttribute("href", old_href + "?adversaries=" + adversary);
                 }
             }
         }

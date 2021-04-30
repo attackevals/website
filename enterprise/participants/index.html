@@ -18,9 +18,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
 
-    <link rel="stylesheet" type="text/css" href="/theme/participants_enterprise.min.css?f9ee8e52">
+    <link rel="stylesheet" type="text/css" href="/theme/participants_enterprise.min.css?13a29688">
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -54,7 +54,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -63,7 +63,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
                             </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -169,12 +169,12 @@
                             <div style="margin: auto;">
                                 Filter By:
                             </div>
-                            <div id="rounds-list" class="dropdown-check-list ml-4" tabindex="100">
+                            <div id="adversaries-list" class="dropdown-check-list ml-4" tabindex="100">
                                 <span class="anchor" id="span-round">Evaluations</span>
-                                <ul id="round-items" class="items">
-                                        <li><input type="checkbox" onclick="applyFilters()" data-round="carbanak_fin7" checked/> Carbanak+FIN7 (2020) </li>
-                                        <li><input type="checkbox" onclick="applyFilters()" data-round="apt29" checked/> APT29 (2019) </li>
-                                        <li><input type="checkbox" onclick="applyFilters()" data-round="apt3" checked/> APT3 (2018) </li>
+                                <ul id="adversary-items" class="items">
+                                        <li><input type="checkbox" onclick="applyFilters()" data-adversary="carbanak_fin7" checked/> Carbanak+FIN7 (2020) </li>
+                                        <li><input type="checkbox" onclick="applyFilters()" data-adversary="apt29" checked/> APT29 (2019) </li>
+                                        <li><input type="checkbox" onclick="applyFilters()" data-adversary="apt3" checked/> APT3 (2018) </li>
                                 </ul>
                             </div>
                             <div class="custom-control custom-checkbox ml-4" style="margin: auto;">
@@ -217,7 +217,7 @@
                         class='EvalCard-results' 
                         data-tags='ahnlab' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>AhnLab</span>
@@ -232,7 +232,7 @@
                         class='EvalCard-results' 
                         data-tags='bitdefender' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Bitdefender</span>
@@ -247,7 +247,7 @@
                         class='EvalCard-results' 
                         data-tags='checkpoint' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Check Point</span>
@@ -262,7 +262,7 @@
                         class='EvalCard-results' 
                         data-tags='cisco' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Cisco</span>
@@ -277,7 +277,7 @@
                         class='EvalCard-results' 
                         data-tags='crowdstrikefalconendpointprotectionstandardbundle' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>CrowdStrike</span>
@@ -292,7 +292,7 @@
                         class='EvalCard-results' 
                         data-tags='cybereason' 
                         data-had_rolling_eval='True' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Cybereason</span>
@@ -307,7 +307,7 @@
                         class='EvalCard-results' 
                         data-tags='cycraft' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>CyCraft</span>
@@ -322,7 +322,7 @@
                         class='EvalCard-results' 
                         data-tags='cylanceblackberry' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>BlackBerry Cylance</span>
@@ -337,7 +337,7 @@
                         class='EvalCard-results' 
                         data-tags='cynet' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Cynet</span>
@@ -352,7 +352,7 @@
                         class='EvalCard-results' 
                         data-tags='endgameelastic' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Elastic</span>
@@ -367,7 +367,7 @@
                         class='EvalCard-results' 
                         data-tags='eset' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>ESET</span>
@@ -382,7 +382,7 @@
                         class='EvalCard-results' 
                         data-tags='fidelis' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Fidelis</span>
@@ -397,7 +397,7 @@
                         class='EvalCard-results' 
                         data-tags='fireeye' 
                         data-had_rolling_eval='True' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>FireEye</span>
@@ -412,7 +412,7 @@
                         class='EvalCard-results' 
                         data-tags='fortinet' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Fortinet</span>
@@ -427,7 +427,7 @@
                         class='EvalCard-results' 
                         data-tags='f-securecountercept' 
                         data-had_rolling_eval='True' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>F-Secure</span>
@@ -442,7 +442,7 @@
                         class='EvalCard-results' 
                         data-tags='gosecurecountertack' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>GoSecure</span>
@@ -457,7 +457,7 @@
                         class='EvalCard-results' 
                         data-tags='hansight' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,' 
+                        data-adversary_inclusion='apt29,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>HanSight</span>
@@ -472,7 +472,7 @@
                         class='EvalCard-results' 
                         data-tags='kaspersky' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,' 
+                        data-adversary_inclusion='apt29,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Kaspersky</span>
@@ -487,7 +487,7 @@
                         class='EvalCard-results' 
                         data-tags='malwarebytes' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Malwarebytes</span>
@@ -502,7 +502,7 @@
                         class='EvalCard-results' 
                         data-tags='mcafee' 
                         data-had_rolling_eval='True' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>McAfee</span>
@@ -517,7 +517,7 @@
                         class='EvalCard-results' 
                         data-tags='microfocus' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Micro Focus</span>
@@ -532,7 +532,7 @@
                         class='EvalCard-results' 
                         data-tags='microsoftdefender' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Microsoft</span>
@@ -547,7 +547,7 @@
                         class='EvalCard-results' 
                         data-tags='opentext' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Open Text</span>
@@ -562,7 +562,7 @@
                         class='EvalCard-results' 
                         data-tags='paloaltonetworkspaloaltonetowrks' 
                         data-had_rolling_eval='True' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Palo Alto Networks</span>
@@ -577,7 +577,7 @@
                         class='EvalCard-results' 
                         data-tags='reaqta' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>ReaQta</span>
@@ -592,7 +592,7 @@
                         class='EvalCard-results' 
                         data-tags='rsa' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,' 
+                        data-adversary_inclusion='apt3,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>RSA</span>
@@ -607,7 +607,7 @@
                         class='EvalCard-results' 
                         data-tags='secureworks' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,' 
+                        data-adversary_inclusion='apt29,' 
                         data-had_protections=false 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Secureworks</span>
@@ -622,7 +622,7 @@
                         class='EvalCard-results' 
                         data-tags='sentinelone' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>SentinelOne</span>
@@ -637,7 +637,7 @@
                         class='EvalCard-results' 
                         data-tags='sophos' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=false>
                         <span class='labEvalName-results'>Sophos</span>
@@ -652,7 +652,7 @@
                         class='EvalCard-results' 
                         data-tags='symantec' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Symantec</span>
@@ -667,7 +667,7 @@
                         class='EvalCard-results' 
                         data-tags='trendmicro' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt29,carbanak_fin7,' 
                         data-had_protections=true 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Trend Micro</span>
@@ -682,7 +682,7 @@
                         class='EvalCard-results' 
                         data-tags='uptycs' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='carbanak_fin7,' 
+                        data-adversary_inclusion='carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>Uptycs</span>
@@ -697,7 +697,7 @@
                         class='EvalCard-results' 
                         data-tags='carbonblackresponsecarbonblackvmware' 
                         data-had_rolling_eval='False' 
-                        data-round_inclusion='apt3,apt29,carbanak_fin7,' 
+                        data-adversary_inclusion='apt3,apt29,carbanak_fin7,' 
                         data-had_protections=false 
                         data-linux_participant=true>
                         <span class='labEvalName-results'>VMware Carbon Black</span>
@@ -718,19 +718,19 @@
     function parseQueryString() {
         var url_string = window.location.href;
         var urlParams = new URLSearchParams(window.location.search);
-        const roundParams = urlParams.get('rounds')
-        let displayed_rounds_ui = document.querySelectorAll('span.filter-box')
-        let round_filters = document.getElementById('round-items').querySelectorAll('input');
-        if (roundParams) {
-            params = roundParams.split(",");
-            displayed_rounds_ui.forEach(xBox => {
+        const adversaryParams = urlParams.get('adversaries')
+        let displayed_adversaries_ui = document.querySelectorAll('span.filter-box')
+        let adversary_filters = document.getElementById('adversary-items').querySelectorAll('input');
+        if (adversaryParams) {
+            params = adversaryParams.split(",");
+            displayed_adversaries_ui.forEach(xBox => {
                 boxID = xBox.id.split("-")[1]
                 if(!params.includes(boxID))
                     xBox.style.display = 'none';
             })
 
-            round_filters.forEach(checkbox => {
-                if(params.includes(checkbox.dataset.round))
+            adversary_filters.forEach(checkbox => {
+                if(params.includes(checkbox.dataset.adversary))
                     checkbox.checked = true;
                 else
                     checkbox.checked = false;
@@ -740,11 +740,11 @@
     }
 
     function removeFilter(e) {
-        round_to_filter_out = e.id.split('-')[1]
+        adversary_to_filter_out = e.id.split('-')[1]
         e.style.display = "none";
-        round_filters = document.getElementById('round-items').querySelectorAll('input');
-        round_filters.forEach(checkbox => {
-            if (checkbox.dataset.round == round_to_filter_out) {
+        adversary_filters = document.getElementById('adversary-items').querySelectorAll('input');
+        adversary_filters.forEach(checkbox => {
+            if (checkbox.dataset.adversary == adversary_to_filter_out) {
                 checkbox.checked = false;
             }
         });
@@ -765,25 +765,24 @@
 
 
     function applyFilters() {
-        vendorCards = document.getElementById('vendor_cards').getElementsByClassName('EvalCard-results')
-        round_filters = document.getElementById('round-items').querySelectorAll('input');
+        vendorCards = document.getElementById('vendor_cards').getElementsByClassName('EvalCard-results');
+        adversary_filters = document.getElementById('adversary-items').querySelectorAll('input');
         
         protectionsFilter = $('#protectionCheck').is(':checked');
         linuxFilter = $('#linuxCheck').is(':checked');
 
-        selected_round_filters = [];
-        round_filters.forEach(checkbox => {
+        selected_adversary_filters = [];
+        adversary_filters.forEach(checkbox => {
             if (checkbox.checked) {
-                selected_round_filters.push(checkbox.dataset.round);
+                selected_adversary_filters.push(checkbox.dataset.adversary);
             }
         });
         let searchQuery = document.getElementById("search-participants").value;
-        console.log(searchQuery)
 
         Array.from(vendorCards).forEach(vendorCard => {
             vendorIncludedInFiltersSelected = false;
-            selected_round_filters.forEach(selected_round => {
-                if(vendorCard.dataset.round_inclusion.includes(selected_round)) {
+            selected_adversary_filters.forEach(selected_adversary => {
+                if(vendorCard.dataset.adversary_inclusion.includes(selected_adversary)) {
                     prots_enabled = (vendorCard.dataset.had_protections == 'true');
                     linux_enabled = (vendorCard.dataset.linux_participant == 'true');
                     if(protectionsFilter && linuxFilter) {
@@ -812,31 +811,31 @@
 
         if(searchQuery != undefined && searchQuery != '') executeSearchQuery(searchQuery, vendorCards);
 
-        displayed_rounds_ui = document.querySelectorAll('span.filter-box');
-        displayed_rounds_ui.forEach(xBox => {
+        displayed_adversaries_ui = document.querySelectorAll('span.filter-box');
+        displayed_adversaries_ui.forEach(xBox => {
             displayBoxID = xBox.id.split('-')[1]
-            if (selected_round_filters.includes(displayBoxID))
+            if (selected_adversary_filters.includes(displayBoxID))
                 xBox.style.display = null;
             else 
                 xBox.style.display = 'none';
         });
-        var newURL = window.location.origin + window.location.pathname + '?rounds=' + selected_round_filters.join(',');
+        var newURL = window.location.origin + window.location.pathname + '?adversaries=' + selected_adversary_filters.join(',');
         window.history.replaceState({path:newURL},'',newURL);
     }
 
-    var roundCheckList = document.getElementById('rounds-list');
-    var round_items = document.getElementById('round-items');
+    var adversaryChecklist = document.getElementById('adversaries-list');
+    var adversary_items = document.getElementById('adversary-items');
 
-    roundCheckList.getElementsByClassName('anchor')[0].onclick = function (evt) {
-        if (round_items.classList.contains('visible')){
-            round_items.classList.remove('visible');
-            round_items.style.display = "none";
+    adversaryChecklist.getElementsByClassName('anchor')[0].onclick = function (evt) {
+        if (adversary_items.classList.contains('visible')){
+            adversary_items.classList.remove('visible');
+            adversary_items.style.display = "none";
         }
         
         else{
-            round_items.classList.add('visible');
-            round_items.style.display = "block";
-            round_items.style.position = "absolute";
+            adversary_items.classList.add('visible');
+            adversary_items.style.display = "block";
+            adversary_items.style.position = "absolute";
         }
     }
 

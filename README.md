@@ -27,7 +27,7 @@ STIX is designed to improve many different capabilities, such as collaborative t
 https://oasis-open.github.io/cti-documentation/
 
 ## Notice
-© 2018 - 2020, The MITRE Corporation and MITRE Engenuity
+© 2018 - 2021, The MITRE Corporation and MITRE Engenuity
 
 Approved for Public Release; Distribution Unlimited. Case Numbers 19-3504 and AT-0005
 
@@ -43,7 +43,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-ATT&CK Evaluations Terms of Use - https://attackevals.mitre-engenuity.org/terms-of-use/
+ATT&CK Evaluations Terms of Use - https://attackevals.mitre-engenuity.org/terms-of-use
 
 This project makes use of ATT&CK<sup>&reg;</sup><br>
 ATT&CK<sup>&reg;</sup> Terms of Use - https://attack.mitre.org/resources/terms-of-use/

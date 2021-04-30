@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?c1cd05f9">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
 
     <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?e65c8aaf">
 </head>
@@ -44,7 +44,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -54,7 +54,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -63,7 +63,7 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?rounds=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
                             </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
@@ -296,8 +296,8 @@
         <div class="col-9"></div>
     </div>
     <br>
-    <label for="select-round-finder" class="control-label pt-2" style="font-size: 1.2rem;">Round:&nbsp;</label>
-    <select class="form-select mr-3 mb-4 p-2" style="width: 15%; border-radius: 5px;" name="select-round-finder" id="select-round-finder" onchange="roundSelected(this.value)">
+    <label for="select-adversary-finder" class="control-label pt-2" style="font-size: 1.2rem;">Round:&nbsp;</label>
+    <select class="form-select mr-3 mb-4 p-2" style="width: 15%; border-radius: 5px;" name="select-adversary-finder" id="select-adversary-finder" onchange="adversarySelected(this.value)">
             <option 
             value="carbanak_fin7"
                 selected
@@ -314,7 +314,7 @@
             <th class="pl-3" style="width: 30%;"><h4>Substeps</h4></th>
         </tr>
         <tr>
-            <td style="border-right: 3px solid black; height: 100%; width: 15%;">
+            <td style="vertical-align: top; border-right: 3px solid black; height: 100%; width: 15%;">
                 <div style="height: 100%;" id="div_tactic_cells">
                         <div 
                             class="div_finder_cell"
@@ -12510,7 +12510,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1560"
                                         data-parent_subtechnique_id = "T1560_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "20_b_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12544,7 +12544,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12582,7 +12582,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_b_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12620,7 +12620,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1005"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12650,7 +12650,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "9_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12680,7 +12680,7 @@
                                         data-parent_tactic_id = "TA0009"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "18_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12709,7 +12709,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1113"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "2_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12738,7 +12738,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1113"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12767,7 +12767,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1113"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12796,7 +12796,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0009"
                                     data-parent_technique_id = "T1113"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "18_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12825,7 +12825,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1071"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12854,7 +12854,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1071"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "12_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -12884,7 +12884,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_10"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12914,7 +12914,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "8_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12944,7 +12944,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "14_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -12974,7 +12974,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13004,7 +13004,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13034,7 +13034,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1071"
                                         data-parent_subtechnique_id = "T1071_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "20_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13064,7 +13064,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_11"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13094,7 +13094,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "8_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13124,7 +13124,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "14_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13154,7 +13154,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_9"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13184,7 +13184,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13214,7 +13214,7 @@
                                         data-parent_tactic_id = "TA0011"
                                         data-parent_technique_id = "T1573"
                                         data-parent_subtechnique_id = "T1573_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "20_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -13243,7 +13243,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "2_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13277,7 +13277,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13311,7 +13311,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "4_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13340,7 +13340,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "4_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13379,7 +13379,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13413,7 +13413,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13442,7 +13442,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13471,7 +13471,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13510,7 +13510,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13544,7 +13544,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13578,7 +13578,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_c_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13612,7 +13612,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_c_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13641,7 +13641,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13670,7 +13670,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13699,7 +13699,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "10_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13728,7 +13728,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "10_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13757,7 +13757,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "12_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13786,7 +13786,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13820,7 +13820,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "15_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13859,7 +13859,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "15_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13888,7 +13888,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "16_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13922,7 +13922,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "16_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13956,7 +13956,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "17_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -13990,7 +13990,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "19_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14019,7 +14019,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "19_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14048,7 +14048,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14077,7 +14077,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1105"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14106,7 +14106,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1095"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_b_7"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14135,7 +14135,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1090"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "19_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14164,7 +14164,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0011"
                                     data-parent_technique_id = "T1219"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "10_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14194,7 +14194,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1110"
                                         data-parent_subtechnique_id = "T1110_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14224,7 +14224,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1555"
                                         data-parent_subtechnique_id = "T1555_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "9_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14255,7 +14255,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "9_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14285,7 +14285,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1056"
                                         data-parent_subtechnique_id = "T1056_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "18_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14315,7 +14315,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1003"
                                         data-parent_subtechnique_id = "T1003_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_b_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14350,7 +14350,7 @@
                                         data-parent_tactic_id = "TA0006"
                                         data-parent_technique_id = "T1003"
                                         data-parent_subtechnique_id = "T1003_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "15_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14380,7 +14380,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14410,7 +14410,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "15_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14439,7 +14439,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "1_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14468,7 +14468,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "1_a_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14497,7 +14497,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14526,7 +14526,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_c_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14555,7 +14555,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "11_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14589,7 +14589,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "14_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14618,7 +14618,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1140"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "14_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14648,7 +14648,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1574"
                                         data-parent_subtechnique_id = "T1574_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14678,7 +14678,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1562"
                                         data-parent_subtechnique_id = "T1562_004"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "10_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14713,7 +14713,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1070"
                                         data-parent_subtechnique_id = "T1070_004"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "9_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14743,7 +14743,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1036"
                                         data-parent_subtechnique_id = "T1036_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14773,7 +14773,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1036"
                                         data-parent_subtechnique_id = "T1036_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -14808,7 +14808,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14837,7 +14837,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "4_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14866,7 +14866,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "10_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14895,7 +14895,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1112"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "10_a_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14924,7 +14924,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "1_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14953,7 +14953,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -14987,7 +14987,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "11_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15016,7 +15016,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1027"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "19_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15050,7 +15050,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15079,7 +15079,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "18_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15108,7 +15108,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "18_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15137,7 +15137,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0005"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15167,7 +15167,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1055"
                                         data-parent_subtechnique_id = "T1055_012"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15197,7 +15197,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1218"
                                         data-parent_subtechnique_id = "T1218_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15237,7 +15237,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1550"
                                         data-parent_subtechnique_id = "T1550_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15267,7 +15267,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15297,7 +15297,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15336,7 +15336,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15375,7 +15375,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15406,7 +15406,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15436,7 +15436,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15466,7 +15466,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15496,7 +15496,7 @@
                                         data-parent_tactic_id = "TA0005"
                                         data-parent_technique_id = "T1497"
                                         data-parent_subtechnique_id = "T1497_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "13_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15526,7 +15526,7 @@
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1087"
                                         data-parent_subtechnique_id = "T1087_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "6_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -15555,7 +15555,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "4_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15584,7 +15584,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15622,7 +15622,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1083"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_c_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15651,7 +15651,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1135"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15680,7 +15680,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "2_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15709,7 +15709,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_b_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15747,7 +15747,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15776,7 +15776,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "15_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15805,7 +15805,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1057"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_b_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15834,7 +15834,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1012"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_b_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15863,7 +15863,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "4_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15904,7 +15904,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_b_7"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15942,7 +15942,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "6_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -15971,7 +15971,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1018"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "15_a_8"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16000,7 +16000,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "2_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16029,7 +16029,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "12_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16058,7 +16058,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16087,7 +16087,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1082"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_9"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16116,7 +16116,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "12_a_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16145,7 +16145,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_8"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16174,7 +16174,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1016"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "15_a_7"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16203,7 +16203,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "7_b_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16232,7 +16232,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0007"
                                     data-parent_technique_id = "T1033"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_a_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -16262,7 +16262,7 @@
                                         data-parent_tactic_id = "TA0007"
                                         data-parent_technique_id = "T1497"
                                         data-parent_subtechnique_id = "T1497_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "13_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16292,7 +16292,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_007"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_9"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16327,7 +16327,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_007"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "12_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16357,7 +16357,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "2_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16387,7 +16387,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "3_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16422,7 +16422,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16452,7 +16452,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "6_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16482,7 +16482,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "13_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16512,7 +16512,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "14_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16547,7 +16547,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "14_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16577,7 +16577,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "15_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16607,7 +16607,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16637,7 +16637,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16667,7 +16667,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16697,7 +16697,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "8_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16732,7 +16732,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16762,7 +16762,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16792,7 +16792,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "2_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16822,7 +16822,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "3_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16852,7 +16852,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "3_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16882,7 +16882,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_b_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16912,7 +16912,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16942,7 +16942,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_c_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -16972,7 +16972,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17002,7 +17002,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "13_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17032,7 +17032,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "13_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17062,7 +17062,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "14_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17092,7 +17092,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17127,7 +17127,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1059"
                                         data-parent_subtechnique_id = "T1059_003"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17157,7 +17157,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1559"
                                         data-parent_subtechnique_id = "T1559_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "1_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17187,7 +17187,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1559"
                                         data-parent_subtechnique_id = "T1559_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17216,7 +17216,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1106"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "3_b_6"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17246,7 +17246,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17276,7 +17276,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "12_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17306,7 +17306,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1569"
                                         data-parent_subtechnique_id = "T1569_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_c_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17346,7 +17346,7 @@
                                         data-parent_tactic_id = "TA0002"
                                         data-parent_technique_id = "T1569"
                                         data-parent_subtechnique_id = "T1569_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_6"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17380,7 +17380,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1204"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "1_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17409,7 +17409,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0002"
                                     data-parent_technique_id = "T1204"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "11_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17438,7 +17438,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0010"
                                     data-parent_technique_id = "T1041"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "2_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17467,7 +17467,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0010"
                                     data-parent_technique_id = "T1041"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "13_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17496,7 +17496,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0010"
                                     data-parent_technique_id = "T1041"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_b_5"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17526,7 +17526,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17556,7 +17556,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17595,7 +17595,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17634,7 +17634,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17665,7 +17665,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17695,7 +17695,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17725,7 +17725,7 @@
                                         data-parent_tactic_id = "TA0001"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17754,7 +17754,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0008"
                                     data-parent_technique_id = "T1570"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_9"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17792,7 +17792,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0008"
                                     data-parent_technique_id = "T1570"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_10"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17830,7 +17830,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0008"
                                     data-parent_technique_id = "T1570"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_a_11"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17868,7 +17868,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0008"
                                     data-parent_technique_id = "T1570"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "5_c_4"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -17898,7 +17898,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17928,7 +17928,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_b_3"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17958,7 +17958,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_a_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -17988,7 +17988,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_c_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18018,7 +18018,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18048,7 +18048,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_004"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18087,7 +18087,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1021"
                                         data-parent_subtechnique_id = "T1021_004"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_b_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18126,7 +18126,7 @@
                                         data-parent_tactic_id = "TA0008"
                                         data-parent_technique_id = "T1550"
                                         data-parent_subtechnique_id = "T1550_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_c_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18156,7 +18156,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_c_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18191,7 +18191,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "10_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18226,7 +18226,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_011"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18261,7 +18261,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_011"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "20_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18291,7 +18291,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1574"
                                         data-parent_subtechnique_id = "T1574_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18321,7 +18321,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18351,7 +18351,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "12_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18381,7 +18381,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18411,7 +18411,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18450,7 +18450,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18489,7 +18489,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18520,7 +18520,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18550,7 +18550,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18580,7 +18580,7 @@
                                         data-parent_tactic_id = "TA0003"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18610,7 +18610,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18640,7 +18640,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1548"
                                         data-parent_subtechnique_id = "T1548_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "15_a_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18670,7 +18670,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_c_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18705,7 +18705,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1547"
                                         data-parent_subtechnique_id = "T1547_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "10_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18740,7 +18740,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_011"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_b_5"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18775,7 +18775,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1546"
                                         data-parent_subtechnique_id = "T1546_011"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "20_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18805,7 +18805,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1574"
                                         data-parent_subtechnique_id = "T1574_001"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "17_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18834,7 +18834,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0004"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "9_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -18863,7 +18863,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0004"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "18_a_1"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -18892,7 +18892,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0004"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "18_a_3"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -18921,7 +18921,7 @@
                                     data-selected="false"
                                     data-parent_tactic_id = "TA0004"
                                     data-parent_technique_id = "T1055"
-                                    data-round_name = "carbanak_fin7"
+                                    data-adversary_name = "carbanak_fin7"
                                     data-substep = "20_a_2"
                                     onclick="select_substep_cell(this);"
                                 >
@@ -18951,7 +18951,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1055"
                                         data-parent_subtechnique_id = "T1055_012"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_7"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -18981,7 +18981,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "11_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19011,7 +19011,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1053"
                                         data-parent_subtechnique_id = "T1053_005"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "12_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19041,7 +19041,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "4_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19071,7 +19071,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_a_8"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19110,7 +19110,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "5_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19149,7 +19149,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19180,7 +19180,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "7_b_2"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19210,7 +19210,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "16_a_4"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19240,7 +19240,7 @@
                                         data-parent_tactic_id = "TA0004"
                                         data-parent_technique_id = "T1078"
                                         data-parent_subtechnique_id = "T1078_002"
-                                        data-round_name = "carbanak_fin7"
+                                        data-adversary_name = "carbanak_fin7"
                                         data-substep = "19_a_1"
                                         onclick="select_substep_cell(this);"
                                     >
@@ -19346,7 +19346,7 @@
         substep_bar_colors: ["#185b85", "#007a9a", "#ffbb05", "#00978d", "#05ae6a", "#95bd2a"],
         chart_columns: chart_col
     }
-    var currentRound = {"round_name": "carbanak_fin7", "round_display_name": "Carbanak+FIN7"};
+    var currentAdversary = {"round_name": "carbanak_fin7", "round_display_name": "Carbanak+FIN7"};
     var active_adversaries = [{'round_name': 'carbanak_fin7', 'round_display_name': 'Carbanak+FIN7'}];
     var stepChartHeight;
     var stepChartWidth;
@@ -19355,38 +19355,38 @@
     var disabledStepChartDetections = [];
     var disabledSubstepChartDetections = [];
     var substepChartTicksHidden = false;
-    let finder_round;
+    let finder_adversary;
     let selected_tactic_cell_id;
     let selected_technique_cell_id;
     let selected_subtechnique_cell_id;
     let selected_procedure_cell_id;
-    let selected_round; 
+    let selected_adversary; 
 
     window.onload = function() {
         var url_string = window.location.href;
         var urlParams = new URLSearchParams(window.location.search);
-        const round = urlParams.get('adversary')
+        const adversary = urlParams.get('adversary')
         const tactic = urlParams.get('tactic')
         const technique = urlParams.get('technique')
         const subtechnique = urlParams.get('subtechnique')
-        switch (round) {
+        switch (adversary) {
             case "apt3":
             case "apt29":
             case "carbanak_fin7":
-                let round_matched_to_query = false;
+                let adversary_matched_to_query = false;
                 active_adversaries.forEach(activeRound => {
-                    if(activeRound['round_name'] == (round)) {
-                        roundSelected(round)
-                        round_matched_to_query = true
-                        $("#select-round-finder").val(round);
+                    if(activeRound['round_name'] == (adversary)) {
+                        adversarySelected(adversary)
+                        adversary_matched_to_query = true
+                        $("#select-adversary-finder").val(adversary);
                     }
                 })
-                if (!round_matched_to_query) {
-                    roundSelected(currentRound['round_name'])
+                if (!adversary_matched_to_query) {
+                    adversarySelected(currentAdversary['round_name'])
                 }
                 break;
             default:
-                roundSelected(currentRound['round_name'])
+                adversarySelected(currentAdversary['round_name'])
         }
 
         // Multiple if checks are necessary incase a wrong query string value is entered in the URL
@@ -19410,10 +19410,10 @@
         }
     }
 
-    function roundSelected (round_selected) {
-        selected_round = round_selected;
-        chart_header_left = (selected_round == 'carbanak_fin7') ? 'Carbanak Scenario' : 'Scenario 1';
-        chart_header_right = (selected_round == 'carbanak_fin7') ? 'FIN7 Scenario' : 'Scenario 2';
+    function adversarySelected (adversary_selected) {
+        selected_adversary = adversary_selected;
+        chart_header_left = (selected_adversary == 'carbanak_fin7') ? 'Carbanak Scenario' : 'Scenario 1';
+        chart_header_right = (selected_adversary == 'carbanak_fin7') ? 'FIN7 Scenario' : 'Scenario 2';
 
         $('#h4_step_breakdown_1').html(chart_header_left);
         $('#h4_step_breakdown_2').html(chart_header_right);
@@ -19422,8 +19422,8 @@
         $('#h4_coverage_breakdown_1').html(chart_header_left);
         $('#h4_coverage_breakdown_2').html(chart_header_right);
         
-        roundSelectedLoadCharts(round_selected);
-        changeFinderRound(round_selected);
+        adversarySelectedLoadCharts(adversary_selected);
+        changeFinderAdversary(adversary_selected);
         prev_tactic_id = selected_tactic_cell_id;
         prev_technique_id = selected_technique_cell_id;
         prev_subtechnique_id = selected_subtechnique_cell_id;
@@ -19442,16 +19442,16 @@
         updateQueryString(true);
 
         if(prev_tactic_id) {
-            new_round_tactic_id_scope = document.getElementById(prev_tactic_id).dataset.scoped_to;
-            if (new_round_tactic_id_scope.includes(round_selected)) {
+            new_adversary_tactic_id_scope = document.getElementById(prev_tactic_id).dataset.scoped_to;
+            if (new_adversary_tactic_id_scope.includes(adversary_selected)) {
                 select_tactic_cell(document.getElementById(prev_tactic_id));
                 if(prev_technique_id) {
-                    new_round_technique_id_scope = document.getElementById(prev_technique_id).dataset.scoped_to;
-                    if (new_round_technique_id_scope.includes(round_selected)) {
+                    new_adversary_technique_id_scope = document.getElementById(prev_technique_id).dataset.scoped_to;
+                    if (new_adversary_technique_id_scope.includes(adversary_selected)) {
                         select_technique_cell(document.getElementById(prev_technique_id));
                         if(prev_subtechnique_id) {
                             new_subtechnique_id_scope = document.getElementById(prev_subtechnique_id).dataset.scoped_to;
-                            if (new_subtechnique_id_scope.includes(round_selected)) {
+                            if (new_subtechnique_id_scope.includes(adversary_selected)) {
                                 select_subtechnique_cell(document.getElementById(prev_subtechnique_id));
                             }
                         }
@@ -19461,11 +19461,11 @@
         }
     }
 
-    function updateQueryString(new_round_selected) {
+    function updateQueryString(new_adversary_selected) {
         let url = window.location.href;
-        let query_string = '?adversary=' + selected_round;
+        let query_string = '?adversary=' + selected_adversary;
         
-        if(!new_round_selected) {
+        if(!new_adversary_selected) {
             if(selected_tactic_cell_id) {
                 selected_tactic_id = document.querySelector("#" + selected_tactic_cell_id).dataset.tactic_id;
                 query_string += '&tactic=' + selected_tactic_id;
@@ -19485,9 +19485,9 @@
         window.history.replaceState({},'',query_string);
     }
 
-    function roundSelectedLoadCharts(round_selected) {
-        if (round_selected == 'carbanak_fin7') data = CF7_chart_data;
-        else if (round_selected == 'apt29') data = APT29_chart_data;
+    function adversarySelectedLoadCharts(adversary_selected) {
+        if (adversary_selected == 'carbanak_fin7') data = CF7_chart_data;
+        else if (adversary_selected == 'apt29') data = APT29_chart_data;
         else data = APT3_chart_data;
         disabledStepChartDetections = [];
         disabledSubstepChartDetections = [];
@@ -19567,15 +19567,15 @@
         }
     }
 
-    function load_step_chart(chart_data, day) {
-        d3.select("#step_breakdown_" + day).select("svg").remove()
+    function load_step_chart(chart_data, scenario) {
+        d3.select("#step_breakdown_" + scenario).select("svg").remove()
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         // Dimensions for the svg
         let margin = ({top: 60, right: 30, bottom: 150, left: 45})
         if(!stepChartHeight) {
-            stepChartHeight = document.getElementById("step_breakdown_" + day).clientHeight
-            stepChartWidth = document.getElementById("step_breakdown_" + day).clientWidth-20
+            stepChartHeight = document.getElementById("step_breakdown_" + scenario).clientHeight
+            stepChartWidth = document.getElementById("step_breakdown_" + scenario).clientWidth-20
         }
         // Function to map the x/y axis ticks
         let yAxis = g => g
@@ -19586,7 +19586,7 @@
                 }));
         let xAxis = g => g
             .attr("transform", `translate(0,${stepChartHeight - margin.bottom})`)
-            .attr("id", "xTicks_" + day)
+            .attr("id", "xTicks_" + scenario)
             .call(d3.axisBottom(x).tickSizeOuter(0))
 
         // Color mapping between detection types and colors
@@ -19597,8 +19597,8 @@
         // Pre-Process the data so that we can use it in the stacked bar chart
         let chart_steps = []
 
-        day_key = 'Scenario_' + day
-        for(step of chart_data['steps'][day_key]) {
+        scenario_key = 'Scenario_' + scenario
+        for(step of chart_data['steps'][scenario_key]) {
             substep_data = {}
             substep_data.step = step.Step
             for(detection of chart_data['detection_types']) {
@@ -19643,7 +19643,7 @@
                 .ticks(10)
         }
 
-        const svg = d3.select("#step_breakdown_" + day)
+        const svg = d3.select("#step_breakdown_" + scenario)
             .append("svg")
             .attr("width", stepChartWidth)
             .attr("height", stepChartHeight)
@@ -19704,16 +19704,16 @@
             .text("Number of Detections");      
 
 
-        var tooltip = d3.select("#step_breakdown_" + day)
+        var tooltip = d3.select("#step_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
 
-        add_step_labels(chart_steps.map(d => d.step_name), day)
+        add_step_labels(chart_steps.map(d => d.step_name), scenario)
     }
 
-    function add_step_labels(step_names, day) {
-        var xAxis = document.getElementById('xTicks_' + day);
+    function add_step_labels(step_names, scenario) {
+        var xAxis = document.getElementById('xTicks_' + scenario);
         var ticks = xAxis.querySelectorAll('.tick');
         for (const [i, tick] of ticks.entries()) {
             textElement = tick.querySelector('text')
@@ -19769,14 +19769,14 @@
 
 
 
-    function load_substep_chart(chart_data, day) {
-        d3.select("#substep_breakdown_" + day).select("svg").remove()
+    function load_substep_chart(chart_data, scenario) {
+        d3.select("#substep_breakdown_" + scenario).select("svg").remove()
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         // Dimensions for the svg
         let margin = ({top: 60, right: 30, bottom: 80, left: 45})
-        let height = document.getElementById("substep_breakdown_" + day).clientHeight
-        let width = document.getElementById("substep_breakdown_" + day).clientWidth -20
+        let height = document.getElementById("substep_breakdown_" + scenario).clientHeight
+        let width = document.getElementById("substep_breakdown_" + scenario).clientWidth -20
         // Function to map the x/y axis ticks
         let yAxis = g => g
             .attr("transform", `translate(${margin.left},0)`)
@@ -19799,8 +19799,8 @@
 
         // Pre-Process the data so that we can use it in the stacked bar chart
         let chart_substeps = []
-        day_key = "Scenario_" + day;
-        for(step of chart_data['steps'][day_key]) {
+        scenario_key = "Scenario_" + scenario;
+        for(step of chart_data['steps'][scenario_key]) {
             for(substep of step.Substeps) {
                 substep_data = {}
                 substep_data.substep = substep.Substep
@@ -19845,7 +19845,7 @@
                 .ticks(5)
         }
 
-        const svg = d3.select("#substep_breakdown_" + day)
+        const svg = d3.select("#substep_breakdown_" + scenario)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -19915,7 +19915,7 @@
             }
         });
 
-        var tooltip = d3.select("#substep_breakdown_" + day)
+        var tooltip = d3.select("#substep_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
@@ -19985,17 +19985,17 @@
         }
     }
 
-    function load_coverage_chart(chart_data, day) {
-        d3.select("#coverage_breakdown_" + day).select("svg").remove()
+    function load_coverage_chart(chart_data, scenario) {
+        d3.select("#coverage_breakdown_" + scenario).select("svg").remove()
 
-        if (selected_round == 'apt3') {
+        if (selected_adversary == 'apt3') {
             var margin = ({top: 30, right: 30, bottom: 70, left: 75});
         }
         else {
             var margin = ({top: 30, right: 30, bottom: 70, left: 45});
         }
-        let height = document.getElementById("coverage_breakdown_" + day).clientHeight - 20
-        let width = document.getElementById("coverage_breakdown_" + day).clientWidth
+        let height = document.getElementById("coverage_breakdown_" + scenario).clientHeight - 20
+        let width = document.getElementById("coverage_breakdown_" + scenario).clientWidth
         // Function to map the x/y axis ticks
         let yAxis = g => g
             .attr("transform", `translate(${margin.left},0)`)
@@ -20022,7 +20022,7 @@
             .range(colorRange)
 
         coverage_substeps = []
-        for(step of chart_data['steps']['Scenario_' + day]) {
+        for(step of chart_data['steps']['Scenario_' + scenario]) {
             for(substep of step.Substeps) {
                 substep_data = {};
                 substep_data.substep = substep.Substep;
@@ -20032,12 +20032,12 @@
         }
         var heatmap_data = []
         for (const [i, substep] of coverage_substeps.entries()) {
-            for (var dtype in chart_data['coverage_scenario' + day]) {
+            for (var dtype in chart_data['coverage_scenario' + scenario]) {
                 data_obj = {}
                 data_obj['substep'] = substep['substep']
                 data_obj['dtype'] = dtype
                 data_obj['dtype_total'] = substep['substepDetectionCounts'][dtype]
-                if(chart_data['coverage_scenario' + day][dtype].charAt(i) == '1') {
+                if(chart_data['coverage_scenario' + scenario][dtype].charAt(i) == '1') {
                     data_obj['presence'] = dtype
                 } else {
                     data_obj['presence'] = 'No Trace'
@@ -20062,7 +20062,7 @@
                 .ticks(coverage_substeps.length)
         }
 
-        const svg = d3.select("#coverage_breakdown_" + day)
+        const svg = d3.select("#coverage_breakdown_" + scenario)
             .append("svg")
             .attr("width", width)
             .attr("height", height)
@@ -20093,7 +20093,7 @@
             }
         });
 
-        var tooltip = d3.select("#coverage_breakdown_" + day)
+        var tooltip = d3.select("#coverage_breakdown_" + scenario)
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip tooltip-box")
@@ -20278,7 +20278,7 @@
 
         for (let substep_cell of substep_cells.children) {
             substep_cell.style.borderBottom = "none";
-            if (substep_cell.getAttribute("data-round_name") === finder_round) {
+            if (substep_cell.getAttribute("data-adversary_name") === finder_adversary) {
                 let parent_tactic_id = substep_cell.getAttribute("data-parent_tactic_id");
                 let parent_technique_id = substep_cell.getAttribute("data-parent_technique_id");
                 let parent_subtechnique_id = substep_cell.getAttribute("data-parent_subtechnique_id");
@@ -20371,43 +20371,43 @@
     }
 
     // This logic and dropdown should be merged with the dropdown for charts
-    function changeFinderRound(round) {
-        finder_round = round;
+    function changeFinderAdversary(adversary) {
+        finder_adversary = adversary;
         
-        // Change scope to match round
+        // Change scope to match adversary
         let tactic_cells = document.getElementById("div_tactic_cells");
         let technique_cells = document.getElementById("div_technique_cells");
         let subtechnique_cells = document.getElementById("div_subtechnique_cells");
         let cell;
 
         for (cell of tactic_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "tactic");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
 
         for (cell of technique_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "technique");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
 
         for (cell of subtechnique_cells.children) {
-            if (cell.getAttribute('data-scoped_to').indexOf(round) > -1) {
+            if (cell.getAttribute('data-scoped_to').indexOf(adversary) > -1) {
                 set_in_scope(cell, "subtechnique");
             }
             else {
                 set_out_of_scope(cell);
             }
-            update_finder_links(cell, round);
+            update_finder_links(cell, adversary);
         }
     }
 
@@ -20470,7 +20470,7 @@
         }
     }
 
-    function update_finder_links(cell, round) {
+    function update_finder_links(cell, adversary) {
         let use_nginx_links = false;
 
         if (cell.children[0].lastElementChild && cell.children[0].lastElementChild.tagName === 'A') {
@@ -20485,10 +20485,10 @@
                 }
 
                 if (old_href.indexOf("?") > -1) {
-                    link.setAttribute("href", old_href.slice(0, old_href.indexOf("?")) + "?adversaries=" + round);
+                    link.setAttribute("href", old_href.slice(0, old_href.indexOf("?")) + "?adversaries=" + adversary);
                 }
                 else {
-                    link.setAttribute("href", old_href + "?adversaries=" + round);
+                    link.setAttribute("href", old_href + "?adversaries=" + adversary);
                 }
             }
         }
