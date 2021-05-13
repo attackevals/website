@@ -146,7 +146,7 @@
 </header>
 <div id='content-width-lock'>
     <div id='content'>
-<div class='divEvaluationSummaryBody-oc'>
+<div class="mx-4 mb-4" style="padding-top: 20px">
     <div style='width: 100%; padding-top: 20px;'>
         <table style='width: 100%;'>
             <tr>
@@ -167,7 +167,6 @@
                 </td>
             </tr>
         </table>
-        <br />
         <br />
         <span class="labSubheader-oc">
             AhnLab Overview
@@ -203,9 +202,53 @@
     </div>
 </div>
 
+<div class="btn-group mx-4 mb-4 btn-group-toggle" role="group" aria-label="Btn Group Adversary" id="adversary_btn_group" data-toggle="buttons">
+    <label class="btn btn-engenuity-purple" for="btn_rdo_adversary_overview">
+        <input 
+            type="radio" 
+            name="btn_rdo_adversary_overview" 
+            id="btn_rdo_adversary_overview" 
+            autocomplete="off" 
+        >
+        Overview
+    </label>
+                <label class="btn btn-purple-disabled" for="btn_rdo_adversary_apt3">
+                    <input 
+                        type="radio" 
+                        name="btn_rdo_adversary_apt3" 
+                        id="btn_rdo_adversary_apt3" 
+                        autocomplete="off" 
+                        data-adversary_val="apt3"
+                        disabled
+                    >
+                    APT3 (2018)
+                </label>
+                <label class="btn btn-purple-disabled" for="btn_rdo_adversary_apt29">
+                    <input 
+                        type="radio" 
+                        name="btn_rdo_adversary_apt29" 
+                        id="btn_rdo_adversary_apt29" 
+                        autocomplete="off" 
+                        data-adversary_val="apt29"
+                        disabled
+                    >
+                    APT29 (2019)
+                </label>
+                <label class="btn btn-engenuity-purple-unselected" for="btn_rdo_adversary_carbanak_fin7">
+                    <input 
+                        type="radio" 
+                        name="btn_rdo_adversary_carbanak_fin7" 
+                        id="btn_rdo_adversary_carbanak_fin7" 
+                        autocomplete="off" 
+                        data-adversary_val="carbanak_fin7"
+                        onclick="location.href='/enterprise/participants/ahnlab/results.html?adversary=carbanak_fin7'"
+                    >
+                    Carbanak+FIN7 (2020)
+                </label>
+</div>
 
 
-<div class="container-fluid mb-4 mr-4 p-4">
+<div class="container-fluid my-4 pl-4">
     <table class='tableMatrixLegendExport-oc'>
         <tr>
             <td>
@@ -286,9 +329,7 @@
         <span>*12 substeps only applied to the Linux environment. AhnLab did not have an agent deployed to the Linux environment, so those substeps were removed.</span>
 </div>
 
-
-
-<div class="container-fluid mb-4 mr-4 p-4">
+<div class="container-fluid m-4 p-4">
     <div class="row">
         <div class="col-3">
             <h5>Evaluation Overview</h5>
