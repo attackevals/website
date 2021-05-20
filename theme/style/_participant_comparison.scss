@@ -106,6 +106,7 @@
   height: 550px;
   border-radius: 5px;
   min-width: 260px;
+  max-width: 330px;
 }
 
 .diff_div_vendor_selects, .diff_div_filters {
@@ -113,12 +114,13 @@
 }
 
 .diff_div_step_tid_card {
-  width: 65%;
+  width: 85%;
   border-radius: 10px;
   border: 2px solid lightgray;
   padding: 10px;
   margin-bottom: 20px;
   transition: all .5s ease;
+  min-width: 750px;
 }
 
 .span_proc_crit_title {
@@ -215,7 +217,7 @@
   cursor: pointer;
   position: fixed;
   bottom: 20px;
-  left: 75%;
+  left: 90%;
   font-size: 30px;
   color: #6241c5;
 }
@@ -283,5 +285,58 @@
   cursor: default;
   text-decoration: none;
 }
+
+@media screen and (max-width:1200px) {
+  .diff_div_step_tid_card {
+    min-width: 450px;
+  }
+}
+
+@media screen and (max-width:1095px) {
+  .diff_div_rhs {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width:1010px) {
+  .diff_div_rhs {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width:905px) {
+  .diff_div_rhs {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .diff_div_rhs {
+    max-width: 400px;
+  }
+  .diff_div_step_tid_card {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width:695px) {
+  .diff_div_user_options {
+    flex: 0 1 auto;
+    position: static;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .diff_div_rhs {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .diff_div_step_tid_card {
+    min-width: 0;
+  }
+}
+
 
 

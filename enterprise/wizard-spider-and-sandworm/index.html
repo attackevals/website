@@ -160,6 +160,9 @@
                 <nav id="sidebar" class="mt-4 navbar" style="top: 130px; position: sticky;">
                     <nav class="nav nav-pills flex-column" id="side-nav">
                         <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
+                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i class="fas fa-chevron-right nav-arrow"></i></a>
                     </nav>
                 </nav>
             </div>
@@ -176,7 +179,7 @@
                                 <div class="col-lg-3 vertical-center text-center">
                                     <h4 class="boldText">Wizard Spider and Sandworm</h4>
                                     <h5 style="color: grey;">Enterprise Evaluation 2021</h5>
-                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4" href="/get-evaluated.html" role="button">Join</a></center>
+                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4" href="/get-evaluated" role="button">Join</a></center>
                                 </div>
                                 <div class="col-lg-6 vertical-center">
                                     <div class="pb-container">
@@ -205,35 +208,153 @@
                                         <sup><a href="https://www.ncsc.gov.uk/news/ncsc-supports-sandworm-advisory" target="_blank">[4]</a></sup>
                                     </p>
                                 </div>
-                                <!-- <div class="col overview_right_card">
+                                <div class="col overview_right_card">
                                     <h5 class="boldText">Emulation Notes</h5>
                                     <p>
-                                        These groups carry a firm reputation of utilizing innovative tradecraft. Efficient espionage and stealth are at the forefront of their strategy, as they often rely heavily on scripting, obfuscation, “hiding in plain sight,” and fully exploiting the users behind the machine while pillaging an environment. They also leverage a unique spectrum of operational utilities, spanning both sophisticated malware as well as legitimate administration tools capable of interacting with various platforms (Windows and Linux, including point-of-sale specific technologies). 
+                                        This round will focus on how multiple groups abuse 
+                                        <a href="https://attack.mitre.org/techniques/T1486/">Data Encrypted For Impact (T1486)</a>. 
+                                        In Wizard Spider’s case, they have leveraged data encryption for ransomware, including the widely known 
+                                        <a href="https://attack.mitre.org/software/S0446/">Ryuk malware (S0446)</a>. 
+                                        Sandworm, on the other hand, leveraged encryption for the destruction of data, perhaps most notably with their 
+                                        <a href="https://attack.mitre.org/software/S0368/">NotPetya malware (S0368) </a>
+                                        that disguised itself as ransomware. While the common thread to this year’s evaluations is Data Encrypted for Impact, both groups have substantial reporting on a broad range of post-exploitation tradecraft.
                                     </p>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="false-anchor" id="technique-scope"></div>
+                <h3 class="boldText mt-4"> Technique Scope </h3>
+                <div>
+                    <p>
+                        For the Wizard Spider and Sandworm evaluation, the highlighted ATT&CK techniques are in scope for this evaluation. 
+                        Linux techniques are included in the scope of this evaluation, though will only represent a small portion of the evaluation. 
+                        The Linux portion of the evaluation is optional for participants. 
+                        This will also mark the first time the impact tactic is in scope for the evaluation. 
+                        Due to the public call for intelligence contributions, the scope is subject to change. 
+                        A final scope will be published in July 2021. 
+                    </p>
+                    <p>
+                        <i>
+                            You can view the in-scope Techniques for the Wizard Spider and Sandworm evaluation in the ATT&CK Navigator by checking out the layer file we made available
+                            <a href="https://mitre-attack.github.io/attack-navigator/v2/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/Wizard_Spider_and_Sandworm_Navigator_layer.json">here</a>. 
+                            A preview is shown below! The Techniques in scope attributed specifically to Wizard Spider are highlighted in purple, attributed specifically to Sandworm in blue, and both Wizard Spider and Sandworm in grey. 
+                        </i>		
+                    </p>
+                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Wizard_Spider_and_Sandworm_Scope.svg" style="width:100%;"></center>
+
+                    <p><a href="/enterprise/wizard-spider-and-sandworm/scope">Learn More: Technique Scope</a></p>
+                </div>
+            
+                <div class="false-anchor" id="environment"></div>
+                <h3 class="boldText mt-4"> Environment </h3>
+                <div class="row">
+                    <div class="col">
+                        <center>
+                            <figure>
+                                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Round4NetworkDiagram.png" style="max-width: 1000px; width: 100%;" />
+                                <figcaption><i>Figure 1: Wizard Spider and Sandworm Evaluation Environment</i></figcaption>
+                            </figure>
+                        </center>
+                        <p><em>Environment configuration is subject to change. Any changes will be reflected on this page. Full environment configuration details will be available upon the release of results.</em></p>
+                    </div>
+                    <div class="col">
+                        <p>
+                            The evaluations will be performed in the Microsoft Azure Cloud. There will be two organizations with separate networks and domains, with Windows Defender disabled for certain portions of the evaluations. The networks will contain domain joined machines running Windows Server 2019, Windows 10 Pro, and CentOS 7.9. The versions are as follows:
+                            <ul>
+                                <li>
+                                    <b>Windows Server 2019</b>
+                                    <ul>
+                                        <li>Publisher: MicrosoftWindowsServer</li>
+                                        <li>Version: 1809</li>
+                                        <li>SKU: 2019-Datacenter</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Windows 10 Pro</b>
+                                    <ul>
+                                        <li>Publisher: MicrosoftWindowsDesktop</li>
+                                        <li>Version: 20h2</li>
+                                        <li>SKU: 20h2-pro</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>CentOS 7.9</b>
+                                    <ul>
+                                        <li>Publisher: Open Logic</li>
+                                        <li>SKU: 7_9</li>
+                                        <li>Kernel: 3.10.0-1160</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            <a href="/enterprise/wizard-spider-and-sandworm/environment">Learn More: Environment Page</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="false-anchor" id="detection-categories"></div>
+                <h3 class="boldText mt-4"> Detection Categories </h3>
+                <div class="row">
+                    <div class="col">
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7-Detection-Categories.png" style="width: 80%;"></center>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Vendors use their own terminology and approaches to detect and protect potential adversary behavior. They provide this information to us in their unique way, and then it is our responsibility to abstract the data using categories to talk about the products in similar ways.
+                        </p>
+                        <p>
+                            These categories are divided into two types: “Main” and “Modifier.” Each detection or protection receives one main category designation, which relates to the amount of context provided to the user, and may optionally receive one or more modifier category designations that help describe the event in more detail. For the Wizard Spider and  evaluation, there are six main detection categories representing the amount of context provided to the analyst, and three main protection categories.
+                        </p>
+                        <p>
+                            You can learn more about our process for processing detections here. 
+                        </p>
+                        <p>
+                            <a href="/enterprise/wizard-spider-and-sandworm/detection-categories">Learn More: Detection Categories Page</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<br><br>
+
 
 <script type="text/javascript">
-var navOffset = 100;
-function deselectNav() {
-    $('#side-nav a').addClass('nav-link-black')
-    $('#side-nav a').removeClass('nav-link-selected')
-    $('#side-nav a i').css("display", "none")
-}
+    
+    </script>
+    
+<script type="text/javascript">
+    var navOffset = 100;
+    function deselectNav() {
+        $('#side-nav a').addClass('nav-link-black')
+        $('#side-nav a').removeClass('nav-link-selected')
+        $('#side-nav a i').css("display", "none")
+    }
 
-$(document).on('scroll', function() {
-    deselectNav()
-    $('#a-overview').addClass('nav-link-selected')
-    $('#a-overview i').css("display", "block")
-})
 
+    $(document).on('scroll', function() {
+        deselectNav()
+        if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
+            $('#a-detection').addClass('nav-link-selected')
+            $('#a-detection i').css("display", "block")
+        }
+        else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
+            $('#a-environment').addClass('nav-link-selected')
+            $('#a-environment i').css("display", "block")
+        }
+        else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
+            $('#a-scope').addClass('nav-link-selected')
+            $('#a-scope i').css("display", "block")
+        }
+        else {
+            $('#a-overview').addClass('nav-link-selected')
+            $('#a-overview i').css("display", "block")
+        }
+    })
 </script>
 
 </div>
