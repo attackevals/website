@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-62667723-5'></script><script src='/theme/scripts/analytics.js'></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+
+ </head>
+
+<body>
+    <header class=''>
+        <nav class='navbar navbar-expand-lg navbar-light fixed-top box-shadow-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/methodology-overview">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Wizard Spider and <br> Sandworm (2021)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/participants/">
+                            View All Participants
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
+                            <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2021)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='nav-item dropdown ml-3'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
+          </ul>
+        </div>
+    </nav>
+</header>
+<div id='content-width-lock'>
+    <div id='content'><br>
+<div class="divEvaluationSummaryBody">
+    <div style="padding: 0px; width: 100%;">
+        <span class="spanBreadcrumbs-results">
+            <a href='/'>Home</a> &nbsp;>&nbsp;
+            <a href="/ics/triton/">ICS TRITON</a> &nbsp;>&nbsp; Detection Categories
+        </span>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class='divFAQBody'>
+        <div style="margin-top:20px; text-align: center;">
+            <h1>TRITON Evaluation: Detection Categories</h1>
+        </div>
+        <br />
+        <table align="right" width="700">
+            <tr>
+                <td>
+                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Detection_Categories.png" style="max-width: 100%;"></center>
+                </td>
+            </tr>
+        </table>
+        <p>
+            The evaluation focuses on articulating how detections occur, rather than assigning scores to vendor
+            capabilities.
+        </p>
+        <p>
+            For the evaluation, we categorize each detection and capture notes about how those detections occur. We
+            organize detections according to each technique. Techniques may have more than one detection if the
+            capability detects the technique in different ways, and detections we observe are included in the results.
+            While we make every effort to capture different detections, vendor capabilities may be able to detect
+            procedures in ways that we did not capture. For a detection to be included for a given technique, it must
+            apply to that technique specifically (i.e. just because a detection applies to one technique in a Step or
+            Sub-Step does not mean it applies to all techniques of that Step). For proof of detection in each category,
+            we require that the proof be provided to us, but we may not include all detection details in public results,
+            particularly when those details are sensitive.
+        </p>
+        <p>
+            To determine the appropriate category for a detection, we review the screenshot(s) provided, notes taken
+            during the evaluation, results of follow-up questions to the vendor, and vendor feedback on draft results.
+            We also independently test procedures in a separate lab environment and review open-source tool detections
+            and forensic artifacts. This testing informs what is considered to be a detection for each technique.
+        </p>
+        <p>
+            After performing detection categorizations, we calibrate the categories across all vendors to look for
+            discrepancies and ensure categories are applied consistently. The decision of what category to apply is
+            ultimately based on human analysis and is therefore subject to discretion and biases inherent in all human
+            analysis, although we do make efforts to hedge against these biases by structuring analysis as described
+            above.
+        </p>
+        <br>
+        <br>
+        <div class="row pt-4 pb-4">
+            <div class="col faq clean-sections accordion-panels">
+                <h2>Data Sources</h2>
+                <p>
+                    Detections will be tagged with the data source(s) that signify the type of data used to generate the
+                    detection. This will be used to differentiate and provide more precise descriptions of similar
+                    detections (ex: telemetry from file monitoring versus process command-line arguments). The list of
+                    possible data source tags will be calibrated by MITRE after execution of the evaluations.
+                </p>
+            </div>
+        </div>
+        <div class="row pt-4 pb-4">
+            <div class="col faq clean-sections accordion-panels">
+                <h2>Detection Categories</h2>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="not-applicable-header" data-toggle="collapse"
+                        data-target="#not-applicable-body" aria-expanded="false" aria-controls="not-applicable-body">
+                        <h5 class="mb-0">Not Applicable</h5>
+                    </div>
+                    <div id="not-applicable-body" class="collapse" aria-labelledby="not-applicable-header">
+                        <div class="card-body">
+                            <p>
+                                Vendor did not have visibility on the system under test. The vendor must state before
+                                the evaluation what systems they did not deploy a sensor on to enable Not Applicable to
+                                be in scope for relevant steps.
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            The vendor product only collects network traffic and is unable to collect
+                                            host-based data natively.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="none-header" data-toggle="collapse" data-target="#none-body"
+                        aria-expanded="false" aria-controls="none-body">
+                        <h5 class="mb-0">None</h5>
+                    </div>
+                    <div id="none-body" class="collapse" aria-labelledby="none-header">
+                        <div class="card-body">
+                            <p>
+                                No data is automatically collected, processed, or made available within the capability
+                                related to the behavior under test. If data is available that is not directly relevant
+                                to the procedure tested, this will be categorized as “None.”
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            No data is collected related to the particular action being performed.
+                                            An alert fires at the same time that the red team performs the procedure,
+                                            but it is not related to the technique under test.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="telemetry-header" data-toggle="collapse"
+                        data-target="#telemetry-body" aria-expanded="false" aria-controls="telemetry-body">
+                        <h5 class="mb-0">Telemetry</h5>
+                    </div>
+                    <div id="telemetry-body" class="collapse" aria-labelledby="telemetry-header">
+                        <div class="card-body">
+                            <p>
+                                Minimally processed data is collected by the capability showing that event(s) occurred
+                                specific to the behavior under test. (i.e. showing the procedure/command that was
+                                executed). Evidence must show definitively that behavior occurred and be related to the
+                                execution mechanism (did happen vs may have happened). Evidence must be related to what
+                                caused the behavior. There is no evidence of complex logic or an advanced rule leading
+                                to the data output, and no labeling occurred other than simple field labeling.
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                A certain command is seen in traffic sent to the management port of a
+                                                controller.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="general-header" data-toggle="collapse"
+                        data-target="#general-body" aria-expanded="false" aria-controls="general-body">
+                        <h5 class="mb-0">General</h5>
+                    </div>
+                    <div id="general-body" class="collapse" aria-labelledby="general-header">
+                        <div class="card-body">
+                            <p>
+                                Processed data specifies that malicious/abnormal event(s) occurred, with relation to the
+                                behavior under test. No or limited details are provided as to why the action was
+                                performed (tactic), or details for how the action was performed (technique).
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                An alert is triggered based on a baseline deviation of a process
+                                                variable, but no information is provided about why the event happened.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="tactic-header" data-toggle="collapse"
+                        data-target="#tactic-body" aria-expanded="false" aria-controls="tactic-body">
+                        <h5 class="mb-0">Tactic</h5>
+                    </div>
+                    <div id="tactic-body" class="collapse" aria-labelledby="tactic-header">
+                        <div class="card-body">
+                            <p>
+                                Processed data specifies an ATT&CK Tactic or equivalent level of enrichment to the data
+                                collected by the capability. Gives the analyst information on the potential intent of
+                                the activity or helps answer the question "why this would be done.”
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                An alert called “Malicious Discovery” is triggered on a series of
+                                                discovery techniques. The alert has a score indicating the alert is
+                                                likely malicious. The alert does not identify the specific type of
+                                                discovery performed.
+                                            </p>
+                                            <p>
+                                                An alert describing that persistence occurred but not specifying how
+                                                persistence was achieved.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="technique-header" data-toggle="collapse"
+                        data-target="#technique-body" aria-expanded="false" aria-controls="technique-body">
+                        <h5 class="mb-0">Technique</h5>
+                    </div>
+                    <div id="technique-body" class="collapse" aria-labelledby="technique-header">
+                        <div class="card-body">
+                            <p>
+                                Processed data specifies an ATT&CK Technique or equivalent level of enrichment to the
+                                data collected by the capability. Gives the analyst information on how the action was
+                                performed or helps answer the question "what was done" (i.e. Brute Force I/O).
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                An alert called “Impair Process Control with Unauthorized Command
+                                                Message” is triggered describing what command message was issued, why it
+                                                is malicious and how it has impaired process control.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4 pb-4">
+            <div class="col faq clean-sections accordion-panels">
+                <h2>Modifier Detection Types</h2>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="configuration-change-header" data-toggle="collapse"
+                        data-target="#configuration-change-body" aria-expanded="false"
+                        aria-controls="configuration-change-body">
+                        <h5 class="mb-0">Configuration Change</h5>
+                    </div>
+                    <div id="configuration-change-body" class="collapse" aria-labelledby="configuration-change-header">
+                        <div class="card-body">
+                            <p>
+                                The configuration of the capability was changed since the start of the evaluation. This
+                                may be done to show additional data can be collected and/or processed. The “Configuration Change” modifier may be applied based on various different types of changes:
+                            </p>
+                            <p>
+                                Configuration Change is subdivided into:
+                                <ul>
+                                    <li>
+                                        <strong>UX</strong> – Change was to the user experience and not to the
+                                        capability's ability to detect behavior. Changes could include display of a
+                                        certain type of data that was already collected but not visible to the user.
+                                    </li>
+                                    <li>
+                                        <strong>Detection Logic</strong> – Change was to the capability's ability to
+                                        process information that impacts its ability to detect adversary behavior.
+                                    </li>
+                                    <li>
+                                        <strong>Data Sources</strong> – Change was to the capability's ability to
+                                        capture a new type of data that impacts its ability to detect adversary
+                                        behavior.
+                                    </li>
+                                </ul>
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Data showing that a controller’s program changed state is collected on
+                                                the backend but not displayed to the end user by default. The vendor
+                                                changes a backend setting to allow “Telemetry” on program state changes
+                                                to be displayed in the user interface, so a detection of “Telemetry” and
+                                                “Configuration Change-UX” would be given for the Change Program State
+                                                technique.
+                                            </p>
+                                            <p>
+                                                The vendor toggles a setting that would display an additional label of
+                                                “Discovery” when the foo, foo1, and foo2 discovery commands are
+                                                executed. A detection of “Tactic” and “Configuration Change-Detection”
+                                                would be given (as opposed to a detection of “Telemetry” that would have
+                                                been given before the change).
+                                            </p>
+                                            <p>
+                                                A rule or detection logic is created and applied retroactively or is
+                                                later retested to show functionality that exists in the capability. This
+                                                would be labeled with a modifier “Configuration Change-Detection”.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-header collapsed" id="correlated-header" data-toggle="collapse"
+                        data-target="#correlated-body" aria-expanded="false" aria-controls="correlated-body">
+                        <h5 class="mb-0">Correlated </h5>
+                    </div>
+                    <div id="correlated-body" class="collapse" aria-labelledby="correlated-header">
+                        <div class="card-body">
+                            <p>
+                                Data is presented as being descendant of events previously identified as
+                                suspicious/malicious based on an alert or high suspicion activity that was brought to
+                                the attention of an analyst. Examples of correlation evidence include annotated process
+                                trees or tags applied to chains of events showing the relationship between the
+                                suspicious/malicious event and data from the technique under test.
+                            </p>
+                            <table class="table table-bordered table-light mt-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Examples</th>
+                                    </tr>
+                                </thead>
+                                <tbody class='bg-white'>
+                                    <tr>
+                                        <td>
+                                            A chain of events is annotated showing the relationship between a new node
+                                            appearing on the network and an alert about unauthorized command messages
+                                            being sent from this node.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+</div>
+</div>
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2021, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

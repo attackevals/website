@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -267,14 +263,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        A Technique detection called Masquerading was generated due to the presence of the RTLO character.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3433.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection called Masquerading was generated due to the presence of the RTLO character.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3433.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -327,14 +328,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell extracting and executing the code embedded within monkey.png.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3478.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell extracting and executing the code embedded within monkey.png.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3478.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -379,14 +385,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed deletion of HKCU\Software\Classes\Folder\shell\Open\command value.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3500.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed deletion of HKCU\Software\Classes\Folder\shell\Open\command value.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3500.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -432,14 +443,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A General alert detection (Reminder severity) was generated for powershell.exe decompressing via Expand-Archive in the Downloads directory.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3514.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General alert detection (Reminder severity) was generated for powershell.exe decompressing via Expand-Archive in the Downloads directory.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3514.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -459,9 +475,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed PowerShell decompressing the ZIP via Expand-Archive.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell decompressing the ZIP via Expand-Archive.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -515,14 +536,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection (warning severity) called "SDelete usage by Process Monitor" was generated due to sdelete64.exe process creation used to delete rcs.3aka3.doc.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3523.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "SDelete usage by Process Monitor" was generated due to sdelete64.exe process creation used to delete rcs.3aka3.doc.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3523.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -542,9 +568,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -598,14 +629,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection (warning severity) called "SDelete usage by Process Monitor"  was generated due to sdelete64.exe process creation used to delete Draft.zip.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3522.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "SDelete usage by Process Monitor"  was generated due to sdelete64.exe process creation used to delete Draft.zip.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3522.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -625,9 +661,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -681,14 +722,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection (warning severity) called "SDelete usage by Process Monitor" was generated due to sdelete64.exe process creation used to delete SysinternalsSuite.zip.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3521.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "SDelete usage by Process Monitor" was generated due to sdelete64.exe process creation used to delete SysinternalsSuite.zip.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3521.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -708,9 +754,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -763,14 +814,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed hash of accesschk.exe, which can be used to verify it is not the legitimate Sysinternals tool.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3557.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed hash of accesschk.exe, which can be used to verify it is not the legitimate Sysinternals tool.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3557.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -823,9 +879,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -878,9 +939,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed a valid logon on Scranton (10.0.1.4) as user Pam.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a valid logon on Scranton (10.0.1.4) as user Pam.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -901,19 +967,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection (Reminder severity) called "Logon Event Detected" was generated due to the user Pam logging on to Scranton (10.0.1.4).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3624.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3627.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (Reminder severity) called "Logon Event Detected" was generated due to the user Pam logging on to Scranton (10.0.1.4).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3624.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3627.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -966,9 +1037,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed sdelete64.exe with command-line arguments used to delete rar.exe.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete64.exe with command-line arguments used to delete rar.exe.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -989,14 +1065,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete rar.exe.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3671.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete rar.exe.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3671.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1050,14 +1131,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete Desktop\working.zip.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3672.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete Desktop\working.zip.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3672.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1077,9 +1163,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sdelete64.exe with command-line arguments used to delete Desktop\working.zip.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete64.exe with command-line arguments used to delete Desktop\working.zip.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1133,14 +1224,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete working.zip.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3673.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (warning severity) called "Indicator Removal on Host" was generated when sdelete64.exe with command-line arguments was used to delete working.zip.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3673.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1160,9 +1256,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sdelete64.exe with command-line arguments to delete working.zip.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sdelete64.exe with command-line arguments to delete working.zip.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1215,9 +1316,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1270,9 +1376,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1325,9 +1436,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing the schemas ADS with Get-Content and IEX.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing the schemas ADS with Get-Content and IEX.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1348,14 +1464,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A General alert detection (warning severity) called "Suspicious Powershell Commandline" was generated for powershell.exe executing the schemas ADS via Get-Content and IEX.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3699.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General alert detection (warning severity) called "Suspicious Powershell Commandline" was generated for powershell.exe executing the schemas ADS via Get-Content and IEX.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3699.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1408,14 +1529,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi query for Win32_BIOS.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3720.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi query for Win32_BIOS.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3720.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1460,9 +1586,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed the certutil.exe process and corresponding file write of the kxwn.lock payload.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the certutil.exe process and corresponding file write of the kxwn.lock payload.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1483,14 +1614,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A General alert detection (Warning severity) was generated for certutil usage.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3744.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General alert detection (Warning severity) was generated for certutil usage.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3744.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1543,19 +1679,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the timestomp function being used to modify attributes of kxwn.lock along with the details of the function.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3768.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3767.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the timestomp function being used to modify attributes of kxwn.lock along with the details of the function.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3768.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3767.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1600,14 +1741,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the deletion of the Registry value.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3786.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the deletion of the Registry value.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3786.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1652,14 +1798,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell writing encoded content into the WMI class.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3866.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell writing encoded content into the WMI class.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3866.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1704,14 +1855,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell reading encoded content from the WMI class.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3867.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell reading encoded content from the WMI class.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3867.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1756,14 +1912,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell appending the GIF file header to the compressed file.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3937.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell appending the GIF file header to the compressed file.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/HanSight-APT29-3937.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>

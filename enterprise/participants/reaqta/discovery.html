@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -263,14 +259,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "System Information Discovery" was generated when wscript.exe made WMI queries for Win32_OperatingSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "System Information Discovery" was generated when wscript.exe made WMI queries for Win32_OperatingSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -290,14 +291,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.2_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.2_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -342,14 +348,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -369,14 +380,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "Process Discovery" was generated when wscript.exe made a WMI query for Win32_Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Process Discovery" was generated when wscript.exe made a WMI query for Win32_Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_2.A.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -421,14 +437,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_3.B.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_3.B.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -473,9 +494,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -520,19 +546,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A General detection named "AMSI" was generated when powershell.exe executed Get-NetComputer deemed malicious by AMSI.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General detection named "AMSI" was generated when powershell.exe executed Get-NetComputer deemed malicious by AMSI.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -552,19 +583,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_4.A.2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -619,14 +655,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Process Discovery" was generated when user kmitnick (542200500) executed ps ax.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Process Discovery" was generated when user kmitnick (542200500) executed ps ax.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -646,14 +687,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.3_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.3_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -708,14 +754,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -735,14 +786,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "File and Directory Discovery" was generated when user kmitnick (542200500) executed ls -lsahR /var/.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "File and Directory Discovery" was generated when user kmitnick (542200500) executed ls -lsahR /var/.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -797,14 +853,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.7.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_5.B.7.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -849,14 +910,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_6.A.2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_6.A.2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -909,14 +975,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        A General detection named "AMSI" was generated when PowerShell executes Get-NetUser determined to be malicious by AMSI.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_6.A.3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General detection named "AMSI" was generated when PowerShell executes Get-NetUser determined to be malicious by AMSI.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_6.A.3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -961,14 +1032,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_7.B.1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_7.B.1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -988,14 +1064,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "System Owner/User Discovery" was generated when powershell.exe executed qwinsta /server:cfo.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_7.B.1_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "System Owner/User Discovery" was generated when powershell.exe executed qwinsta /server:cfo.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_7.B.1_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1040,9 +1121,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1087,14 +1173,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Tactic detection named "Discovery" was generated when adb156.exe makes a WMI query for Win32_NetworkAdapterConfiguration.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Tactic detection named "Discovery" was generated when adb156.exe makes a WMI query for Win32_NetworkAdapterConfiguration.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1114,14 +1205,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1166,14 +1262,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Tactic detection named "Discovery" was generated when adb156.exe makes a WMI query for Win32_LogicalDisk.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Tactic detection named "Discovery" was generated when adb156.exe makes a WMI query for Win32_LogicalDisk.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1193,14 +1294,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_12.A.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1245,14 +1351,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Process Discovery" was generated when adb156.exe makes a WMI query for Win32_Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.1_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Process Discovery" was generated when adb156.exe makes a WMI query for Win32_Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.1_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1272,14 +1383,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1324,14 +1440,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Network Share Discovery" was generated when cmd.exe executed net view.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Network Share Discovery" was generated when cmd.exe executed net view.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1351,14 +1472,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.3_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.3_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1403,9 +1529,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1450,9 +1581,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1497,14 +1633,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Discovery" was generated when adb156.exe made a WMI query for Win32_ComputerSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Discovery" was generated when adb156.exe made a WMI query for Win32_ComputerSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1524,14 +1665,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.8_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.8_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1576,14 +1722,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "System Information Discovery" was generated when adb156.exe made a WMI query for Win32_OperatingSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "System Information Discovery" was generated when adb156.exe made a WMI query for Win32_OperatingSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1603,14 +1754,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.9_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_13.A.9_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1655,9 +1811,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1702,9 +1863,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1749,14 +1915,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_15.A.8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_RQ_15.A.8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1801,9 +1972,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2924,14 +3100,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing ChildItem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-233.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing ChildItem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-233.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2977,14 +3158,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing Get-Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-246.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing Get-Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-246.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3030,14 +3216,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing $env:TEMP.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing $env:TEMP.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3083,14 +3274,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing: $env:USERNAME.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing: $env:USERNAME.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3136,14 +3332,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing: $env:COMPUTERNAME.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing: $env:COMPUTERNAME.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3189,14 +3390,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing: $env:USERDOMAIN.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing: $env:USERDOMAIN.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3242,14 +3448,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing: $PID.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing: $PID.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3295,14 +3506,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing Gwmi Win32_OperatingSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing Gwmi Win32_OperatingSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3356,14 +3572,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell executing Get-WmiObject  ... -Class AntiVirusProduct.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell executing Get-WmiObject  ... -Class AntiVirusProduct.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3417,14 +3638,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell executing Get-WmiObject ... -Class FireWallProduct.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell executing Get-WmiObject ... -Class FireWallProduct.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3478,19 +3704,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing the NetUserGetGroups API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-258.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing the NetUserGetGroups API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-258.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3544,19 +3775,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing the NetUserGetLocalGroups API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-260.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing the NetUserGetLocalGroups API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-13284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-260.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3601,19 +3837,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe establishing a connection to NewYork (10.0.0.4) over port 389.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-129.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-131.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe establishing a connection to NewYork (10.0.0.4) over port 389.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-129.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-131.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3659,14 +3900,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing Get-Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-279.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing Get-Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-279.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3712,14 +3958,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing ChildItem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-284.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing ChildItem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-284.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3765,19 +4016,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi queries for Win32_BIOS and Win32_ComputerSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-287.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi queries for Win32_BIOS and Win32_ComputerSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-287.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3823,14 +4079,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi query for Win32_PnPEntity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-288.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi query for Win32_PnPEntity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-288.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3876,14 +4137,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi query for Win32_ComputerSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi query for Win32_ComputerSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3929,14 +4195,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe gwmi query for Win32_ComputerSystem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe gwmi query for Win32_ComputerSystem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-289.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3982,14 +4253,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi query for Win32_Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-290.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi query for Win32_Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-290.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4035,14 +4311,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell executing Get-Item for the current path.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-291.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing Get-Item for the current path.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-291.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4088,19 +4369,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell enumeration of System32.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-298.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-295.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell enumeration of System32.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-298.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-295.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4154,14 +4440,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the PowerShell gwmi query for AntiVirusProduct.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-300.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the PowerShell gwmi query for AntiVirusProduct.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-300.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4207,14 +4498,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed script block with registry query for installed software.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-302.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed script block with registry query for installed software.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-302.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4260,14 +4556,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed script block with registry query for installed software.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-302.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed script block with registry query for installed software.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-302.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4313,14 +4614,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell calling the GetComputerNameEx API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-305.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell calling the GetComputerNameEx API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-305.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4366,14 +4672,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell calling the NetWkstaGetInfo API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-306.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell calling the NetWkstaGetInfo API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-306.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4419,14 +4730,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell executing the GetUserNameEx API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-308.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing the GetUserNameEx API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-308.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4472,14 +4788,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell calling the CreateToolhelp32Snapshot API.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-310.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell calling the CreateToolhelp32Snapshot API.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-310.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4525,14 +4846,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell executing Get-Process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-314.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing Get-Process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-314.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4578,14 +4904,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell script block executing $env:UserName.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-320.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell script block executing $env:UserName.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-320.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4631,19 +4962,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell executing the Get-NetDomainController cmdlet and subsequently making a network connection to the domain controller NewYork (10.0.0.4) over TCP port 389.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-187.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-322.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing the Get-NetDomainController cmdlet and subsequently making a network connection to the domain controller NewYork (10.0.0.4) over TCP port 389.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-187.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-322.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4689,14 +5025,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed PowerShell executing the ConvertSidToStringSid API function.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-326.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing the ConvertSidToStringSid API function.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/ReaQta-APT29-326.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>

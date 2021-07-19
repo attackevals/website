@@ -18,9 +18,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
-    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?e65c8aaf">
+    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?31dc97fb">
 </head>
 
 <body>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -284,28 +280,44 @@
                                 <a href="/enterprise/participants/kaspersky/results?adversary=apt29">
                                     APT29 (2019)
                                 </a>
+                                    <div class="custom-control custom-checkbox" style="margin: auto; font-size: .8rem">
+                                        <input type="checkbox" class="custom-control-input" id="chkIncludeMSSP" onchange="toggleMSSP(this.checked)" checked>
+                                        <label class="custom-control-label" style="line-height: 2" for="chkIncludeMSSP">Include MSSP</label>
+                                    </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>150&nbsp;&nbsp;across&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_total_detections_apt29" data-with_mssp="150" data-without_mssp="79">150</span>
+                                        &nbsp;&nbsp;across&nbsp;&nbsp;134
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>74&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_analytic_coverage_apt29" data-with_mssp='74&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='27&nbsp;&nbsp;of&nbsp;&nbsp;134'>74&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>51&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_telemetry_coverage_apt29" data-with_mssp='51&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='51&nbsp;&nbsp;of&nbsp;&nbsp;134'>51&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>83&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_visibility_apt29" data-with_mssp='83&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='57&nbsp;&nbsp;of&nbsp;&nbsp;134'>83&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
@@ -333,7 +345,6 @@
     <select class="form-select mr-3 mb-4 p-2" style="width: 15%; border-radius: 5px;" name="select-adversary-finder" id="select-adversary-finder" onchange="adversarySelected(this.value)">
             <option 
             value="apt29"
-                selected
             >APT29
         </option>
 
@@ -12636,7 +12647,7 @@
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_2_a_4_0#tr_apt29_2_a_4_0">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)Alert)
+                                                        (Configuration Change (Detections), Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_2_a_4_0#tr_apt29_2_a_4_1">
@@ -12752,7 +12763,7 @@
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_7_b_3_0#tr_apt29_7_b_3_0">
                                                 <li> 
                                                     None
-                                                        (Host InterrogationDelayed (Manual))
+                                                        (Host Interrogation, Delayed (Manual))
                                                 </li>
                                             </a>
                                         </ul>
@@ -12785,7 +12796,7 @@
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_9_b_6_0#tr_apt29_9_b_6_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_9_b_6_0#tr_apt29_9_b_6_1">
@@ -14794,7 +14805,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_8_b_2_0#tr_apt29_8_b_2_0">
                                                 <li> 
                                                     None
-                                                        (Host InterrogationDelayed (Manual))
+                                                        (Host Interrogation, Delayed (Manual))
                                                 </li>
                                             </a>
                                         </ul>
@@ -14827,7 +14838,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_3_a_2_0#tr_apt29_3_a_2_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_3_a_2_0#tr_apt29_3_a_2_1">
@@ -16132,7 +16143,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_1_b_2_0#tr_apt29_1_b_2_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_1_b_2_0#tr_apt29_1_b_2_1">
@@ -16188,7 +16199,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_4_a_2_0#tr_apt29_4_a_2_2">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -16735,7 +16746,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/kaspersky/results?adversary=apt29&scenario=1&detection=apt29_7_b_4_0#tr_apt29_7_b_4_1">
                                                 <li> 
                                                     None
-                                                        (Delayed (Manual)Host Interrogation)
+                                                        (Delayed (Manual), Host Interrogation)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18111,8 +18122,8 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         chart_columns: chart_col
     }
     
-    var currentAdversary = {"round_name": "apt29", "round_display_name": "APT29"};
-    var active_adversaries = [{'round_name': 'apt29', 'round_display_name': 'APT29'}];
+    var currentAdversary = {"adversary_name": "apt29", "adversary_display_name": "APT29"};
+    var active_adversaries = [{'adversary_name': 'apt29', 'adversary_display_name': 'APT29'}];
     var stepChartHeight;
     var stepChartWidth;
     var stepChartMaxDetections = 0;
@@ -18140,18 +18151,18 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             case "carbanak_fin7":
                 let adversary_matched_to_query = false;
                 active_adversaries.forEach(activeRound => {
-                    if(activeRound['round_name'] == (adversary)) {
+                    if(activeRound['adversary_name'] == (adversary)) {
                         adversarySelected(adversary)
                         adversary_matched_to_query = true
                         $("#select-adversary-finder").val(adversary);
                     }
                 })
                 if (!adversary_matched_to_query) {
-                    adversarySelected(currentAdversary['round_name'])
+                    adversarySelected(currentAdversary['adversary_name'])
                 }
                 break;
             default:
-                adversarySelected(currentAdversary['round_name'])
+                adversarySelected(currentAdversary['adversary_name'])
         }
 
         // Multiple if checks are necessary incase a wrong query string value is entered in the URL
@@ -19256,6 +19267,26 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                     link.setAttribute("href", old_href + "?adversaries=" + adversary);
                 }
             }
+        }
+    }
+
+    function toggleMSSP(include_MSSP) {
+        span_total_detections_apt29 = document.getElementById("span_total_detections_apt29");
+        span_analytic_coverage_apt29 = document.getElementById("span_analytic_coverage_apt29");
+        span_telemetry_coverage_apt29 = document.getElementById("span_telemetry_coverage_apt29");
+        span_visibility_apt29 = document.getElementById("span_visibility_apt29");
+
+        if (include_MSSP) {
+            span_total_detections_apt29.textContent = span_total_detections_apt29.getAttribute("data-with_mssp");
+            span_analytic_coverage_apt29.textContent = span_analytic_coverage_apt29.getAttribute("data-with_mssp");
+            span_telemetry_coverage_apt29.textContent = span_telemetry_coverage_apt29.getAttribute("data-with_mssp");
+            span_visibility_apt29.textContent = span_visibility_apt29.getAttribute("data-with_mssp");
+        }
+        else {
+            span_total_detections_apt29.textContent = span_total_detections_apt29.getAttribute("data-without_mssp");
+            span_analytic_coverage_apt29.textContent = span_analytic_coverage_apt29.getAttribute("data-without_mssp");
+            span_telemetry_coverage_apt29.textContent = span_telemetry_coverage_apt29.getAttribute("data-without_mssp");
+            span_visibility_apt29.textContent = span_visibility_apt29.getAttribute("data-without_mssp");
         }
     }
 

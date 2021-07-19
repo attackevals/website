@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -267,14 +263,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "ScreenshotTaken" was generated when powershell.exe executed CopyFromScreen().
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_2.B.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "ScreenshotTaken" was generated when powershell.exe executed CopyFromScreen().
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_2.B.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -294,14 +295,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_2.B.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_2.B.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -356,14 +362,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -383,14 +394,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "DataFromLocalSystem" was generated when user kmitnick read network-diagram-financial.xml via cat.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "DataFromLocalSystem" was generated when user kmitnick read network-diagram-financial.xml via cat.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -445,14 +461,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.6.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.6.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -472,14 +493,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "DataFromLocalSystem" was generated when user kmitnick read help-desk-ticket.txt via cat.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.6_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "DataFromLocalSystem" was generated when user kmitnick read help-desk-ticket.txt via cat.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_5.B.6_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -524,19 +550,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        A Technique detection named "DllLoad + ScreenshotTaken" was generated when explorer.exe took a screenshot.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "DllLoad + ScreenshotTaken" was generated when explorer.exe took a screenshot.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -581,19 +612,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -613,14 +649,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "DataFromLocalSystemFileOpen" was generated when explorer.exe (identified as Java-Update.exe) read C:\Users\jsmith\AppData\Local\Temp\klog2.txt over to 192.168.0.4.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "DataFromLocalSystemFileOpen" was generated when explorer.exe (identified as Java-Update.exe) read C:\Users\jsmith\AppData\Local\Temp\klog2.txt over to 192.168.0.4.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_9.A.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -665,14 +706,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "ScreenshotTaken" was generated when powershell.exe executed CopyFromScreen().
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_13.B.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "ScreenshotTaken" was generated when powershell.exe executed CopyFromScreen().
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_13.B.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -692,14 +738,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_13.B.4_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_13.B.4_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -744,14 +795,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_18.A.2_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_18.A.2_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -771,14 +827,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "ScreenshotTaken" was generated when explorer.exe called the CreateCompatibleBitmap API from Gdi32.dll.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_18.A.2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "ScreenshotTaken" was generated when explorer.exe called the CreateCompatibleBitmap API from Gdi32.dll.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_SO_18.A.2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1325,14 +1386,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing ChildItem. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6485.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing ChildItem. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6485.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1353,14 +1419,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        An MSSP detection for "InteractivePSCommand" contained evidence of powershell.exe executing ChildItem.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12797.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "InteractivePSCommand" contained evidence of powershell.exe executing ChildItem.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12797.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1381,14 +1452,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection for "Automated Collection" was generated on powershell.exe executing Get-ChildItem after a short delay. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6498.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Automated Collection" was generated on powershell.exe executing Get-ChildItem after a short delay. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6498.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1434,14 +1510,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe reading files from C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7164.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe reading files from C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7164.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1462,14 +1543,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        An MSSP detection for "PowerShell is seen enumerating the system and searching for files" contained evidence of file reads to C:/Users/Pam/*.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12797.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "PowerShell is seen enumerating the system and searching for files" contained evidence of file reads to C:/Users/Pam/*.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12797.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1490,19 +1576,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection for "Data from Local System {T1005}" was generated on powershell.exe executing Get-ChildItem and reading C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7164.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7161.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Data from Local System {T1005}" was generated on powershell.exe executing Get-ChildItem and reading C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7164.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7161.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1556,14 +1647,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection for "Data Compressed. MITRE Exfiltration {T1002}" was generated on powershell.exe compressing via Compress-Archive. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6486.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Data Compressed. MITRE Exfiltration {T1002}" was generated on powershell.exe compressing via Compress-Archive. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6486.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1584,19 +1680,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        Telemetry showed powershell.exe compressing via Compress-Archive.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14543.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14542.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe compressing via Compress-Archive.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14543.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14542.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1617,24 +1718,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection occurred for powershell.exe compressing via Compress-Archive.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14544.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14546.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14545.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection occurred for powershell.exe compressing via Compress-Archive.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14544.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14546.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14545.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1688,14 +1794,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        An MSSP detection for the file creation of Draft.zip was received. The alert stated that "C:\Users\pam\AppData\Roaming\Draft.zip" file was created.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-10769.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for the file creation of Draft.zip was received. The alert stated that "C:\Users\pam\AppData\Roaming\Draft.zip" file was created.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-10769.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1716,14 +1827,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed the creation of Draft.Zip. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-17890.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the creation of Draft.Zip. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-17890.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1769,19 +1885,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection for "Screenshot" generated due to CopyFromScreen API execution. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7238.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7239.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Screenshot" generated due to CopyFromScreen API execution. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7238.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7239.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1802,14 +1923,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing CopyFromScreen from System.Drawing.dll. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7219.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing CopyFromScreen from System.Drawing.dll. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7219.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1830,19 +1956,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1113" occurred containing evidence of System.Drawing.dll being loaded and Invoke-ScreenCapture called.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12824.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12825.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1113" occurred containing evidence of System.Drawing.dll being loaded and Invoke-ScreenCapture called.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12824.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12825.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1888,14 +2019,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing Get-Clipboard. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7206.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing Get-Clipboard. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7206.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1916,14 +2052,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection for "ClipBoardAccess" was generated due to PowerShell executing Get-Clipboard. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7216.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "ClipBoardAccess" was generated due to PowerShell executing Get-Clipboard. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7216.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1977,14 +2118,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection for "SuspiciousKeylogging" was generated due to GetAsyncKeyState execution. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7214.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "SuspiciousKeylogging" was generated due to GetAsyncKeyState execution. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7214.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2005,14 +2151,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        Telemetry showed PowerShell calling the GetAsyncKeyState API. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7211.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell calling the GetAsyncKeyState API. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7211.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2033,19 +2184,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1056" occurred containing evidence of GetAsyncKeyState API calls and Get-Keystrokes function call.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12827.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12826.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1056" occurred containing evidence of GetAsyncKeyState API calls and Get-Keystrokes function call.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12827.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12826.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2091,14 +2247,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6686.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6686.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2119,14 +2280,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection for "Data from Local System {T1005}" was generated due to powershell.exe reading files from C:\Users\pam\Downloads. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14732.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Data from Local System {T1005}" was generated due to powershell.exe reading files from C:\Users\pam\Downloads. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14732.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2180,14 +2346,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed the file create event for OfficeSupplies.7z. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6670.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the file create event for OfficeSupplies.7z. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6670.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2208,14 +2379,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "exfiltrate" occurred containing evidence of OfficeSupplies.7z being created.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12828.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "exfiltrate" occurred containing evidence of OfficeSupplies.7z being created.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12828.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2269,14 +2445,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing Compress-7Zip with arguments for encryption. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7224.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing Compress-7Zip with arguments for encryption. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7224.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2297,14 +2478,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "Exfiltrate" occurred containing evidence of Compress-7zip compressing and encrypting the download directory with 7z using the password "lolol."
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12828.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "Exfiltrate" occurred containing evidence of Compress-7zip compressing and encrypting the download directory with 7z using the password "lolol."
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12828.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2350,14 +2536,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed PowerShell executing ChildItem. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7235.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell executing ChildItem. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7235.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2378,14 +2569,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        An MSSP detection for "T1119" occurred containing evidence of enumerating directories in search for specific files. The function "ChildItem" is observed.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12838.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1119" occurred containing evidence of enumerating directories in search for specific files. The function "ChildItem" is observed.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12838.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2406,14 +2602,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection called "Automated Collection" was generated when powershell.exe accessed multiple files when using ChildItem. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-17873.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection called "Automated Collection" was generated when powershell.exe accessed multiple files when using ChildItem. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-17873.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2459,19 +2660,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        A Technique alert detection for "OpenedFile" under "Data from Local System {T1005}" was generated when a known malicious powershell.exe read files in C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7240.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7241.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "OpenedFile" under "Data from Local System {T1005}" was generated when a known malicious powershell.exe read files in C:\Users\Pam\*. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7240.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7241.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2525,14 +2731,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed a File Creation event for powershell.exe creating working.zip.The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6743.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a File Creation event for powershell.exe creating working.zip.The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6743.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2553,14 +2764,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1074" occurred containing evidence of working.zip creation from file creation events.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1074" occurred containing evidence of working.zip creation from file creation events.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2614,14 +2830,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing rar.exe with command-line arguments. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6744.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing rar.exe with command-line arguments. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6744.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2642,14 +2863,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1022" occurred containing evidence of rar.exe being executed with an encryption password parameter passed.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1022" occurred containing evidence of rar.exe being executed with an encryption password parameter passed.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2703,14 +2929,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed powershell.exe executing rar.exe with command-line arguments. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6744.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing rar.exe with command-line arguments. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6744.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2731,14 +2962,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        An MSSP detection for "T1002" occurred containing evidence of powershell.exe executing rar.exe.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1002" occurred containing evidence of powershell.exe executing rar.exe.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12839.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2759,14 +2995,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection called "Compression" was generated due to powershell.exe executing rar.exe with command-line arguments indicative of compression. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14735.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection called "Compression" was generated due to powershell.exe executing rar.exe with command-line arguments indicative of compression. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-14735.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2820,14 +3061,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed outlook.exe spawning from svchost.exe, which is indicative of programmatic access to Outlook emails. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6925.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed outlook.exe spawning from svchost.exe, which is indicative of programmatic access to Outlook emails. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6925.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2848,14 +3094,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1114" occurred containing evidence of Outlook process being started from the parent process "svchost.exe" along with the function definition for "psemail".
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12883.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1114" occurred containing evidence of Outlook process being started from the parent process "svchost.exe" along with the function definition for "psemail".
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12883.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2901,14 +3152,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        A Technique alert detection for Data from Local System was generated for a process reading MITRE-ATTACK-EVALS.HTML. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7266.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for Data from Local System was generated for a process reading MITRE-ATTACK-EVALS.HTML. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7266.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2962,14 +3218,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed the file create event for MITRE-ATTACK-EVALS.HTML.  The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6938.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the file create event for MITRE-ATTACK-EVALS.HTML.  The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6938.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2990,14 +3251,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1074" occurred containing evidence of Copy-Item with ..\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML being the destination file.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12884.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1074" occurred containing evidence of Copy-Item with ..\WindowsParentalControlMigration\MITRE-ATTACK-EVALS.HTML being the destination file.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12884.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -3051,14 +3317,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique alert detection for "Data Compressed" was generated due to an entropy calculation of WindowsParentalControlMigration.tmp. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6950.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection for "Data Compressed" was generated due to an entropy calculation of WindowsParentalControlMigration.tmp. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-6950.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -3079,14 +3350,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        Telemetry showed PowerShell compressing collection via the ZipFile.CreateFromDirectory .NET method. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7273.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell compressing collection via the ZipFile.CreateFromDirectory .NET method. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-7273.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -3107,14 +3383,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        An MSSP detection for "T1002" occurred containing evidence of "zip" function compressing collection via ZipFile.CreateFromDirectory .NET method.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12885.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    An MSSP detection for "T1002" occurred containing evidence of "zip" function compressing collection via ZipFile.CreateFromDirectory .NET method.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/SentinelOne-APT29-12885.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4738,19 +5019,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed GetAsyncKeyStateApi, which was indicative of keylogging. The telemetry was tainted by the activity seen during the initial compromise step because it was associated with the same story (Group ID).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-8.C.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-8.C.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed GetAsyncKeyStateApi, which was indicative of keylogging. The telemetry was tainted by the activity seen during the initial compromise step because it was associated with the same story (Group ID).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-8.C.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-8.C.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4795,14 +5081,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed remote file access behavior for the .vsdx file from the network shared drive.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-9.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed remote file access behavior for the .vsdx file from the network shared drive.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-9.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4847,9 +5138,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4903,14 +5199,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        The capability enriched data collected as keylogging behavior that was not visible through the standard interface during the evaluation.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-15.A.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    The capability enriched data collected as keylogging behavior that was not visible through the standard interface during the evaluation.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-15.A.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -4964,14 +5265,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed file write of the .vsdx to the Recycle Bin. The activity seen during the lateral movement step tainted the telemetry because it was associated with the same story (Group ID).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-18.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed file write of the .vsdx to the Recycle Bin. The activity seen during the lateral movement step tainted the telemetry because it was associated with the same story (Group ID).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-18.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -5017,14 +5323,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the .vsdx file copied from a network shared drive on Conficker. The activity seen during the lateral movement step tainted the telemetry because it was associated with the same story (Group ID).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-18.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the .vsdx file copied from a network shared drive on Conficker. The activity seen during the lateral movement step tainted the telemetry because it was associated with the same story (Group ID).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/S1-18.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -5078,9 +5389,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed execution of recycler.exe with command-line arguments, including the -hp flag, indicating use of encryption and compression with a WinRAR utility. The activity seen during the lateral movement step tainted the event because it was associated with the same story (Group ID).
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed execution of recycler.exe with command-line arguments, including the -hp flag, indicating use of encryption and compression with a WinRAR utility. The activity seen during the lateral movement step tainted the event because it was associated with the same story (Group ID).
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -5134,9 +5450,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed execution of recycler.exe with command-line arguments, including the -hp flag, indicating use of encryption and compression with a WinRAR utility. The activity seen during the lateral movement step tainted the event because it was associated with the same story (Group ID).
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed execution of recycler.exe with command-line arguments, including the -hp flag, indicating use of encryption and compression with a WinRAR utility. The activity seen during the lateral movement step tainted the event because it was associated with the same story (Group ID).
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>

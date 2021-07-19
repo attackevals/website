@@ -1,0 +1,2857 @@
+{
+    "Participant_Name": "iii",
+    "Participant_Display_Name": "Institute for Information Industry",
+    "PublicRelease": "",
+    "Aggregate_Data": {
+        "Evaluation_Aggregate_Data": {
+            "Adversaries": [{
+                "Adversary_Name": "triton",
+                "Display_Name": "TRITON",
+                "Evaluation_Year": 2021,
+                "Total_Substeps": 100,
+                "Aggregates": {
+                    "Total_Detections": 79,
+                    "Analytic_Detections": 25,
+                    "Telemetry_Detections": 54,
+                    "Analytic_Coverage": "25/100",
+                    "Telemetry_Coverage": "54/100",
+                    "Visibility": "72/100"
+                },
+                "Host_Based_Capability": true,
+                "Programmable_Logic_Controller_Capability": false
+            }]
+        }
+    },
+    "Adversaries": [{
+        "Adversary_Name": "triton",
+        "Display_Name": "TRITON",
+        "Evaluation_Year": 2021,
+        "Detections_By_Step": {
+            "Scenario_1": {
+                "Steps": [{
+                        "Step_Num": 1,
+                        "Step_Name": "Step 1",
+                        "Substeps": [{
+                                "Substep": "1.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) as RDP.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Technique",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D1.1.A.1-190.png",
+                                            "system-67-II-D1.1.A.1-190-1.png"
+                                        ],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "1.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 2,
+                        "Step_Name": "Step 2",
+                        "Substeps": [{
+                            "Substep": "2.B.1",
+                            "Procedure": "",
+                            "Criteria": "Evidence of an adversary initiated program upload action of the control PLC (10.0.100.110) to collect the current running configuration (requested from the safety EWS [10.0.100.20]). ",
+                            "Tactic": {
+                                "Tactic_Id": "TA0104",
+                                "Tactic_Name": "Execution"
+                            },
+                            "Technique": {
+                                "Technique_Id": "T0871",
+                                "Technique_Name": "Execution through API"
+                            },
+                            "Subtechnique": {
+                                "Subtechnique_Id": "",
+                                "Subtechnique_Name": ""
+                            },
+                            "Detections": [{
+                                "Detection_Note": "",
+                                "Detection_Type": "Technique",
+                                "Modifier": [],
+                                "Screenshots": [
+                                    "system-67-II-D1.2.B.1-177.png"
+                                ],
+                                "Footnotes": []
+                            }]
+                        }]
+                    },
+                    {
+                        "Step_Num": 3,
+                        "Step_Name": "Step 3",
+                        "Substeps": [{
+                            "Substep": "3.A.1",
+                            "Procedure": "",
+                            "Criteria": "Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate (\u201cSMBClient.exe\u201d, \u201cSMB_Sync.xml\u201d, and \u201cSMB_Update.xml\u201d).",
+                            "Tactic": {
+                                "Tactic_Id": "TA0103",
+                                "Tactic_Name": "Evasion"
+                            },
+                            "Technique": {
+                                "Technique_Id": "T0849",
+                                "Technique_Name": "Masquerading"
+                            },
+                            "Subtechnique": {
+                                "Subtechnique_Id": "",
+                                "Subtechnique_Name": ""
+                            },
+                            "Detections": [{
+                                "Detection_Note": "",
+                                "Detection_Type": "None",
+                                "Modifier": [],
+                                "Screenshots": [],
+                                "Footnotes": []
+                            }]
+                        }]
+                    },
+                    {
+                        "Step_Num": 4,
+                        "Step_Name": "Step 4",
+                        "Substeps": [{
+                                "Substep": "4.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the scheduled task \u201cSMB_sync.xml\u201d is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "4.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201cSMBClient.exe\u201d process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.4.B.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "4.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 from the control EWS (10.0.100.20) to the adversary machine (10.0.100.1) as an outbound SSH tunnel request.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Technique",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D1.4.B.2-190.png",
+                                            "system-67-II-D1.4.B.2-190-1.png",
+                                            "system-67-II-D1.4.B.2-190-2.png"
+                                        ],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "4.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 5,
+                        "Step_Name": "Step 5",
+                        "Substeps": [{
+                            "Substep": "5.A.1",
+                            "Procedure": "",
+                            "Criteria": "Evidence that the newly created files from the extraction of \u201ccsp3.zip\u201d in the Temp Rockwell directory are not legitimate (\u201ccsp.exe\u201d, \u201cInstall-csp.ps1\u201d, \u201ccsp-agent.exe\u201d, \u201csftp.exe\u201d, etc.).",
+                            "Tactic": {
+                                "Tactic_Id": "TA0103",
+                                "Tactic_Name": "Evasion"
+                            },
+                            "Technique": {
+                                "Technique_Id": "T0849",
+                                "Technique_Name": "Masquerading"
+                            },
+                            "Subtechnique": {
+                                "Subtechnique_Id": "",
+                                "Subtechnique_Name": ""
+                            },
+                            "Detections": [{
+                                "Detection_Note": "",
+                                "Detection_Type": "Telemetry",
+                                "Modifier": [],
+                                "Screenshots": [
+                                    "system-67-II-D1.5.A.1-156.png"
+                                ],
+                                "Footnotes": []
+                            }]
+                        }]
+                    },
+                    {
+                        "Step_Num": 6,
+                        "Step_Name": "Step 6",
+                        "Substeps": [{
+                                "Substep": "6.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201cinstall-csp.ps1\u201d script was executed on the control EWS (10.0.100.20) via PowerShell (using the bypass execution policy). ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.6.A.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "6.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201crockwell-csp3\u201d service is not legitimate (service is spoofed SSDH, created then executed via Start-Service).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.6.B.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "6.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201ccsp-agent\u201d service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.6.C.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "6.D.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the scheduled task \u201cSMB_update.xml\u201d is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.6.D.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "6.E.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201cSMBClient.exe\u201d process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D1.6.E.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "6.E.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 from the control EWS (10.0.100.20) to the adversary machine (10.0.100.1) as an outbound SSH tunnel request.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "General",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D1.6.E.2-190.png",
+                                            "system-67-II-D1.6.E.2-190-1.png",
+                                            "system-67-II-D1.6.E.2-190-2.png",
+                                            "system-67-II-D1.6.E.2-190-3.png"
+                                        ],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 7,
+                        "Step_Name": "Step 7",
+                        "Substeps": [{
+                                "Substep": "7.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) tunneling SFTP.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D2.7.A.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "7.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201csftp-server.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.7.A.2-190.png",
+                                        "system-67-II-D2.7.A.2-190-1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "7.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) tunneling SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D2.7.B.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "7.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 8,
+                        "Step_Name": "Step 8",
+                        "Substeps": [{
+                            "Substep": "8.A.1",
+                            "Procedure": "",
+                            "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                            "Tactic": {
+                                "Tactic_Id": "TA0103",
+                                "Tactic_Name": "Evasion"
+                            },
+                            "Technique": {
+                                "Technique_Id": "T0849",
+                                "Technique_Name": "Masquerading"
+                            },
+                            "Subtechnique": {
+                                "Subtechnique_Id": "",
+                                "Subtechnique_Name": ""
+                            },
+                            "Detections": [{
+                                "Detection_Note": "",
+                                "Detection_Type": "Telemetry",
+                                "Modifier": [],
+                                "Screenshots": [
+                                    "system-67-II-D2.8.A.1-156.png"
+                                ],
+                                "Footnotes": []
+                            }]
+                        }]
+                    },
+                    {
+                        "Step_Num": 9,
+                        "Step_Name": "Step 9",
+                        "Substeps": [{
+                                "Substep": "9.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the LogixMap.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.A.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence that a network discovery scan for TCP port 44818 was initiated from the control EWS (10.0.100.20) on hosts across the whole subnet (10.0.100.1-10.0.100.255).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0102",
+                                    "Tactic_Name": "Discovery"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0846",
+                                    "Technique_Name": "Remote System Discovery"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "General",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D2.9.A.2-153.png",
+                                            "system-67-II-D2.9.A.2-153-1.png",
+                                            "system-67-II-D2.9.A.2-153-2.png",
+                                            "system-67-II-D2.9.A.2-153-3.png",
+                                            "system-67-II-D2.9.A.2-153-4.png",
+                                            "system-67-II-D2.9.A.2-153-5.png",
+                                            "system-67-II-D2.9.A.2-153-6.png",
+                                            "system-67-II-D2.9.A.2-153-7.png",
+                                            "system-67-II-D2.9.A.2-153-8.png",
+                                            "system-67-II-D2.9.A.2-153-9.png",
+                                            "system-67-II-D2.9.A.2-153-10.png",
+                                            "system-67-II-D2.9.A.2-153-11.png",
+                                            "system-67-II-D2.9.A.2-153-12.png",
+                                            "system-67-II-D2.9.A.2-153-13.png",
+                                            "system-67-II-D2.9.A.2-153-14.png",
+                                            "system-67-II-D2.9.A.2-153-15.png",
+                                            "system-67-II-D2.9.A.2-153-16.png"
+                                        ],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "9.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLINX.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the network discovery broadcast request sent from the control EWS (10.0.100.15) over TCP port 44818.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0102",
+                                    "Tactic_Name": "Discovery"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0846",
+                                    "Technique_Name": "Remote System Discovery"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "General",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D2.9.B.2-153.png"
+                                        ],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "9.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLINX.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.C.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.C.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cDevice Type\u201d attribute (instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0102",
+                                    "Tactic_Name": "Discovery"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0888",
+                                    "Technique_Name": "Remote System Information Discovery"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.D.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLINX.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.D.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.D.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0100",
+                                    "Tactic_Name": "Collection"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0868",
+                                    "Technique_Name": "Detect Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.D.2-174.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.E.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLINX.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.E.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "9.E.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence that all controller and program tag names were requested over CIP from the control PLC (10.0.100.110) to the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D2.9.E.2-177.png",
+                                        "system-67-II-D2.9.E.2-177-1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 10,
+                        "Step_Name": "Step 10",
+                        "Substeps": [{
+                                "Substep": "10.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the Control EWS (10.0.100.20) tunneling RDP traffic over SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D3.10.A.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "10.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.10.A.2-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "10.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) as RDP.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.10.B.1-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "10.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 11,
+                        "Step_Name": "Step 11",
+                        "Substeps": [{
+                                "Substep": "11.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "11.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the \u201cinstall-csp.ps1\u201d script was executed on the safety EWS (10.0.100.15) via PowerShell (using the bypass execution policy). ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.11.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "11.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the services \u201crockwell-csp3\u201d and \u201ccsp-agent\u201d are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.11.C.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 12,
+                        "Step_Name": "Step 12",
+                        "Substeps": [{
+                                "Substep": "12.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) tunneling SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D3.12.A.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "12.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 13,
+                        "Step_Name": "Step 13",
+                        "Substeps": [{
+                            "Substep": "13.A.1",
+                            "Procedure": "",
+                            "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                            "Tactic": {
+                                "Tactic_Id": "TA0104",
+                                "Tactic_Name": "Execution"
+                            },
+                            "Technique": {
+                                "Technique_Id": "T0871",
+                                "Technique_Name": "Execution through API"
+                            },
+                            "Subtechnique": {
+                                "Subtechnique_Id": "",
+                                "Subtechnique_Name": ""
+                            },
+                            "Detections": [{
+                                "Detection_Note": "",
+                                "Detection_Type": "Technique",
+                                "Modifier": [],
+                                "Screenshots": [
+                                    "system-67-II-D3.13.A.1-177.png"
+                                ],
+                                "Footnotes": []
+                            }]
+                        }]
+                    },
+                    {
+                        "Step_Num": 14,
+                        "Step_Name": "Step 14",
+                        "Substeps": [{
+                                "Substep": "14.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201cscp\u201d. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.14.A.1-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "14.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 15,
+                        "Step_Name": "Step 15",
+                        "Substeps": [{
+                                "Substep": "15.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) as SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D3.15.A.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "15.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 16,
+                        "Step_Name": "Step 16",
+                        "Substeps": [{
+                                "Substep": "16.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.A.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the network discovery broadcast request sent from the safety EWS (10.0.100.15) over TCP port 44818.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0102",
+                                    "Tactic_Name": "Discovery"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0846",
+                                    "Technique_Name": "Remote System Discovery"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "General",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D3.16.A.2-153.png"
+                                        ],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "16.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cDevice Type\u201d attribute (instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0102",
+                                    "Tactic_Name": "Discovery"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0888",
+                                    "Technique_Name": "Remote System Information Discovery"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.C.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.C.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0100",
+                                    "Tactic_Name": "Collection"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0868",
+                                    "Technique_Name": "Detect Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.C.2-174.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.D.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.D.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "16.D.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence that all controller and program tag names were requested over CIP from the safety PLC (10.0.100.105) to the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D3.16.D.2-177.png",
+                                        "system-67-II-D3.16.D.2-177-1.png",
+                                        "system-67-II-D3.16.D.2-177-2.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 17,
+                        "Step_Name": "Step 17",
+                        "Substeps": [{
+                                "Substep": "17.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201csftp-server.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.17.A.1-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "17.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) tunneling SFTP.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D4.17.A.2.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "17.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the newly created files from the extraction of \u201cInstall_RSLogix.zip\u201d in the Temp Rockwell RSLogix directory are not legitimate (\u201cRSLogix5000.exe\u201d, \u201cRSComms.exe\u201d, etc.)",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 18,
+                        "Step_Name": "Step 18",
+                        "Substeps": [{
+                                "Substep": "18.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) to transfer \u201cInstall_GuardLogix.zip\u201d over scp.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "18.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201cscp\u201d. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.18.A.2-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 19,
+                        "Step_Name": "Step 19",
+                        "Substeps": [{
+                                "Substep": "19.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) as SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "19.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "19.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the newly created files from the extraction of \u201cInstall_GuardLogix.zip\u201d in the Temp Rockwell GuardLogix directory are not legitimate (\u201cRSLogix5000.exe\u201d, \u201cRSComms.exe\u201d, \u201cabRSA.exe\u201d, etc.)",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0849",
+                                    "Technique_Name": "Masquerading"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.19.B.1-156.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 20,
+                        "Step_Name": "Step 20",
+                        "Substeps": [{
+                                "Substep": "20.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.A.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0100",
+                                    "Tactic_Name": "Collection"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0868",
+                                    "Technique_Name": "Detect Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.A.2-174.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.B.2-177.png",
+                                        "system-67-II-D4.20.B.2-177-1.png",
+                                        "system-67-II-D4.20.B.2-177-2.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.B.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated online edit action on the safety PLC (10.0.100.105), requested from the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0109",
+                                    "Tactic_Name": "Lateral Movement"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0843",
+                                    "Technique_Name": "Program Download"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.B.3-150.png",
+                                        "system-67-II-D4.20.B.3-150-1.png",
+                                        "system-67-II-D4.20.B.3-150-2.png",
+                                        "system-67-II-D4.20.B.3-150-3.png",
+                                        "system-67-II-D4.20.B.3-150-4.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.B.4",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the modified program \u201cP04_Trips_FO_R00_Trips\u201d to include new function block logic and a \u201cCC\u201d tag for command and control on the safety PLC. ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0110",
+                                    "Tactic_Name": "Persistence"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0889",
+                                    "Technique_Name": "Modify Program"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "N/A",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.C.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.C.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated read action of the \u201cCC\u201d tag using the 0x4C CIP service.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.C.2-177-4.png",
+                                        "system-67-II-D4.20.C.2-177-5.png",
+                                        "system-67-II-D4.20.C.2-177-6.png",
+                                        "system-67-II-D4.20.C.2-177.png",
+                                        "system-67-II-D4.20.C.2-177-1.png",
+                                        "system-67-II-D4.20.C.2-177-2.png",
+                                        "system-67-II-D4.20.C.2-177-3.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.C.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated write tag action to the \u201cCC\u201d tag using the 0x4D CIP service (a low value of \u201c0\u201d or False was written).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Telemetry",
+                                        "Modifier": [],
+                                        "Screenshots": [],
+                                        "Footnotes": []
+                                    },
+                                    {
+                                        "Detection_Note": "",
+                                        "Detection_Type": "Technique",
+                                        "Modifier": [],
+                                        "Screenshots": [
+                                            "system-67-II-D4.20.C.3-177.png"
+                                        ],
+                                        "Footnotes": []
+                                    }
+                                ]
+                            },
+                            {
+                                "Substep": "20.D.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.D.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "20.D.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0100",
+                                    "Tactic_Name": "Collection"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0868",
+                                    "Technique_Name": "Detect Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.20.D.2-174.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 21,
+                        "Step_Name": "Step 21",
+                        "Substeps": [{
+                                "Substep": "21.E.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "21.E.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of abuse of a CIP handshake between the control EWS and control PLC resulting in an adversary privilege escalation (handshake sequence consisted of a service 0x4B class 0x64 initiation request and 0x4C class 0x64 challenge response).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.21.E.2-177.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "21.F.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "21.F.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of adversary initiated write tag actions to the \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \u201c0\u201d [percent open] and HMI_Enb was pulsed to remove cascade control).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 22,
+                        "Step_Name": "Step 22",
+                        "Substeps": [{
+                                "Substep": "22.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "22.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the safety PLC operating mode being switched to Program Mode following adversary CIP request to instance 0x01 of class 0x8E using service 0x07. ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0103",
+                                    "Tactic_Name": "Evasion"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0858",
+                                    "Technique_Name": "Change Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "22.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.22.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "22.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated program download action on the safety PLC (10.0.100.105) to overwrite the current configuration (requested from the safety EWS [10.0.100.15]). ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0109",
+                                    "Tactic_Name": "Lateral Movement"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0843",
+                                    "Technique_Name": "Program Download"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D4.22.B.2-150.png",
+                                        "system-67-II-D4.22.B.2-150-1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 23,
+                        "Step_Name": "Step 23",
+                        "Substeps": [{
+                                "Substep": "23.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) tunneling SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D5.23.A.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "23.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.23.A.2-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "23.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) as SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D5.23.B.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "23.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.23.B.2-190.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 24,
+                        "Step_Name": "Step 24",
+                        "Substeps": [{
+                                "Substep": "24.A.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.A.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.A.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0100",
+                                    "Tactic_Name": "Collection"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0868",
+                                    "Technique_Name": "Detect Operating Mode"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.A.2-174.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.B.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSLogix5000.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.B.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.B.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.B.2-177.png",
+                                        "system-67-II-D5.24.B.2-177-1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.B.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated online edit action on the safety PLC (10.0.100.105), requested from the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0109",
+                                    "Tactic_Name": "Lateral Movement"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0843",
+                                    "Technique_Name": "Program Download"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "General",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.B.3-150.png",
+                                        "system-67-II-D5.24.B.3-150-1.png",
+                                        "system-67-II-D5.24.B.3-150-2.png",
+                                        "system-67-II-D5.24.B.3-150-3.png",
+                                        "system-67-II-D5.24.B.3-150-4.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.B.4",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the modified program \u201cP04_Trips_FO_R00_Trips\u201d to include new function block logic and a \u201cCC\u201d tag for command and control on the safety PLC. ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0110",
+                                    "Tactic_Name": "Persistence"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0889",
+                                    "Technique_Name": "Modify Program"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "N/A",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.C.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the safety EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.C.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.C.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated read action of the \u201cCC\u201d tag using the 0x4C CIP service.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.24.C.2-177.png",
+                                        "system-67-II-D5.24.C.2-177-1.png",
+                                        "system-67-II-D5.24.C.2-177-2.png",
+                                        "system-67-II-D5.24.C.2-177-3.png",
+                                        "system-67-II-D5.24.C.2-177-4.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "24.C.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an adversary initiated write tag action to the \u201cCC\u201d tag using the 0x4D CIP service (a low value of \u201c1\u201d or True was written).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    },
+                    {
+                        "Step_Num": 25,
+                        "Step_Name": "Step 25",
+                        "Substeps": [{
+                                "Substep": "25.D.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) as SSH.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "TRITON_II_D5.25.D.1.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.D.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0101",
+                                    "Tactic_Name": "Command and Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0885",
+                                    "Technique_Name": "Commonly Used Port"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.E.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the control EWS (10.0.100.15).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.25.E.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.E.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of abuse of a CIP handshake between the control EWS and control PLC resulting in an adversary privilege escalation (handshake sequence consisted of a service 0x4B class 0x64 initiation request and 0x4C class 0x64 challenge response).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.E.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of adversary initiated write tag actions to the \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \u201c0\u201d [percent open] and HMI_Enb was pulsed to remove cascade control).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.F.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence of the safety HMI (10.0.100.16) writing to the safety PLC (10.0.100.105). Manual trip actions were engaged through onsite access by process operators on the HMI to disable the burner management system. ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0105",
+                                    "Tactic_Name": "Impact"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0880",
+                                    "Technique_Name": "Loss of Safety"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Technique",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.25.F.1-185-4.png",
+                                        "system-67-II-D5.25.F.1-185-5.png",
+                                        "system-67-II-D5.25.F.1-185-6.png",
+                                        "system-67-II-D5.25.F.1-185.png",
+                                        "system-67-II-D5.25.F.1-185-1.png",
+                                        "system-67-II-D5.25.F.1-185-2.png",
+                                        "system-67-II-D5.25.F.1-185-3.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.G.1",
+                                "Procedure": "",
+                                "Criteria": "Evidence that the RSComms.exe payload was executed on the control EWS (10.0.100.20).",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T1059",
+                                    "Technique_Name": "Command and Scripting Interpreter"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "Telemetry",
+                                    "Modifier": [],
+                                    "Screenshots": [
+                                        "system-67-II-D5.25.G.1-160.png"
+                                    ],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.G.2",
+                                "Procedure": "",
+                                "Criteria": "Evidence of a privileged write or force point action being used to overwrite polled tag values on the control PLC when the adversary initiated the CIP service 0x51 within the class 0x6A. The tags associated with the Ignitor (3XY2070) and Flame Sensor (3HS2070) were the target of these actions.",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0106",
+                                    "Tactic_Name": "Impair Process Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0855",
+                                    "Technique_Name": "Unauthorized Command Message"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.G.3",
+                                "Procedure": "",
+                                "Criteria": "Evidence of write actions occurring on the tags \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d to change setpoints and control actions with the CIP service 0x4D and service 0x51, respectively. HMI_Enb was pulsed to remove cascade control and the air damper setpoint tag was written to \u201c100\u201d [percent open].",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0104",
+                                    "Tactic_Name": "Execution"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0871",
+                                    "Technique_Name": "Execution through API"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            },
+                            {
+                                "Substep": "25.G.4",
+                                "Procedure": "",
+                                "Criteria": "Evidence that a privileged write action occurred and actuated all forced points set in the logic (Enable all forces in Allen Bradley) following the adversary request the class 0x69 using service 0x4D. ",
+                                "Tactic": {
+                                    "Tactic_Id": "TA0106",
+                                    "Tactic_Name": "Impair Process Control"
+                                },
+                                "Technique": {
+                                    "Technique_Id": "T0855",
+                                    "Technique_Name": "Unauthorized Command Message"
+                                },
+                                "Subtechnique": {
+                                    "Subtechnique_Id": "",
+                                    "Subtechnique_Name": ""
+                                },
+                                "Detections": [{
+                                    "Detection_Note": "",
+                                    "Detection_Type": "None",
+                                    "Modifier": [],
+                                    "Screenshots": [],
+                                    "Footnotes": []
+                                }]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }]
+}

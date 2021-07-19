@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -275,14 +271,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "UACRegMod" (High) was generated when powershell.exe modified a Registry key to facilitate UAC bypass.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_7.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "UACRegMod" (High) was generated when powershell.exe modified a Registry key to facilitate UAC bypass.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_7.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -302,14 +303,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -329,19 +335,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "Bypass User Account Control" (High) was generated when fodhelper.exe spawned cmd.exe as a high-integrity process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_6.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Bypass User Account Control" (High) was generated when fodhelper.exe spawned cmd.exe as a high-integrity process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_4.B.5_6.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -394,14 +405,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Bypass User Account Control" (High) was generated when a Registry entry used for User Account Control bypass was set.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Bypass User Account Control" (High) was generated when a Registry entry used for User Account Control bypass was set.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -421,14 +437,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        A Technique detection named "Bypass User Account Control" (High) was generated when powershell.exe spawned samcat.exe as a high-integrity process.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Bypass User Account Control" (High) was generated when powershell.exe spawned samcat.exe as a high-integrity process.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -448,19 +469,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_15.A.5_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -513,14 +539,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -540,19 +571,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        A General detection named "Defense Evasion via Process Injection" (High) was generated when a userspace process (SystemPropertiesAdvanced.exe) spawned a new process (rundll32.exe) and used it to execute shellcode in srrstr.dll.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General detection named "Defense Evasion via Process Injection" (High) was generated when a userspace process (SystemPropertiesAdvanced.exe) spawned a new process (rundll32.exe) and used it to execute shellcode in srrstr.dll.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -573,14 +609,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "DLL Search Order Hijacking" was generated when SystemPropertiesAdvanced.exe loaded the illegitimate srrstr.dll.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "DLL Search Order Hijacking" was generated when SystemPropertiesAdvanced.exe loaded the illegitimate srrstr.dll.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_CS_17.A.4_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1019,14 +1060,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the addition of the DelegateExecute Registry Value. The detection was correlated to a parent grouping of malicious activity.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10257.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the addition of the DelegateExecute Registry Value. The detection was correlated to a parent grouping of malicious activity.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10257.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1080,14 +1126,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed control.exe creating a high integrity powershell.exe. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10272.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed control.exe creating a high integrity powershell.exe. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10272.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1108,14 +1159,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        A Tactic alert detection (purple hexagon) called "Defense Evasion" was generated when a process reflectively loaded a DLL associated with meterpreter using the PowerShell payload. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10261.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Tactic alert detection (purple hexagon) called "Defense Evasion" was generated when a process reflectively loaded a DLL associated with meterpreter using the PowerShell payload. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10261.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1136,14 +1192,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection (purple hexagon) called "Bypass User Account Control" was generated when control.exe spawned an elevated PowerShell payload. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10265.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (purple hexagon) called "Bypass User Account Control" was generated when control.exe spawned an elevated PowerShell payload. The event was correlated to a parent general detection for user execution of rcs.3aka.doc.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10265.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1196,19 +1257,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed the addition of the DelegateExecute Registry value.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10619.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10627.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed the addition of the DelegateExecute Registry value.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10619.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10627.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1262,14 +1328,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Tactic alert detection (red indicator) called "Privilege Escalation - Access Token Manipulation" was generated powershell.exe impersonated another user via access token manipulation. The event was correlated to a parent technique detection for PowerShell.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10620.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Tactic alert detection (red indicator) called "Privilege Escalation - Access Token Manipulation" was generated powershell.exe impersonated another user via access token manipulation. The event was correlated to a parent technique detection for PowerShell.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10620.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1290,14 +1361,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        Telemetry showed a new High Integrity PowerShell callback spawned from control.exe (spawned from sdclt.exe).  The event was correlated to a parent technique detection for PowerShell.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10629.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a new High Integrity PowerShell callback spawned from control.exe (spawned from sdclt.exe).  The event was correlated to a parent technique detection for PowerShell.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10629.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1318,14 +1394,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection (red indicator) called "Bypass User Account Control" was generated when the parent powershell.exe process of sdclt.exe attempted to escalated privileges with UAC bypass or UAC elevation. The event was correlated to a parent Technique detection for PowerShell.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10625.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (red indicator) called "Bypass User Account Control" was generated when the parent powershell.exe process of sdclt.exe attempted to escalated privileges with UAC bypass or UAC elevation. The event was correlated to a parent Technique detection for PowerShell.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CrowdStrike-APT29-10625.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1667,14 +1748,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed an integrity level change for user Debbie from 8192 (0x2000/Medium) to 12288 (0x3000/High), which is indicative of bypassing UAC.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-3.A.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed an integrity level change for user Debbie from 8192 (0x2000/Medium) to 12288 (0x3000/High), which is indicative of bypassing UAC.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-3.A.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1728,24 +1814,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        The OverWatch team also sent an email indicating a Specific Behavior was observed because a base64 obfuscated PowerShell command was used to invoke UAC bypass.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    The OverWatch team also sent an email indicating a Specific Behavior was observed because a base64 obfuscated PowerShell command was used to invoke UAC bypass.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1765,24 +1856,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed an integrity level change through a query for powershell.exe processes of high integrity (12288/0x3000) that were created by medium integrity processes (8192/0x2000), which is indicative of bypassing UAC. Telemetry also showed the Invoke-BypassUACTokenManipulation function in the script.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed an integrity level change through a query for powershell.exe processes of high integrity (12288/0x3000) that were created by medium integrity processes (8192/0x2000), which is indicative of bypassing UAC. Telemetry also showed the Invoke-BypassUACTokenManipulation function in the script.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-14.A.1-4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1836,19 +1932,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        OverWatch generated a General Behavior alert indicating the successful net use connection was suspicious. The alert was tainted by a parent powershell.exe detection.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    OverWatch generated a General Behavior alert indicating the successful net use connection was suspicious. The alert was tainted by a parent powershell.exe detection.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1869,19 +1970,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed a logon attempt via net.exe with command-line arguments to connect using the valid credentials of user Kmitnick (following multiple failed net use attempts). The telemetry was tainted by a parent powershell.exe detection.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a logon attempt via net.exe with command-line arguments to connect using the valid credentials of user Kmitnick (following multiple failed net use attempts). The telemetry was tainted by a parent powershell.exe detection.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.B.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1935,24 +2041,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        The OverWatch team sent an email indicating they observed a General Behavior because newly created file (AdobeUpdater service in registry) established persistence on the host.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-11.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    The OverWatch team sent an email indicating they observed a General Behavior because newly created file (AdobeUpdater service in registry) established persistence on the host.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-11.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1973,24 +2084,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed sc.exe executing with command-line arguments for a new service called AdobeUpdater with binPath pointed to cmd.exe with arguments to execute update.vbs and service description \\"Synchronize with Adobe for security updates.\\" The process tree view showed sc.exe as tainted by a previous powershell.exe detection.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-11.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed sc.exe executing with command-line arguments for a new service called AdobeUpdater with binPath pointed to cmd.exe with arguments to execute update.vbs and service description \\"Synchronize with Adobe for security updates.\\" The process tree view showed sc.exe as tainted by a previous powershell.exe detection.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-E-11.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/CS-16.H.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>

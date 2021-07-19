@@ -18,9 +18,9 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
-    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?e65c8aaf">
+    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?31dc97fb">
 </head>
 
 <body>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -280,25 +276,34 @@
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>184&nbsp;&nbsp;across&nbsp;&nbsp;136</span>
+                                    <span>
+                                            184
+                                        &nbsp;&nbsp;across&nbsp;&nbsp;136
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>63&nbsp;&nbsp;of&nbsp;&nbsp;136</span>
+                                    <span>
+                                            63&nbsp;&nbsp;of&nbsp;&nbsp;136
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>97&nbsp;&nbsp;of&nbsp;&nbsp;136</span>
+                                    <span>
+                                            97&nbsp;&nbsp;of&nbsp;&nbsp;136
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>101&nbsp;&nbsp;of&nbsp;&nbsp;136</span>
+                                    <span>
+                                            101&nbsp;&nbsp;of&nbsp;&nbsp;136
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
@@ -308,28 +313,44 @@
                                 <a href="/enterprise/participants/elastic/results?adversary=apt29">
                                     APT29 (2019)
                                 </a>
+                                    <div class="custom-control custom-checkbox" style="margin: auto; font-size: .8rem">
+                                        <input type="checkbox" class="custom-control-input" id="chkIncludeMSSP" onchange="toggleMSSP(this.checked)" checked>
+                                        <label class="custom-control-label" style="line-height: 2" for="chkIncludeMSSP">Include MSSP</label>
+                                    </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>193&nbsp;&nbsp;across&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_total_detections_apt29" data-with_mssp="193" data-without_mssp="193">193</span>
+                                        &nbsp;&nbsp;across&nbsp;&nbsp;134
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>60&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_analytic_coverage_apt29" data-with_mssp='60&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='60&nbsp;&nbsp;of&nbsp;&nbsp;134'>60&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>119&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_telemetry_coverage_apt29" data-with_mssp='119&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='119&nbsp;&nbsp;of&nbsp;&nbsp;134'>119&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>122&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+                                    <span>
+                                            <span id="span_visibility_apt29" data-with_mssp='122&nbsp;&nbsp;of&nbsp;&nbsp;134' data-without_mssp='122&nbsp;&nbsp;of&nbsp;&nbsp;134'>122&nbsp;&nbsp;of&nbsp;&nbsp;134</span>
+
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
@@ -342,25 +363,34 @@
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>214&nbsp;&nbsp;across&nbsp;&nbsp;174</span>
+                                    <span>
+                                            214
+                                        &nbsp;&nbsp;across&nbsp;&nbsp;174
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>63&nbsp;&nbsp;of&nbsp;&nbsp;174</span>
+                                    <span>
+                                            63&nbsp;&nbsp;of&nbsp;&nbsp;174
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>138&nbsp;&nbsp;of&nbsp;&nbsp;174</span>
+                                    <span>
+                                            138&nbsp;&nbsp;of&nbsp;&nbsp;174
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
                             <td class="td-evaluationSummaryActive" style="line-height: normal;">
                                 <div class="div_eval_summary_cell">
-                                    <span>140&nbsp;&nbsp;of&nbsp;&nbsp;174</span>
+                                    <span>
+                                            140&nbsp;&nbsp;of&nbsp;&nbsp;174
+                                    </span>
                                     <span style="font-size: .8rem;">substeps</span>
                                 </div>
                             </td>
@@ -389,7 +419,6 @@
         </option>
             <option 
             value="carbanak_fin7"
-                selected
             >Carbanak+FIN7
         </option>
 
@@ -13062,7 +13091,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_19_b_1_127_0#tr_apt3_19_b_1_127_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_19_b_1_127_0#tr_apt3_19_b_1_127_2">
@@ -13105,7 +13134,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_19_b_1_128_0#tr_apt3_19_b_1_128_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_19_b_1_128_0#tr_apt3_19_b_1_128_2">
@@ -13183,7 +13212,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_2_a_5_0#tr_apt29_2_a_5_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedConfiguration Change (Detections))
+                                                        (Correlated, Configuration Change (Detections))
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_2_a_5_0#tr_apt29_2_a_5_1">
@@ -13288,7 +13317,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_6_0#tr_apt29_9_b_6_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_6_0#tr_apt29_9_b_6_1">
@@ -13327,7 +13356,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_7_0#tr_apt29_9_b_7_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_7_0#tr_apt29_9_b_7_1">
@@ -13538,7 +13567,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_7_a_2_0#tr_apt29_7_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -14026,7 +14055,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_7_a_3_0#tr_apt29_7_a_3_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -14147,7 +14176,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_7_a_1_0#tr_apt29_7_a_1_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelatedConfiguration Change (Detections))
+                                                        (Alert, Correlated, Configuration Change (Detections))
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_7_a_1_0#tr_apt29_7_a_1_1">
@@ -14860,13 +14889,13 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_3_0#tr_apt29_3_b_3_1">
                                                 <li> 
                                                     General
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_3_0#tr_apt29_3_b_3_2">
                                                 <li> 
                                                     Tactic
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -15565,7 +15594,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_3_0#tr_apt29_14_b_3_1">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -16544,7 +16573,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_18_a_1_0#tr_apt29_18_a_1_1">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -16581,7 +16610,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_a_1_100_0#tr_apt3_16_a_1_100_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_a_1_100_0#tr_apt3_16_a_1_100_2">
@@ -16624,7 +16653,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_104_0#tr_apt3_16_b_1_104_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_104_0#tr_apt3_16_b_1_104_2">
@@ -16807,7 +16836,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_7_a_3_0#tr_apt29_7_a_3_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -16930,7 +16959,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_4_0#tr_apt29_14_b_4_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -16963,13 +16992,13 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_16_d_2_0#tr_apt29_16_d_2_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_16_d_2_0#tr_apt29_16_d_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -17120,13 +17149,13 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_c_1_0#tr_apt29_6_c_1_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)Alert)
+                                                        (Configuration Change (Detections), Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_c_1_0#tr_apt29_6_c_1_2">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -17189,13 +17218,13 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_a_1_0#tr_apt29_6_a_1_0">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)Correlated)
+                                                        (Configuration Change (Detections), Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_a_1_0#tr_apt29_6_a_1_1">
                                                 <li> 
                                                     Telemetry
-                                                        (Configuration Change (Detections)Correlated)
+                                                        (Configuration Change (Detections), Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -17234,7 +17263,7 @@
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_b_1_0#tr_apt29_6_b_1_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -17972,7 +18001,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=carbanak_fin7&scenario=2&detection=carbanak_fin7_17_a_4_0#tr_carbanak_fin7_17_a_4_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detection Logic)Configuration Change (Data Sources))
+                                                        (Configuration Change (Detection Logic), Configuration Change (Data Sources))
                                                 </li>
                                             </a>
                                         </ul>
@@ -18200,7 +18229,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_c_1_0#tr_apt29_9_c_1_0">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)AlertCorrelated)
+                                                        (Configuration Change (Detections), Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_c_1_0#tr_apt29_9_c_1_1">
@@ -18277,7 +18306,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_c_3_0#tr_apt29_9_c_3_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertConfiguration Change (Detections)Correlated)
+                                                        (Alert, Configuration Change (Detections), Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18316,7 +18345,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_c_4_0#tr_apt29_9_c_4_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18416,13 +18445,13 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_12_a_2_0#tr_apt29_12_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_12_a_2_0#tr_apt29_12_a_2_2">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18557,7 +18586,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_6_a_3_0#tr_apt29_6_a_3_1">
                                                 <li> 
                                                     General
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18661,7 +18690,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_1_a_2_0#tr_apt29_1_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)Alert)
+                                                        (Configuration Change (Detections), Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -18725,7 +18754,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_a_3_0#tr_apt29_14_a_3_0">
                                                 <li> 
                                                     None
-                                                        (Host InterrogationDelayed (Manual))
+                                                        (Host Interrogation, Delayed (Manual))
                                                 </li>
                                             </a>
                                         </ul>
@@ -18900,7 +18929,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_5_0#tr_apt29_14_b_5_1">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedConfiguration Change (Detections))
+                                                        (Correlated, Configuration Change (Detections))
                                                 </li>
                                             </a>
                                         </ul>
@@ -19086,7 +19115,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_8_b_2_0#tr_apt29_8_b_2_0">
                                                 <li> 
                                                     None
-                                                        (Host InterrogationDelayed (Manual))
+                                                        (Host Interrogation, Delayed (Manual))
                                                 </li>
                                             </a>
                                         </ul>
@@ -19622,7 +19651,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_1">
@@ -19988,7 +20017,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_1">
@@ -20100,7 +20129,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_g_1_19_0#tr_apt3_2_g_1_19_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_g_1_19_0#tr_apt3_2_g_1_19_1">
@@ -20137,7 +20166,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_g_2_20_0#tr_apt3_2_g_2_20_0">
                                                 <li> 
                                                     General Behavior
-                                                        (DelayedConfiguration ChangeTainted)
+                                                        (Delayed, Configuration Change, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_g_2_20_0#tr_apt3_2_g_2_20_1">
@@ -20174,7 +20203,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_g_2_88_0#tr_apt3_12_g_2_88_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_g_2_88_0#tr_apt3_12_g_2_88_1">
@@ -20277,7 +20306,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_g_1_87_0#tr_apt3_12_g_1_87_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_g_1_87_0#tr_apt3_12_g_1_87_1">
@@ -20371,7 +20400,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_8_a_1_45_0#tr_apt3_8_a_1_45_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_8_a_1_45_0#tr_apt3_8_a_1_45_1">
@@ -20407,7 +20436,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_8_a_2_46_0#tr_apt3_8_a_2_46_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_8_a_2_46_0#tr_apt3_8_a_2_46_1">
@@ -20723,7 +20752,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_12_a_1_0#tr_apt29_12_a_1_1">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -21002,7 +21031,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_2_17_0#tr_apt3_2_f_2_17_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_2_17_0#tr_apt3_2_f_2_17_1">
@@ -21045,7 +21074,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_3_18_0#tr_apt3_2_f_3_18_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_3_18_0#tr_apt3_2_f_3_18_1">
@@ -21124,7 +21153,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_f_1_85_0#tr_apt3_12_f_1_85_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_f_1_85_0#tr_apt3_12_f_1_85_2">
@@ -21194,7 +21223,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_1_16_0#tr_apt3_2_f_1_16_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeDelayedTainted)
+                                                        (Configuration Change, Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_f_1_16_0#tr_apt3_2_f_1_16_1">
@@ -21243,7 +21272,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_f_2_86_0#tr_apt3_12_f_2_86_1">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_f_2_86_0#tr_apt3_12_f_2_86_2">
@@ -21341,7 +21370,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_c_2_11_0#tr_apt3_2_c_2_11_0">
                                                 <li> 
                                                     General Behavior
-                                                        (DelayedConfiguration ChangeTainted)
+                                                        (Delayed, Configuration Change, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_c_2_11_0#tr_apt3_2_c_2_11_1">
@@ -21638,7 +21667,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_2_0#tr_apt29_14_b_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -21827,7 +21856,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_h_1_21_0#tr_apt3_2_h_1_21_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_h_1_21_0#tr_apt3_2_h_1_21_1">
@@ -21922,7 +21951,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_c_1_92_0#tr_apt3_13_c_1_92_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_c_1_92_0#tr_apt3_13_c_1_92_1">
@@ -21958,7 +21987,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_a_1_118_0#tr_apt3_17_a_1_118_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_a_1_118_0#tr_apt3_17_a_1_118_1">
@@ -22157,7 +22186,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_a_1_89_0#tr_apt3_13_a_1_89_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_a_1_89_0#tr_apt3_13_a_1_89_1">
@@ -22479,7 +22508,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_4_c_7_0#tr_apt29_4_c_7_1">
                                                 <li> 
                                                     Tactic
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -22518,7 +22547,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_4_c_8_0#tr_apt29_4_c_8_1">
                                                 <li> 
                                                     Tactic
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -22557,7 +22586,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_12_b_1_0#tr_apt29_12_b_1_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detections)CorrelatedAlert)
+                                                        (Configuration Change (Detections), Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -22587,7 +22616,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_e_1_14_0#tr_apt3_2_e_1_14_0">
                                                 <li> 
                                                     General Behavior
-                                                        (TaintedDelayedConfiguration Change)
+                                                        (Tainted, Delayed, Configuration Change)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_e_1_14_0#tr_apt3_2_e_1_14_1">
@@ -22623,7 +22652,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_e_2_15_0#tr_apt3_2_e_2_15_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_e_2_15_0#tr_apt3_2_e_2_15_1">
@@ -22757,7 +22786,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_4_c_6_0#tr_apt29_4_c_6_1">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -22977,7 +23006,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_a_1_7_0#tr_apt3_2_a_1_7_0">
                                                 <li> 
                                                     General Behavior
-                                                        (TaintedDelayedConfiguration Change)
+                                                        (Tainted, Delayed, Configuration Change)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_a_1_7_0#tr_apt3_2_a_1_7_1">
@@ -23019,7 +23048,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_a_2_8_0#tr_apt3_2_a_2_8_0">
                                                 <li> 
                                                     General Behavior
-                                                        (DelayedConfiguration ChangeTainted)
+                                                        (Delayed, Configuration Change, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_a_2_8_0#tr_apt3_2_a_2_8_1">
@@ -23396,7 +23425,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_e_1_12_84_0#tr_apt3_12_e_1_12_84_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_e_1_12_84_0#tr_apt3_12_e_1_12_84_1">
@@ -23438,7 +23467,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_b_1_90_0#tr_apt3_13_b_1_90_1">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_b_1_90_0#tr_apt3_13_b_1_90_2">
@@ -23474,7 +23503,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_b_2_91_0#tr_apt3_13_b_2_91_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_13_b_2_91_0#tr_apt3_13_b_2_91_1">
@@ -23510,7 +23539,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_b_1_9_0#tr_apt3_2_b_1_9_0">
                                                 <li> 
                                                     General Behavior
-                                                        (TaintedConfiguration ChangeDelayed)
+                                                        (Tainted, Configuration Change, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_b_1_9_0#tr_apt3_2_b_1_9_1">
@@ -23546,7 +23575,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_b_1_65_0#tr_apt3_12_b_1_65_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_b_1_65_0#tr_apt3_12_b_1_65_1">
@@ -23611,7 +23640,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_b_1_135_0#tr_apt3_20_b_1_135_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_b_1_135_0#tr_apt3_20_b_1_135_1">
@@ -23875,7 +23904,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_d_1_12_0#tr_apt3_2_d_1_12_0">
                                                 <li> 
                                                     General Behavior
-                                                        (Configuration ChangeTaintedDelayed)
+                                                        (Configuration Change, Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_d_1_12_0#tr_apt3_2_d_1_12_1">
@@ -23911,7 +23940,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_d_2_13_0#tr_apt3_2_d_2_13_0">
                                                 <li> 
                                                     General Behavior
-                                                        (TaintedConfiguration ChangeDelayed)
+                                                        (Tainted, Configuration Change, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_2_d_2_13_0#tr_apt3_2_d_2_13_1">
@@ -23947,7 +23976,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_d_1_67_0#tr_apt3_12_d_1_67_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_12_d_1_67_0#tr_apt3_12_d_1_67_1">
@@ -24012,7 +24041,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_h_1_111_0#tr_apt3_16_h_1_111_0">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_h_1_111_0#tr_apt3_16_h_1_111_1">
@@ -24048,7 +24077,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_j_1_114_0#tr_apt3_16_j_1_114_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_j_1_114_0#tr_apt3_16_j_1_114_1">
@@ -24189,7 +24218,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_f_1_109_0#tr_apt3_16_f_1_109_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_f_1_109_0#tr_apt3_16_f_1_109_2">
@@ -24405,7 +24434,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_4_a_2_0#tr_apt29_4_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -24438,7 +24467,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_1_0#tr_apt29_9_b_1_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_1_0#tr_apt29_9_b_1_1">
@@ -25091,7 +25120,7 @@ query for Win32_BIOS </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_1_b_1_0#tr_apt29_1_b_1_1">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlertConfiguration Change (Detections))
+                                                        (Correlated, Alert, Configuration Change (Detections))
                                                 </li>
                                             </a>
                                         </ul>
@@ -25841,7 +25870,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_2">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_3">
@@ -25974,7 +26003,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_l_1_116_0#tr_apt3_16_l_1_116_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_l_1_116_0#tr_apt3_16_l_1_116_2">
@@ -26013,7 +26042,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_8_c_3_0#tr_apt29_8_c_3_0">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_8_c_3_0#tr_apt29_8_c_3_1">
@@ -26025,7 +26054,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_8_c_3_0#tr_apt29_8_c_3_2">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -26352,13 +26381,13 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_1_0#tr_apt29_14_b_1_2">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_14_b_1_0#tr_apt29_14_b_1_3">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -26514,7 +26543,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_9_b_8_0#tr_apt29_9_b_8_0">
                                                 <li> 
                                                     Telemetry
-                                                        (Configuration Change (Detections)Correlated)
+                                                        (Configuration Change (Detections), Correlated)
                                                 </li>
                                             </a>
                                         </ul>
@@ -26665,7 +26694,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_1">
@@ -27031,7 +27060,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_1">
@@ -27104,7 +27133,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_16_d_1_0#tr_apt29_16_d_1_0">
                                                 <li> 
                                                     General
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_16_d_1_0#tr_apt29_16_d_1_1">
@@ -27486,7 +27515,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_a_1_101_0#tr_apt3_16_a_1_101_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_a_1_101_0#tr_apt3_16_a_1_101_2">
@@ -27529,7 +27558,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_103_0#tr_apt3_16_b_1_103_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_103_0#tr_apt3_16_b_1_103_2">
@@ -27572,7 +27601,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_106_0#tr_apt3_16_d_1_106_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_106_0#tr_apt3_16_d_1_106_2">
@@ -27788,7 +27817,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_8_a_2_0#tr_apt29_8_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -27833,7 +27862,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_16_c_1_0#tr_apt29_16_c_1_2">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -28035,7 +28064,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_1">
@@ -28047,7 +28076,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_2">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -28080,7 +28109,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_10_b_1_0#tr_apt29_10_b_1_0">
                                                 <li> 
                                                     None
-                                                        (Delayed (Manual)Host Interrogation)
+                                                        (Delayed (Manual), Host Interrogation)
                                                 </li>
                                             </a>
                                         </ul>
@@ -28303,7 +28332,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_i_1_112_0#tr_apt3_16_i_1_112_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_i_1_112_0#tr_apt3_16_i_1_112_2">
@@ -28342,7 +28371,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_a_1_0#tr_apt29_5_a_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_a_1_0#tr_apt29_5_a_1_1">
@@ -28384,7 +28413,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_c_1_121_0#tr_apt3_17_c_1_121_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_c_1_121_0#tr_apt3_17_c_1_121_2">
@@ -28426,7 +28455,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_a_1_133_0#tr_apt3_20_a_1_133_1">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_a_1_133_0#tr_apt3_20_a_1_133_2">
@@ -28530,7 +28559,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_1_0#tr_apt29_3_b_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedConfiguration Change (Detections)Alert)
+                                                        (Correlated, Configuration Change (Detections), Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_1_0#tr_apt29_3_b_1_1">
@@ -28608,7 +28637,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_15_a_2_0#tr_apt29_15_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_15_a_2_0#tr_apt29_15_a_2_2">
@@ -28688,7 +28717,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=carbanak_fin7&scenario=2&detection=carbanak_fin7_17_a_4_0#tr_carbanak_fin7_17_a_4_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detection Logic)Configuration Change (Data Sources))
+                                                        (Configuration Change (Detection Logic), Configuration Change (Data Sources))
                                                 </li>
                                             </a>
                                         </ul>
@@ -28730,7 +28759,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_2">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_3">
@@ -28858,7 +28887,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_1">
@@ -29224,7 +29253,7 @@ CreateProcessWithToken API </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_1">
@@ -29634,7 +29663,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_1">
@@ -29646,7 +29675,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_b_1_0#tr_apt29_5_b_1_2">
                                                 <li> 
                                                     General
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                         </ul>
@@ -29679,7 +29708,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_10_b_1_0#tr_apt29_10_b_1_0">
                                                 <li> 
                                                     None
-                                                        (Delayed (Manual)Host Interrogation)
+                                                        (Delayed (Manual), Host Interrogation)
                                                 </li>
                                             </a>
                                         </ul>
@@ -29834,7 +29863,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_i_1_112_0#tr_apt3_16_i_1_112_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_i_1_112_0#tr_apt3_16_i_1_112_2">
@@ -29873,7 +29902,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_a_1_0#tr_apt29_5_a_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedAlert)
+                                                        (Correlated, Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_5_a_1_0#tr_apt29_5_a_1_1">
@@ -29915,7 +29944,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_c_1_121_0#tr_apt3_17_c_1_121_1">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_17_c_1_121_0#tr_apt3_17_c_1_121_2">
@@ -29957,7 +29986,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_a_1_133_0#tr_apt3_20_a_1_133_1">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_20_a_1_133_0#tr_apt3_20_a_1_133_2">
@@ -30061,7 +30090,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_1_0#tr_apt29_3_b_1_0">
                                                 <li> 
                                                     Technique
-                                                        (CorrelatedConfiguration Change (Detections)Alert)
+                                                        (Correlated, Configuration Change (Detections), Alert)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=1&detection=apt29_3_b_1_0#tr_apt29_3_b_1_1">
@@ -30139,7 +30168,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_15_a_2_0#tr_apt29_15_a_2_1">
                                                 <li> 
                                                     Technique
-                                                        (AlertCorrelated)
+                                                        (Alert, Correlated)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt29&scenario=2&detection=apt29_15_a_2_0#tr_apt29_15_a_2_2">
@@ -30219,7 +30248,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=carbanak_fin7&scenario=2&detection=carbanak_fin7_17_a_4_0#tr_carbanak_fin7_17_a_4_1">
                                                 <li> 
                                                     Technique
-                                                        (Configuration Change (Detection Logic)Configuration Change (Data Sources))
+                                                        (Configuration Change (Detection Logic), Configuration Change (Data Sources))
                                                 </li>
                                             </a>
                                         </ul>
@@ -30554,7 +30583,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_2">
                                                 <li> 
                                                     Enrichment
-                                                        (DelayedTainted)
+                                                        (Delayed, Tainted)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=1&detection=apt3_7_c_1_44_0#tr_apt3_7_c_1_44_3">
@@ -30682,7 +30711,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_d_1_107_0#tr_apt3_16_d_1_107_1">
@@ -31048,7 +31077,7 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_0">
                                                 <li> 
                                                     Enrichment
-                                                        (TaintedDelayed)
+                                                        (Tainted, Delayed)
                                                 </li>
                                             </a>
                                             <a href="/enterprise/participants/elastic/results?adversary=apt3&scenario=2&detection=apt3_16_b_1_102_0#tr_apt3_16_b_1_102_1">
@@ -31173,8 +31202,8 @@ powershell.exe executing with the stolen token of explorer.exe </p>
         substep_bar_colors: ["#185b85", "#007a9a", "#ffbb05", "#00978d", "#05ae6a", "#95bd2a"],
         chart_columns: chart_col
     }
-    var currentAdversary = {"round_name": "carbanak_fin7", "round_display_name": "Carbanak+FIN7"};
-    var active_adversaries = [{'round_name': 'apt3', 'round_display_name': 'APT3'}, {'round_name': 'apt29', 'round_display_name': 'APT29'}, {'round_name': 'carbanak_fin7', 'round_display_name': 'Carbanak+FIN7'}];
+    var currentAdversary = {"adversary_name": "carbanak_fin7", "adversary_display_name": "Carbanak+FIN7"};
+    var active_adversaries = [{'adversary_name': 'apt3', 'adversary_display_name': 'APT3'}, {'adversary_name': 'apt29', 'adversary_display_name': 'APT29'}, {'adversary_name': 'carbanak_fin7', 'adversary_display_name': 'Carbanak+FIN7'}];
     var stepChartHeight;
     var stepChartWidth;
     var stepChartMaxDetections = 0;
@@ -31202,18 +31231,18 @@ powershell.exe executing with the stolen token of explorer.exe </p>
             case "carbanak_fin7":
                 let adversary_matched_to_query = false;
                 active_adversaries.forEach(activeRound => {
-                    if(activeRound['round_name'] == (adversary)) {
+                    if(activeRound['adversary_name'] == (adversary)) {
                         adversarySelected(adversary)
                         adversary_matched_to_query = true
                         $("#select-adversary-finder").val(adversary);
                     }
                 })
                 if (!adversary_matched_to_query) {
-                    adversarySelected(currentAdversary['round_name'])
+                    adversarySelected(currentAdversary['adversary_name'])
                 }
                 break;
             default:
-                adversarySelected(currentAdversary['round_name'])
+                adversarySelected(currentAdversary['adversary_name'])
         }
 
         // Multiple if checks are necessary incase a wrong query string value is entered in the URL
@@ -32318,6 +32347,26 @@ powershell.exe executing with the stolen token of explorer.exe </p>
                     link.setAttribute("href", old_href + "?adversaries=" + adversary);
                 }
             }
+        }
+    }
+
+    function toggleMSSP(include_MSSP) {
+        span_total_detections_apt29 = document.getElementById("span_total_detections_apt29");
+        span_analytic_coverage_apt29 = document.getElementById("span_analytic_coverage_apt29");
+        span_telemetry_coverage_apt29 = document.getElementById("span_telemetry_coverage_apt29");
+        span_visibility_apt29 = document.getElementById("span_visibility_apt29");
+
+        if (include_MSSP) {
+            span_total_detections_apt29.textContent = span_total_detections_apt29.getAttribute("data-with_mssp");
+            span_analytic_coverage_apt29.textContent = span_analytic_coverage_apt29.getAttribute("data-with_mssp");
+            span_telemetry_coverage_apt29.textContent = span_telemetry_coverage_apt29.getAttribute("data-with_mssp");
+            span_visibility_apt29.textContent = span_visibility_apt29.getAttribute("data-with_mssp");
+        }
+        else {
+            span_total_detections_apt29.textContent = span_total_detections_apt29.getAttribute("data-without_mssp");
+            span_analytic_coverage_apt29.textContent = span_analytic_coverage_apt29.getAttribute("data-without_mssp");
+            span_telemetry_coverage_apt29.textContent = span_telemetry_coverage_apt29.getAttribute("data-without_mssp");
+            span_visibility_apt29.textContent = span_visibility_apt29.getAttribute("data-without_mssp");
         }
     }
 

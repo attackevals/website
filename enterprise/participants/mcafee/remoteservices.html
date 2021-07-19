@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/tact_tech_subtech_summary.min.css?7f01a381">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,58 +57,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -285,34 +281,39 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[4]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[5]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7_4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[4]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.A.7.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[5]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -375,29 +376,34 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[4]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.B.1_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[4]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -450,14 +456,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A General detection named "Remotely creating or modifying files or folders" (Critical) was generated when a service binary was remotely created on 10.0.0.4.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A General detection named "Remotely creating or modifying files or folders" (Critical) was generated when a service binary was remotely created on 10.0.0.4.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -477,19 +488,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_5.C.2_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -542,24 +558,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.A.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -612,24 +633,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Used functionality of Remote Desktop techniques via mstsc utility" was generated when the remote desktop connection client (mstsc.exe) was used to establish an RDP session.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_4.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Used functionality of Remote Desktop techniques via mstsc utility" was generated when the remote desktop connection client (mstsc.exe) was used to establish an RDP session.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_4.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -649,29 +675,34 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_10.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_11.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[4]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_10.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_7.B.3_11.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[4]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -724,19 +755,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection named "Detected remote execution attempt using Paexec tool" (Orange) was generated when paexec.exe was executed to access 10.0.1.6.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Detected remote execution attempt using Paexec tool" (Orange) was generated when paexec.exe was executed to access 10.0.1.6.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -756,14 +792,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        A Technique detection named "A file was copied on the administrative share of a remote endpoint " was generated when paexec.exe was used to remotely copy a file to an admin share on 10.0.1.6.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "A file was copied on the administrative share of a remote endpoint " was generated when paexec.exe was used to remotely copy a file to an admin share on 10.0.1.6.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -783,29 +824,34 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray; border-bottom: none;">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_6.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[4]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_6.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[4]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -825,14 +871,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique detection named "Paexec has been used to execute a process from a remote endpoint" (Orange) was generated when paexec.exe was used to execute a service executable process from 10.0.1.5 to 10.0.1.6.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection named "Paexec has been used to execute a process from a remote endpoint" (Orange) was generated when paexec.exe was used to execute a service executable process from 10.0.1.5 to 10.0.1.6.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_16.A.5_1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -885,24 +936,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_8.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_10.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_7.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_8.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_10.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_MC_19.A.2_7.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1704,14 +1760,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed a connection to Scranton (10.0.1.4) on port 5985. The detection was correlated to a parent alert for PowerShell.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1718.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a connection to Scranton (10.0.1.4) on port 5985. The detection was correlated to a parent alert for PowerShell.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1718.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1765,14 +1826,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 135. The detection was correlated to a parent alert for PowerShell.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1743.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 135. The detection was correlated to a parent alert for PowerShell.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1743.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1826,14 +1892,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Technique detection alert (orange indicator) called "Windows Remote Management" was generated for powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1867.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique detection alert (orange indicator) called "Windows Remote Management" was generated for powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1867.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1853,14 +1924,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed a network connection to remote host NewYork (10.0.0.4) over port 5985.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1869.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a network connection to remote host NewYork (10.0.0.4) over port 5985.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1869.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -1913,14 +1989,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        Telemetry showed PowerShell with an open network connection to remote host Scranton (10.0.1.4) over port 5985.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1925.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed PowerShell with an open network connection to remote host Scranton (10.0.1.4) over port 5985.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1925.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -1941,19 +2022,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        A Technique alert detection (orange indicator) called "Windows Remote Management" was generated for a "PowerShell script doing Windows Remote Management (WinRM) activity."
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1921.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1925.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Technique alert detection (orange indicator) called "Windows Remote Management" was generated for a "PowerShell script doing Windows Remote Management (WinRM) activity."
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1921.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/McAfee-APT29-1925.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2222,19 +2308,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        The capability enriched rundll32.exe (the process that made the network connection) with the correct ATT&CK Tactic (Lateral Movement) and the Technique (Remote Desktop Protocol).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    The capability enriched rundll32.exe (the process that made the network connection) with the correct ATT&CK Tactic (Lateral Movement) and the Technique (Remote Desktop Protocol).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2254,19 +2345,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed a connection to 10.0.0.5 (Conficker) over TCP port 3389.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a connection to 10.0.0.5 (Conficker) over TCP port 3389.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-6.C.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2319,24 +2415,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        The capability enriched the rundll32.exe that made the network connection with the correct ATT&CK Tactic (Lateral Movement) and Technique (Remote Desktop Protocol).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.A.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    The capability enriched the rundll32.exe that made the network connection with the correct ATT&CK Tactic (Lateral Movement) and Technique (Remote Desktop Protocol).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.A.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2357,24 +2458,29 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed a remote interactive logon for Jesse to Conficker (10.0.0.5) as well as a connection to 10.0.0.5 (Conficker) over port 3389 from rundll32.exe. The telemetry was tainted by a trace detection on rundll32.exe
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.A.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[3]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a remote interactive logon for Jesse to Conficker (10.0.0.5) as well as a connection to 10.0.0.5 (Conficker) over port 3389 from rundll32.exe. The telemetry was tainted by a trace detection on rundll32.exe
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.B.1-3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-10.A.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[3]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2428,14 +2534,19 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Telemetry showed powershell.exe executing repeated logon attempts targeting ADMIN$ via net.exe. The telemetry was tainted by a trace detection on powershell.exe.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-1.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing repeated logon attempts targeting ADMIN$ via net.exe. The telemetry was tainted by a trace detection on powershell.exe.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-1.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2488,19 +2599,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Specific Behavior alert was generated for the net utility executed to authenticate to a remote admin share with valid accounts. The alert was tagged with the correct ATT&CK Tactic (Lateral Movement) and Technique (Windows Admin Shares).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Specific Behavior alert was generated for the net utility executed to authenticate to a remote admin share with valid accounts. The alert was tagged with the correct ATT&CK Tactic (Lateral Movement) and Technique (Windows Admin Shares).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2521,19 +2637,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed a logon attempt via net.exe to ADMIN$ with command-line arguments to login using the valid credentials of user Kmitnick. The telemetry was tainted by a trace detection on powershell.exe.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-2.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-3.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed a logon attempt via net.exe to ADMIN$ with command-line arguments to login using the valid credentials of user Kmitnick. The telemetry was tainted by a trace detection on powershell.exe.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-2.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.A.1-3.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2586,19 +2707,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-bottom: none;">
-                                                        A Specific Behavior alert was generated for the net utility executed to authenticate to a remote admin share with valid accounts. The alert was tagged with the correct ATT&CK Tactic (Lateral Movement) and Technique (Windows Admin Shares).
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    A Specific Behavior alert was generated for the net utility executed to authenticate to a remote admin share with valid accounts. The alert was tagged with the correct ATT&CK Tactic (Lateral Movement) and Technique (Windows Admin Shares).
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                             <tr 
@@ -2619,19 +2745,24 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell" style="border-top: 1px solid lightgray;">
-                                                        Telemetry showed powershell.exe executing net.exe. The telemetry was tainted by a trace detection on powershell.exe.
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-9.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[1]
-                                                            </a>
-                                                            <a  
-                                                                href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-5.png" 
-                                                                target="_blank"
-                                                                class="ml-1" style="text-decoration: none;">[2]
-                                                            </a>
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Telemetry showed powershell.exe executing net.exe. The telemetry was tainted by a trace detection on powershell.exe.
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-9.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[1]
+                                                                        </a>
+                                                                        <a  
+                                                                            href="https://d1zq5d3dtjfcoj.cloudfront.net/MC-16.D.1-5.png" 
+                                                                            target="_blank"
+                                                                            class="ml-1" style="text-decoration: none;">[2]
+                                                                        </a>
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>
@@ -2684,9 +2815,14 @@
                                                     </div>
                                                 </td>
                                                 <td class="tdDetectionNote">
-                                                            <div class="divDetectionNoteCell">
-                                                        Minimum detection criteria was not met for this procedure.
-                                                    </div>
+                                                            <div class="divDetectionNoteCell row" style="margin-right: 0px; margin-left: 0px;">
+                                                                <div class="col-11">
+                                                                    Minimum detection criteria was not met for this procedure.
+                                                                </div>
+                                                                <div class="col-1" style="display: flex; flex-direction: column; justify-content: center;">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </div>
+                                                            </div>
                                                 </td>
                                             </tr>
                                     </tbody>

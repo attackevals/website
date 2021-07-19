@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
     <link rel="stylesheet" type="text/css" href="/theme/participants_enterprise.min.css?13a29688">
 </head>
@@ -31,9 +31,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -43,35 +42,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -80,65 +57,83 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
 </header>
 <div id='content-width-lock'>
-    <div id='content'>
-<br>
+    <div id='content'><br>
 <div class="divEvaluationSummaryBody">
     <div style="padding: 0px; width: 100%;"> 
         <span class="spanBreadcrumbs-results"> 
@@ -148,83 +143,119 @@
         <br>
         <br>
     </div>
-    <div class="btn-group pl-3">
-        <button type="button" id=btnRound-results class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">	
-            <span id="spanRound-results"> TRITON </span>
-		</button>
-        <div class="dropdown-menu">
-            <a class='dropdown-item' href='#'> TRITON</a>
-        </div>
-	</div>
-	<div class="pl-4"> 
-		<p id="results_or_evaluations_details"> 
-			For detailed round information, visit the <a href="/ics/triton">Overview</a>. 
-		</p>
-	</div>		
-	<div class="pl-4">
-		<h3>
-			<span id='span_results_or_evaluations'> Participants </span>
-		</h3>
-	</div>
-
-    <br>
     <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <h2>Participants</h2>
+                    <p>
+                        MITRE Engenuity does not assign scores, rankings, or ratings. The evaluation results are available to the public, so other organizations may provide their own analysis and interpretation - these are not endorsed or validated by MITRE Engenuity.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Displayed rounds: 
+                        <span class="filter-box" id="display-triton" onclick="removeFilter(this)"> TRITON (2021) <i class="fas fa-times" style="padding-left: 5px;"></i></span>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <div class="input-group" style="max-width: 20%; margin: auto;">
+                        <span class="input-group-prepend">
+                            <div class="input-group-text bg-transparent border-right-0"><i class="fa fa-search"></i></div>
+                        </span>
+                        <input class="form-control py-2 border-left-0 border" oninput="applyFilters()" type="search" placeholder="Participant Search" id="search-participants">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
         <div class="row">
             <div class="col" id="vendor_cards">
-                    <div id='Armis' 
+                <a href='/ics/participants/armis/'>
+                    <div id='armis' 
                         class='EvalCard-results' 
-                        data-tags='Armis' 
-                        data-round_inclusion='TRITON,' 
-                        data-had_protections=false>
-                        <span class='comingSoon'>Coming Soon!</span>
+                        data-tags='armis' 
+                        data-adversary_inclusion='triton'>
+                        <span class='labEvalName-results'>Armis</span>
+                        <br><br>
                         <div class='divLogo-results'>
-                            <img class='vendorlogo-results-preview' src='https://d1zq5d3dtjfcoj.cloudfront.net/Armis-Triton.png' alt='Armis_Logo' />
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Armis-Triton.png' alt='armis_Logo' />
                         </div>
                     </div>
-                    <div id='Claroty' 
+                </a>
+                <a href='/ics/participants/claroty/'>
+                    <div id='claroty' 
                         class='EvalCard-results' 
-                        data-tags='Claroty' 
-                        data-round_inclusion='TRITON,' 
-                        data-had_protections=false>
-                        <span class='comingSoon'>Coming Soon!</span>
+                        data-tags='claroty' 
+                        data-adversary_inclusion='triton'>
+                        <span class='labEvalName-results'>Claroty</span>
+                        <br><br>
                         <div class='divLogo-results'>
-                            <img class='vendorlogo-results-preview' src='https://d1zq5d3dtjfcoj.cloudfront.net/Claroty_logo.png' alt='Claroty_Logo' />
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Claroty_logo.png' alt='claroty_Logo' />
                         </div>
                     </div>
-                    <div id='Dragos' 
+                </a>
+                <a href='/ics/participants/dragos/'>
+                    <div id='dragos' 
                         class='EvalCard-results' 
-                        data-tags='Dragos' 
-                        data-round_inclusion='TRITON,' 
-                        data-had_protections=false>
-                        <span class='comingSoon'>Coming Soon!</span>
+                        data-tags='dragos' 
+                        data-adversary_inclusion='triton'>
+                        <span class='labEvalName-results'>Dragos</span>
+                        <br><br>
                         <div class='divLogo-results'>
-                            <img class='vendorlogo-results-preview' src='https://d1zq5d3dtjfcoj.cloudfront.net/Dragos-Triton.png' alt='Dragos_Logo' />
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Dragos-Triton.png' alt='dragos_Logo' />
                         </div>
                     </div>
-                    <div id='III' 
+                </a>
+                <a href='/ics/participants/iii/'>
+                    <div id='iii' 
                         class='EvalCard-results' 
-                        data-tags='III.Institute for Information Industry' 
-                        data-round_inclusion='TRITON,' 
-                        data-had_protections=false>
-                        <span class='comingSoon'>Coming Soon!</span>
+                        data-tags='iii' 
+                        data-adversary_inclusion='triton'>
+                        <span class='labEvalName-results'>Institute for Information Industry</span>
+                        <br><br>
                         <div class='divLogo-results'>
-                            <img class='vendorlogo-results-preview' src='https://d1zq5d3dtjfcoj.cloudfront.net/III-Triton.png' alt='III_Logo' />
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/III-Triton.png' alt='iii_Logo' />
                         </div>
                     </div>
+                </a>
+                <a href='/ics/participants/microsoft/'>
                     <div id='Microsoft' 
                         class='EvalCard-results' 
-                        data-tags='Microsoft' 
-                        data-round_inclusion='TRITON,' 
-                        data-had_protections=false>
-                        <span class='comingSoon'>Coming Soon!</span>
+                        data-tags='microsoftdefenderatp' 
+                        data-adversary_inclusion='triton'>
+                        <span class='labEvalName-results'>Microsoft</span>
+                        <br><br>
                         <div class='divLogo-results'>
-                            <img class='vendorlogo-results-preview' src='https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png' alt='Microsoft_Logo' />
+                            <img class='vendorlogo-results' src='https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png' alt='Microsoft_Logo' />
                         </div>
                     </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+	function executeSearchQuery(searchQuery, vendorCards) {
+        Array.from(vendorCards).forEach(vendorCard => {
+            if (vendorCard.dataset.tags.includes(searchQuery)) {
+                vendorCard.style.display = 'block';
+            } else {
+                vendorCard.style.display = 'none';
+            }
+        });
+	}
+
+    function applyFilters() {
+        vendorCards = document.getElementById('vendor_cards').getElementsByClassName('EvalCard-results');
+        let searchQuery = document.getElementById("search-participants").value;
+        if(searchQuery != undefined) executeSearchQuery(searchQuery, vendorCards);
+    }
+</script>
+
 
 </div>
 </div>

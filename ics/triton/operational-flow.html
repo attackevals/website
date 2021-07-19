@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-62667723-5'></script><script src='/theme/scripts/analytics.js'></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='shortcut icon' href='https://d1zq5d3dtjfcoj.cloudfront.net/ME_icon.png' type='image/x-icon'>
+
+    <link rel="stylesheet" href="/theme/style/all.css">
+
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    
+    <title>ATT&CK&reg; EVALUATIONS</title>
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='/theme/style/bootstrap.min.css' />
+    <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
+    <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+
+ </head>
+
+<body>
+    <header class=''>
+        <nav class='navbar navbar-expand-lg navbar-light fixed-top box-shadow-bottom bg-white'>
+        <a class='navbar-brand' href='/'><img src='https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Engenuity_ATTACK-Evaluations_logo_PMS_purple.jpg' height="50px" alt=''></a>
+        <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
+        </button>
+        <div class='collapse navbar-collapse' id='navbarCollapse'>
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
+                <!-- <ul class="dropdown-menu dropleft"> -->
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/methodology-overview">
+                            Methodology Overview
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
+                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Wizard Spider and <br> Sandworm (2021)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/participants/">
+                            View All Participants
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
+                            <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRITON (2021)
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class='nav-item dropdown ml-3'>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
+                <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="/about">About ATT&CK</a>
+                        <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
+                    </div>  
+                </li> 
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
+          </ul>
+        </div>
+    </nav>
+</header>
+<div id='content-width-lock'>
+    <div id='content'><br>
+<div class="divEvaluationSummaryBody">
+	<div style="padding: 0px; width: 100%;">
+		<span class="spanBreadcrumbs-results">
+			<a href='/'>Home</a> &nbsp;>&nbsp;
+			<a href="/ics/triton/">ICS TRITON</a> &nbsp;>&nbsp; Operational Flow
+		</span>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div class='divFAQBody'>
+		<div style="margin-top:20px; text-align: center;">
+			<h1>TRITON Evaluation: Operational Flow</h1>
+		</div>
+		<br />
+		<br />
+		<p>
+			The Operational Flow separated technique execution into sequences we referred to as “Steps”. Organizing our
+			execution into Steps ensured that the detection displayed was correctly associated with the technique that
+			was being tested. Each Step corresponded to an adversary’s intended goal during an operation.
+		</p>
+		<br>
+
+		<p onclick="toggle_step_collapse(this, 'step1DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 1: Initial
+				Compromise</span>
+			<test class="right"></i>
+		</p>
+		<div id="step1DIV" style="display:none">
+			<p>
+				Steps Included: 1, 2, 3
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							The scenario begins with the adversaries having a foothold on an application server within a
+							shared DMZ between the target petrochemical company’s corporate network and the ICS network.
+							This foothold was established during a prior phase of the campaign and handed off to the ICS
+							focused adversaries. These adversaries then utilized captured valid credentials to login
+							remotely onto a windows-based engineering workstation within the process environment using
+							Remote Desktop (RDP) over port 3389 (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>). This initial RDP session passes through the ICS firewall as
+							standard operator behavior. The attacker leverages their RDP access to perform a program upload using the Rockwell engineering tools and saves this file to the temp directory under the Engineer user. RDP shared folders are used to move persistence tools onto the control engineering workstation (EWS).
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton adversaries leveraged valid accounts that were harvested throughout the operation. [1]</p>
+							<p>Triton adversaries routinely used standard tools that would mimic legitimate administrator activities. This included heavy use of RDP. [2] [3]</p>
+							<p>Triton adversaries gained remote access to an SIS engineering workstation. [1]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step2DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 2: Employ
+				Persistence</span>
+			<test class="right"></i>
+		</p>
+		<div id="step2DIV" style="display:none">
+			<p>
+				Steps Included: 4, 5, 6
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							<p>
+								To gain persistence on the control EWS, the adversary installed scheduled tasks by
+								importing an XML task named <i>SMB_Sync.xml</i> into Task Scheduler. This task initiates
+								a <i>plink.exe</i> reverse shell and local port redirection for RDP access. The outgoing
+								SSH request was made over port 445 (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>) to the application server in the DMZ. This
+								port was selected to bypass firewall restrictions and guise as SMB traffic.
+							</p>
+							<p>
+								Once the SSH tunnel is in place the adversaries reinitiate RDP over the encrypted tunnel
+								to transfer and install the OpenSSH-based backdoor using a PowerShell install script
+								named <i>install-csp.ps1</i> (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>). The OpenSSH backdoor was masqueraded as a
+								proprietary Rockwell protocol, Client Server Protocol (CSP) [4]. Once installed the SSHD
+								component is masqueraded as <i>CSP.exe</i> with a local listening port of 2223 and
+								service name <i>rockwell-csp3</i> (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0849">T0849</a>). Finally, an additional XML scheduled task
+								<i>SMB_Update.xml</i> is imported to establish an additional tunnel for SSH traffic over
+								port 445 (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
+							</p>
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton adversaries utilized customized OpenSSH PEs with content "Microsoft openSSH
+								client." [2]</p>
+							<p>Triton adversaries leveraged <a href="https://docs.microsoft.com/en-us/windows/desktop/taskschd/daily-trigger-example--xml-">Scheduled Tasks XML triggers</a> referencing unsigned .exe
+								files. [2]</p>
+							<p>Triton adversaries used tunneled RDP sessions over PLINK for remote access. [2] [4]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step3DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 3: Deploy
+				Toolkit</span>
+			<test class="right"></i>
+		</p>
+		<div id="step3DIV" style="display:none">
+			<p>
+				Steps Included: 7, 8
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							Now that persistence has been established on the control EWS, the attacker leverages
+							<i>SFTP</i> over the 445 tunnel to move a zip file of custom discovery tools.
+							RSLINX_install.zip was moved from the application server in the DMZ to a local Rockwell temp
+							directory. This serves as the staging and execution location for all custom EtherNet/IP
+							tools. Two custom python executable tools, <i>RSLINX.exe</i> and <i>LogixMap.exe</i>, are
+							extracted into the Rockwell directory.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton files were staged and executed from temp directories. [2]</p>
+							<p>Triton adversaries leveraged an unmodified but custom-compiled version of sftp-server.exe
+								from OpenSSH. [4]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step4DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 4: Collection /
+				Discovery </span>
+			<test class="right"></i>
+		</p>
+		<div id="step4DIV" style="display:none">
+			<p>
+				Steps Included: 9
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							<p>
+								The attacker uses this stage to collect artifacts and discover information that will be used in later phases. The attacker accomplishes this with custom network and EtherNet/IP tools to discovery additional assets and information about the environment.
+							</p>
+							<p>
+								The attacker uses <i>LogixMap.exe</i>, a custom executable, to conduct a stealth scan
+								across the network on TCP port 44818 to identify any EtherNet/IP capable assets (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0846">T0846</a>).
+								This operates for multiple hours to limit detection.
+							</p>
+							<p>
+								Following this, the attacker utilizes another custom python tool <i>RSLINX.exe</i> to gather information from Rockwell assets over EtherNet/IP. This script conducts a broadcast discovery (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>) (similar to “WhoActive” by Allen Bradley), gathers the device type (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>), PLC operating mode (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>), and a dump of all tag names (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
+							</p>
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton is capable of autodetecting Triconex controllers by sending a specific UDP broadcast packet over port 1502. [5] [6]</p>
+							<p>Triton contains the definitions to identify the key state (operating mode) and program
+								state of a Triconex controller. [7]</p>
+							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
+								analyzing SIS logs. [1]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step5DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 5: Expand
+				Access</span>
+			<test class="right"></i>
+		</p>
+		<div id="step5DIV" style="display:none">
+			<p>
+				Steps Included: 10, 11, 12, 13, 14, 15
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							<p>
+								The attacker discovered an asset with the hostname USPCU-EWS-S-P001 and expanded their
+							access into the safety EWS through valid accounts over RDP for remote access (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
+							This access was enabled as a misconfiguration within the environment, establishing the
+							control EWS a pivot point through the ICS network. Once on the safety EWS, the OpenSSH-based
+							CSP tools were moved from the control EWS over a shared drive and installed for persistence.
+							Since access between the DMZ application server and safety system was not accessible, plink
+							tunnels were not needed. Access to the system was established directly over port 2223
+							between the control and safety EWS.
+							</p>
+							<p>
+								The attacker leverages <i>scp</i> over port 2223 to move the custom discovery tools, <i>LogixMap.exe</i> and RSLINX.exe, as a zip file (RSLINX_Install.zip) from the control EWS onto the safety EWS. Before closing out of the established RDP session, the attacker leverages the Rockwell engineering tools to initiate a Program Upload (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>) and saves this file into their temp Rockwell directory.
+							</p>
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton utilized an OpenSSH-based backdoor for lateral movement. [2]</p>
+							<p>Triton adversaries routinely used standard tools that would mimic legitimate
+								administrator activities. This included heavy use of RDP. [2] [3]</p>
+							<p>Triton adversaries gained remote access to an SIS engineering workstation. [1]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step6DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 6: Collection /
+				Discovery</span>
+			<test class="right"></i>
+		</p>
+		<div id="step6DIV" style="display:none">
+			<p>
+				Steps Included: 16
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							After gaining access to the safety EWS. The adversary executes their custom tool <i>RSLINX.exe</i> (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>) to conduct the broadcast discovery (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>) (similar to “WhoActive” by Allen Bradley), gather the device type (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>), PLC operating mode (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>), and dump all tag names (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton is capable of autodetecting Triconex controllers by sending a specific UDP
+								broadcast packet over port 1502. [5] [6]</p>
+							<p>Triton contains the definitions to identify the key state (operating mode) and program
+								state of a Triconex controller. [7]</p>
+							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
+								analyzing SIS logs. [1]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step7DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 7: Deploy OT
+				Toolkit</span>
+			<test class="right"></i>
+		</p>
+		<div id="step7DIV" style="display:none">
+			<p>
+				Steps Included: 17, 18, 19
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							The attacker leverages the OpenSSH backdoor to move tools from the DMZ application server
+							onto the control EWS through the persistent plink tunnel. This transfer is achieved through
+							<i>SFTP</i> as a zip file named <i>Install_RSLogix5000.zip</i>. When extracted, the tools
+							<i>RSLogix5000.exe</i>, <i>RSComms.exe</i> are created. Another zip toolkit,
+							<i>Install_Guardlogix.zip</i> is extracted and moved to the safety system over <i>scp</i>.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							<p>Triton adversaries leveraged an unmodified but custom-compiled version of sftp-server.exe
+								from OpenSSH. [4]</p>
+							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
+								analyzing SIS logs. [1]</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step8DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 8: Failed Attempt to
+				Disable Safety Function</span>
+			<test class="right"></i>
+		</p>
+		<div id="step8DIV" style="display:none">
+			<p>
+				Steps Included: 20, 21
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							The attacker modifies the safety controller program (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0889">T0889</a>) over
+							EtherNet/IP using the custom python script <i>RSLogix5000.exe</i> from the safety EWS
+							allowing for future control of the safety system without having to change the key switch.
+							This was accomplished through an online edit or program append action (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0843">T0843</a>). [8]
+							The attacker then monitors the command-and-control tag and actuates the malicious control
+							logic to disable safety functions. However, because of an error in the malicious payload it
+							fails to prevent a trip as the attacker begins to manipulate the control process. This trip
+							halts the operation of the burner management system.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							Triton caused the safety system to enter a failed safe state and tripped the industrial
+							process. Requiring asset owner intervention and investigation. [1] [5]
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step9DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 9: Clean Up</span>
+			<test class="right"></i>
+		</p>
+		<div id="step9DIV" style="display:none">
+			<p>
+				Steps Included: 22
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							Following the trip, the attacker changes the operating mode (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0858">T0858</a>) of
+							the safety PLC to Program Mode to allow for a full program download. The attacker then
+							initiates a full program download (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0843">T0843</a>) using the original program collected from the
+							program upload. This action was primarily to wipe any artifacts of the malicious logic off
+							of the controller. Process operators respond to investigate and restart the plant following
+							the shutdown.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							Triton would reset the controller to the previous state over Tristation and if this failed
+							it would write a dummy program to memory in what was likely an attempt at anti-forensics.
+							[5]
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step10DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 10: Infect Safety
+				System Control Logic</span>
+			<test class="right"></i>
+		</p>
+		<div id="step10DIV" style="display:none">
+			<p>
+				Steps Included: 23, 24
+				<p>
+					Substeps 24.A.1 to 24.B.4
+				</p>
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							The attacker modified the controller program to replace a specific task component of the
+							controller program on the safety PLC (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0889">T0889</a>).
+							This task was part of the safety system trip logic which would shut down the control process
+							and halt the system if a series of process indicators were present. Specifically for this
+							attack, the “flame out”, “trip from HMI”, and “trip from field” indicators were crucial.
+							With the new modified task, the attackers were able to communicate directly with the safety
+							PLC and could disable these trip functions on command. Once disabled, automatic trips from
+							the process and manual trips from an HMI or the field were ignored.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							Triton does not leverage any 0-days but instead reprograms the target safety controllers via
+							the TriStation protocol. [5]
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step11DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 11: Disable Safety Function</span>
+			<test class="right"></i>
+		</p>
+		<div id="step11DIV" style="display:none">
+			<p>
+				Steps Included: 24
+				<p>
+					Substeps 24.C.1 to 24.C.3
+				</p>
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							In the days after the safety trip, the attacker re-implements the safety payload and
+							conducts another online edit (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0843">T0843</a>)
+							action to re-infect the safety controller program (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0889">T0889</a>).
+							Once the implant is installed, the attacker monitors their command-and-control tags before
+							actuating the malicious logic (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>). All
+							communication with the malicious logic occurs as standard protocol commands and successfully
+							disables the trip functionality.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							Triton can communicate with the implant over the TriStation 'get main processor diagnostic
+							data' command. [5]
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p onclick="toggle_step_collapse(this, 'step12DIV')" id="hide_show"
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 12: Manipulate DCS to Achieve Failure</span>
+			<test class="right"></i>
+		</p>
+		<div id="step12DIV" style="display:none">
+			<p>
+				Steps Included: 25
+			</p>
+			<table class="table_opflow_step">
+				<thead>
+					<tr style="background-color: lightgray; border-bottom: 1px solid black;">
+						<th class="th_opflow_step" style="width: 32%;">High Level Overview of Emulation and Techniques
+							Evaluated</th>
+						<th class="th_opflow_step" style="width: 33%;">Cited Intelligence</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="td_opflow_step" style="text-align: left; width: 32%;">
+							After the safety implant was successfully installed, the attacker moves back to the control
+							EWS to manipulate the burner. The attacker uses their custom tool <i>RSComms.exe</i> (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>) to
+							exploit the operational communication to allow for privileged communication with the control
+							PLC and control of the process. The attacker initiates a privileged write to switch the air
+							damper control from an auto cascade mode into manual HMI control mode (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
+							This allowed the adversary to write a new manual setpoint for the dampers, cutting off all
+							air supply. Without any air supply, the burner flame is extinguished. Since the safety
+							system is disabled, the standard trip for loss of flame does not actuate and the gas lines
+							continued to pump into the facility. During this time, an operator took action to prevent
+							the gas accumulation and attempted to manually halt the process through the HMI and the
+							field trip buttons. However, these trips were ignored, resulting in a total loss of safety
+							(<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0880">T0880</a>).
+							Once gas had built up in the facility, the attacker opened the dampers (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>)
+							enough to achieve an ignitable fuel mixture at the ignitor. The attacker then used
+							privileged forces to enable the force mask in logic for the flame sensor and ignitor (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0855">T0855</a>).
+							Finally, with the force mask in place, an ‘enable all forces’ command was issued (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0855">T0855</a>).
+							This enabled the force mask override, engaging the ignitor, and causing an explosion of the
+							built-up gasses resulting in physical destruction of the facility.
+						</td>
+						<td class="td_opflow_step" style="text-align: left; width: 33%;">
+							Following Triton, analysis identified potential scenarios that could have been the goal for
+							Triton. For the TRITON evaluation we chose the scenario with the most adversary interaction
+							and manipulation (reprogram the SIS to allow an unsafe state – while using the DCS to create
+							an unsafe state or hazard [1]) for thorough testing of detections. These events were not
+							reported to have occurred in real life and no DCS payload has been publicly released.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+
+		<h3 class="my-3">Works Cited</h3>
+		<ol>
+			<li class="li_citation">
+				D. C. M. K. D. S. N. B. C. G. Blake Johnson, "Attackers Deploy New ICS Attack Framework “TRITON” and
+				Cause Operational Disruption to Critical Infrastructure," Fireeye, 14 December 2017. [Online].
+				Available: <a
+					href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html</a>.
+				[Accessed 7 July 2021].
+			</li>
+			<br>
+			<li class="li_citation">
+				N. B. D. K. Z. D. C. Steve Miller, "TRITON Actor TTP Profile, Custom Attack Tools, Detections, and
+				ATT&CK Mapping," 10 April 2019. [Online]. Available: <a
+					href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html</a>.
+			</li>
+			<br>
+			<li class="li_citation">
+				Dragos Inc., "TRISIS Malware Analysis of Safety System Targeted Malware," [Online]. Available: <a
+					href="https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf">https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf</a>.
+				[Accessed 7 July 2021].
+			</li>
+			<br>
+			<li class="li_citation">
+				Fireeye, "Appendix B: Technical Analysis of Custom Attack Tools," [Online]. Available: <a
+					href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf</a>.
+				[Accessed 7 July 2021].
+			</li>
+			<br>
+			<li class="li_citation">
+				Midnight Blue Labs, "Analyzing the TRITON industrial malware," Midnight Blue Labs, 16 January 2018.
+				[Online]. Available: <a
+					href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware</a>.
+				[Accessed 7 July 2021].
+			</li>
+			<br>
+			<li class="li_citation">
+				Cybersecurity and Infrastructure Security Agency, "MAR-17-352-01 HatMan—Safety System Targeted Malware,"
+				27 February 2019. [Online]. Available: <a
+					href="https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf">https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf</a>.
+				[Accessed 7 July 2021].
+			</li>
+			<br>
+			<li class="li_citation">
+				MDudek-ICS, "TRISIS / TRITON / HatMan Malware Repository," Github, 2018.
+			</li>
+		</ol>
+		<br><br>
+	</div>
+</div>
+<br><br>
+<script>
+	function toggle_step_collapse(p_clicked, id) {
+		$("#" + id).slideToggle();
+		if (p_clicked.classList.contains('collapsed')) {
+			p_clicked.classList.remove('collapsed');
+		} else {
+			p_clicked.classList.add('collapsed');
+		}
+	}
+</script>
+<style>
+	.hover_pointer:hover {
+		cursor: pointer;
+	}
+
+	.li_citation {
+		padding-left: 10px;
+	}
+</style>
+</div>
+</div>
+<footer>
+    <div class="container-fluid border-top pt-4 pb-4">
+        <div class="row" style="width: 95%; margin: 0 auto;">
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <p class="footer-links-left"><a class="footer-links-left" href="/terms-of-use">Terms and Conditions</a></p>
+                <p class="footer-links-left"><a class="footer-links-left" href="/privacy">Privacy Policy</a></p>
+                <p class="footer-links-left">© 2018 - 2021, The MITRE Corporation and MITRE Engenuity.</p>
+                <p class="footer-links-left">MITRE ATT&CK and ATT&CK are registered trademarks of The MITRE Corporation.</p>
+            </div>
+            <div class="col-xl-6 style: display: flex; flex-direction: column;">
+                <div class="footer-float-right-responsive">
+                    <div class="mb-1">
+                        <a href="https://twitter.com/MITREengenuity" class="btn btn-footer w-100">
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/twitter.png" class="mr-1" style="vertical-align: top" width="20" height="20">
+                            <b>@MITREengenuity</b>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="/contact" class="btn btn-footer w-100">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    <!--SCRIPTS-->
+    <script src="/theme/scripts/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="/theme/scripts/bootstrap.min.js"></script>
+    <script src="/theme/scripts/site.js"></script>
+
+    <script src="/theme/scripts/bootstrap-tourist.js"></script>
+    
+</body>
+
+<!-- jjli -->
+
+</html>

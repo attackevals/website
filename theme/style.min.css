@@ -249,7 +249,8 @@
 
                       .dropdown-item {
                         color: black;
-                        font-family: "Gilroy", Arial, sans-serif; }
+                        font-family: "Gilroy", Arial, sans-serif;
+                        padding: 0.25rem 1.25rem !important; }
 
                         .dropdown-menu {
                           background-color: white; }
@@ -598,7 +599,7 @@
     .top-center-banner {
       position: absolute;
       width: 100%;
-      top: 5%;
+      top: 4%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: #6241C5;
@@ -903,7 +904,7 @@
         .th_opflow_step, .td_opflow_step {
           border-right: 1px solid black;
           padding: 5px;
-          font-size: 12px;
+          font-size: 0.95rem;
           font-weight: bolder; }
 
           .right:after {

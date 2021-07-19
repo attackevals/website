@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?9ce184b4">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
  </head>
 
@@ -30,9 +30,8 @@
           <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarCollapse'>
-          <ul class='nav nav-tabs ml-auto'>
-            
-            <li class="dropdown-submenu">
+          <ul class='nav nav-tabs ml-auto mr-5'>
+            <li class="dropdown-submenu ml-3">
                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Enterprise</strong></a>
                 <!-- <ul class="dropdown-menu dropleft"> -->
                 <ul class="dropdown-menu dropright">
@@ -42,35 +41,13 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 50px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
-                        </a>
-                        
+                        <a class="dropdown-item" href='/participant_comparison'>Compare Participants</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 90px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/APT29">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
+                        <a class="dropdown-item" href='/technique_comparison'>Explore Techniques</a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
@@ -79,58 +56,77 @@
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
+                            </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Carbanak+FIN7 (2020)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT29 (2019)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
+                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            APT3 (2018)
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
                         </a>
                     </li>
-
                 </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
                     <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right">
-                            <li><a class="dropdown-item" href="/ics/participants/">Participants</a></li>
+                        <a class="dropdown-item" href='/participant_comparison_ics'>Compare Participants</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href='/technique_comparison_ics'>Explore Techniques</a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 85px;">
+                            <li><a class="dropdown-item" href="/ics/participants/">Results</a></li>
                             <li><a class="dropdown-item" href="/ics/triton/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            TRITON (2020)
+                            TRITON (2021)
                         </a>
                     </li>
                 </ul>
             </li>
-
-            <li class='nav-item dropdown'>
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Tools</strong></a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href='/technique_comparison'>Technique Comparison Tool </a>
-                    <a class="dropdown-item" href='/participant_comparison'>Participant Comparison Tool </a>
-                    <!-- <a class="dropdown-item" href='https://github.com/mitre-attack/attack-arsenal'>
-                        ATT&CK Arsenal
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a> -->
-                    <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
-                        Emulation Plan Library 
-                        &nbsp;<i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>  
-            </li>
-            <li class='nav-item dropdown'>
+            <li class='nav-item dropdown ml-3'>
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Resources</strong></a>
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
+                        <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
+                            Emulation Plan Library 
+                            &nbsp;<i class="fas fa-external-link-alt"></i>
+                        </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
-            <li class='nav-item'><a  class='nav-link'  href='/get-evaluated'><strong>Get Evaluated</strong></a></li>
+            <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
           </ul>
         </div>
     </nav>
@@ -138,8 +134,8 @@
 <div id='content-width-lock'>
     <div id='content'><br>
 <div class="divEvaluationSummaryBody">
-    <div style="padding: 0px; width: 100%;"> 
-        <span class="spanBreadcrumbs-results"> 
+    <div style="padding: 0px; width: 100%;">
+        <span class="spanBreadcrumbs-results">
             <a href='/'>Home</a> &nbsp;>&nbsp; ICS TRITON Overview
         </span>
         <br>
@@ -151,8 +147,18 @@
             <div class="col-2">
                 <nav id="sidebar" class="mt-4 navbar" style="top: 130px; position: sticky;">
                     <nav class="nav nav-pills flex-column" id="side-nav">
-                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
-                        <a class="nav-link-black" id="a-participants" href="#participants">Participants<i class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i
+                                class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
+                        <a class="nav-link-black" id="a-results" href="#results">Results<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-opflow" href="#operational-flow">Operational Flow<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
                     </nav>
                 </nav>
             </div>
@@ -164,20 +170,21 @@
                         <div class="col-lg-12">
                             <div class="row overview_card">
                                 <div class="col-lg-3 pt-3 pb-3">
-                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Attack_hacker.svg"></center>
+                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Attack-Evals_Triton.png" style="max-width: 200px;"></center>
                                 </div>
                                 <div class="col-lg-3 vertical-center text-center">
                                     <h3 class="boldText">TRITON</h3>
-                                    <h5 style="color: grey;">ICS Evaluation 2020</h5>
-                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4" href="/ics/participants/" role="button">Participants</a></center>
+                                    <h5 style="color: grey;">ICS Evaluation 2021</h5>
+                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4"
+                                            href="/ics/participants/" role="button">Participants</a></center>
                                 </div>
                                 <div class="col-lg-6 vertical-center">
                                     <div class="pb-container">
                                         <ul class="progressbar">
                                             <li class="active prog-complete">Call For Participation</li>
-                                            <li class="active prog-doing">Evaluating</li>
-                                            <li class="prog-incomplete-3">Preparing</li>
-                                            <li class="prog-incomplete-4">Published</li>
+                                            <li class="active prog-complete">Evaluating</li>
+                                            <li class="active prog-complete">Preparing</li>
+                                            <li class="active prog-complete">Published</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -186,77 +193,217 @@
                                 <div class="col overview_left_card">
                                     <h5 class="boldText">Scenario Description</h5>
                                     <p>
-                                        In mid-2017, a petrochemical facility in Saudi Arabia was discovered to have been the victim of a potentially disastrous cyber incident. This incident was dubbed TRITON <sup><a href="https://collaborate.mitre.org/attackics/index.php/Software/S0013">[1]</a></sup> (aka TRISIS or HATMAN) due to its specific targeting of Triconex Safety Instrumented Systems (SIS). The SIS in question is responsible for providing safety monitoring to the facility’s operations, including oversight of the facility’s burner management system.
+                                        In mid-2017, a petrochemical facility in Saudi Arabia was discovered to have
+                                        been the victim of a potentially disastrous cyber incident. This incident was
+                                        dubbed TRITON <sup><a
+                                                href="https://collaborate.mitre.org/attackics/index.php/Software/S0013">[1]</a></sup>
+                                        (aka TRISIS or HATMAN) due to its specific targeting of Triconex Safety
+                                        Instrumented Systems (SIS). The SIS in question is responsible for providing
+                                        safety monitoring to the facility’s operations, including oversight of the
+                                        facility’s burner management system.
                                     </p>
                                     <p>
-                                        The TRITON event represents the first publicly reported incident demonstrating a targeted attack with a known effect to an operational SIS. <sup><a href="https://www.dragos.com/resource/trisis-analyzing-safety-system-targeting-malware/">[2]</a></sup> Information describing initial access and the subsequent pivot to the safety system assets remains largely unknown. While the group’s ultimate goals may still be uncovered, it has proven the capability to interact with and affect a targeted critical safety system.
+                                        The TRITON event represents the first publicly reported incident demonstrating a
+                                        targeted attack with a known effect to an operational SIS. <sup><a
+                                                href="https://www.dragos.com/resource/trisis-analyzing-safety-system-targeting-malware/">[2]</a></sup>
+                                        Information describing initial access and the subsequent pivot to the safety
+                                        system assets remains largely unknown. While the group’s ultimate goals may
+                                        still be uncovered, it has proven the capability to interact with and affect a
+                                        targeted critical safety system.
                                     </p>
                                 </div>
                                 <div class="col overview_right_card">
                                     <h5 class="boldText">Scenario Characteristics</h5>
-                                    <p> 
-                                        The TRITON scenario demonstrated the capability to affect or otherwise compromise the safety monitoring functions present within the target facility. The threat group behind TRITON has shown specific motivations for targeting the oil and gas sector. With certainty, the threat group exhibited a deep understanding of the target system and environment. <sup><a href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html ">[3]</a></sup>
+                                    <p>
+                                        The TRITON scenario demonstrated the capability to affect or otherwise
+                                        compromise the safety monitoring functions present within the target facility.
+                                        The threat group behind TRITON has shown specific motivations for targeting the
+                                        oil and gas sector. With certainty, the threat group exhibited a deep
+                                        understanding of the target system and environment. <sup><a
+                                                href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html ">[3]</a></sup>
                                     </p>
                                     <p>
-                                        Notable ATT&CK tactics displayed in the TRITON scenario include execution, inhibition of response function, and impact. Specifically leveraging APIs and scripting for execution, the threat group was able to ultimately modify program state and control logic to achieve an impact of Loss of Safety. The threat group has also demonstrated prominent evasion capabilities in order to effectively masquerade its malicious behaviors.                 
+                                        Notable ATT&CK tactics displayed in the TRITON scenario include execution,
+                                        inhibition of response function, and impact. Specifically leveraging APIs and
+                                        scripting for execution, the threat group was able to ultimately modify program
+                                        state and control logic to achieve an impact of Loss of Safety. The threat group
+                                        has also demonstrated prominent evasion capabilities in order to effectively
+                                        masquerade its malicious behaviors.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="false-anchor" id="participants"></div>
-                <h3 class="collapseShowCarrot boldText mt-4" data-toggle="collapse" data-target="#collapseParticipants" aria-expanded="true" aria-controls="collapseParticipants"> Participants </h3>
-                <div class="show" id="collapseParticipants">
+                <div class="false-anchor" id="results"></div>
+                <h3 class="boldText mt-4"> Results </h3>
+                <div>
                     <div class="vendor-block">
-                            <div class="vendor-card vendorlogo-results-preview" style="transition: none; animation: none;">
-                                <span class="comingSoon" style="font-size: 100% !important; margin-bottom: 0px !important;">Coming Soon!</span>
-                                <span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Armis-Triton.png" style="margin-top: 20px;"></span>
-                            </div>
-                            <div class="vendor-card vendorlogo-results-preview" style="transition: none; animation: none;">
-                                <span class="comingSoon" style="font-size: 100% !important; margin-bottom: 0px !important;">Coming Soon!</span>
-                                <span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Claroty_logo.png" style="margin-top: 20px;"></span>
-                            </div>
-                            <div class="vendor-card vendorlogo-results-preview" style="transition: none; animation: none;">
-                                <span class="comingSoon" style="font-size: 100% !important; margin-bottom: 0px !important;">Coming Soon!</span>
-                                <span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Dragos-Triton.png" style="margin-top: 20px;"></span>
-                            </div>
-                            <div class="vendor-card vendorlogo-results-preview" style="transition: none; animation: none;">
-                                <span class="comingSoon" style="font-size: 100% !important; margin-bottom: 0px !important;">Coming Soon!</span>
-                                <span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/III-Triton.png" style="margin-top: 20px;"></span>
-                            </div>
-                            <div class="vendor-card vendorlogo-results-preview" style="transition: none; animation: none;">
-                                <span class="comingSoon" style="font-size: 100% !important; margin-bottom: 0px !important;">Coming Soon!</span>
-                                <span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png" style="margin-top: 20px;"></span>
-                            </div>
+                        <div class="vendor-card">
+                            <a href="/ics/participants/armis/"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Armis-Triton.png"></span></a>
+                        </div>
+                        <div class="vendor-card">
+                            <a href="/ics/participants/claroty/"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Claroty_logo.png"></span></a>
+                        </div>
+                        <div class="vendor-card">
+                            <a href="/ics/participants/dragos/"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Dragos-Triton.png"></span></a>
+                        </div>
+                        <div class="vendor-card">
+                            <a href="/ics/participants/iii/"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/III-Triton.png"></span></a>
+                        </div>
+                        <div class="vendor-card">
+                            <a href="/ics/participants/microsoft/"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="false-anchor" id="operational-flow"></div>
+                <h3 class="boldText mt-4"> Operational Flow </h3>
+                <div class="row">
+                    <div class="col-4">
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/ICS_Triton_Overview_OpFlow.png" style="max-height: 600px;"></center>
+                    </div>
+                    <div class="col-8">
+                        <p class="mt-2">
+                            TRITON Scenario: This scenario begins with an adversary accessing a burner management
+                            environment through an application server located within a shared DMZ between the corporate
+                            and ICS network. Following the initial compromise of a control engineering workstation
+                            access is expanded to a safety engineering workstation. As these hosts are compromised,
+                            persistence is established for covert remote access. Discovery and collection occur
+                            throughout the campaign to identify hosts, gather artifacts, ascertain process state, and
+                            generally inform decision making. Critical safety functions are disabled by the addition of
+                            malicious control logic to the safety system. These malicious additions inhibit the safety
+                            system’s ability to trip the process in unsafe states. With the safety system out of the
+                            way, the adversary manipulates the burner causing physical damage to the facility.
+                        </p>
+                        <p>
+                            For details on the TRITON emulation please refer to the <a href="/ics/triton/operational-flow"">Operational Flow</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="false-anchor" id="technique-scope"></div>
+                <h3 class="boldText mt-4"> Technique Scope </h3>
+                <div>
+                    <p>
+                        For the TRITON evaluation, 17 ATT&CK techniques across 10 ATT&CK tactics are in.
+                        You can view the in-scope Techniques for the TRITON evaluation below:
+                    </p>
+                    <center><img src=" https://d1zq5d3dtjfcoj.cloudfront.net/triton_technique_matrix.png" style="width:100%;"></center>
+                </div>
+
+                <div class=" false-anchor" id="environment">
+                </div>
+                <h3 class="boldText mt-4"> Environment </h3>
+                <div class="row">
+                    <div class="col">
+                        <center>
+                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Environment.png"
+                                style="max-width: 1000px; width: 100%;" />
+                        </center>
+                    </div>
+                    <div class="col">
+                        <p>
+                            The evaluation was performed in a MITRE Engenuity lab against an environment functioning as
+                            a burner management system. Control system components (i.e., PLCs), Windows host running ICS
+                            applications, and network infrastructure were physically implemented while the industrial
+                            equipment and physical processes were simulated. The burner management solution was designed
+                            and programmed by an integration company focused on the energy sector.
+                        </p>
+                        <p>
+                            Vendors shipped a physical appliance with their detection solution installed on it. All the
+                            vendor appliances simultaneously received network traffic which was distributed by a network
+                            aggregator connected to the SPAN port of the environment’s switch. Windows event logs were
+                            centrally collected and then forwarded via syslog to each solution capable of collecting
+                            events in this fashion.
+                        </p>
+                        <p>
+                            In addition, the opportunity to actively poll the PLCs for configuration changes (program
+                            and task modifications) was provided to vendors that offer this as a current feature of
+                            their solution. This was done outside of the execution phase as not to taint the network
+                            traffic collected by the other appliances.
+                        </p>
+                        <p>
+                            VPN access enabled the vendors to connect remotely to their appliances for management and
+                            monitoring purposes throughout the various phases of the evaluation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="false-anchor" id="detection-categories"></div>
+                <h3 class="boldText mt-4"> Detection Categories </h3>
+                <div class="row">
+                    <div class="col">
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Detection_Categories.png" style="max-width: 100%;">
+                        </center>
+                    </div>
+                    <div class="col">
+                        <p>
+                            Vendors use their own terminology and approaches to detect and protect potential adversary
+                            behavior. They provide this information to us in their unique way, and then it is our
+                            responsibility to abstract the data using categories to talk about the products in similar
+                            ways.
+                        </p>
+                        <p>
+                            These categories are divided into two types: “Main” and “Modifier.” Each detection receives
+                            one main category designation, which relates to the amount of context provided to the user
+                            and may optionally receive one or more modifier category designations that help describe the
+                            event in more detail. For the TRITON evaluation, there are six main detection categories
+                            representing the amount of context provided to the analyst, and two modifier categories.
+                        </p>
+                        <p>
+                            You can learn more about our process for processing detections here.
+                        </p>
+                        <p>
+                            <a
+                                href="/ics/triton/detection-categories">Learn
+                                More: Detection Categories Page
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<br><br>
 
 <script type="text/javascript">
-var navOffset = 100;
-function deselectNav() {
-    $('#side-nav a').addClass('nav-link-black')
-    $('#side-nav a').removeClass('nav-link-selected')
-    $('#side-nav a i').css("display", "none")
-}
+    var navOffset = 100;
 
-$(document).on('scroll', function() {
-    deselectNav()
-    if ($(this).scrollTop() >= $('#participants').position().top - navOffset - 200) {
-        $('#a-participants').addClass('nav-link-selected')
-        $('#a-participants i').css("display", "block")
+    function deselectNav() {
+        $('#side-nav a').addClass('nav-link-black')
+        $('#side-nav a').removeClass('nav-link-selected')
+        $('#side-nav a i').css("display", "none")
     }
-    else {
-        $('#a-overview').addClass('nav-link-selected')
-        $('#a-overview i').css("display", "block")
-    }
-})
 
+    $(document).on('scroll', function () {
+        deselectNav()
+        if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
+            $('#a-detection').addClass('nav-link-selected')
+            $('#a-detection i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
+            $('#a-environment').addClass('nav-link-selected')
+            $('#a-environment i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
+            $('#a-scope').addClass('nav-link-selected')
+            $('#a-scope i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
+            $('#a-opflow').addClass('nav-link-selected')
+            $('#a-opflow i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
+            $('#a-results').addClass('nav-link-selected')
+            $('#a-results i').css("display", "block")
+        } else {
+            $('#a-overview').addClass('nav-link-selected')
+            $('#a-overview i').css("display", "block")
+        }
+    })
 </script>
 
 </div>

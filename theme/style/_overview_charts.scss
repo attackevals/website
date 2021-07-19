@@ -203,7 +203,7 @@
 }
 
 .td-evaluationSummaryActiveRound {
-  line-height: 75px;
+  padding: 25px;
   border: 1px solid #6241c5;
   border-radius: 5px;
   background-color: #fff;
@@ -297,4 +297,8 @@
   border-width: 2px;
   border-radius: 5px;
   padding: 5px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color:#6241c5;
 }
