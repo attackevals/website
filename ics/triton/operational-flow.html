@@ -150,9 +150,10 @@
 		<br />
 		<br />
 		<p>
-			The Operational Flow separated technique execution into sequences we referred to as “Steps”. Organizing our
-			execution into Steps ensured that the detection displayed was correctly associated with the technique that
-			was being tested. Each Step corresponded to an adversary’s intended goal during an operation.
+			The Operational Flow separated technique execution into sequences we referred to as “Steps”, which are
+			grouped in higher-level abstractions called “Phases”. Organizing our execution into Phases and Steps ensured
+			that the detection displayed was correctly associated with the technique that was being tested. Each Step
+			corresponded to an adversary’s intended goal during an operation.
 		</p>
 		<br>
 
@@ -181,13 +182,27 @@
 							This foothold was established during a prior phase of the campaign and handed off to the ICS
 							focused adversaries. These adversaries then utilized captured valid credentials to login
 							remotely onto a windows-based engineering workstation within the process environment using
-							Remote Desktop (RDP) over port 3389 (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>). This initial RDP session passes through the ICS firewall as
-							standard operator behavior. The attacker leverages their RDP access to perform a program upload using the Rockwell engineering tools and saves this file to the temp directory under the Engineer user. RDP shared folders are used to move persistence tools onto the control engineering workstation (EWS).
+							Remote Desktop (RDP) over port 3389 (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
+							This initial RDP session passes through the ICS firewall as
+							standard operator behavior. The attacker leverages their RDP access to perform a program
+							upload using the Rockwell engineering tools and saves this file to the temp directory under
+							the Engineer user. RDP shared folders are used to move persistence tools onto the control
+							engineering workstation (EWS).
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
-							<p>Triton adversaries leveraged valid accounts that were harvested throughout the operation. [1]</p>
-							<p>Triton adversaries routinely used standard tools that would mimic legitimate administrator activities. This included heavy use of RDP. [2] [3]</p>
-							<p>Triton adversaries gained remote access to an SIS engineering workstation. [1]</p>
+							<p>Triton adversaries leveraged valid accounts that were harvested throughout the operation.
+								<a
+									href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a>
+							</p>
+							<p>Triton adversaries routinely used standard tools that would mimic legitimate
+								administrator activities. This included heavy use of RDP. <a
+									href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a>
+								<a href="https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf">
+									[3]</a></p>
+							<p>Triton adversaries gained remote access to an SIS engineering workstation. <a
+									href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a>
+							</p>
 						</td>
 					</tr>
 				</tbody>
@@ -218,17 +233,23 @@
 								importing an XML task named <i>SMB_Sync.xml</i> into Task Scheduler. This task initiates
 								a <i>plink.exe</i> reverse shell and local port redirection for RDP access. The outgoing
 								SSH request was made over port 445 (<a
-								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>) to the application server in the DMZ. This
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>)
+								to the application server in the DMZ. This
 								port was selected to bypass firewall restrictions and guise as SMB traffic.
 							</p>
 							<p>
 								Once the SSH tunnel is in place the adversaries reinitiate RDP over the encrypted tunnel
 								to transfer and install the OpenSSH-based backdoor using a PowerShell install script
 								named <i>install-csp.ps1</i> (<a
-								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>). The OpenSSH backdoor was masqueraded as a
-								proprietary Rockwell protocol, Client Server Protocol (CSP) [4]. Once installed the SSHD
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>).
+								The OpenSSH backdoor was masqueraded as a
+								proprietary Rockwell protocol, Client Server Protocol (CSP) <a
+									href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">[4]</a>.
+								Once installed the SSHD
 								component is masqueraded as <i>CSP.exe</i> with a local listening port of 2223 and
-								service name <i>rockwell-csp3</i> (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0849">T0849</a>). Finally, an additional XML scheduled task
+								service name <i>rockwell-csp3</i> (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0849">T0849</a>).
+								Finally, an additional XML scheduled task
 								<i>SMB_Update.xml</i> is imported to establish an additional tunnel for SSH traffic over
 								port 445 (<a
 									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
@@ -236,10 +257,16 @@
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							<p>Triton adversaries utilized customized OpenSSH PEs with content "Microsoft openSSH
-								client." [2]</p>
-							<p>Triton adversaries leveraged <a href="https://docs.microsoft.com/en-us/windows/desktop/taskschd/daily-trigger-example--xml-">Scheduled Tasks XML triggers</a> referencing unsigned .exe
-								files. [2]</p>
-							<p>Triton adversaries used tunneled RDP sessions over PLINK for remote access. [2] [4]</p>
+								client." <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a></p>
+							<p>Triton adversaries leveraged <a
+									href="https://docs.microsoft.com/en-us/windows/desktop/taskschd/daily-trigger-example--xml-">Scheduled
+									Tasks XML triggers</a> referencing unsigned .exe
+								files. <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a></p>
+							<p>Triton adversaries used tunneled RDP sessions over PLINK for remote access. <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a> <a
+								href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">[4]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -273,9 +300,11 @@
 							extracted into the Rockwell directory.
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
-							<p>Triton files were staged and executed from temp directories. [2]</p>
+							<p>Triton files were staged and executed from temp directories. <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a></p>
 							<p>Triton adversaries leveraged an unmodified but custom-compiled version of sftp-server.exe
-								from OpenSSH. [4]</p>
+								from OpenSSH. <a
+								href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">[4]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -302,7 +331,9 @@
 					<tr>
 						<td class="td_opflow_step" style="text-align: left; width: 32%;">
 							<p>
-								The attacker uses this stage to collect artifacts and discover information that will be used in later phases. The attacker accomplishes this with custom network and EtherNet/IP tools to discovery additional assets and information about the environment.
+								The attacker uses this stage to collect artifacts and discover information that will be
+								used in later phases. The attacker accomplishes this with custom network and EtherNet/IP
+								tools to discovery additional assets and information about the environment.
 							</p>
 							<p>
 								The attacker uses <i>LogixMap.exe</i>, a custom executable, to conduct a stealth scan
@@ -311,15 +342,27 @@
 								This operates for multiple hours to limit detection.
 							</p>
 							<p>
-								Following this, the attacker utilizes another custom python tool <i>RSLINX.exe</i> to gather information from Rockwell assets over EtherNet/IP. This script conducts a broadcast discovery (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>) (similar to “WhoActive” by Allen Bradley), gathers the device type (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>), PLC operating mode (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>), and a dump of all tag names (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
+								Following this, the attacker utilizes another custom python tool <i>RSLINX.exe</i> to
+								gather information from Rockwell assets over EtherNet/IP. This script conducts a
+								broadcast discovery (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>)
+								(similar to “WhoActive” by Allen Bradley), gathers the device type (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>),
+								PLC operating mode (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>),
+								and a dump of all tag names (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
 							</p>
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
-							<p>Triton is capable of autodetecting Triconex controllers by sending a specific UDP broadcast packet over port 1502. [5] [6]</p>
+							<p>Triton is capable of autodetecting Triconex controllers by sending a specific UDP
+								broadcast packet over port 1502. <a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a> <a href="https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf">[6]</a></p>
 							<p>Triton contains the definitions to identify the key state (operating mode) and program
-								state of a Triconex controller. [7]</p>
+								state of a Triconex controller. <a href="https://github.com/MDudek-ICS/TRISIS-TRITON-HATMAN">[7]</a></p>
 							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
-								analyzing SIS logs. [1]</p>
+								analyzing SIS logs. <a
+								href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -347,25 +390,36 @@
 						<td class="td_opflow_step" style="text-align: left; width: 32%;">
 							<p>
 								The attacker discovered an asset with the hostname USPCU-EWS-S-P001 and expanded their
-							access into the safety EWS through valid accounts over RDP for remote access (<a
-								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
-							This access was enabled as a misconfiguration within the environment, establishing the
-							control EWS a pivot point through the ICS network. Once on the safety EWS, the OpenSSH-based
-							CSP tools were moved from the control EWS over a shared drive and installed for persistence.
-							Since access between the DMZ application server and safety system was not accessible, plink
-							tunnels were not needed. Access to the system was established directly over port 2223
-							between the control and safety EWS.
+								access into the safety EWS through valid accounts over RDP for remote access (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0885">T0885</a>).
+								This access was enabled as a misconfiguration within the environment, establishing the
+								control EWS a pivot point through the ICS network. Once on the safety EWS, the
+								OpenSSH-based
+								CSP tools were moved from the control EWS over a shared drive and installed for
+								persistence.
+								Since access between the DMZ application server and safety system was not accessible,
+								plink
+								tunnels were not needed. Access to the system was established directly over port 2223
+								between the control and safety EWS.
 							</p>
 							<p>
-								The attacker leverages <i>scp</i> over port 2223 to move the custom discovery tools, <i>LogixMap.exe</i> and RSLINX.exe, as a zip file (RSLINX_Install.zip) from the control EWS onto the safety EWS. Before closing out of the established RDP session, the attacker leverages the Rockwell engineering tools to initiate a Program Upload (<a
-								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>) and saves this file into their temp Rockwell directory.
+								The attacker leverages <i>scp</i> over port 2223 to move the custom discovery tools,
+								<i>LogixMap.exe</i> and RSLINX.exe, as a zip file (RSLINX_Install.zip) from the control
+								EWS onto the safety EWS. Before closing out of the established RDP session, the attacker
+								leverages the Rockwell engineering tools to initiate a Program Upload (<a
+									href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>)
+								and saves this file into their temp Rockwell directory.
 							</p>
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
-							<p>Triton utilized an OpenSSH-based backdoor for lateral movement. [2]</p>
+							<p>Triton utilized an OpenSSH-based backdoor for lateral movement. <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a></p>
 							<p>Triton adversaries routinely used standard tools that would mimic legitimate
-								administrator activities. This included heavy use of RDP. [2] [3]</p>
-							<p>Triton adversaries gained remote access to an SIS engineering workstation. [1]</p>
+								administrator activities. This included heavy use of RDP. <a
+								href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">[2]</a> <a href="https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf">
+									[3]</a></p>
+							<p>Triton adversaries gained remote access to an SIS engineering workstation. <a
+								href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -391,15 +445,27 @@
 				<tbody>
 					<tr>
 						<td class="td_opflow_step" style="text-align: left; width: 32%;">
-							After gaining access to the safety EWS. The adversary executes their custom tool <i>RSLINX.exe</i> (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>) to conduct the broadcast discovery (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>) (similar to “WhoActive” by Allen Bradley), gather the device type (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>), PLC operating mode (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>), and dump all tag names (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
+							After gaining access to the safety EWS. The adversary executes their custom tool
+							<i>RSLINX.exe</i> (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0853">T0853</a>) to
+							conduct the broadcast discovery (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>)
+							(similar to “WhoActive” by Allen Bradley), gather the device type (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0888">T0888</a>), PLC
+							operating mode (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0868">T0868</a>), and
+							dump all tag names (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0871">T0871</a>).
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							<p>Triton is capable of autodetecting Triconex controllers by sending a specific UDP
-								broadcast packet over port 1502. [5] [6]</p>
+								broadcast packet over port 1502. <a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a> <a href="https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf">[6]</a></p>
 							<p>Triton contains the definitions to identify the key state (operating mode) and program
-								state of a Triconex controller. [7]</p>
+								state of a Triconex controller. <a href="https://github.com/MDudek-ICS/TRISIS-TRITON-HATMAN">[7]</a></p>
 							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
-								analyzing SIS logs. [1]</p>
+								analyzing SIS logs. <a
+								href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -433,9 +499,11 @@
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							<p>Triton adversaries leveraged an unmodified but custom-compiled version of sftp-server.exe
-								from OpenSSH. [4]</p>
+								from OpenSSH. <a
+									href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">[4]</a></p>
 							<p>Triton was configured to masquerade as trilog.exe, which is the Triconex software for
-								analyzing SIS logs. [1]</p>
+								analyzing SIS logs. <a
+								href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a></p>
 						</td>
 					</tr>
 				</tbody>
@@ -474,7 +542,9 @@
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							Triton caused the safety system to enter a failed safe state and tripped the industrial
-							process. Requiring asset owner intervention and investigation. [1] [5]
+							process. Requiring asset owner intervention and investigation. <a
+							href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a> <a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a>
 						</td>
 					</tr>
 				</tbody>
@@ -502,7 +572,9 @@
 							Following the trip, the attacker changes the operating mode (<a
 								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0858">T0858</a>) of
 							the safety PLC to Program Mode to allow for a full program download. The attacker then
-							initiates a full program download (<a href="https://collaborate.mitre.org/attackics/index.php/Technique/T0843">T0843</a>) using the original program collected from the
+							initiates a full program download (<a
+								href="https://collaborate.mitre.org/attackics/index.php/Technique/T0843">T0843</a>)
+							using the original program collected from the
 							program upload. This action was primarily to wipe any artifacts of the malicious logic off
 							of the controller. Process operators respond to investigate and restart the plant following
 							the shutdown.
@@ -510,7 +582,8 @@
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							Triton would reset the controller to the previous state over Tristation and if this failed
 							it would write a dummy program to memory in what was likely an attempt at anti-forensics.
-							[5]
+							<a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a>
 						</td>
 					</tr>
 				</tbody>
@@ -551,14 +624,16 @@
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							Triton does not leverage any 0-days but instead reprograms the target safety controllers via
-							the TriStation protocol. [5]
+							the TriStation protocol. <a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<p onclick="toggle_step_collapse(this, 'step11DIV')" id="hide_show"
-			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 11: Disable Safety Function</span>
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 11: Disable Safety
+				Function</span>
 			<test class="right"></i>
 		</p>
 		<div id="step11DIV" style="display:none">
@@ -592,14 +667,16 @@
 						</td>
 						<td class="td_opflow_step" style="text-align: left; width: 33%;">
 							Triton can communicate with the implant over the TriStation 'get main processor diagnostic
-							data' command. [5]
+							data' command. <a
+								href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">[5]</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<p onclick="toggle_step_collapse(this, 'step12DIV')" id="hide_show"
-			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 12: Manipulate DCS to Achieve Failure</span>
+			class="collapsed collapseShowCarrot hover_pointer"><span style="font-size: 18px;">Phase 12: Manipulate DCS
+				to Achieve Failure</span>
 			<test class="right"></i>
 		</p>
 		<div id="step12DIV" style="display:none">
@@ -645,7 +722,8 @@
 							Following Triton, analysis identified potential scenarios that could have been the goal for
 							Triton. For the TRITON evaluation we chose the scenario with the most adversary interaction
 							and manipulation (reprogram the SIS to allow an unsafe state – while using the DCS to create
-							an unsafe state or hazard [1]) for thorough testing of detections. These events were not
+							an unsafe state or hazard <a
+							href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">[1]</a>) for thorough testing of detections. These events were not
 							reported to have occurred in real life and no DCS payload has been publicly released.
 						</td>
 					</tr>
@@ -653,54 +731,6 @@
 			</table>
 		</div>
 		<br>
-
-		<h3 class="my-3">Works Cited</h3>
-		<ol>
-			<li class="li_citation">
-				D. C. M. K. D. S. N. B. C. G. Blake Johnson, "Attackers Deploy New ICS Attack Framework “TRITON” and
-				Cause Operational Disruption to Critical Infrastructure," Fireeye, 14 December 2017. [Online].
-				Available: <a
-					href="https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html">https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html</a>.
-				[Accessed 7 July 2021].
-			</li>
-			<br>
-			<li class="li_citation">
-				N. B. D. K. Z. D. C. Steve Miller, "TRITON Actor TTP Profile, Custom Attack Tools, Detections, and
-				ATT&CK Mapping," 10 April 2019. [Online]. Available: <a
-					href="https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html">https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html</a>.
-			</li>
-			<br>
-			<li class="li_citation">
-				Dragos Inc., "TRISIS Malware Analysis of Safety System Targeted Malware," [Online]. Available: <a
-					href="https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf">https://www.dragos.com/wp-content/uploads/TRISIS-01.pdf</a>.
-				[Accessed 7 July 2021].
-			</li>
-			<br>
-			<li class="li_citation">
-				Fireeye, "Appendix B: Technical Analysis of Custom Attack Tools," [Online]. Available: <a
-					href="https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf">https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/TRITON_Appendix_B.pdf</a>.
-				[Accessed 7 July 2021].
-			</li>
-			<br>
-			<li class="li_citation">
-				Midnight Blue Labs, "Analyzing the TRITON industrial malware," Midnight Blue Labs, 16 January 2018.
-				[Online]. Available: <a
-					href="https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware">https://www.midnightbluelabs.com/blog/2018/1/16/analyzing-the-triton-industrial-malware</a>.
-				[Accessed 7 July 2021].
-			</li>
-			<br>
-			<li class="li_citation">
-				Cybersecurity and Infrastructure Security Agency, "MAR-17-352-01 HatMan—Safety System Targeted Malware,"
-				27 February 2019. [Online]. Available: <a
-					href="https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf">https://us-cert.cisa.gov/sites/default/files/documents/MAR-17-352-01%20HatMan%20-%20Safety%20System%20Targeted%20Malware%20%28Update%20B%29.pdf</a>.
-				[Accessed 7 July 2021].
-			</li>
-			<br>
-			<li class="li_citation">
-				MDudek-ICS, "TRISIS / TRITON / HatMan Malware Repository," Github, 2018.
-			</li>
-		</ol>
-		<br><br>
 	</div>
 </div>
 <br><br>

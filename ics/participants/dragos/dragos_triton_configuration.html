@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -139,10 +138,12 @@
         <table style='width: 100%;'>
             <tr>
                 <td style='width: 100%;'>
-                    <div style="padding: 0px; width: 100%;"> 
-                        <span class="spanBreadcrumbs-results"> 
-                            <a href='/'>Home</a> &nbsp;>&nbsp; 
-                            <a href="/methodology-overview">ICS</a> &nbsp;>&nbsp; 
+                    <div style="padding: 0px; width: 100%;">
+                        <span class="spanBreadcrumbs-results">
+                            <a href='/'>Home</a> &nbsp;>&nbsp;
+                            <a
+                                href="/methodology-overview">ICS</a>
+                            &nbsp;>&nbsp;
                             <a href='/ics/participants/'>Participants</a> &nbsp;>&nbsp;
                             <a href='/ics/participants/dragos'> Dragos </a> &nbsp;>&nbsp; TRITON Configuration
                         </span>
@@ -151,11 +152,175 @@
             </tr>
         </table>
     </div>
-	<div class='divFAQBody pb-4 mt-5'>
+    <div class='divFAQBody pb-4 mt-5'>
         <div class="mt-3">
-            <h1>Dragos Configuration - Coming Soon!</h1>
+            <h1>Dragos Configuration</h1>
         </div>
-	</div>
+        <br>
+        <h3 class="mt-3">Product Versions</h3>
+        <ul>
+            <li>Dragos Platform SiteStore version: 7.2</li>
+            <li>Dragos Platform Sensor version: 7.2</li>
+            <li>Dragos Knowledge Pack: April 2020</li>
+        </ul>
+        <br>
+        <h3 class="mt-3">Description</h3>
+        <div style="margin-left: 20px;">
+            <p class='p-methodology'>
+                The <a href="https://www.dragos.com/platform/">Dragos Platform</a> is a network-based cybersecurity
+                software technology that identifies ICS network assets and their communications to provide an inventory
+                and topology, identify and manage vulnerabilities, detect malicious activity, and provides guidance to
+                investigate incidents. Within the Dragos Platform, we leverage <a
+                    href="https://www.dragos.com/wp-content/uploads/The_Four_Types-of_Threat_Detection.pdf">The 4 Types
+                    of Threat Detection</a> model.
+            </p>
+            <center>
+                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/dragos_4_threat_detection_types.png" style="max-width: 35%;" class="mt-4" />
+                <figcaption><i>The 4 Types of Threat Detection</i></figcaption>
+            </center>
+            <p class='p-methodology' style='margin-top: 20px;'>
+                The 4 Types of Threat Detection create different use-cases and detection strategies for defenders
+                leveraging the Dragos Platform and are aggregated in the Notification view.
+            </p>
+            <ol>
+                <li style="margin-bottom: 15px;">
+                    <h6><b>Modeling</b></h4>
+                    Modeling is a mathematical approach to detecting threats by defining “normal” and measuring the
+                    divergence from the definition. When organizations talk about “baselines”, “machine learning” or
+                    various forms of “anomaly detection” they are referring to Modeling based detections. The goal of
+                    Modeling is to build profiles of the environment over time and alert on uncustomary behaviors. The
+                    value in doing this approach is that it is threat-agnostic instead of relying on knowledge of the
+                    environment. The downside is that detections contain very limited if any context on the threat
+                    because the detection was not looking for the threat itself but the deviation. These detections are
+                    great for hunting but not ideal for triaging as their threat context is specific to the modeled
+                    environment.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <h6><b>Configuration</b></h4>
+                    Configuration-based detection relies on current knowledge of an environment’s known architecture or
+                    design to identify changes to the configuration. As an example, a new device would be a change to
+                    the configuration. However, a change in the configuration such as a change on the timing in a GPS
+                    clock, a project file upload to a programmable logic controller (PLC), or the change of a key switch
+                    from RUN mode to PROGRAM mode in a safety system would all be configuration alerts. These alerts can
+                    be useful for understanding your environment better and provide good forensics on changes in the
+                    environment but contain little threat context for triaging.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <h6><b>Indicators</b></h4>
+                    Indicators are the quickest way of leveraging detection with threat context. When properly created,
+                    indicators identify specific activity that gives analysts the context to properly prioritize and
+                    respond to the activity observed. There are two main benefits associated with indicators: knowledge
+                    enrichment and quick scoping. The downside is that adversaries can change their dependence on
+                    specific indicators (such as infrastructure and malware), which can quickly make those specific
+                    indicators ineffective. Indicators though are ideal for triaging for known threats.
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <h6><b>Threat Behavior</b></h4>
+                    Threat behavior analytics codify malicious adversary tradecraft (e.g., tactics, techniques, and
+                    methods) for detection regardless of specific indicators like malware or infrastructure. Threat
+                    behavior analytics are the best form of expandable and alterable threat detection that also result
+                    in context for the defender. The downside is they are often time-intensive to create. The value is
+                    that they are not tied to any individual adversary but instead represent a series of events that
+                    catch known tactics and techniques that adversaries leverage making them able to identify known and
+                    unknown threat groups with context making them a great form of threat detection. The structure of
+                    MITRE ATT&CK is based upon Threat Behaviors and documents Threat Behaviors in detail, which is why
+                    it is such a valuable resource for network defenders.
+                </li>
+            </ol>
+            <br>
+            <p class='p-methodology' style='margin-top: 20px;'>
+                Hunting for threat behavior is akin to “finding a needle in a haystack” of data. To best approach this
+                monumental task, the Dragos Platform sorted the haystack into smaller, more manageable haystacks. These
+                smaller haystacks make it easier for Dragos Platform users to identify and investigate threat behavior
+                within ICS Networks. The smaller haystacks consist of the following:
+            </p>
+            <table style="border: 1px solid black;">
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        <h6><b>Tagged Data</b></h6>
+                    </td>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        Data that the Dragos Platform might be interested in using for the creation of Events and
+                        Notifications is identified, inspected using deep packet analysis, and then stored as Tagged
+                        Data.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        <h6><b>Events</b></h6>
+                    </td>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        Events (Severity 0) are actions taken within the ICS network that you probably want to keep
+                        track of but do not necessarily want to be constantly notified about. Events could be atomic
+                        (single step) threat behaviors in the context of an attack but could also be normal operations
+                        of an ICS environment. Events are normally hidden from view but can feed information into
+                        Composite Analytics (see below) or turned on to see the Events that led up to high severity
+                        Notifications. They are also useful for forensics and investigation timelines.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        <h6><b>Notifications</b></h6>
+                    </td>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        Notifications are actions taken within the ICS network that could be considered one of The 4
+                        Types of Threat Detection. The higher the severity rating of the Notification, the higher the
+                        confidence that this is a real threat, and that action should be taken.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        <h6><b>Composite Analytics</b></h6>
+                    </td>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        Composite Analytics are multi-step threat analytics that more confidently relate to adversary
+                        actions. They often will take data from multiple sources, such as Windows Events, Network
+                        Traffic, Asset Information, or Vulnerability Information to create context-sensitive, high
+                        confidence and high severity Notifications (often severity 3 – 5).
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        <h6><b>Query Focused Datasets (QFDs)</b></h6>
+                    </td>
+                    <td style="border: 1px solid black; padding: 10px;">
+                        Query Focused Datasets (QFDs) provide analysts with powerful tools for both proactive threat
+                        hunts and investigations. A query focused dataset is a pared down dataset that combines
+                        disparate data to enable analysts to prove or disprove a given hypothesis quickly. While a QFD
+                        is a subset of a larger dataset, the QFD might contain additional enriched information that
+                        provides analysts with an optimized view of the situation in question. QFDs normalize data and
+                        reduce the overall time analysts must spend when triaging suspicious activity or threat hunting.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <h3 class="mt-3">Product Configuration</h3>
+        <div style="margin-left: 20px;">
+            <p class='p-methodology'>
+                Each of the Windows hosts used the Microsoft Sysmon tool and forwarded logs to the Dragos Platform which can passively collect network data off of the environment and optionally leverage host-based logs. The network traffic was monitored by one Dragos network sensor monitoring the SPAN port of the switch. With this deployment, Windows host and network data were our two data sources.
+            </p>
+            <center>
+                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/dragos_config_diagram.png" style="max-width:50%;" class="mt-4" />
+                <figcaption><i>MITRE Evaluation Network Topology with the Dragos Platform Sensor and Sitestore Event and Traffic Aggregation</i></figcaption>
+            </center>
+            <br>
+            <h4 class="mt-3">Dragos Platform Configuration</h4>
+            <ul>
+                <li>
+                    Network Traffic Ingestion by Dragos Sensor
+                </li>
+                <li>
+                    <span style="text-decoration: line-through;">Endpoint Windows Event Collection using <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon">SYSMON</a> and <a href="https://www.elastic.co/downloads/beats/winlogbeat">Winlogbeat</a></span>
+                </li>
+                <li>
+                    Windows Events ingested using the SYSLOG via Dragos Platform Sitestore
+                </li>
+            </ul>
+        </div>
+        <br><br>
+    </div>
 </div>
 </div>
 </div>
