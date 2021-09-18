@@ -9,7 +9,6 @@
                     "Display_Name": "APT3",
                     "Evaluation_Year": 2018,
                     "Total_Substeps": 136,
-                    "LinuxParticipant": null,
                     "Aggregates": {
                         "Total_Detections": 77,
                         "Total_Alerts": null,
@@ -18,7 +17,8 @@
                         "Analytic_Coverage": "1/136",
                         "Telemetry_Coverage": "76/136",
                         "Visibility": "76/136"
-                    }
+                    },
+                    "Participant_Capabilities": []
                 }
             ]
         }

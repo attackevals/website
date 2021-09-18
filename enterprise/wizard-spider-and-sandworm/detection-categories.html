@@ -48,43 +48,30 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/#participants">Participants</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Wizard Spider and <br> Sandworm (2021)
+                            Wizard Spider and <br> Sandworm (2022)
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
+                            Carbanak+FIN7 (2021)
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/evaluations/">
+                            View All Evaluations
                         </a>
                     </li>
                 </ul>
@@ -115,6 +102,7 @@
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
                         <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
@@ -123,7 +111,6 @@
                         </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
             <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
@@ -155,20 +142,20 @@
             The evaluation focuses on articulating how detections occur, rather than assigning scores to vendor capabilities.
         </p>
         <p>
-            For the evaluation, we categorize each detection and capture notes about how those detections occur. We organize detections according to each technique. Techniques may have more than one detection if the capability detects the technique in different ways, and detections we observe are included in the results. While we make every effort to capture different detections, vendor capabilities may be able to detect procedures in ways that we did not capture. For a detection to be included for a given technique, it must apply to that technique specifically (i.e. just because a detection applies to one technique in a Step or Sub-Step does not mean it applies to all techniques of that Step). For proof of detection in each category, we require that the proof be provided to us, but we may not include all detection details in public results, particularly when those details are sensitive.
+            We organize detections according to each substep (i.e., implementation of a technique). For a detection to be included for a given substep, it must apply to the specific technique-under-test (i.e., the detection must apply to the one technique associated with that substep, not other or all techniques of that Step). For each detection, we require that proof/evidence be provided to us, but we may not include all detection details in public results, particularly when those details are sensitive. While we make every effort to capture all relevant detections, vendor capabilities may be able to detect procedures in ways that we did not capture.
         </p>
         <p>
-            To determine the appropriate category for a detection, we review the screenshot(s) provided, notes taken during the evaluation, results of follow-up questions to the vendor, and vendor feedback on draft results. We also independently test procedures in a separate lab environment and review open-source tool detections and forensic artifacts. This testing informs what is considered to be a detection for each technique.    
+            Starting with the Wizard Spider and Sandworm evaluations, each substep has a single detection category that represents the highest level of context provided to the analyst across all detections for that substep. For reference, the context provided by each detection category increases from left to right, with Technique being the highest context within the detection category diagram. An image gallery will display evidence of the detection that generated that detection category for that substep as well as other relevant images from other detections associated with that substep. Data sources will be tied to each screenshot within the gallery. Detections captured that require detection category modifiers (ex: configuration change or delayed) will be separated within a substep’s results to clearly identify the different type of detections and allow users to more easily filter the results based on whether to include or exclude these types of detections. To determine the appropriate category for a detection, we review the evidence provided, notes taken during the evaluation, results of follow-up questions to the vendor, and vendor feedback on draft results. We also independently test procedures in a separate lab environment and review open-source tool detections and forensic artifacts. This testing informs what is considered to be a detection for each technique.
         </p>
         <p>
-            After performing detection categorizations, we calibrate the categories across all vendors to look for discrepancies and ensure categories are applied consistently. The decision of what category to apply is ultimately based on human analysis and is therefore subject to discretion and biases inherent in all human analysis, although we do make efforts to hedge against these biases by structuring analysis as described above.    
+            After performing detection categorizations, we calibrate the categories across all vendors to look for discrepancies and ensure categories are applied consistently. The decision of what category to apply is ultimately based on human analysis and is therefore subject to discretion and biases inherent in all human analysis, although we do make efforts to hedge against these biases by structuring analysis as described above.
         </p>
         <br>
         <div class="row pt-4 pb-4">
             <div class="col faq clean-sections accordion-panels">
                 <h2>Data Sources</h2>
                 <p>
-                    Detections will be tagged with the data source(s) that signify the type of data used to generate the detection. This will be used to differentiate and provide more precise descriptions of similar detections (ex: telemetry from file monitoring versus process command-line arguments). The list of possible data source tags will be calibrated by MITRE after execution of the evaluations.
+                    Screenshots will be tagged with the data source(s) that signify the type of data used to generate the detection. This will be used to differentiate and provide more precise descriptions of similar detections (ex: telemetry from file monitoring versus process command-line arguments). The list of possible data source tags will be calibrated by MITRE Engenuity after execution of the evaluations.
                 </p>
             </div>
         </div>

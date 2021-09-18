@@ -9,7 +9,6 @@
                     "Display_Name": "APT29",
                     "Evaluation_Year": 2019,
                     "Total_Substeps": 134,
-                    "LinuxParticipant": null,
                     "Aggregates": {
                         "Total_Detections": 193,
                         "Total_Alerts": null,
@@ -26,14 +25,14 @@
                         "Analytic_Coverage": "65/134",
                         "Telemetry_Coverage": "96/134",
                         "Visibility": "109/134"
-                    }
+                    },
+                    "Participant_Capabilities": []
                 },
                 {
                     "Adversary_Name": "carbanak_fin7",
                     "Display_Name": "Carbanak+FIN7",
                     "Evaluation_Year": 2020,
                     "Total_Substeps": 174,
-                    "LinuxParticipant": true,
                     "Aggregates": {
                         "Total_Detections": 366,
                         "Total_Alerts": null,
@@ -42,7 +41,10 @@
                         "Analytic_Coverage": "151/174",
                         "Telemetry_Coverage": "150/174",
                         "Visibility": "158/174"
-                    }
+                    },
+                    "Participant_Capabilities": [
+                        "Linux Capability"
+                    ]
                 }
             ]
         }
@@ -5308,7 +5310,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.2",
@@ -5338,7 +5340,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.3",
@@ -5402,7 +5404,7 @@
                                             "Indicator_Name": "Microsoft Office Suspicious Child - T1059.005 Visual Basic"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.4",
@@ -5438,7 +5440,7 @@
                                             "Indicator_Name": "WscriptEncodedScript - T1027 Obfuscated Files or Information"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.5",
@@ -5491,7 +5493,7 @@
                                             "Indicator_Name": "ScriptDecodeAndDrop - T1140 Deobfuscate/Decode Files or Information"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.6",
@@ -5543,7 +5545,7 @@
                                             "Indicator_Name": "ScriptDecodeAndDrop - T1140 Deobfuscate/Decode Files or Information"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.7",
@@ -5606,7 +5608,7 @@
                                             "Indicator_Name": "Antimalware detected wscript.exe executed a suspicious command line"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.8",
@@ -5654,7 +5656,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.9",
@@ -5732,7 +5734,7 @@
                                             "Indicator_Name": "T1059.007 JavaScript/JScript"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.10",
@@ -5786,7 +5788,7 @@
                                             "Indicator_Name": "ConnectionProtocolIdentified - T1071.001 Web Protocols"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.11",
@@ -5822,7 +5824,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1573 Encrypted Channel"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -5879,7 +5881,7 @@
                                             "Indicator_Name": "WindowsDiscoveryAPIUsed - T1082 System Information Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.A.4",
@@ -5933,7 +5935,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.1",
@@ -6007,7 +6009,7 @@
                                             "Indicator_Name": "ScriptDecodeAndDrop - T1105 Ingress Tool Transfer"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.2",
@@ -6056,7 +6058,7 @@
                                             "Indicator_Name": "SuspiciousProcessChain - T1059.003 Windows Command Shell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.3",
@@ -6120,7 +6122,7 @@
                                             "Indicator_Name": "AMSI detected potentially harmful artifacts scanning the Memory Buffer Register"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.4",
@@ -6183,7 +6185,7 @@
                                             "Indicator_Name": "PowershellScreenshotTaken - T1113 Screen Capture"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.5",
@@ -6213,7 +6215,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -6267,7 +6269,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.A.2",
@@ -6327,7 +6329,7 @@
                                             "Indicator_Name": "Registry Manipulation - T1112 Modify Registry"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.A.3",
@@ -6377,7 +6379,7 @@
                                             "Indicator_Name": "IExplorerRegAdd - T1027 Obfuscated Files or Information"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.1",
@@ -6451,7 +6453,7 @@
                                             "Indicator_Name": "ScriptDecodeAndDrop - T1105 Ingress Tool Transfer"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.2",
@@ -6499,7 +6501,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.3",
@@ -6561,7 +6563,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.4",
@@ -6612,7 +6614,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.5",
@@ -6665,7 +6667,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.6",
@@ -6717,7 +6719,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.7",
@@ -6783,7 +6785,7 @@
                                             "Indicator_Name": "PowershellSuspiciousPortUsage - Command and Control"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -6819,7 +6821,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.2",
@@ -6914,7 +6916,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.3",
@@ -6977,7 +6979,7 @@
                                             "Indicator_Name": "ConnectionOverCommonPortScripting"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.4",
@@ -7027,7 +7029,7 @@
                                             "Indicator_Name": "T1078 Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.1",
@@ -7098,7 +7100,7 @@
                                             "Indicator_Name": "ScriptFileWrittenByPowershell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.2",
@@ -7165,7 +7167,7 @@
                                             "Indicator_Name": "Gen:Heur.Mimikatz"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.3",
@@ -7242,7 +7244,7 @@
                                             "Indicator_Name": "AMSI detected potentially harmful artifacts scanning the Memory Buffer Register"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.4",
@@ -7292,7 +7294,7 @@
                                             "Indicator_Name": "PowershellNewRegistry - T1112 Modify Registry"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.5",
@@ -7341,7 +7343,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.6",
@@ -7391,7 +7393,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.7",
@@ -7453,7 +7455,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -7511,7 +7513,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.2",
@@ -7567,7 +7569,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.3",
@@ -7619,7 +7621,7 @@
                                             "Indicator_Name": "Suspicious File Write"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.4",
@@ -7668,7 +7670,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.5",
@@ -7720,7 +7722,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.6",
@@ -7768,7 +7770,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.7",
@@ -7832,7 +7834,9 @@
                                             "Indicator_Name": "SSHConnection - T1021 Remote Services"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.8",
@@ -7880,7 +7884,9 @@
                                             "Indicator_Name": "ValidAccounts - T1078 Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.9",
@@ -7928,7 +7934,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.10",
@@ -7976,7 +7984,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.11",
@@ -8025,7 +8035,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.1",
@@ -8075,7 +8087,9 @@
                                             "Indicator_Name": "SSHConnection - T1021 Remote Services"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.2",
@@ -8123,7 +8137,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.3",
@@ -8171,7 +8187,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.4",
@@ -8219,7 +8237,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.5",
@@ -8273,7 +8293,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.6",
@@ -8327,7 +8349,9 @@
                                             "Indicator_Name": "DataCollection - T1005 Data from Local System"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.7",
@@ -8393,7 +8417,9 @@
                                             "Indicator_Name": "DNSLookup - T1018 Remote System Discovery"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.C.1",
@@ -8461,7 +8487,7 @@
                                             "Indicator_Name": "GenericPassTheHash - T1075 - Pass the Hash"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.2",
@@ -8527,7 +8553,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.3",
@@ -8579,7 +8605,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.4",
@@ -8609,7 +8635,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.5",
@@ -8657,7 +8683,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.6",
@@ -8707,7 +8733,7 @@
                                             "Indicator_Name": "PEInjected - Defense Evasion"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8784,7 +8810,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "6.A.2",
@@ -8814,7 +8840,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "6.A.3",
@@ -8844,7 +8870,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8919,7 +8945,7 @@
                                             "Indicator_Name": "Suspicious File Write"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.2",
@@ -8967,7 +8993,7 @@
                                             "Indicator_Name": "Suspicious Child of Injected Process - T1059.003 Windows Command Shell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.3",
@@ -9017,7 +9043,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.4",
@@ -9065,7 +9091,7 @@
                                             "Indicator_Name": "UserLogon - T1078 Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.5",
@@ -9115,7 +9141,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.1",
@@ -9163,7 +9189,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.2",
@@ -9209,7 +9235,7 @@
                                             "Indicator_Name": "UserLogon - T1078 Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.3",
@@ -9259,7 +9285,7 @@
                                             "Indicator_Name": "RdpConnection - T1021.001 Remote Desktop Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.1",
@@ -9313,7 +9339,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.2",
@@ -9343,7 +9369,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.3",
@@ -9394,7 +9420,7 @@
                                             "Indicator_Name": "File Detected as Suspicious by Analysis"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.4",
@@ -9445,7 +9471,7 @@
                                             "Indicator_Name": "Run Key Write - T1547.001 Registry Run Keys / Startup Folder"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -9514,7 +9540,7 @@
                                             "Indicator_Name": "WscriptProcessExecuted - T1059.005 Visual Basic"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "8.A.2",
@@ -9564,7 +9590,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1071.001 Web Protocols"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "8.A.3",
@@ -9615,7 +9641,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -9675,7 +9701,7 @@
                                             "Indicator_Name": "Suspicious File Drop - T1105 Ingress Tool Transfer"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.2",
@@ -9725,7 +9751,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.3",
@@ -9776,7 +9802,7 @@
                                             "Indicator_Name": "InjectionCreateThreadKm, InjectionWriteProcMemory - T1055 Process Injection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.4",
@@ -9806,7 +9832,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.5",
@@ -9845,7 +9871,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.1",
@@ -9881,7 +9907,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.2",
@@ -9934,7 +9960,7 @@
                                             "Indicator_Name": "VaultEnumerateItemsCall - T1555.003 Credentials from Web Browsers"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.3",
@@ -9998,7 +10024,7 @@
                                             "Indicator_Name": "PowershellRemoveItem - T1070.004 File Deletion"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -10056,7 +10082,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.2",
@@ -10108,7 +10134,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.3",
@@ -10156,7 +10182,7 @@
                                             "Indicator_Name": "NetshDisableFirewall - T1562.004 Disable or Modify System Firewall"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.4",
@@ -10206,7 +10232,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.5",
@@ -10236,7 +10262,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.6",
@@ -10284,7 +10310,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.B.1",
@@ -10314,7 +10340,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         }
@@ -10373,7 +10399,7 @@
                                             "Indicator_Name": "T1204 User Execution"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.2",
@@ -10423,7 +10449,7 @@
                                             "Indicator_Name": "Antimalware static engines detected a potential security breach"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.3",
@@ -10502,7 +10528,7 @@
                                             "Indicator_Name": "Antimalware detected mshta.exe executed a suspicious command line"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.4",
@@ -10551,7 +10577,7 @@
                                             "Indicator_Name": "Antimalware detected mshta.exe executed a suspicious command line - T1059 Command and Scripting Interpeter"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.5",
@@ -10633,7 +10659,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.6",
@@ -10683,7 +10709,7 @@
                                             "Indicator_Name": "RenamedWscriptExecuted - T1036.003 Rename System Utilities"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.7",
@@ -10732,7 +10758,7 @@
                                             "Indicator_Name": "VerClsidProcessExecutedComObject - T1559.001 Component Object Model"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.8",
@@ -10767,7 +10793,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -10825,7 +10851,7 @@
                                             "Indicator_Name": "ScheduledTaskExecuted - T1053.005 Scheduled Task"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.2",
@@ -10887,7 +10913,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.3",
@@ -10938,7 +10964,7 @@
                                             "Indicator_Name": "T1071 Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.4",
@@ -10989,7 +11015,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.5",
@@ -11056,7 +11082,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.B.1",
@@ -11125,7 +11151,7 @@
                                             "Indicator_Name": "Antimalware static engines detected a potential security breach"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -11182,7 +11208,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.2",
@@ -11216,7 +11242,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.3",
@@ -11264,7 +11290,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.4",
@@ -11314,7 +11340,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.5",
@@ -11348,7 +11374,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.6",
@@ -11382,7 +11408,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.8",
@@ -11431,7 +11457,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.9",
@@ -11481,7 +11507,7 @@
                                             "Indicator_Name": "WMISuspiciousOperatingSystemDiscovery - T1092 System Information Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.1",
@@ -11551,7 +11577,7 @@
                                             "Indicator_Name": "Suspicious File Write"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.2",
@@ -11599,7 +11625,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.3",
@@ -11647,7 +11673,7 @@
                                             "Indicator_Name": "Cmd Spawns PowerShell Child - T1059.001 PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.4",
@@ -11713,7 +11739,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.5",
@@ -11747,7 +11773,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -11802,7 +11828,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.2",
@@ -11851,7 +11877,7 @@
                                             "Indicator_Name": "Cmd Spawns PowerShell Child - T1059.001 PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.3",
@@ -11903,7 +11929,7 @@
                                             "Indicator_Name": "ZlibCompressionCommand"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.4",
@@ -11952,7 +11978,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.5",
@@ -12015,7 +12041,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.6",
@@ -12081,7 +12107,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.7",
@@ -12147,7 +12173,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -12188,7 +12214,7 @@
                                             "Indicator_Name": "FindProcess - T1057 Process Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.2",
@@ -12258,7 +12284,7 @@
                                             "Indicator_Name": "Gen:Heur.Mimikatz"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.3",
@@ -12330,7 +12356,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.4",
@@ -12379,7 +12405,7 @@
                                             "Indicator_Name": "PowershellStartedByPowershell - T1059.001 PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.5",
@@ -12443,7 +12469,7 @@
                                             "Indicator_Name": "TokenImpersonation - Privilege Escalation"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.6",
@@ -12515,7 +12541,7 @@
                                             "Indicator_Name": "Registry Credentials Accessed - T1003 OS Credential Dumping"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.7",
@@ -12545,7 +12571,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.8",
@@ -12612,7 +12638,7 @@
                                             "Indicator_Name": "Nslookup Process Execution"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -12689,7 +12715,7 @@
                                             "Indicator_Name": "Command and Control"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.2",
@@ -12772,7 +12798,7 @@
                                             "Indicator_Name": "Antimalware static engines detected a potential security breach"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.3",
@@ -12820,7 +12846,7 @@
                                             "Indicator_Name": "SuspiciousProcessChain - T1059.003 Windows Command Shell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.4",
@@ -12868,7 +12894,7 @@
                                             "Indicator_Name": "UserLogon - T1078 Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.5",
@@ -12932,7 +12958,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.6",
@@ -12980,7 +13006,7 @@
                                             "Indicator_Name": "ServiceExecuted"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.7",
@@ -13046,7 +13072,7 @@
                                             "Indicator_Name": "InjectionWriteProcMemory"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.8",
@@ -13096,7 +13122,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1071.001 Web Protocols"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.9",
@@ -13161,7 +13187,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -13238,7 +13264,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.2",
@@ -13304,7 +13330,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.3",
@@ -13352,7 +13378,7 @@
                                             "Indicator_Name": "Suspicious Child of Injected Process - T1059.003 Windows Command Shell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.4",
@@ -13388,7 +13414,7 @@
                                             "Indicator_Name": "Rundll32 Uncommon Load"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.5",
@@ -13440,7 +13466,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1071.001 Web Protocols"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.6",
@@ -13491,7 +13517,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1573 Encrypted Channel"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -13552,7 +13578,7 @@
                                             "Indicator_Name": "InjectionCreateThread - T1055 Process Injection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.2",
@@ -13582,7 +13608,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.3",
@@ -13662,7 +13688,7 @@
                                             "Indicator_Name": "ProcessInjectionVictim - T1055 Process Injection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.4",
@@ -13692,7 +13718,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -13746,7 +13772,7 @@
                                             "Indicator_Name": "UserLogon - T1078.003 Local Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.A.2",
@@ -13796,7 +13822,7 @@
                                             "Indicator_Name": "RemoteDesktopConnection - T1021.001 Remote Desktop Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.A.3",
@@ -13826,7 +13852,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.1",
@@ -13874,7 +13900,7 @@
                                             "Indicator_Name": "PowershellStartedByPowershell - T1059.001 PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.2",
@@ -13923,7 +13949,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.3",
@@ -13988,7 +14014,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.4",
@@ -14038,7 +14064,7 @@
                                             "Indicator_Name": "Suspicious File Write"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.5",
@@ -14134,7 +14160,7 @@
                                             "Indicator_Name": "ShimRegistryModified - T1546.011 Application Shimming"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -14170,7 +14196,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.2",
@@ -14221,7 +14247,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.3",
@@ -14271,7 +14297,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.4",
@@ -14321,7 +14347,7 @@
                                             "Indicator_Name": "StandardCryptographicProtocol - T1573 Encrypted Channel"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.1",
@@ -14390,7 +14416,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.2",
@@ -14420,7 +14446,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.3",
@@ -14490,7 +14516,7 @@
                                             "Indicator_Name": "File detected as suspicious by analysis"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.4",
@@ -14540,7 +14566,7 @@
                                             "Indicator_Name": "File Written in User Directory"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.5",
@@ -14591,13 +14617,16 @@
                                             "Indicator_Name": "PersonalDocumentsRead"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         }
                     ]
                 }
-            }
+            },
+            "Participant_Capabilities": [
+                "Linux Capability"
+            ]
         }
     ]
 }

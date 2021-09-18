@@ -9,7 +9,6 @@
                     "Display_Name": "APT29",
                     "Evaluation_Year": 2019,
                     "Total_Substeps": 134,
-                    "LinuxParticipant": null,
                     "Aggregates": {
                         "Total_Detections": 200,
                         "Total_Alerts": null,
@@ -26,14 +25,14 @@
                         "Analytic_Coverage": "44/134",
                         "Telemetry_Coverage": "74/134",
                         "Visibility": "80/134"
-                    }
+                    },
+                    "Participant_Capabilities": []
                 },
                 {
                     "Adversary_Name": "carbanak_fin7",
                     "Display_Name": "Carbanak+FIN7",
                     "Evaluation_Year": 2020,
                     "Total_Substeps": 174,
-                    "LinuxParticipant": true,
                     "Aggregates": {
                         "Total_Detections": 282,
                         "Total_Alerts": null,
@@ -42,7 +41,11 @@
                         "Analytic_Coverage": "122/174",
                         "Telemetry_Coverage": "143/174",
                         "Visibility": "159/174"
-                    }
+                    },
+                    "Participant_Capabilities": [
+                        "Linux Capability",
+                        "Protection Capability"
+                    ]
                 }
             ]
         }
@@ -5157,7 +5160,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.2",
@@ -5196,7 +5199,7 @@
                                             "Indicator_Name": "Module Event"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.3",
@@ -5256,7 +5259,7 @@
                                             "Indicator_Name": "Scripting"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.4",
@@ -5290,7 +5293,7 @@
                                             "Indicator_Name": "B64 Decode"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.5",
@@ -5327,7 +5330,7 @@
                                             "Indicator_Name": "File create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.6",
@@ -5362,7 +5365,7 @@
                                             "Indicator_Name": "Save File"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.7",
@@ -5411,7 +5414,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.8",
@@ -5457,7 +5460,7 @@
                                             "Indicator_Name": "Command-Line Interface"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.9",
@@ -5506,7 +5509,7 @@
                                             "Indicator_Name": "Scripting"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.10",
@@ -5536,7 +5539,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "1.A.11",
@@ -5584,7 +5587,7 @@
                                             "Indicator_Name": "Standard Cryptographic Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -5638,7 +5641,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.A.4",
@@ -5686,7 +5689,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.1",
@@ -5722,7 +5725,7 @@
                                             "Indicator_Name": "File create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.2",
@@ -5770,7 +5773,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.3",
@@ -5818,7 +5821,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.4",
@@ -5852,7 +5855,7 @@
                                             "Indicator_Name": "PowerShell activity"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "2.B.5",
@@ -5882,7 +5885,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -5936,7 +5939,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.A.2",
@@ -5989,7 +5992,7 @@
                                             "Indicator_Name": "Modify Registry"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.A.3",
@@ -6023,7 +6026,7 @@
                                             "Indicator_Name": "Encoded Command-Line"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.1",
@@ -6059,7 +6062,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.2",
@@ -6107,7 +6110,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.3",
@@ -6155,7 +6158,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.4",
@@ -6204,7 +6207,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.5",
@@ -6252,7 +6255,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.6",
@@ -6301,7 +6304,7 @@
                                             "Indicator_Name": "PowerShell activity"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "3.B.7",
@@ -6331,7 +6334,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -6367,7 +6370,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.2",
@@ -6420,7 +6423,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.3",
@@ -6471,7 +6474,7 @@
                                             "Indicator_Name": "Brute Force"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.A.4",
@@ -6524,7 +6527,7 @@
                                             "Indicator_Name": "Forensics Report"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.1",
@@ -6564,7 +6567,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.2",
@@ -6600,7 +6603,7 @@
                                             "Indicator_Name": "Command and Control"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.3",
@@ -6648,7 +6651,7 @@
                                             "Indicator_Name": "PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.4",
@@ -6699,7 +6702,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.5",
@@ -6748,7 +6751,7 @@
                                             "Indicator_Name": "Command-Line Interface"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.6",
@@ -6810,7 +6813,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "4.B.7",
@@ -6862,7 +6865,7 @@
                                             "Indicator_Name": "Credential Dumping"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -6904,7 +6907,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.2",
@@ -6940,7 +6943,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.3",
@@ -6976,7 +6979,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.4",
@@ -7012,7 +7015,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.5",
@@ -7048,7 +7051,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.6",
@@ -7110,7 +7113,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.A.7",
@@ -7160,7 +7163,9 @@
                                             "Indicator_Name": "Exfiltration Over Command and Control"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.8",
@@ -7194,7 +7199,9 @@
                                             "Indicator_Name": "Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.9",
@@ -7248,7 +7255,9 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.10",
@@ -7301,7 +7310,9 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.A.11",
@@ -7354,7 +7365,9 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.1",
@@ -7390,7 +7403,9 @@
                                             "Indicator_Name": "SSH"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.2",
@@ -7438,7 +7453,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.3",
@@ -7486,7 +7503,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.4",
@@ -7534,7 +7553,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.5",
@@ -7584,7 +7605,9 @@
                                             "Indicator_Name": "Data from Local System"
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.6",
@@ -7634,7 +7657,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.B.7",
@@ -7682,7 +7707,9 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": true
+                                    "Capability_Requirements": [
+                                        "Linux Capability"
+                                    ]
                                 },
                                 {
                                     "Substep": "5.C.1",
@@ -7732,7 +7759,7 @@
                                             "Indicator_Name": "Pass the Hash"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.2",
@@ -7781,7 +7808,7 @@
                                             "Indicator_Name": "SMB Network Activity"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.3",
@@ -7829,7 +7856,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.4",
@@ -7882,7 +7909,7 @@
                                             "Indicator_Name": "Lateral Movement"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.5",
@@ -7930,7 +7957,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "5.C.6",
@@ -7965,7 +7992,7 @@
                                             "Indicator_Name": "System Infected"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8010,7 +8037,7 @@
                                             "Indicator_Name": "Module Event"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "6.A.2",
@@ -8045,7 +8072,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "6.A.3",
@@ -8096,7 +8123,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8154,7 +8181,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.2",
@@ -8202,7 +8229,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.3",
@@ -8254,7 +8281,7 @@
                                             "Indicator_Name": "Standard Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.4",
@@ -8302,7 +8329,7 @@
                                             "Indicator_Name": "Successful Windows Logon"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.A.5",
@@ -8366,7 +8393,7 @@
                                             "Indicator_Name": "Remote Desktop Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.1",
@@ -8416,7 +8443,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.2",
@@ -8454,7 +8481,7 @@
                                             "Indicator_Name": "Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.B.3",
@@ -8521,7 +8548,7 @@
                                             "Indicator_Name": "Remote Desktop Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.1",
@@ -8586,7 +8613,7 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.2",
@@ -8616,7 +8643,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.3",
@@ -8652,7 +8679,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "7.C.4",
@@ -8700,7 +8727,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8740,7 +8767,7 @@
                                             "Indicator_Name": "Process Start"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "8.A.2",
@@ -8792,7 +8819,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "8.A.3",
@@ -8844,7 +8871,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -8901,7 +8928,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.2",
@@ -8931,7 +8958,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.3",
@@ -8979,7 +9006,7 @@
                                             "Indicator_Name": "Process Injection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.4",
@@ -9009,7 +9036,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.A.5",
@@ -9045,7 +9072,7 @@
                                             "Indicator_Name": "File Open"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.1",
@@ -9095,7 +9122,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.2",
@@ -9134,7 +9161,7 @@
                                             "Indicator_Name": "Forensics Report"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "9.B.3",
@@ -9182,7 +9209,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -9224,7 +9251,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.2",
@@ -9260,7 +9287,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.3",
@@ -9294,7 +9321,7 @@
                                             "Indicator_Name": "Disabling Security Tools"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.4",
@@ -9344,7 +9371,7 @@
                                             "Indicator_Name": "Registry Run Keys / Startup Folder"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.5",
@@ -9398,7 +9425,7 @@
                                             "Indicator_Name": "Modify Registry"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.A.6",
@@ -9451,7 +9478,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "10.B.1",
@@ -9489,7 +9516,7 @@
                                             "Indicator_Name": "Network Connection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         }
@@ -9547,7 +9574,7 @@
                                             "Indicator_Name": "User Execution"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.2",
@@ -9582,7 +9609,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.3",
@@ -9630,7 +9657,7 @@
                                             "Indicator_Name": "Mshta"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.4",
@@ -9678,7 +9705,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.5",
@@ -9730,7 +9757,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.6",
@@ -9804,7 +9831,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.7",
@@ -9857,7 +9884,7 @@
                                             "Indicator_Name": "Execution"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "11.A.8",
@@ -9909,7 +9936,7 @@
                                             "Indicator_Name": "Scheduled Task"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -9963,7 +9990,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.2",
@@ -10016,7 +10043,7 @@
                                             "Indicator_Name": "Scripting"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.3",
@@ -10050,7 +10077,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.4",
@@ -10100,7 +10127,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.A.5",
@@ -10150,7 +10177,7 @@
                                             "Indicator_Name": "Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "12.B.1",
@@ -10190,7 +10217,7 @@
                                             "Indicator_Name": "Network Connection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -10246,7 +10273,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.2",
@@ -10294,7 +10321,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.3",
@@ -10342,7 +10369,7 @@
                                             "Indicator_Name": "Network Share Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.4",
@@ -10393,7 +10420,7 @@
                                             "Indicator_Name": "System Information Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.5",
@@ -10427,7 +10454,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.6",
@@ -10461,7 +10488,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.8",
@@ -10511,7 +10538,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.A.9",
@@ -10561,7 +10588,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.1",
@@ -10598,7 +10625,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.2",
@@ -10646,7 +10673,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.3",
@@ -10694,7 +10721,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.4",
@@ -10728,7 +10755,7 @@
                                             "Indicator_Name": "Screen Capture"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "13.B.5",
@@ -10762,7 +10789,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -10816,7 +10843,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.2",
@@ -10864,7 +10891,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.3",
@@ -10912,7 +10939,7 @@
                                             "Indicator_Name": "Deobfuscate/Decode FIles or Information"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.4",
@@ -10960,7 +10987,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.5",
@@ -10990,7 +11017,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.6",
@@ -11043,7 +11070,7 @@
                                             "Indicator_Name": "Standard Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "14.A.7",
@@ -11095,7 +11122,7 @@
                                             "Indicator_Name": "Standard Cryptographic Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -11131,7 +11158,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.2",
@@ -11183,7 +11210,7 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.3",
@@ -11217,7 +11244,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.4",
@@ -11265,7 +11292,7 @@
                                             "Indicator_Name": "PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.5",
@@ -11315,7 +11342,7 @@
                                             "Indicator_Name": "Bypass User Account Control"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.6",
@@ -11380,7 +11407,7 @@
                                             "Indicator_Name": "Credential Dumping"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.7",
@@ -11410,7 +11437,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "15.A.8",
@@ -11444,7 +11471,7 @@
                                             "Indicator_Name": "Remote System Discovery"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -11504,7 +11531,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.2",
@@ -11558,7 +11585,7 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.3",
@@ -11606,7 +11633,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.4",
@@ -11644,7 +11671,7 @@
                                             "Indicator_Name": "Valid Accounts"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.5",
@@ -11683,7 +11710,7 @@
                                             "Indicator_Name": "Windows Admin Shares"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.6",
@@ -11731,7 +11758,7 @@
                                             "Indicator_Name": "Service Execution"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.7",
@@ -11765,7 +11792,7 @@
                                             "Indicator_Name": "Suspicious Process"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.8",
@@ -11820,7 +11847,7 @@
                                             "Indicator_Name": "Standard Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "16.A.9",
@@ -11872,7 +11899,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -11932,7 +11959,7 @@
                                             "Indicator_Name": "Remote File Copy"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.2",
@@ -11982,7 +12009,7 @@
                                             "Indicator_Name": "Bad Disposition"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.3",
@@ -12030,7 +12057,7 @@
                                             "Indicator_Name": "Command-Line Interface"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.4",
@@ -12068,7 +12095,7 @@
                                             "Indicator_Name": "Module Load"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.5",
@@ -12124,7 +12151,7 @@
                                             "Indicator_Name": "Standard Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "17.A.6",
@@ -12177,7 +12204,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -12231,7 +12258,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.2",
@@ -12261,7 +12288,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.3",
@@ -12309,7 +12336,7 @@
                                             "Indicator_Name": "Process Injection"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "18.A.4",
@@ -12339,7 +12366,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -12412,7 +12439,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.A.2",
@@ -12476,7 +12503,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.A.3",
@@ -12514,7 +12541,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.1",
@@ -12562,7 +12589,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.2",
@@ -12598,7 +12625,7 @@
                                             "Indicator_Name": "PowerShell"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.3",
@@ -12651,7 +12678,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.4",
@@ -12690,7 +12717,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "19.B.5",
@@ -12767,7 +12794,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         },
@@ -12803,7 +12830,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.2",
@@ -12852,7 +12879,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.3",
@@ -12905,7 +12932,7 @@
                                             "Indicator_Name": "Standard Application Layer Protocol"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.A.4",
@@ -12959,7 +12986,7 @@
                                             "Indicator_Name": "Networking"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.1",
@@ -12994,7 +13021,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.2",
@@ -13024,7 +13051,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.3",
@@ -13059,7 +13086,7 @@
                                             "Indicator_Name": "File Create"
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.4",
@@ -13109,7 +13136,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 },
                                 {
                                     "Substep": "20.B.5",
@@ -13139,7 +13166,7 @@
                                             "Indicator_Name": ""
                                         }
                                     ],
-                                    "Linux_Only": false
+                                    "Capability_Requirements": []
                                 }
                             ]
                         }
@@ -15133,7 +15160,11 @@
                         "Test_Screenshots": []
                     }
                 ]
-            }
+            },
+            "Participant_Capabilities": [
+                "Linux Capability",
+                "Protection Capability"
+            ]
         }
     ]
 }

@@ -9,7 +9,6 @@
                     "Display_Name": "APT29",
                     "Evaluation_Year": 2019,
                     "Total_Substeps": 134,
-                    "LinuxParticipant": null,
                     "Aggregates": {
                         "Total_Detections": 160,
                         "Total_Alerts": null,
@@ -26,7 +25,8 @@
                         "Analytic_Coverage": "53/134",
                         "Telemetry_Coverage": "101/134",
                         "Visibility": "111/134"
-                    }
+                    },
+                    "Participant_Capabilities": []
                 }
             ]
         }

@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
 
-    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?31dc97fb">
+    <link rel="stylesheet" type="text/css" href="/theme/overview_charts.min.css?dffd105c">
 </head>
 
 <body>
@@ -49,43 +49,30 @@
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 130px;">
-                            <li><a class="dropdown-item" href="/get-evaluated">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/#participants">Participants</a></li>
                             <li><a class="dropdown-item" href="/enterprise/wizard-spider-and-sandworm/">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Wizard Spider and <br> Sandworm (2021)
+                            Wizard Spider and <br> Sandworm (2022)
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 180px;">
                             <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=carbanak_fin7">Results</a></li>
                             <li><a class="dropdown-item" href="/enterprise/carbanak_fin7/">Overview</a></li>
-                            </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            Carbanak+FIN7 (2020)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 230px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt29">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/apt29">Overview</a></li>
                         </ul>
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT29 (2019)
-                        </a>
-                    </li>
-                    <li class="dropdown-item dropdown-submenu2">
-                        <ul class="dropdown-menu drop_menu_side_right" style="margin-top: 280px;">
-                            <li><a class="dropdown-item" href="/enterprise/participants/?adversaries=apt3">Results</a></li>
-                            <li><a class="dropdown-item" href="/enterprise/apt3">Overview</a></li>
-                        </ul>
-                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
-                            APT3 (2018)
+                            Carbanak+FIN7 (2021)
                         </a>
                     </li>
                     <li class="dropdown-item dropdown-submenu2">
                         <a class="dropdown-item" href="/enterprise/participants/">
                             View All Participants
+                        </a>
+                    </li>
+                    <li class="dropdown-item dropdown-submenu2">
+                        <a class="dropdown-item" href="/enterprise/evaluations/">
+                            View All Evaluations
                         </a>
                     </li>
                 </ul>
@@ -116,6 +103,7 @@
                 <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> -->
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="/using-attack-evaluations">Using ATT&CK Evaluations</a>
+                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                         <a class="dropdown-item" href="/about">About ATT&CK</a>
                         <a class="dropdown-item" href="/FAQ">FAQ</a>
                         <a class="dropdown-item" href='https://github.com/center-for-threat-informed-defense/adversary_emulation_library'>
@@ -124,7 +112,6 @@
                         </a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/https://mitre-engenuity.org/mad/">MITRE ATT&CK Defender Training&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
                         <a class="dropdown-item" href="https://mitre-engenuity.org/ctid/">Center for Threat-Informed Defense&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a>
-                        <a class="dropdown-item" href="https://medium.com/mitre-engenuity/tagged/evaluation" target="_blank"> Blog</strong>&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i> </a>
                     </div>  
                 </li> 
             <li class='nav-item ml-4'><button class="btn btn-sm btn-engenuity-purple mt-1" onclick="window.location.href='/get-evaluated'">Get Evaluated</button></li>
@@ -2136,6 +2123,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2194,6 +2189,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2281,6 +2284,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “sftp-server.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2339,6 +2350,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2403,6 +2422,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2461,6 +2488,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2519,6 +2554,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2549,6 +2592,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “scp”. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2613,6 +2664,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2643,6 +2702,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “sftp-server.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2741,6 +2808,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “scp”. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2805,6 +2880,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2868,6 +2951,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -2937,6 +3028,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -3007,6 +3106,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation. </p>
@@ -3237,6 +3344,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate (“SMBClient.exe”, “SMB_Sync.xml”, and “SMB_Update.xml”). </p>
@@ -3266,6 +3381,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the scheduled task “SMB_sync.xml” is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel). </p>
@@ -3295,6 +3418,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the “SMBClient.exe” process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports). </p>
@@ -3324,6 +3455,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “csp3.zip” in the Temp Rockwell directory are not legitimate (“csp.exe”, “Install-csp.ps1”, “csp-agent.exe”, “sftp.exe”, etc.). </p>
@@ -3359,6 +3498,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the “rockwell-csp3” service is not legitimate (service is spoofed SSDH, created then executed via Start-Service). </p>
@@ -3388,6 +3535,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the “csp-agent” service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service). </p>
@@ -3446,6 +3601,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the “SMBClient.exe” process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports). </p>
@@ -3475,6 +3638,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”). </p>
@@ -3510,6 +3681,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”). </p>
@@ -3545,6 +3724,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the services “rockwell-csp3” and “csp-agent” are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service). </p>
@@ -3574,6 +3761,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”). </p>
@@ -3609,6 +3804,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “Install_RSLogix.zip” in the Temp Rockwell RSLogix directory are not legitimate (“RSLogix5000.exe”, “RSComms.exe”, etc.) </p>
@@ -3644,6 +3847,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required the collection of Windows host-based data.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/Host-Based_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence that the newly created files from the extraction of “Install_GuardLogix.zip” in the Temp Rockwell GuardLogix directory are not legitimate (“RSLogix5000.exe”, “RSComms.exe”, “abRSA.exe”, etc.) </p>
@@ -4299,6 +4510,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required actively querying the programmable logic controllers. Armis did not leverage this type of capability.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/PLC_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of the modified program “P04_Trips_FO_R00_Trips” to include new function block logic and a “CC” tag for command and control on the safety PLC.  </p>
@@ -4328,6 +4547,14 @@
                                             <!-- <i class="fas fa-link fa-xs" style="margin-left: 5px;"></i> -->
                                         </span>
                                     </a>
+                                    <div class="d-inline-block float-right">
+                                        <span class="d-inline-block" tabindex="0" data-toggle="tooltip" data-placement="top" 
+                                            title="
+                                                This substep required actively querying the programmable logic controllers. Armis did not leverage this type of capability.
+">
+                                            <img width="40" src="https://d1zq5d3dtjfcoj.cloudfront.net/PLC_Icon.png">
+                                        </span>
+                                    </div>
 
                                         <h5>Criteria: </h5>
                                         <p class="p_procedure_criteria"> Evidence of the modified program “P04_Trips_FO_R00_Trips” to include new function block logic and a “CC” tag for command and control on the safety PLC.  </p>
@@ -4405,8 +4632,8 @@
         substep_bar_colors: ["#185b85", "#007a9a", "#ffbb05", "#00978d", "#05ae6a", "#95bd2a"],
         chart_columns: chart_col
     }
-    var currentAdversary = {"adversary_name": "triton", "adversary_display_name": "TRITON", "Participant_Capabilities": ["Host-based Capability"], "Evaluation_Group": ""};
-    var active_adversaries = [{'adversary_name': 'triton', 'adversary_display_name': 'TRITON', 'Participant_Capabilities': ['Host-based Capability'], 'Evaluation_Group': ''}];
+    var currentAdversary = {"adversary_name": "triton", "adversary_display_name": "TRITON", "Participant_Capabilities": ["Host-based Capability"], "Evaluation_Group": "", "status": "PUBLISHED"};
+    var active_adversaries = [{'adversary_name': 'triton', 'adversary_display_name': 'TRITON', 'Participant_Capabilities': ['Host-based Capability'], 'Evaluation_Group': '', 'status': 'PUBLISHED'}];
     var stepChartHeight;
     var stepChartWidth;
     var stepChartMaxDetections = 0;
