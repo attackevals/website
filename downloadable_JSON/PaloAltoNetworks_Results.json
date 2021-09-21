@@ -58,7 +58,10 @@
                         "Telemetry_Coverage": "154/174",
                         "Visibility": "169/174"
                     },
-                    "Participant_Capabilities": []
+                    "Participant_Capabilities": [
+                        "Linux Capability",
+                        "Protection Capability"
+                    ]
                 }
             ]
         }
@@ -22215,7 +22218,10 @@
                     }
                 ]
             },
-            "Participant_Capabilities": []
+            "Participant_Capabilities": [
+                "Linux Capability",
+                "Protection Capability"
+            ]
         }
     ]
 }
