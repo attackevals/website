@@ -228,23 +228,23 @@ html {
                                                                                       .div_techs_in_test {
                                                                                         overflow-y: auto;
                                                                                         max-height: 200px;
-                                                                                        border: 1px solid lightgray; }
+                                                                                        border: 1px solid lightgray;
+                                                                                        padding: 10px; }
 
-                                                                                        .carousel-control-prev-icon {
-                                                                                          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+                                                                                        .div_techs_in_test::-webkit-scrollbar {
+                                                                                          width: 5px; }
 
-                                                                                          .carousel-control-next-icon {
-                                                                                            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+                                                                                          .carousel-control-prev-icon {
+                                                                                            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
 
-                                                                                            .carousel-indicators .active {
-                                                                                              background-color: gray !important; }
+                                                                                            .carousel-control-next-icon {
+                                                                                              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
 
-                                                                                              .carousel-indicators li {
-                                                                                                background-color: #bebebe !important; }
+                                                                                              .carousel-indicators .active {
+                                                                                                background-color: gray !important; }
 
-                                                                                                ::-webkit-scrollbar {
-                                                                                                  -webkit-appearance: none;
-                                                                                                  width: 2px; }
+                                                                                                .carousel-indicators li {
+                                                                                                  background-color: #bebebe !important; }
 
                                                                                                   ::-webkit-scrollbar-thumb {
                                                                                                     border-radius: 8px;

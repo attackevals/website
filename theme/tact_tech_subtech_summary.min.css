@@ -131,11 +131,7 @@ html {
                                               text-decoration: none;
                                               margin-top: 0.5rem !important; }
 
-                                              ::-webkit-scrollbar {
-                                                -webkit-appearance: none;
-                                                width: 2px; }
-
-                                                ::-webkit-scrollbar-thumb {
-                                                  border-radius: 8px;
-                                                  background-color: rgba(0, 0, 0, 0.5);
-                                                  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+                                              ::-webkit-scrollbar-thumb {
+                                                border-radius: 8px;
+                                                background-color: rgba(0, 0, 0, 0.5);
+                                                box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }

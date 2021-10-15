@@ -272,6 +272,11 @@ html {
     overflow-y: auto;
     max-height: 200px;
     border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.div_techs_in_test::-webkit-scrollbar {
+    width: 5px;
 }
 
 .carousel-control-prev-icon {
@@ -288,11 +293,6 @@ html {
 
 .carousel-indicators li {
     background-color: rgb(190, 190, 190) !important;
-}
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 2px;
 }
   
 ::-webkit-scrollbar-thumb {
