@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6845d713">
 
  </head>
 
@@ -76,7 +76,20 @@
                     </li>
                 </ul>
             </li>
-
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Managed Services</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated/">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/managed-services/managed-services/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Managed Services (2022)
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
@@ -119,10 +132,17 @@
     </nav>
 </header>
 <div id='content-width-lock'>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2022 ATT&CK Evaluations for Managed Services Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
     <div id='content'><br>
 <div class="divEvaluationSummaryBody">
-    <div style="padding: 0px; width: 100%;"> 
-        <span class="spanBreadcrumbs-results"> 
+    <div style="padding: 0px; width: 100%;">
+        <span class="spanBreadcrumbs-results">
             <a href='/'>Home</a> &nbsp;>&nbsp; Enterprise APT29 Overview
         </span>
         <br>
@@ -134,12 +154,20 @@
             <div class="col-2">
                 <nav id="sidebar" class="mt-4 navbar" style="top: 130px; position: sticky;">
                     <nav class="nav nav-pills flex-column" id="side-nav">
-                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
-                        <a class="nav-link-black" id="a-results" href="#results">Results<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-opflow" href="#operational-flow">Operational Flow<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i
+                                class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
+                        <a class="nav-link-black" id="a-results" href="#results">Results<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-opflow" href="#operational-flow">Operational Flow<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-resources" href="#resources">Additional Resources<i
+                            class="fas fa-chevron-right nav-arrow"></i></a>
                     </nav>
                 </nav>
             </div>
@@ -151,12 +179,15 @@
                         <div class="col-lg-12">
                             <div class="row overview_card">
                                 <div class="col-lg-3 pt-3 pb-3">
-                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_APT29.png" style="width: 100%; max-width: 250px;"></center>
+                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_APT29.png"
+                                            style="width: 100%; max-width: 250px;"></center>
                                 </div>
                                 <div class="col-lg-3 vertical-center text-center">
                                     <h3 class="boldText">APT29</h3>
                                     <h5 style="color: grey;">Enterprise Evaluation 2020</h5>
-                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4" href="/enterprise/participants/?adversaries=apt29" role="button">RESULTS</a></center>
+                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4"
+                                            href="/enterprise/participants/?adversaries=apt29" role="button">RESULTS</a>
+                                    </center>
                                 </div>
                                 <div class="col-lg-6 vertical-center">
                                     <div class="pb-container">
@@ -174,17 +205,27 @@
                                     <h5 class="boldText">ATT&CK Description</h5>
                                     <p>
                                         <a href="https://attack.mitre.org/groups/G0016/" target="_blank">APT29</a>
-                                        is a threat group that has been attributed to the Russian government and has operated since at least 2008. 
-                                        <sup><a href="https://www.f-secure.com/documents/996508/1030760/dukes_whitepaper.pdf" target="_blank">[1]</a></sup>
-                                        <sup><a href="https://www.us-cert.gov/sites/default/files/publications/JAR_16-20296A_GRIZZLY%20STEPPE-2016-1229.pdf" target="_blank">[2]</a></sup>
-                                        This group reportedly compromised the Democratic National Committee starting in the summer of 2015.
-                                        <sup><a href="https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/" target="_blank">[3]</a></sup>
+                                        is a threat group that has been attributed to the Russian government and has
+                                        operated since at least 2008. 
+                                        <sup><a href="https://www.f-secure.com/documents/996508/1030760/dukes_whitepaper.pdf"
+                                                target="_blank">[1]</a></sup>
+                                        <sup><a href="https://www.us-cert.gov/sites/default/files/publications/JAR_16-20296A_GRIZZLY%20STEPPE-2016-1229.pdf"
+                                                target="_blank">[2]</a></sup>
+                                        This group reportedly compromised the Democratic National Committee starting in
+                                        the summer of 2015.
+                                        <sup><a href="https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
+                                                target="_blank">[3]</a></sup>
                                     </p>
                                 </div>
                                 <div class="col overview_right_card">
                                     <h5 class="boldText">Emulation Notes</h5>
                                     <p>
-                                        APT29 is distinguished by its commitment to stealth and sophisticated implementations of techniques via an arsenal of custom malware. APT29 typically accomplishes its goals via custom compiled binaries and alternate execution methods such as PowerShell and WMI. APT29 has also been known to employ various operational cadences (smash-and-grab vs. slow-and-deliberate) depending on the perceived intelligence value and/or infection method of victims. 
+                                        APT29 is distinguished by its commitment to stealth and sophisticated
+                                        implementations of techniques via an arsenal of custom malware. APT29 typically
+                                        accomplishes its goals via custom compiled binaries and alternate execution
+                                        methods such as PowerShell and WMI. APT29 has also been known to employ various
+                                        operational cadences (smash-and-grab vs. slow-and-deliberate) depending on the
+                                        perceived intelligence value and/or infection method of victims.
                                     </p>
                                 </div>
                             </div>
@@ -197,93 +238,129 @@
                 <div>
                     <div class="vendor-block">
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/bitdefender/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/LOGO_bitdefender_red_white.png"></span></a>
+                            <a href="/enterprise/participants/bitdefender/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/LOGO_bitdefender_red_white.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cylance/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cylance_BB_Logo_RGB_Vert_BLK.png"></span></a>
+                            <a href="/enterprise/participants/cylance/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cylance_BB_Logo_RGB_Vert_BLK.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/crowdstrike/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CS_logostacked-red.png"></span></a>
+                            <a href="/enterprise/participants/crowdstrike/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/CS_logostacked-red.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cycraft/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CyCraft_logo_2021_vertical_FullColor.png"></span></a>
+                            <a href="/enterprise/participants/cycraft/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/CyCraft_logo_2021_vertical_FullColor.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cybereason/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cybereason_Logo.png"></span></a>
+                            <a href="/enterprise/participants/cybereason/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cybereason_Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/elastic/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/elastic-logo-final.png"></span></a>
+                            <a href="/enterprise/participants/elastic/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/elastic-logo-final.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/f-secure/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/F-Secure_vertical-logo_RGB_blue.png"></span></a>
+                            <a href="/enterprise/participants/f-secure/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/F-Secure_vertical-logo_RGB_blue.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/fireeye/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/fireeye-logo.png"></span></a>
+                            <a href="/enterprise/participants/fireeye/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/fireeye-logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/gosecure/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure_L_h_red_cmyk.png"></span></a>
+                            <a href="/enterprise/participants/gosecure/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure_L_h_red_cmyk.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/hansight/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/hansight_logo2.png"></span></a>
+                            <a href="/enterprise/participants/hansight/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/hansight_logo2.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/kaspersky/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Kaspersky_logotype_green.png"></span></a>
+                            <a href="/enterprise/participants/kaspersky/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Kaspersky_logotype_green.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/malwarebytes/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/malwarebytes_logo.png"></span></a>
+                            <a href="/enterprise/participants/malwarebytes/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/malwarebytes_logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/mcafee/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/mcafee-stacked-logo-no-tag-rgb-20170327.png"></span></a>
+                            <a href="/enterprise/participants/mcafee/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/mcafee-stacked-logo-no-tag-rgb-20170327.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/microsoft/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png"></span></a>
+                            <a href="/enterprise/participants/microsoft/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/paloaltonetworks/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cortex-Logo.png"></span></a>
+                            <a href="/enterprise/participants/paloaltonetworks/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cortex-Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/reaqta/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/reaqta_r3.png"></span></a>
+                            <a href="/enterprise/participants/reaqta/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/reaqta_r3.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/secureworks/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Secureworks_Logo_final.png"></span></a>
+                            <a href="/enterprise/participants/secureworks/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Secureworks_Logo_final.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/sentinelone/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/sentinelOne_logo_2019.jpg"></span></a>
+                            <a href="/enterprise/participants/sentinelone/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/sentinelOne_logo_2019.jpg"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/symantec/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-Logo-APT29.png"></span></a>
+                            <a href="/enterprise/participants/symantec/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-Logo-APT29.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/trendmicro/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TM_logo_red_2c.png"></span></a>
+                            <a href="/enterprise/participants/trendmicro/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/TM_logo_red_2c.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/vmware/?adversary=apt29"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/VMware-logo.png"></span></a>
+                            <a href="/enterprise/participants/vmware/?adversary=apt29"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/VMware-logo.png"></span></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="false-anchor" id="operational-flow"></div>
                 <h3 class="boldText mt-4"> Operational Flow </h3>
-                <div class="row" >
+                <div class="row">
                     <div class="col">
                         <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/APT29_opflow.png" style="width: 400px;"></center>
                     </div>
-                    <div class="col" >
+                    <div class="col">
                         <div>
                             <p>
-                                The Operations Flow chains techniques together into a logical order that commonly occur across APT29 operations. In the case of APT29, we break out their operations into two distinct scenarios:
+                                The Operations Flow chains techniques together into a logical order that commonly occur
+                                across APT29 operations. In the case of APT29, we break out their operations into two
+                                distinct scenarios:
                             </p>
                             <p class="mt-2">
-                                <b>Scenario 1: </b> This scenario starts with a “smash-and-grab” then rapid espionage mission that focuses on gathering and exfiltrating data, before transitioning to stealthier techniques to achieve persistence, further data collection, credential access, and lateral movement. The scenario ends with the execution of previously established persistence mechanisms.
+                                <b>Scenario 1: </b> This scenario starts with a “smash-and-grab” then rapid espionage
+                                mission that focuses on gathering and exfiltrating data, before transitioning to
+                                stealthier techniques to achieve persistence, further data collection, credential
+                                access, and lateral movement. The scenario ends with the execution of previously
+                                established persistence mechanisms.
                             </p>
                             <p class="mt-2">
-                                <b>Scenario 2: </b> This scenario consists of a stealthier and slower approach to compromising the initial target, establishing persistence, harvesting credentials, then finally enumerating and compromising the entire domain. The scenario ends with a simulated time-lapse where previously established persistence mechanisms are executed.
+                                <b>Scenario 2: </b> This scenario consists of a stealthier and slower approach to
+                                compromising the initial target, establishing persistence, harvesting credentials, then
+                                finally enumerating and compromising the entire domain. The scenario ends with a
+                                simulated time-lapse where previously established persistence mechanisms are executed.
                             </p>
                             <p class="mt-2">
-                                For details on the APT29 emulation please refer to the <a href="/enterprise/apt29/operational-flow">Operational Flow</a>, or expore other resources:<br>
+                                For details on the APT29 emulation please refer to the <a
+                                    href="/enterprise/apt29/operational-flow">Operational
+                                    Flow</a>, or expore other resources:<br>
                                 <ul>
-                                    <li><a href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/apt29">Adversary Emulation Plan Library Format and YAML</a></li>
-                                    <li><a href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/apt29/Resources">APT29 emulation scripts</a></li>
+                                    <li><a
+                                            href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/apt29">Adversary
+                                            Emulation Plan Library Format and YAML</a></li>
+                                    <li><a
+                                            href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/apt29/Resources">APT29
+                                            emulation scripts</a></li>
                                 </ul>
                             </p>
                         </div>
@@ -294,33 +371,51 @@
                 <h3 class="boldText mt-4"> Technique Scope </h3>
                 <div>
                     <p>
-                        For the APT29 evaluation, we tested 58 of 60 in scope Enterprise ATT&CK techniques across 10 ATT&CK tactics. Uncommonly Used Port was added to scope at the time of evaluation. DLL Search Order Hijacking was not evaluated. Process Injection was part of Step 19, which was excluded from results. The Initial Access tactic was considered out of scope for the evaluation. The in-scope techniques for the APT29 evaluation are displayed below and are also highlighted in each vendor’s results page.
+                        For the APT29 evaluation, we tested 58 of 60 in scope Enterprise ATT&CK techniques across 10
+                        ATT&CK tactics. Uncommonly Used Port was added to scope at the time of evaluation. DLL Search
+                        Order Hijacking was not evaluated. Process Injection was part of Step 19, which was excluded
+                        from results. The Initial Access tactic was considered out of scope for the evaluation. The
+                        in-scope techniques for the APT29 evaluation are displayed below and are also highlighted in
+                        each vendor’s results page.
                     </p>
                     <p>
-                        <em>You can view the in scope Techniques for the APT29 evaluation in the ATT&CK Navigator by checking out the layer file we made available  <a href="https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/APT29_Navigator_layer.json" target="_blank">here</a>. A preview is shown below! The Techniques in-scope for Round 2 are highlighted in green. (Updated April 21, 2020)</em>
+                        <em>You can view the in scope Techniques for the APT29 evaluation in the ATT&CK Navigator by
+                            checking out the layer file we made available <a
+                                href="https://mitre-attack.github.io/attack-navigator/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/APT29_Navigator_layer.json"
+                                target="_blank">here</a>. A preview is shown below! The Techniques in-scope for Round 2
+                            are highlighted in green. (Updated April 21, 2020)</em>
                     </p>
                     <p>
-                        <a href="/enterprise/apt29/scope">Learn More: Technique Scope Page</a>
+                        <a href="/enterprise/apt29/scope">Learn
+                            More: Technique Scope Page</a>
                     </p>
-                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_scope_navigator.svg"  style="width: 100%; height: auto;"/>
+                    <img src="https://d1zq5d3dtjfcoj.cloudfront.net/round2_scope_navigator.svg" style="width: 100%; height: auto;" />
                 </div>
-        
+
                 <div class="false-anchor" id="environment"></div>
                 <h3 class="boldText mt-4"> Environment </h3>
                 <div class="row">
                     <div class="col">
-                        <img src="https://d1zq5d3dtjfcoj.cloudfront.net/APT29Network.png" style="width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;"/>
-                        <p style="text-align: center";><strong><i>Figure 1: APT29 Evaluation Environment</i></strong></p>
+                        <img src="https://d1zq5d3dtjfcoj.cloudfront.net/APT29Network.png"
+                            style="width: 80%; height: auto; display: block; margin-left: auto; margin-right: auto;" />
+                        <p style="text-align: center" ;><strong><i>Figure 1: APT29 Evaluation Environment</i></strong>
+                        </p>
                     </div>
                     <div class="col">
                         <p class='p-methodology'>
-                            The APT29 evaluations used a Windows domain hosted in Microsoft Azure, with one domain controller, one file server and five clients. All VMs were the “Standard B4MS” instance, with four vCPUs and 16GB memory. The servers ran Windows Server with SKU: “2019-Datacenter” and the clients ran Windows 10 1903 with SKU “19h1-pro” or “1903-evd-o365pp.”
+                            The APT29 evaluations used a Windows domain hosted in Microsoft Azure, with one domain
+                            controller, one file server and five clients. All VMs were the “Standard B4MS” instance,
+                            with four vCPUs and 16GB memory. The servers ran Windows Server with SKU: “2019-Datacenter”
+                            and the clients ran Windows 10 1903 with SKU “19h1-pro” or “1903-evd-o365pp.”
                         </p>
                         <p class='p-methodology'>
-                            In addition to disabling Windows Defender we made a number of modifications to the standard images to execute our evaluation. Full details can be found here.
+                            In addition to disabling Windows Defender we made a number of modifications to the standard
+                            images to execute our evaluation. Full details can be found here.
                         </p>
                         <p>
-                            <a href="/enterprise/apt29/environment">Learn More: Environment Page</a>
+                            <a
+                                href="/enterprise/apt29/environment">Learn
+                                More: Environment Page</a>
                         </p>
                     </div>
                 </div>
@@ -329,21 +424,68 @@
                 <h3 class="boldText mt-4"> Detection Categories </h3>
                 <div class="row">
                     <div class="col">
-                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/APT29_Detection_Categories.png" style="max-width: 100%;"></center>
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/APT29_Detection_Categories.png"
+                                style="max-width: 100%;"></center>
                     </div>
                     <div class="col">
                         <p>
-                            Vendors use their own terminology and approaches to detect potential adversary behavior. They provide this information to us in their unique way, and then it is our responsibility to abstract the data using detection categories to talk about the products in similar ways.
+                            Vendors use their own terminology and approaches to detect potential adversary behavior.
+                            They provide this information to us in their unique way, and then it is our responsibility
+                            to abstract the data using detection categories to talk about the products in similar ways.
                         </p>
                         <p>
-                            These categories are divided into two types: “Main” and “Modifier.” Each detection receives one main category designation, which relates to the amount of context provided to the user. A detection may optionally receive one or more modifier category designations that help describe the detection in more detail.  For the APT29 evaluation, there are six main detection categories representing the amount of context provided to the analyst.
+                            These categories are divided into two types: “Main” and “Modifier.” Each detection receives
+                            one main category designation, which relates to the amount of context provided to the user.
+                            A detection may optionally receive one or more modifier category designations that help
+                            describe the detection in more detail. For the APT29 evaluation, there are six main
+                            detection categories representing the amount of context provided to the analyst.
                         </p>
                         <p>
-                            You can learn more about our process for processing detections here. 
+                            You can learn more about our process for processing detections here.
                         </p>
                         <p>
-                            <a href="/enterprise/apt29/detection-categories">Learn More: Detection Categories Page</a>
+                            <a
+                                href="/enterprise/apt29/detection-categories">Learn
+                                More: Detection Categories Page</a>
                         </p>
+                    </div>
+                </div>
+
+                <div class="false-anchor" id="resources"></div>
+                <h3 class="boldText mt-4"> Additional Resources </h3>
+                <div class="row">
+                    <div class="col">
+                        The following links provide more context to this round:
+                        <ul style="padding-inline-start: 10px;">
+                            <li class="mt-2">
+                                <a href="https://github.com/mitre-attack/attack-arsenal">
+                                    APT29 Plan and Scripts at ATT&CK Arsenal
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="https://medium.com/mitre-attack/attack-evals-round-2-c3ea383ba55d">
+                                    APT29 Announcement (Enterprise)
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-attack/attack-evaluations-round-2-methodology-and-site-updates-98f5305c2121">
+                                    APT29 Methodology Update (Enterprise)
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-attack/attack-apt29-results-released-cd30b3686ad9">
+                                    APT29 Results (Enterprise)
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-engenuity/att-ck-evaluation-apt29-emulation-plan-added-to-the-emulation-plan-library-df908dabd729?source=collection_detail----788dfb314899-----19-----------------------">
+                                    Plan Re-release
+                                </a>
+                            </li>
+                        <ul>
                     </div>
                 </div>
 
@@ -354,40 +496,39 @@
 <br><br>
 
 <script type="text/javascript">
-var navOffset = 100;
-function deselectNav() {
-    $('#side-nav a').addClass('nav-link-black')
-    $('#side-nav a').removeClass('nav-link-selected')
-    $('#side-nav a i').css("display", "none")
-}
+    var navOffset = 100;
 
-$(document).on('scroll', function() {
-    deselectNav()
-    if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
-        $('#a-detection').addClass('nav-link-selected')
-        $('#a-detection i ').css("display", "block")
-    } 
-    else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
-        $('#a-environment').addClass('nav-link-selected')
-        $('#a-environment i').css("display", "block")
+    function deselectNav() {
+        $('#side-nav a').addClass('nav-link-black')
+        $('#side-nav a').removeClass('nav-link-selected')
+        $('#side-nav a i').css("display", "none")
     }
-    else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
-        $('#a-scope').addClass('nav-link-selected')
-        $('#a-scope i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
-        $('#a-opflow').addClass('nav-link-selected')
-        $('#a-opflow i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
-        $('#a-results').addClass('nav-link-selected')
-        $('#a-results i').css("display", "block")
-    }
-    else {
-        $('#a-overview').addClass('nav-link-selected')
-        $('#a-overview i').css("display", "block")
-    }
-})
+
+    $(document).on('scroll', function () {
+        deselectNav()
+        if ($(this).scrollTop() >= $('#resources').position().top - navOffset - 300) {
+            $('#a-resources').addClass('nav-link-selected')
+            $('#a-resources i ').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset) {
+            $('#a-detection').addClass('nav-link-selected')
+            $('#a-detection i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
+            $('#a-environment').addClass('nav-link-selected')
+            $('#a-environment i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
+            $('#a-scope').addClass('nav-link-selected')
+            $('#a-scope i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
+            $('#a-opflow').addClass('nav-link-selected')
+            $('#a-opflow i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
+            $('#a-results').addClass('nav-link-selected')
+            $('#a-results i').css("display", "block")
+        } else {
+            $('#a-overview').addClass('nav-link-selected')
+            $('#a-overview i').css("display", "block")
+        }
+    })
 </script>
 
 </div>

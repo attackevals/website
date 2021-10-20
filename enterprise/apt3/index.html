@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6845d713">
 
  </head>
 
@@ -76,7 +76,20 @@
                     </li>
                 </ul>
             </li>
-
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Managed Services</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated/">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/managed-services/managed-services/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Managed Services (2022)
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
@@ -119,6 +132,13 @@
     </nav>
 </header>
 <div id='content-width-lock'>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2022 ATT&CK Evaluations for Managed Services Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
     <div id='content'><br>
 <div class="divEvaluationSummaryBody">
     <div style="padding: 0px; width: 100%;"> 
@@ -140,6 +160,8 @@
                         <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i class="fas fa-chevron-right nav-arrow"></i></a>
                         <a class="nav-link-black" id="a-environment" href="#environment">Environment<i class="fas fa-chevron-right nav-arrow"></i></a>
                         <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-resources" href="#resources">Additional Resources<i
+                            class="fas fa-chevron-right nav-arrow"></i></a>
                     </nav>
                 </nav>
             </div>
@@ -327,6 +349,30 @@
                     </div>
                 </div>
 
+                <div class="false-anchor" id="resources"></div>
+                <h3 class="boldText mt-4"> Additional Resources </h3>
+                <div class="row">
+                    <div class="col">
+                        The following links provide more context to this round:
+                        <ul style="padding-inline-start: 10px;">
+                            <li class="mt-2">
+                                <a href="https://attack.mitre.org/resources/adversary-emulation-plans/">
+                                    Original APT3 Plan on ATT&CK (External)
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="https://medium.com/mitre-attack/mitres-att-ck-based-evaluations-for-security-vendors-are-underway-3300a6f63990">
+                                    APT3 Announcement (Enterprise)
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="https://medium.com/mitre-attack/first-round-of-mitre-att-ck-evaluations-released-15db64ea970d">
+                                    APT3 Results (Enterprise)
+                                </a>
+                            </li>
+                        <ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -344,10 +390,14 @@ function deselectNav() {
 
 $(document).on('scroll', function() {
     deselectNav()
-    if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
-        $('#a-detection').addClass('nav-link-selected')
-        $('#a-detection i ').css("display", "block")
+    if ($(this).scrollTop() >= $('#resources').position().top - navOffset - 300) {
+        $('#a-resources').addClass('nav-link-selected')
+        $('#a-resources i ').css("display", "block")
     } 
+    else if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset) {
+        $('#a-detection').addClass('nav-link-selected')
+        $('#a-detection i').css("display", "block")
+    }
     else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
         $('#a-environment').addClass('nav-link-selected')
         $('#a-environment i').css("display", "block")

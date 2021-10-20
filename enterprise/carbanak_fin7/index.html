@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6845d713">
 
  </head>
 
@@ -76,7 +76,20 @@
                     </li>
                 </ul>
             </li>
-
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Managed Services</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated/">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/managed-services/managed-services/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Managed Services (2022)
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
@@ -119,10 +132,17 @@
     </nav>
 </header>
 <div id='content-width-lock'>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2022 ATT&CK Evaluations for Managed Services Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
     <div id='content'><br>
 <div class="divEvaluationSummaryBody">
-    <div style="padding: 0px; width: 100%;"> 
-        <span class="spanBreadcrumbs-results"> 
+    <div style="padding: 0px; width: 100%;">
+        <span class="spanBreadcrumbs-results">
             <a href='/'>Home</a> &nbsp;>&nbsp; Enterprise Carbanak+FIN7 Overview
         </span>
         <br>
@@ -134,13 +154,21 @@
             <div class="col-2">
                 <nav id="sidebar" class="mt-4 navbar" style="top: 130px; position: sticky;">
                     <nav class="nav nav-pills flex-column" id="side-nav">
-                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
-                        <a class="nav-link-black" id="a-results" href="#results">Results<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-opflow" href="#operational-flow">Operational Flow<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i class="fas fa-chevron-right nav-arrow"></i></a>
-                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i class="fas fa-chevron-right nav-arrow"></i></a>
-                    </nav>
+                        <a class="nav-link-selected" id="a-overview" href="#overview">Overview<i
+                                class="fas fa-chevron-right nav-arrow" style="display: block;"></i></a>
+                        <a class="nav-link-black" id="a-results" href="#results">Results<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-opflow" href="#operational-flow">Operational Flow<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-scope" href="#technique-scope">Technique Scope<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-environment" href="#environment">Environment<i
+                                class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i
+                            class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-resources" href="#resources">Additional Resources<i
+                            class="fas fa-chevron-right nav-arrow"></i></a>
+                        </nav>
                 </nav>
             </div>
             <div class="col-10 mt-2 ml-2">
@@ -151,12 +179,15 @@
                         <div class="col-lg-12">
                             <div class="row overview_card">
                                 <div class="col-lg-3 pt-3 pb-3">
-                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_CARBANAK.png" style="width: 100%; max-width: 250px;"></center>
+                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_CARBANAK.png"
+                                            style="width: 100%; max-width: 250px;"></center>
                                 </div>
                                 <div class="col-lg-3 vertical-center text-center">
                                     <h4 class="boldText">Carbanak+FIN7</h4>
                                     <h5 style="color: grey;">Enterprise Evaluation 2021</h5>
-                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4" href="/enterprise/participants/?adversaries=carbanak_fin7" role="button">RESULTS</a></center>
+                                    <center><a class="btn btn-md btn-engenuity-purple mt-2 pl-4 pr-4"
+                                            href="/enterprise/participants/?adversaries=carbanak_fin7"
+                                            role="button">RESULTS</a></center>
                                 </div>
                                 <div class="col-lg-6 vertical-center">
                                     <div class="pb-container">
@@ -174,22 +205,39 @@
                                     <h5 class="boldText">ATT&CK Description</h5>
                                     <p>
                                         <a href="https://attack.mitre.org/groups/G0008/">Carbanak </a>
-                                        is a threat group that mainly targets banks. It also refers to malware of the same name (Carbanak). It is sometimes referred to as <a href="https://attack.mitre.org/groups/G0046/">FIN7</a>, but these appear to be two groups using the same Carbanak malware and are therefore tracked separately. 
+                                        is a threat group that mainly targets banks. It also refers to malware of the
+                                        same name (Carbanak). It is sometimes referred to as <a
+                                            href="https://attack.mitre.org/groups/G0046/">FIN7</a>, but these appear to
+                                        be two groups using the same Carbanak malware and are therefore tracked
+                                        separately.
                                         <sup><a href="" target="_blank">[1]</a></sup> 
                                         <sup><a href="" target="_blank">[2]</a></sup> 
                                     </p>
                                     <p>
-                                        <a href="https://attack.mitre.org/groups/G0046/">FIN7</a> is a financially-motivated threat group that has primarily targeted the U.S. retail, restaurant, and hospitality sectors since mid-2015. They often use point-of-sale malware. A portion of FIN7 was run out of a front company called Combi Security.
+                                        <a href="https://attack.mitre.org/groups/G0046/">FIN7</a> is a
+                                        financially-motivated threat group that has primarily targeted the U.S. retail,
+                                        restaurant, and hospitality sectors since mid-2015. They often use point-of-sale
+                                        malware. A portion of FIN7 was run out of a front company called Combi Security.
                                         <sup><a href="" target="_blank">[2]</a></sup> 
-                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html" target="_blank">[3]</a></sup> 
-                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2017/03/fin7_spear_phishing.html" target="_blank">[4]</a></sup> 
-                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html" target="_blank">[5]</a></sup> 
-                                    </p>	
+                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2017/06/behind-the-carbanak-backdoor.html"
+                                                target="_blank">[3]</a></sup> 
+                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2017/03/fin7_spear_phishing.html"
+                                                target="_blank">[4]</a></sup> 
+                                        <sup><a href="https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
+                                                target="_blank">[5]</a></sup> 
+                                    </p>
                                 </div>
                                 <div class="col overview_right_card">
                                     <h5 class="boldText">Emulation Notes</h5>
                                     <p>
-                                        These groups carry a firm reputation of utilizing innovative tradecraft. Efficient espionage and stealth are at the forefront of their strategy, as they often rely heavily on scripting, obfuscation, “hiding in plain sight,” and fully exploiting the users behind the machine while pillaging an environment. They also leverage a unique spectrum of operational utilities, spanning both sophisticated malware as well as legitimate administration tools capable of interacting with various platforms (Windows and Linux, including point-of-sale specific technologies). 
+                                        These groups carry a firm reputation of utilizing innovative tradecraft.
+                                        Efficient espionage and stealth are at the forefront of their strategy, as they
+                                        often rely heavily on scripting, obfuscation, “hiding in plain sight,” and fully
+                                        exploiting the users behind the machine while pillaging an environment. They
+                                        also leverage a unique spectrum of operational utilities, spanning both
+                                        sophisticated malware as well as legitimate administration tools capable of
+                                        interacting with various platforms (Windows and Linux, including point-of-sale
+                                        specific technologies).
                                     </p>
                                 </div>
                             </div>
@@ -202,91 +250,120 @@
                 <div>
                     <div class="vendor-block">
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/ahnlab/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/AhnLab_CI.png"></span></a>
+                            <a href="/enterprise/participants/ahnlab/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/AhnLab_CI.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/bitdefender/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/LOGO_bitdefender_red_white.png"></span></a>
+                            <a href="/enterprise/participants/bitdefender/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/LOGO_bitdefender_red_white.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cylance/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cylance_BB_Logo_RGB_Vert_BLK.png"></span></a>
+                            <a href="/enterprise/participants/cylance/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cylance_BB_Logo_RGB_Vert_BLK.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/checkpoint/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CheckPoint_stacked.png"></span></a>
+                            <a href="/enterprise/participants/checkpoint/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/CheckPoint_stacked.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cisco/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cisco_Logo.png"></span></a>
+                            <a href="/enterprise/participants/cisco/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cisco_Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/crowdstrike/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CS_logostacked-red.png"></span></a>
+                            <a href="/enterprise/participants/crowdstrike/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/CS_logostacked-red.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cycraft/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CyCraft_logo_2021_vertical_FullColor.png"></span></a>
+                            <a href="/enterprise/participants/cycraft/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/CyCraft_logo_2021_vertical_FullColor.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cybereason/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cybereason_Logo.png"></span></a>
+                            <a href="/enterprise/participants/cybereason/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cybereason_Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/cynet/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cynet-Logo.png"></span></a>
+                            <a href="/enterprise/participants/cynet/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cynet-Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/eset/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/ESET-logo.png"></span></a>
+                            <a href="/enterprise/participants/eset/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/ESET-logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/elastic/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/elastic-logo-final.png"></span></a>
+                            <a href="/enterprise/participants/elastic/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/elastic-logo-final.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/f-secure/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/F-Secure_vertical-logo_RGB_blue.png"></span></a>
+                            <a href="/enterprise/participants/f-secure/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/F-Secure_vertical-logo_RGB_blue.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/fidelis/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Fidelis_Green_Logo.png"></span></a>
+                            <a href="/enterprise/participants/fidelis/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Fidelis_Green_Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/fireeye/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/fireeye-logo.png"></span></a>
+                            <a href="/enterprise/participants/fireeye/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/fireeye-logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/fortinet/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Fortinet_Logo_Black-Red.png"></span></a>
+                            <a href="/enterprise/participants/fortinet/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Fortinet_Logo_Black-Red.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/gosecure/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure_L_h_red_cmyk.png"></span></a>
+                            <a href="/enterprise/participants/gosecure/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/GoSecure_L_h_red_cmyk.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/malwarebytes/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/malwarebytes_logo.png"></span></a>
+                            <a href="/enterprise/participants/malwarebytes/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/malwarebytes_logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/mcafee/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/mcafee-stacked-logo-no-tag-rgb-20170327.png"></span></a>
+                            <a href="/enterprise/participants/mcafee/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/mcafee-stacked-logo-no-tag-rgb-20170327.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/microfocus/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/ArcSight_blue.png"></span></a>
+                            <a href="/enterprise/participants/microfocus/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/ArcSight_blue.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/microsoft/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png"></span></a>
+                            <a href="/enterprise/participants/microsoft/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Microsoft-logo-APT29-final.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/opentext/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/OpenText-EnCase-Wordmark.png"></span></a>
+                            <a href="/enterprise/participants/opentext/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/OpenText-EnCase-Wordmark.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/paloaltonetworks/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Cortex-Logo.png"></span></a>
+                            <a href="/enterprise/participants/paloaltonetworks/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Cortex-Logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/reaqta/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/reaqta_r3.png"></span></a>
+                            <a href="/enterprise/participants/reaqta/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/reaqta_r3.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/sentinelone/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/sentinelOne_logo_2019.jpg"></span></a>
+                            <a href="/enterprise/participants/sentinelone/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/sentinelOne_logo_2019.jpg"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/sophos/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/sophos-logo.png"></span></a>
+                            <a href="/enterprise/participants/sophos/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/sophos-logo.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/symantec/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-Logo-APT29.png"></span></a>
+                            <a href="/enterprise/participants/symantec/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Symantec-Logo-APT29.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/trendmicro/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TM_logo_red_2c.png"></span></a>
+                            <a href="/enterprise/participants/trendmicro/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/TM_logo_red_2c.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/uptycs/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Uptycs_Logo_Stacked.png"></span></a>
+                            <a href="/enterprise/participants/uptycs/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/Uptycs_Logo_Stacked.png"></span></a>
                         </div>
                         <div class="vendor-card">
-                            <a href="/enterprise/participants/vmware/?adversary=carbanak_fin7"><span class="helper"><img src="https://d1zq5d3dtjfcoj.cloudfront.net/VMware-logo.png"></span></a>
+                            <a href="/enterprise/participants/vmware/?adversary=carbanak_fin7"><span class="helper"><img
+                                        src="https://d1zq5d3dtjfcoj.cloudfront.net/VMware-logo.png"></span></a>
                         </div>
                     </div>
                 </div>
@@ -304,19 +381,36 @@
                     </div>
                     <div class="col-6">
                         <p class="mt-2">
-                            <b>Carbanak Scenario: </b>This scenario begins with a legitimate user executing a malicious payload delivered via spearphishing attacks targeting financial institutions. Following initial compromise, Carbanak expands access to other hosts through privilege escalation, credential access, and lateral movement with the goal of compromising money processing services, automated teller machines, and financial accounts. As Carbanak compromises potentially valuable targets, they establish persistence so that they can learn the financial organization's internal procedures and technology. Using this information, Carbanak transfers funds to bank accounts under their control, completing their mission.
+                            <b>Carbanak Scenario: </b>This scenario begins with a legitimate user executing a malicious
+                            payload delivered via spearphishing attacks targeting financial institutions. Following
+                            initial compromise, Carbanak expands access to other hosts through privilege escalation,
+                            credential access, and lateral movement with the goal of compromising money processing
+                            services, automated teller machines, and financial accounts. As Carbanak compromises
+                            potentially valuable targets, they establish persistence so that they can learn the
+                            financial organization's internal procedures and technology. Using this information,
+                            Carbanak transfers funds to bank accounts under their control, completing their mission.
                         </p>
                         <p class="mt-2">
-                            <b>FIN7 Scenario: </b>This scenario emulates FIN7 targeting a hotel manager network to gain access to credit card information. The scenario begins with FIN7 achieving initial access to the network after an unwitting user executes a malicious .LNK file. FIN7 then pivots to a privileged IT administrator workstation. From this system, FIN7 keylogs credentials needed to access an accounting workstation. FIN7 then pivots to the accounting workstation, establishes persistence, and deploys malware to scrape credit card information from process memory.
+                            <b>FIN7 Scenario: </b>This scenario emulates FIN7 targeting a hotel manager network to gain
+                            access to credit card information. The scenario begins with FIN7 achieving initial access to
+                            the network after an unwitting user executes a malicious .LNK file. FIN7 then pivots to a
+                            privileged IT administrator workstation. From this system, FIN7 keylogs credentials needed
+                            to access an accounting workstation. FIN7 then pivots to the accounting workstation,
+                            establishes persistence, and deploys malware to scrape credit card information from process
+                            memory.
                         </p>
                         <p class="mt-2">
                             Additional Resources:
                         </p>
                         <p class="mt-2">
-                            <a href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/carbanak/Operations_Flow.md">Operational Flow (Carbanak)</a>
+                            <a
+                                href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/carbanak/Operations_Flow.md">Operational
+                                Flow (Carbanak)</a>
                         </p>
                         <p class="mt-1">
-                            <a href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/fin7/Operations_Flow.md">Operational Flow (FIN7)</a>
+                            <a
+                                href="https://github.com/center-for-threat-informed-defense/adversary_emulation_library/blob/master/fin7/Operations_Flow.md">Operational
+                                Flow (FIN7)</a>
                         </p>
                     </div>
                 </div>
@@ -325,37 +419,61 @@
                 <h3 class="boldText mt-4"> Technique Scope </h3>
                 <div>
                     <p>
-                        For the Carbanak and FIN7 evaluation, 65 ATT&CK techniques across 11 ATT&CK tactics are in scope for this evaluation. This includes 12 ATT&CK techniques across 7 ATT&CK tactics that are in scope for the Linux portion of the Carbanak evaluation. The Impact tactic is out of scope for this evaluation.
+                        For the Carbanak and FIN7 evaluation, 65 ATT&CK techniques across 11 ATT&CK tactics are in scope
+                        for this evaluation. This includes 12 ATT&CK techniques across 7 ATT&CK tactics that are in
+                        scope for the Linux portion of the Carbanak evaluation. The Impact tactic is out of scope for
+                        this evaluation.
                     </p>
                     <p>
-                        <i>You can view the in scope Techniques for the Carbanak+FIN7 evaluation in the ATT&CK Navigator by checking out the layer file we made available <a href="https://mitre-attack.github.io/attack-navigator/v2/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/CarbanakFin7_Navigator_layer.json" target="_blank"">here</a>. A preview is shown below! The Techniques in scope attributed specifically to Carbanak are highlighted in blue, attributed specifically to FIN7 in red, and both Carbanak and FIN7 in yellow. </i>		
+                        <i>You can view the in scope Techniques for the Carbanak+FIN7 evaluation in the ATT&CK Navigator
+                            by checking out the layer file we made available <a
+                                href="https://mitre-attack.github.io/attack-navigator/v2/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/CarbanakFin7_Navigator_layer.json"
+                                target="_blank"">here</a>. A preview is shown below! The Techniques in scope attributed specifically to Carbanak are highlighted in blue, attributed specifically to FIN7 in red, and both Carbanak and FIN7 in yellow. </i>		
                     </p>
-                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/CarbanakFIN7_Scope.svg" style="width:100%;"></center>
-                    <p>
-                        <i>To see additional details on the scope, including the scope for the Linux portion of the Carbanak evaluation click <a href="https://mitre-attack.github.io/attack-navigator/v2/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/CarbanakFin7_LinuxOnly_Navigator_layer.json" target="_blank"">here</a>.</i>
+                    <center><img src=" https://d1zq5d3dtjfcoj.cloudfront.net/CarbanakFIN7_Scope.svg" style="width:100%;"></center>
+                                <p>
+                                    <i>To see additional details on the scope, including the scope for the Linux portion
+                                        of the Carbanak evaluation click <a
+                                            href="https://mitre-attack.github.io/attack-navigator/v2/enterprise/#layerURL=https://raw.githubusercontent.com/attackevals/website/master/downloadable_JSON/CarbanakFin7_LinuxOnly_Navigator_layer.json"
+                                            target="_blank"">here</a>.</i>
                     </p>
                 </div>
 
-                <div class="false-anchor" id="environment"></div>
+                <div class=" false-anchor" id="environment">
+                </div>
                 <h3 class="boldText mt-4"> Environment </h3>
                 <div class="row">
                     <div class="col">
                         <center>
                             <figure>
-                                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Round3Networklatest.png" style="max-width: 1000px; width: 100%;" />
-                                <figcaption><i>Figure 1: Carbanak + FIN7 Evaluation Environment (Updated 4/20/2020)</i></figcaption>
+                                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/Round3Networklatest.png"
+                                    style="max-width: 1000px; width: 100%;" />
+                                <figcaption><i>Figure 1: Carbanak + FIN7 Evaluation Environment (Updated 4/20/2020)</i>
+                                </figcaption>
                             </figure>
                         </center>
                     </div>
                     <div class="col">
                         <p>
-                            The evaluations were performed in Microsoft Azure Cloud. Each vendor was provided with two identical environments consisting of eight hosts each on which to install their client software. These two environments were used for the detection-only and protection tests, respectively.  The vendors also had the option of installing server software onto a virtual machine (VM) already in the environment or importing a VM if necessary. By default, the Azure VMs were Standard B4MS, each with four vCPUs and 16GB memory. Each vendor had full and complete administrative access to the hosts instantiated for them.
+                            The evaluations were performed in Microsoft Azure Cloud. Each vendor was provided with two
+                            identical environments consisting of eight hosts each on which to install their client
+                            software. These two environments were used for the detection-only and protection tests,
+                            respectively. The vendors also had the option of installing server software onto a virtual
+                            machine (VM) already in the environment or importing a VM if necessary. By default, the
+                            Azure VMs were Standard B4MS, each with four vCPUs and 16GB memory. Each vendor had full and
+                            complete administrative access to the hosts instantiated for them.
                         </p>
                         <p>
-                            VPN access enabled connectivity to the environment, and passwords were shared via out-of-band methods. There was one VPN server per environment and vendors then used RDP or SSH elsewhere within the environment. Hosts were reachable only within the VPN. They did not have public IP addresses assigned to them via Azure, but they were able to access the Internet.
+                            VPN access enabled connectivity to the environment, and passwords were shared via
+                            out-of-band methods. There was one VPN server per environment and vendors then used RDP or
+                            SSH elsewhere within the environment. Hosts were reachable only within the VPN. They did not
+                            have public IP addresses assigned to them via Azure, but they were able to access the
+                            Internet.
                         </p>
                         <p>
-                            <a href="/enterprise/carbanak_fin7/environment">Learn More: Environment Page</a>
+                            <a
+                                href="/enterprise/carbanak_fin7/environment">Learn
+                                More: Environment Page</a>
                         </p>
                     </div>
                 </div>
@@ -364,27 +482,69 @@
                 <h3 class="boldText mt-4"> Detection and Protection Categories </h3>
                 <div class="row">
                     <div class="col">
-                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Adv3plus_Detection_Categories.png" style="max-width: 100%;"></center>
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/Adv3plus_Detection_Categories.png"
+                                style="max-width: 100%;"></center>
                     </div>
                     <div class="col">
                         <p>
-                            Vendors use their own terminology and approaches to detect and protect potential adversary behavior. They provide this information to us in their unique way, and then it is our responsibility to abstract the data using categories to talk about the products in similar ways.
+                            Vendors use their own terminology and approaches to detect and protect potential adversary
+                            behavior. They provide this information to us in their unique way, and then it is our
+                            responsibility to abstract the data using categories to talk about the products in similar
+                            ways.
                         </p>
                         <p>
-                            These categories are divided into two types: “Main” and “Modifier.” Each detection or protection receives one main category designation, which relates to the amount of context provided to the user, and may optionally receive one or more modifier category designations that help describe the event in more detail. For the Carbanak+FIN7 evaluation, there are six main detection categories representing the amount of context provided to the analyst, and three main protection categories.
+                            These categories are divided into two types: “Main” and “Modifier.” Each detection or
+                            protection receives one main category designation, which relates to the amount of context
+                            provided to the user, and may optionally receive one or more modifier category designations
+                            that help describe the event in more detail. For the Carbanak+FIN7 evaluation, there are six
+                            main detection categories representing the amount of context provided to the analyst, and
+                            three main protection categories.
                         </p>
                         <p>
-                            You can learn more about our process for processing detections here. 
+                            You can learn more about our process for processing detections here.
                         </p>
                         <p>
-                            <a href="/enterprise/carbanak_fin7/detection-categories">Learn More: Detection Categories Page</a>
+                            <a
+                                href="/enterprise/carbanak_fin7/detection-categories">Learn
+                                More: Detection Categories Page</a>
                         </p>
                         <p>
-                            <a href="/enterprise/carbanak_fin7/protection-categories">Learn More: Protection Categories Page</a>
+                            <a
+                                href="/enterprise/carbanak_fin7/protection-categories">Learn
+                                More: Protection Categories Page</a>
                         </p>
 
                     </div>
                 </div>
+
+                <div class="false-anchor" id="resources"></div>
+                <h3 class="boldText mt-4"> Additional Resources </h3>
+                <div class="row">
+                    <div class="col">
+                        The following links provide more context to this round:
+                        <ul style="padding-inline-start: 10px;">
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-attack/announcing-2020s-attack-evaluation-6755650b68c2">
+                                    Announcement
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-engenuity/getting-ready-for-the-carbanak-and-fin7-evaluations-441df646756e">
+                                    Methodology Update
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a
+                                    href="https://medium.com/mitre-engenuity/attack-evaluations-carbanak-and-fin7-result-release-c5a15d7b3c30">
+                                    Result Release
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -393,42 +553,39 @@
 
 
 <script type="text/javascript">
-function deselectNav() {
-    $('#side-nav a').addClass('nav-link-black')
-    $('#side-nav a').removeClass('nav-link-selected')
-    $('#side-nav a i').css("display", "none")
-}
+    function deselectNav() {
+        $('#side-nav a').addClass('nav-link-black')
+        $('#side-nav a').removeClass('nav-link-selected')
+        $('#side-nav a i').css("display", "none")
+    }
 
-var navOffset = 100;
+    var navOffset = 100;
 
-$(document).on('scroll', function() {
-    deselectNav()
-    if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
-        $('#a-detection').addClass('nav-link-selected')
-        $('#a-detection i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
-        $('#a-environment').addClass('nav-link-selected')
-        $('#a-environment i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
-        $('#a-scope').addClass('nav-link-selected')
-        $('#a-scope i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
-        $('#a-opflow').addClass('nav-link-selected')
-        $('#a-opflow i').css("display", "block")
-    }
-    else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
-        $('#a-results').addClass('nav-link-selected')
-        $('#a-results i').css("display", "block")
-    }
-    else {
-        $('#a-overview').addClass('nav-link-selected')
-        $('#a-overview i').css("display", "block")
-    }
-})
-
+    $(document).on('scroll', function () {
+        deselectNav()
+        if ($(this).scrollTop() >= $('#resources').position().top - navOffset - 300) {
+            $('#a-resources').addClass('nav-link-selected')
+            $('#a-resources i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset) {
+            $('#a-detection').addClass('nav-link-selected')
+            $('#a-detection i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
+            $('#a-environment').addClass('nav-link-selected')
+            $('#a-environment i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
+            $('#a-scope').addClass('nav-link-selected')
+            $('#a-scope i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
+            $('#a-opflow').addClass('nav-link-selected')
+            $('#a-opflow i').css("display", "block")
+        } else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
+            $('#a-results').addClass('nav-link-selected')
+            $('#a-results i').css("display", "block")
+        } else {
+            $('#a-overview').addClass('nav-link-selected')
+            $('#a-overview i').css("display", "block")
+        }
+    })
 </script>
 
 </div>

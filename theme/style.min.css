@@ -78,12 +78,13 @@
                               letter-spacing: 0.5pt; }
 
                               .div-cfp {
-                                position: fixed;
+                                position: absolute;
                                 top: 75px;
+                                left: 0px;
                                 background-color: #6241c5;
                                 width: 100%;
                                 color: white;
-                                z-index: 1029;
+                                z-index: 5;
                                 text-align: center;
                                 padding-top: 5px; }
                                 .div-cfp .h5-cfp {
@@ -117,7 +118,7 @@
             margin: auto; }
 
             #content {
-              margin-top: 45px;
+              margin-top: 95px;
               width: 100%;
               min-height: calc(92vh - 149px) !important; }
 

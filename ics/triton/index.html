@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/theme/style/bootstrap-glyphicon.min.css' />
     <link href="/theme/style/bootstrap-tourist.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?780e9fe1">
+    <link rel="stylesheet" type="text/css" href="/theme/style.min.css?6845d713">
 
  </head>
 
@@ -76,7 +76,20 @@
                     </li>
                 </ul>
             </li>
-
+            <li class="dropdown-submenu ml-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Managed Services</strong></a>
+                <ul class="dropdown-menu dropright">
+                    <li class="dropdown-item dropdown-submenu2">
+                        <ul class="dropdown-menu drop_menu_side_right">
+                            <li><a class="dropdown-item" href="/get-evaluated/">Call for Participation</a></li>
+                            <li><a class="dropdown-item" href="/managed-services/managed-services/">Overview</a></li>
+                        </ul>
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            Managed Services (2022)
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="dropdown-submenu ml-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>ICS</strong></a>
                 <ul class="dropdown-menu dropright">
@@ -119,6 +132,13 @@
     </nav>
 </header>
 <div id='content-width-lock'>
+    <div class="div-cfp">
+        <h5 class="h5-cfp">
+            The 2022 ATT&CK Evaluations for Managed Services Call for Participation is now open. 
+            Click <a class="a-click-here" href="/get-evaluated.html">here</a>
+            to learn how to participate.
+        </h5>
+    </div>
     <div id='content'><br>
 <div class="divEvaluationSummaryBody">
     <div style="padding: 0px; width: 100%;">
@@ -146,6 +166,8 @@
                                 class="fas fa-chevron-right nav-arrow"></i></a>
                         <a class="nav-link-black" id="a-detection" href="#detection-categories">Detection Categories<i
                                 class="fas fa-chevron-right nav-arrow"></i></a>
+                        <a class="nav-link-black" id="a-resources" href="#resources">Additional Resources<i
+                            class="fas fa-chevron-right nav-arrow"></i></a>
                     </nav>
                 </nav>
             </div>
@@ -157,7 +179,8 @@
                         <div class="col-lg-12">
                             <div class="row overview_card">
                                 <div class="col-lg-3 pt-3 pb-3">
-                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_Triton.png" style="width: 100%; max-width: 250px;"></center>
+                                    <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/MITRE_Attack-Evals_Triton.png"
+                                            style="width: 100%; max-width: 250px;"></center>
                                 </div>
                                 <div class="col-lg-3 vertical-center text-center">
                                     <h3 class="boldText">TRITON</h3>
@@ -253,7 +276,8 @@
                 <h3 class="boldText mt-4"> Operational Flow </h3>
                 <div class="row">
                     <div class="col-4">
-                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/ICS_Triton_Overview_OpFlow.png" style="max-height: 600px;"></center>
+                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/ICS_Triton_Overview_OpFlow.png"
+                                style="max-height: 600px;"></center>
                     </div>
                     <div class="col-8">
                         <p class="mt-2">
@@ -269,129 +293,185 @@
                             way, the adversary manipulates the burner causing physical damage to the facility.
                         </p>
                         <p>
-                            For details on the TRITON emulation please refer to the <a href="/ics/triton/operational-flow"">Operational Flow</a>.
+                            For details on the TRITON emulation please refer to the <a
+                                href="/ics/triton/operational-flow"">Operational Flow</a>.
                         </p>
                     </div>
                 </div>
 
-                <div class="false-anchor" id="technique-scope"></div>
-                <h3 class="boldText mt-4"> Technique Scope </h3>
-                <div>
-                    <p>
-                        For the TRITON evaluation, 17 ATT&CK techniques across 10 ATT&CK tactics are in.
-                        You can view the in-scope Techniques for the TRITON evaluation below:
-                    </p>
-                    <center><img src=" https://d1zq5d3dtjfcoj.cloudfront.net/triton_technique_matrix.png" style="width:100%;"></center>
-                </div>
-
-                <div class=" false-anchor" id="environment">
-                </div>
-                <h3 class="boldText mt-4"> Environment </h3>
-                <div class="row">
-                    <div class="col">
-                        <center>
-                            <img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Environment.png"
-                                style="max-width: 1000px; width: 100%;" />
+                <div class=" false-anchor" id="technique-scope">
+                    </div>
+                    <h3 class="boldText mt-4"> Technique Scope </h3>
+                    <div>
+                        <p>
+                            For the TRITON evaluation, 17 ATT&CK techniques across 10 ATT&CK tactics are in.
+                            You can view the in-scope Techniques for the TRITON evaluation below:
+                        </p>
+                        <center><img src=" https://d1zq5d3dtjfcoj.cloudfront.net/triton_technique_matrix.png" style="width:100%;">
                         </center>
                     </div>
-                    <div class="col">
-                        <p>
-                            The evaluation was performed in a MITRE Engenuity lab against an environment functioning as
-                            a burner management system. Control system components (i.e., PLCs), Windows host running ICS
-                            applications, and network infrastructure were physically implemented while the industrial
-                            equipment and physical processes were simulated. The burner management solution was designed
-                            and programmed by an integration company focused on the energy sector.
-                        </p>
-                        <p>
-                            Vendors shipped a physical appliance with their detection solution installed on it. All the
-                            vendor appliances simultaneously received network traffic which was distributed by a network
-                            aggregator connected to the SPAN port of the environment’s switch. Windows event logs were
-                            centrally collected and then forwarded via syslog to each solution capable of collecting
-                            events in this fashion.
-                        </p>
-                        <p>
-                            In addition, the opportunity to actively poll the PLCs for configuration changes (program
-                            and task modifications) was provided to vendors that offer this as a current feature of
-                            their solution. This was done outside of the execution phase as not to taint the network
-                            traffic collected by the other appliances.
-                        </p>
-                        <p>
-                            VPN access enabled the vendors to connect remotely to their appliances for management and
-                            monitoring purposes throughout the various phases of the evaluation.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="false-anchor" id="detection-categories"></div>
-                <h3 class="boldText mt-4"> Detection Categories </h3>
-                <div class="row">
-                    <div class="col">
-                        <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Detection_Categories.png" style="max-width: 100%;">
-                        </center>
+                    <div class=" false-anchor" id="environment">
                     </div>
-                    <div class="col">
-                        <p>
-                            Vendors use their own terminology and approaches to detect and protect potential adversary
-                            behavior. They provide this information to us in their unique way, and then it is our
-                            responsibility to abstract the data using categories to talk about the products in similar
-                            ways.
-                        </p>
-                        <p>
-                            These categories are divided into two types: “Main” and “Modifier.” Each detection receives
-                            one main category designation, which relates to the amount of context provided to the user
-                            and may optionally receive one or more modifier category designations that help describe the
-                            event in more detail. For the TRITON evaluation, there are six main detection categories
-                            representing the amount of context provided to the analyst, and two modifier categories.
-                        </p>
-                        <p>
-                            You can learn more about our process for processing detections here.
-                        </p>
-                        <p>
-                            <a
-                                href="/ics/triton/detection-categories">Learn
-                                More: Detection Categories Page
-                            </a>
-                        </p>
+                    <h3 class="boldText mt-4"> Environment </h3>
+                    <div class="row">
+                        <div class="col">
+                            <center>
+                                <img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Environment.png"
+                                    style="max-width: 1000px; width: 100%;" />
+                            </center>
+                        </div>
+                        <div class="col">
+                            <p>
+                                The evaluation was performed in a MITRE Engenuity lab against an environment functioning
+                                as
+                                a burner management system. Control system components (i.e., PLCs), Windows host running
+                                ICS
+                                applications, and network infrastructure were physically implemented while the
+                                industrial
+                                equipment and physical processes were simulated. The burner management solution was
+                                designed
+                                and programmed by an integration company focused on the energy sector.
+                            </p>
+                            <p>
+                                Vendors shipped a physical appliance with their detection solution installed on it. All
+                                the
+                                vendor appliances simultaneously received network traffic which was distributed by a
+                                network
+                                aggregator connected to the SPAN port of the environment’s switch. Windows event logs
+                                were
+                                centrally collected and then forwarded via syslog to each solution capable of collecting
+                                events in this fashion.
+                            </p>
+                            <p>
+                                In addition, the opportunity to actively poll the PLCs for configuration changes
+                                (program
+                                and task modifications) was provided to vendors that offer this as a current feature of
+                                their solution. This was done outside of the execution phase as not to taint the network
+                                traffic collected by the other appliances.
+                            </p>
+                            <p>
+                                VPN access enabled the vendors to connect remotely to their appliances for management
+                                and
+                                monitoring purposes throughout the various phases of the evaluation.
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="false-anchor" id="detection-categories"></div>
+                    <h3 class="boldText mt-4"> Detection Categories </h3>
+                    <div class="row">
+                        <div class="col">
+                            <center><img src="https://d1zq5d3dtjfcoj.cloudfront.net/TRITON_Detection_Categories.png"
+                                    style="max-width: 100%;">
+                            </center>
+                        </div>
+                        <div class="col">
+                            <p>
+                                Vendors use their own terminology and approaches to detect and protect potential
+                                adversary
+                                behavior. They provide this information to us in their unique way, and then it is our
+                                responsibility to abstract the data using categories to talk about the products in
+                                similar
+                                ways.
+                            </p>
+                            <p>
+                                These categories are divided into two types: “Main” and “Modifier.” Each detection
+                                receives
+                                one main category designation, which relates to the amount of context provided to the
+                                user
+                                and may optionally receive one or more modifier category designations that help describe
+                                the
+                                event in more detail. For the TRITON evaluation, there are six main detection categories
+                                representing the amount of context provided to the analyst, and two modifier categories.
+                            </p>
+                            <p>
+                                You can learn more about our process for processing detections here.
+                            </p>
+                            <p>
+                                <a
+                                    href="/ics/triton/detection-categories">Learn
+                                    More: Detection Categories Page
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="false-anchor" id="resources"></div>
+                    <h3 class="boldText mt-4"> Additional Resources </h3>
+                    <div class="row">
+                        <div class="col">
+                            The following links provide more context to this round:
+                            <ul style="padding-inline-start: 10px;">
+                                <li class="mt-2">
+                                    <a
+                                        href="https://medium.com/mitre-engenuity/att-ck-evaluations-expands-to-industrial-control-systems-af83bc2fec53">
+                                        Announcement
+                                    </a>
+                                </li>
+                                <li class="mt-2">
+                                    <a
+                                        href="https://medium.com/mitre-engenuity/announcing-the-att-ck-evaluations-for-ics-fall-2020-cohort-19fb6a1df164">
+                                        Cohort Announcement
+                                    </a>
+                                </li>
+                                <li class="mt-2">
+                                    <a
+                                        href="https://medium.com/mitre-engenuity/att-ck-evaluations-for-ics-round-1-triton-results-69e39a23da3f">
+                                        Result Release
+                                    </a>
+                                </li>
+                                <li class="mt-2">
+                                    <a
+                                        href="https://medium.com/mitre-engenuity/detection-context-using-the-ics-results-2386f2197c34">
+                                        Understanding the Results
+                                    </a>
+                                </li>
+                            <ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
-<br><br>
+    <br><br>
 
-<script type="text/javascript">
-    var navOffset = 100;
+    <script type="text/javascript">
+        var navOffset = 100;
 
-    function deselectNav() {
-        $('#side-nav a').addClass('nav-link-black')
-        $('#side-nav a').removeClass('nav-link-selected')
-        $('#side-nav a i').css("display", "none")
-    }
-
-    $(document).on('scroll', function () {
-        deselectNav()
-        if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset - 300) {
-            $('#a-detection').addClass('nav-link-selected')
-            $('#a-detection i').css("display", "block")
-        } else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
-            $('#a-environment').addClass('nav-link-selected')
-            $('#a-environment i').css("display", "block")
-        } else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
-            $('#a-scope').addClass('nav-link-selected')
-            $('#a-scope i').css("display", "block")
-        } else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
-            $('#a-opflow').addClass('nav-link-selected')
-            $('#a-opflow i').css("display", "block")
-        } else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
-            $('#a-results').addClass('nav-link-selected')
-            $('#a-results i').css("display", "block")
-        } else {
-            $('#a-overview').addClass('nav-link-selected')
-            $('#a-overview i').css("display", "block")
+        function deselectNav() {
+            $('#side-nav a').addClass('nav-link-black')
+            $('#side-nav a').removeClass('nav-link-selected')
+            $('#side-nav a i').css("display", "none")
         }
-    })
-</script>
+
+        $(document).on('scroll', function () {
+            deselectNav()
+            if ($(this).scrollTop() >= $('#resources').position().top - navOffset - 300) {
+                $('#a-resources').addClass('nav-link-selected')
+                $('#a-resources i').css("display", "block")
+            } else if ($(this).scrollTop() >= $('#detection-categories').position().top - navOffset) {
+                $('#a-detection').addClass('nav-link-selected')
+                $('#a-detection i').css("display", "block")
+            } else if ($(this).scrollTop() >= $('#environment').position().top - navOffset) {
+                $('#a-environment').addClass('nav-link-selected')
+                $('#a-environment i').css("display", "block")
+            } else if ($(this).scrollTop() >= $('#technique-scope').position().top - navOffset) {
+                $('#a-scope').addClass('nav-link-selected')
+                $('#a-scope i').css("display", "block")
+            } else if ($(this).scrollTop() >= $('#operational-flow').position().top - navOffset) {
+                $('#a-opflow').addClass('nav-link-selected')
+                $('#a-opflow i').css("display", "block")
+            } else if ($(this).scrollTop() >= $('#results').position().top - navOffset) {
+                $('#a-results').addClass('nav-link-selected')
+                $('#a-results i').css("display", "block")
+            } else {
+                $('#a-overview').addClass('nav-link-selected')
+                $('#a-overview i').css("display", "block")
+            }
+        })
+    </script>
 
 </div>
 </div>

@@ -26,12 +26,13 @@ h3, h4, h5, h6 {
 }
 
 .div-cfp {
-  position: fixed;
+  position: absolute;
   top: 75px;
+  left: 0px;
   background-color: #6241c5;
   width: 100%;
   color: white;
-  z-index: 1029;
+  z-index: 5;
   text-align: center;
   padding-top: 5px;
   .h5-cfp {
@@ -75,7 +76,7 @@ a {
 }
 
 #content {
-  margin-top: 45px;
+  margin-top: 95px;
   // margin-bottom: 20px;
   width: 100%;
   min-height: calc(92vh - 149px) !important;
