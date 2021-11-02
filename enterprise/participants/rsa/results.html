@@ -170,6 +170,9 @@
                                     RSA: Results
                                 </span>
                                 <br />
+                                Participant Configuration: &nbsp;<a href="/enterprise/participants/RSA/RSA_apt3_configuration"id="apt3_config"class="config_link d-none">APT3</a>
+                                <br />
+                                <br />
                             </td>
                         </tr>
                         <tr>
@@ -12491,6 +12494,9 @@
 
         current_adversary_rdo_id = "btn_rdo_adversary_" + current_adversary;
         current_scenario_rdo_id = "btn_rdo_scenario_" + current_scenario;
+
+        // Set the config links
+        document.getElementById(current_adversary + "_config").className = 'd-inline config_link';
         
         // Set the radio buttons
         $('label[for="'+ current_adversary_rdo_id +'"]').removeClass('btn-engenuity-purple-unselected').addClass('btn-engenuity-purple')
@@ -12569,6 +12575,10 @@
                 document.getElementById(current_protections_div_id).style.display = "flex";
             }
         }
+
+        // Change config link(s)
+        Array.from(document.getElementsByClassName("config_link")).forEach(el => el.className = 'd-none config_link');
+        document.getElementById(new_adversary + "_config").className = 'd-inline config_link';
 
         // Change radio button(s)
         $('label[for="' + current_adversary_rdo_id + '"]').removeClass('btn-engenuity-purple').addClass('btn-engenuity-purple-unselected')
