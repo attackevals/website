@@ -11,7 +11,6 @@
                     "Total_Substeps": 162,
                     "Aggregates": {
                         "Total_Detections": 123,
-                        "Total_Alerts": null,
                         "Analytic_Detections": 43,
                         "Telemetry_Detections": 80,
                         "Analytic_Coverage": "37/162",
@@ -60,7 +59,6 @@
                     }
                 ]
             },
-            "Linux_Participant": false,
             "Alerting_Strategy": "Events that are deemed to be related to a suspicious or malicious behavior are assigned appropriate severity values (Low, Medium, High). These behaviors are also enriched with contextual information, such as a short description and potential mapping(s) to related ATT&CK Tactics and Techniques. Tagged behaviors are aggregated into specific views as well as highlighted (with specific icons and fonts) when included as part of other views of system events/data.",
             "Correlation_Strategy": "Detection views highlight potentially associated suspicious or malicious behaviors in an environment. Each detection may include one or more hosts and include process tree views which capture correlation between system events and data, such as process lineage or interactions between processes and files or network connections. Dashboard views also exist to provide a wider perspective on events across multiple hosts.",
             "Detections_By_Step": {

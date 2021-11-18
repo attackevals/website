@@ -56,7 +56,6 @@
                     }
                 ]
             },
-            "Linux_Participant": false,
             "Alerting_Strategy": "A centralized Dashboard view provides the overarching view of the environment, including the number of security events and most targeted device or processes. Alerts are aggregated into the Event Viewer, where the data for each event can be explored in greater detail. Each alert is tagged with an icon to designate its degree of suspicion (e.g., suspicious, malicious, inconclusive). When exploring a specific event, the Advanced Data of the Event Viewer is populated with supporting data and correlated events that provide evidence, context, and lineage between different data sources. The Forensics View is used to search the data for additional events, and includes additional context such as ATT&CK mappings, denoted by a blue icon above the event details.",
             "Correlation_Strategy": "The Dashboard view provides a high level summary of all events in the environment. The Event Viewer correlates the selected alert with other noteworthy events, from a variety of data sources. This graph explains the action (e.g., file create or network connection) as links and objects (e.g., file or host) as nodes. Each element is searchable within the Forensics View, and clicking on an event in that view will show the immediately relevant relationship, such what process created the selected file.",
             "Detections_By_Step": {
@@ -3070,7 +3069,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote Services: Remote Desktop Protocol, T1021.001\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote Services: Remote Desktop Protocol, T1021.001\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6816,7 +6815,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Event Triggered Execution: Application Shimming, T1546.011\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Event Triggered Execution: Application Shimming, T1546.011\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -6914,7 +6913,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Injected Thread\" (malicious) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Injected Thread\" (malicious) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

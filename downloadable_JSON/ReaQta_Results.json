@@ -2547,7 +2547,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -2573,7 +2573,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -2669,7 +2669,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -4488,7 +4488,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "In the Incident Analysis view, each node is a process with sub-nodes representing potentially malicious actions of that process. Events are distinguished with different colors and icons depending upon the action. Interacting with a node will show an enrichment alert view containing ATT&CK techniques and descriptions of what took place.",
             "Correlation_Strategy": "Each host in the environment has their own Incident Analysis view. In this view, process lineage is tracked, and events of those processes are correlated to the instigating process. There is a detailed Alerts Details for Behavioral Anomaly view that correlates events and alerts by timestamp where severity is listed (info, low, medium, high).",
             "Detections_By_Step": {
@@ -11222,7 +11221,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -11270,7 +11269,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A General detection named \"Executable dropped\" (Low) was generated when powershell.exe created dll329.dll\n.",
+                                            "Detection_Note": "A General detection named \"Executable dropped\" (Low) was generated when powershell.exe created dll329.dll.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -11340,7 +11339,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

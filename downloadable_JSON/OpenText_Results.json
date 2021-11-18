@@ -78,7 +78,6 @@
                     }
                 ]
             },
-            "Linux_Participant": false,
             "Alerting_Strategy": "Events are parsed through filters that identify anomaly detections. Anomalies are assigned appropriate severity values (e.g. Assess, Suspicious, Critical) as well as being enriched with contextual information, such as a short description and potential mapping(s) to related ATT&CK Tactics and Techniques. Anomaly detections are aggregated into specific views as well as highlighted (with specific icons and fonts) when included as part of other views of system events/data.",
             "Correlation_Strategy": "Each anomaly detection captures correlation between system events and data, such as process lineage or interactions between system objects (ex: processes, files, network connections, etc.). Anomaly detections present events in either snapshot view (organized by severity), timeline view (organized by timestamps) or both. Each anomaly detection focuses on a single host, but dashboard views exist to provide a wider perspective on events across multiple hosts.",
             "Detections_By_Step": {
@@ -7639,7 +7638,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Process Injection (Remote Thread)\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Process Injection (Remote Thread)\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

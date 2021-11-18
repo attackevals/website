@@ -76,7 +76,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that match analytic logic for malicious behaviors are assigned appropriate severity values (Very Low, Low, Medium, High, Very High). These alerted events are also enriched with contextual information, such as a title related to the adversary behavior and mappings to related ATT&CK Tactics and Techniques. Indicators potentially associated with compromise are aggregated and highlighted (color coding).",
             "Correlation_Strategy": "The Event Inspector view captures system events and data, these events can contain contextual information such as process lineage or interactions between processes and files. Events are aggregated to give a wider perspective, while search queries can be used to refine results. Dashboard views exist that summarize events on a per host and/or username basis.",
             "Detections_By_Step": {
@@ -5923,7 +5922,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Obfuscated PowerShell Detected\" (High) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Obfuscated PowerShell Detected\" (High) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -5975,7 +5974,7 @@
                                             "Indicator_Name": "Suspicious File Created"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Possible Remote File Copy From Command Line\" (High) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"Possible Remote File Copy From Command Line\" (High) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6010,7 +6009,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Possible Remote File Copy From Command Line\" (High) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"Possible Remote File Copy From Command Line\" (High) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6274,7 +6273,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Suspicious File Created\" (High) was generated when rundll32.exe created debug.exe\n.",
+                                            "Detection_Note": "A Technique detection named \"Suspicious File Created\" (High) was generated when rundll32.exe created debug.exe.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

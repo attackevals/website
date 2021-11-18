@@ -84,7 +84,6 @@
                     }
                 ]
             },
-            "Linux_Participant": false,
             "Alerting_Strategy": "Events that match analytic logic for malicious behaviors are assigned appropriate severity values (Informational, Warning, Threat). These alerted events are also enriched with contextual information, such as a description and potential mappings to related ATT&CK Tactics and Techniques. Alerted events are aggregated into specific views as well as highlighted (with specific icons and colors) when included as part of other views of system events/data.",
             "Correlation_Strategy": "The Enterprise Inspector Detection Window view captures correlation between system events and data, such as process lineage or interactions between processes and files. Each Detection Window view focuses on a single host, but Dashboard views exist to provide a wider perspective on events across multiple hosts. Process trees are generated that enable visualizations of process lineage, detections, and context for each of the processes within the tree.",
             "Detections_By_Step": {
@@ -7886,7 +7885,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Sdbinst.exe tool executed\" (Information) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Sdbinst.exe tool executed\" (Information) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

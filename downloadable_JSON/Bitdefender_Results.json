@@ -2812,7 +2812,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -2843,7 +2843,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -2962,7 +2962,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -5251,7 +5251,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are deemed to be related to a suspicious or malicious behavior are assigned appropriate severity values (Suspicious, Low, Medium, High). These behaviors are also enriched with a short description, related events, and potential mapping(s) to related ATT&CK Tactics and Techniques. Tagged behaviors are aggregated into specific views when included as part of other views of system events/data.",
             "Correlation_Strategy": "Incident views highlight potentially associated suspicious or malicious behaviors in an environment. Each detection includes one or more hosts, and the data may include alerts triggered, investigation status, remediation steps, process information, ATT&CK information, etc.. Report views are also available to provide users a search capability to examine the relationships between alerts, endpoints, and other data.",
             "Detections_By_Step": {
@@ -10282,7 +10281,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"RegistryManipulation - T1112 Modify Registry\" (10) was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted\n.",
+                                            "Detection_Note": "A Technique detection named \"RegistryManipulation - T1112 Modify Registry\" (10) was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -13969,7 +13968,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"SuspiciousBinaryWrittenByPowershell - T1105 Ingress Tool Transfer\" (Low) was generated when powershell.exe created dll329.dll\n.",
+                                            "Detection_Note": "A Technique detection named \"SuspiciousBinaryWrittenByPowershell - T1105 Ingress Tool Transfer\" (Low) was generated when powershell.exe created dll329.dll.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -13984,7 +13983,7 @@
                                             "Indicator_Name": "SuspiciousBinaryWrittenByPowershell - T1105 Ingress Tool Transfer"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"SMBSuspiciousAccess - T1105 Ingress Tool Transfer\" (Low) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"SMBSuspiciousAccess - T1105 Ingress Tool Transfer\" (Low) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14049,7 +14048,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"Suspicious File Write\" (1) was generated when powershell.exe created sdbE376.tmp\n.",
+                                            "Detection_Note": "A General detection named \"Suspicious File Write\" (1) was generated when powershell.exe created sdbE376.tmp.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14084,7 +14083,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"ShimDatabaseWrite - T1546.011 Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"ShimDatabaseWrite - T1546.011 Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14100,7 +14099,7 @@
                                             "Indicator_Name": "ShimDatabaseWrite - T1546.011 Application Shimming"
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"ShimRegistryModified\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A General detection named \"ShimRegistryModified\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14129,7 +14128,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"ShimDatabaseWrite\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A General detection named \"ShimDatabaseWrite\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14144,7 +14143,7 @@
                                             "Indicator_Name": "ShimDatabaseWrite"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"ShimRegistryModified - T1546.011 Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"ShimRegistryModified - T1546.011 Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -14384,7 +14383,7 @@
                                             "Indicator_Name": "T1055 Ingress Tool Transfer"
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"Executable Written in User Directory\" (Low) was generated when rundll32.exe created debug.exe\n.",
+                                            "Detection_Note": "A General detection named \"Executable Written in User Directory\" (Low) was generated when rundll32.exe created debug.exe.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [

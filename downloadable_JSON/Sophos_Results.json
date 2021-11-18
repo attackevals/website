@@ -60,7 +60,6 @@
                     }
                 ]
             },
-            "Linux_Participant": false,
             "Alerting_Strategy": "Data is enriched through customizable SQL queries that process captured evidence. If identified, events of interest are tagged with the appropriate matching query name as well as potential mapping(s) to related ATT&CK Tactics and Techniques. Query results are rendered into specific views, but can also be delivered via email notifications. Queries can be run automatically or manually.",
             "Correlation_Strategy": "Event data is formatted based on the specific query used to populate rendered results. Queries can target single or span multiple hosts and in general can be manipulated based on any present variable. Reusable queries are also available to produce common views such as process trees or to trace specific events (ex: network connections, data related to a specific indicator such as a file or IP address).",
             "Detections_By_Step": {
@@ -2994,7 +2993,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Adding a run key using reg.exe\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n.",
+                                            "Detection_Note": "A Technique detection named \"Adding a run key using reg.exe\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6174,7 +6173,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"SMB file activity\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"SMB file activity\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6243,7 +6242,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"SMB file activity\" was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"SMB file activity\" was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6309,7 +6308,7 @@
                                             "Indicator_Name": "Shim registry key creation or modification"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Shim registry key creation or modification\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Shim registry key creation or modification\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

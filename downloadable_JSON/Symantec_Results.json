@@ -2873,7 +2873,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -2902,7 +2902,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -3016,7 +3016,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -5104,7 +5104,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are deemed to be related to a compromise are assigned appropriate severity values (Low, Medium, High). These compromise-related events are also enriched with contextual information, such as a short description or potential mappings to related ATT&CK Tactics and Techniques. Events potentially associated with compromise are aggregated into specific views and tagged with corresponding IOCs related to each event.",
             "Correlation_Strategy": "Events are aggregated into a central queue, where the data for each can be explored. Data within each event captures relevant evidence, including correlation between surrounding system events such as process lineage or interactions between processes and files. There are additional dashboards that provide a wider perspective on events across multiple hosts. There is also the ability to correlate events across more in-depth data captured from a full system dump.",
             "Detections_By_Step": {
@@ -8532,7 +8531,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote Desktop Protocol\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote Desktop Protocol\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8699,7 +8698,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Registry Run Keys / Startup Folder\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n.",
+                                            "Detection_Note": "A Technique detection named \"Registry Run Keys / Startup Folder\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12850,7 +12849,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

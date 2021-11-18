@@ -2903,7 +2903,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -2929,7 +2929,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -3043,7 +3043,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -5075,7 +5075,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "The CylanceOPTICS detection's view contains all the enriched information about what potentially malicious activity took place. Each alert has a descriptive title and description with potential mapping(s) to related ATT&CK Tactics and Techniques. The detection logic is shown in-line along with the system events that lead to the alert. Alert severity is listed as informational, low, medium, and high.",
             "Correlation_Strategy": "Alerts are aggregated by host and can be sorted by chronological order in the CylanceOPTICS detection view. Additional correlation happens in CylanceOPTICS Focus Data view which shows process lineage and each action that occurred in a given process tree over time.",
             "Detections_By_Step": {
@@ -9351,7 +9350,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Tactic detection named \"Persistence\" was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted\n.",
+                                            "Detection_Note": "A Tactic detection named \"Persistence\" was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted.",
                                             "Detection_Type": "Tactic",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12396,7 +12395,7 @@
                                             "Indicator_Name": "Obfuscated Files or Information"
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe executed base64 encoded commands\n detected as NetDrive Interaction (T1021).",
+                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe executed base64 encoded commands detected as NetDrive Interaction (T1021).",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12458,7 +12457,7 @@
                                             "Indicator_Name": "File Create"
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n detected as NetDrive Interaction (T1021).",
+                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive detected as NetDrive Interaction (T1021).",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12492,7 +12491,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive\n detected as NetDrive Interaction (T1021).",
+                                            "Detection_Note": "A General detection named \"NetDrive Interaction\" (Low) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive detected as NetDrive Interaction (T1021).",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12540,7 +12539,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (High) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (High) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12569,7 +12568,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (Low) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

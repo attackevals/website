@@ -3089,7 +3089,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -3117,7 +3117,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -3246,7 +3246,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -5484,7 +5484,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "The Observed ATT&CK Techniques view contains the majority of alerts. Alerts are generated from detection criteria based on system events that took place. They are assigned a risk level of info, low, medium, high along with a description. Each alert has a dropdown that contains the corresponding events that were triggered on. For network specific alerts, the Deep Discovery Inspector view displays granular network information.",
             "Correlation_Strategy": "The Analysis Chain view captures correlation between system events such as process lineage, file activity, and network communication. Each process or file is a node where the inter-node relationships are the activity that took place. Nodes that met a medium level or greater of maliciousness are colored yellow. Alerts are correlated by host in the Incident Workbench view.",
             "Detections_By_Step": {
@@ -9142,7 +9141,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Successful Authentication in Windows Remote Desktop Services\" (Medium) was generated when a logon event by kmitnick was detected as an RDP Login\n.",
+                                            "Detection_Note": "A Technique detection named \"Successful Authentication in Windows Remote Desktop Services\" (Medium) was generated when a logon event by kmitnick was detected as an RDP Login.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -9290,7 +9289,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Successful Logon - RDP\" was generated when a logon event by kmitnick was detected as an RDP Login on cfo (10.0.0.5)\n.",
+                                            "Detection_Note": "A Technique detection named \"Successful Logon - RDP\" was generated when a logon event by kmitnick was detected as an RDP Login on cfo (10.0.0.5).",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -9445,7 +9444,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Uncommon Run/Run Once Registry Entry Creation\" (Medium) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n.",
+                                            "Detection_Note": "A Technique detection named \"Uncommon Run/Run Once Registry Entry Creation\" (Medium) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -9473,7 +9472,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Auto-start Registry\" (Low) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n.",
+                                            "Detection_Note": "A Technique detection named \"Auto-start Registry\" (Low) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -10374,7 +10373,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Connection from Known Remote Access Tools\" (Low) was generated when tvnserver.exe began listening for connections on TCP port 5900\n.",
+                                            "Detection_Note": "A Technique detection named \"Connection from Known Remote Access Tools\" (Low) was generated when tvnserver.exe began listening for connections on TCP port 5900.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -10408,7 +10407,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote Access Tool VNC Request\" (Medium) was generated when tvnserver.exe accepted a connection from 192.168.0.4 over TCP port 5900\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote Access Tool VNC Request\" (Medium) was generated when tvnserver.exe accepted a connection from 192.168.0.4 over TCP port 5900.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -13747,7 +13746,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Suspicious Encoded PowerShell Command Line\" (High) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Suspicious Encoded PowerShell Command Line\" (High) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -13914,7 +13913,7 @@
                                             "Indicator_Name": "Shim Installation Via Registry Modification"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shim Installation\" (Informational) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shim Installation\" (Informational) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

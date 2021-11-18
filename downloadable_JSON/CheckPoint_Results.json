@@ -11,7 +11,6 @@
                     "Total_Substeps": 174,
                     "Aggregates": {
                         "Total_Detections": 330,
-                        "Total_Alerts": null,
                         "Analytic_Detections": 169,
                         "Telemetry_Detections": 161,
                         "Analytic_Coverage": "157/174",
@@ -68,7 +67,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Indicators that are deemed to be related to a compromise are assigned severity values (Low, Medium, High, Critical). These compromise-related indicators are also enriched with contextual information, such as mappings to related ATT&CK Tactics and Techniques. Alerted events are aggregated into specific views as well as highlighted (icons, colors) when included as parts of other views of system events/data.",
             "Correlation_Strategy": "The Forensics view captures correlation between system events and data, such as process lineage or interactions between processes and files. The Forensics view focuses on a single host, but dashboards exist to provide a wider perspective on events across multiple hosts. Process trees are generated that enable visualizations of process lineage, detections, and context for each of the processes within the tree.",
             "Detections_By_Step": {
@@ -4953,7 +4951,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Modify Registry\" (Low) was generated when the Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted\n.",
+                                            "Detection_Note": "A Technique detection named \"Modify Registry\" (Low) was generated when the Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8412,7 +8410,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" (Medium) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" (Medium) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8446,7 +8444,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -8513,7 +8511,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when powershell.exe created sdbE376.tmp\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when powershell.exe created sdbE376.tmp.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -8564,7 +8562,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"behavioral.win.application_shimming.a\" (Low ) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A General detection named \"behavioral.win.application_shimming.a\" (Low ) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8578,7 +8576,7 @@
                                             "Indicator_Name": "behavioral.win.application_shimming.a"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8681,7 +8679,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Process Injection\" (Medium) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Process Injection\" (Medium) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -8808,7 +8806,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when rundll32.exe downloaded debug.exe from 192.168.0.4\n.",
+                                            "Detection_Note": "A Technique detection named \"Remote File Copy\" was generated when rundll32.exe downloaded debug.exe from 192.168.0.4.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"
@@ -8897,7 +8895,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \" Remote File Copy\" was generated when rundll32.exe downloaded 7za.exe from 192.168.0.4\n.",
+                                            "Detection_Note": "A Technique detection named \" Remote File Copy\" was generated when rundll32.exe downloaded 7za.exe from 192.168.0.4.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"

@@ -303,7 +303,7 @@
                         <div class="col-xl-4 mr-4">
                             <p class="p_strategy">Alerting Strategy</p>
                             <span>
-                                    The severity values of the blacklist intrusion detection are assigned to Low, Medium, High, Critical according to the packet’s information with some suspicious behavior. Critical indicates that the contents of the packet are intrusive, such as privilege gain and shell-code (executable instructions) in the packet. Severity high indicates that there is no immediately damaging system effect, such as DoS and information leak. Medium and low are suspicious activity to confirm by MIS. Each rule of the blacklist intrusion detection is mapped into ATT&CK Tactics and Techniques to show the suspected attack type. The AI-based anomaly detection utilizes the normal network behavior to build a customized model. Then, this model can be used to detect abnormal behavior by analyzing the behavior outlier from the packet source.
+                                    The severity values of the blacklist intrusion detection are assigned to Low, Medium, High, Critical according to the packet's information with some suspicious behavior. Critical indicates that the contents of the packet are intrusive, such as privilege gain and shell-code (executable instructions) in the packet. Severity high indicates that there is no immediately damaging system effect, such as DoS and information leak. Medium and low are suspicious activity to confirm by MIS. Each rule of the blacklist intrusion detection is mapped into ATT&CK Tactics and Techniques to show the suspected attack type. The AI-based anomaly detection utilizes the normal network behavior to build a customized model. Then, this model can be used to detect abnormal behavior by analyzing the behavior outlier from the packet source.
                             </span>
                         </div>
                         <div class="col-xl-4 ml-4">
@@ -7271,7 +7271,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the "mstsc.exe" process as RDP. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -7282,7 +7282,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated program upload action of the control PLC (10.0.100.110) to collect the current running configuration (requested from the safety EWS [10.0.100.20]). 
+                                            Evidence of an adversary initiated program upload action of the control PLC (10.0.100.110) to collect the current running configuration (requested from the safety EWS [10.0.100.20]).
                                         </p>
                                             [1]
                                             <br>
@@ -7307,7 +7307,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate (“SMBClient.exe”, “SMB_Sync.xml”, and “SMB_Update.xml”).
+                                            Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate ("SMBClient.exe", "SMB_Sync.xml", and "SMB_Update.xml").
                                         </p>
                                     </div>
                                 </div>
@@ -7318,7 +7318,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the scheduled task “SMB_sync.xml” is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).
+                                            Evidence that the scheduled task "SMB_sync.xml" is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).
                                         </p>
                                     </div>
                                 </div>
@@ -7329,7 +7329,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “SMBClient.exe” process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).
+                                            Evidence that the "SMBClient.exe" process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).
                                         </p>
                                             [1]
                                             <br>
@@ -7418,7 +7418,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the "mstsc.exe" process. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -7429,7 +7429,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “csp3.zip” in the Temp Rockwell directory are not legitimate (“csp.exe”, “Install-csp.ps1”, “csp-agent.exe”, “sftp.exe”, etc.).
+                                            Evidence that the newly created files from the extraction of "csp3.zip" in the Temp Rockwell directory are not legitimate ("csp.exe", "Install-csp.ps1", "csp-agent.exe", "sftp.exe", etc.).
                                         </p>
                                             [1]
                                             <br>
@@ -7454,7 +7454,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “install-csp.ps1” script was executed on the control EWS (10.0.100.20) via PowerShell (using the bypass execution policy). 
+                                            Evidence that the "install-csp.ps1" script was executed on the control EWS (10.0.100.20) via PowerShell (using the bypass execution policy).
                                         </p>
                                             [1]
                                             <br>
@@ -7479,7 +7479,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “rockwell-csp3” service is not legitimate (service is spoofed SSDH, created then executed via Start-Service).
+                                            Evidence that the "rockwell-csp3" service is not legitimate (service is spoofed SSDH, created then executed via Start-Service).
                                         </p>
                                             [1]
                                             <br>
@@ -7504,7 +7504,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “csp-agent” service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service).
+                                            Evidence that the "csp-agent" service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service).
                                         </p>
                                             [1]
                                             <br>
@@ -7529,7 +7529,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the scheduled task “SMB_update.xml” is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).
+                                            Evidence that the scheduled task "SMB_update.xml" is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).
                                         </p>
                                             [1]
                                             <br>
@@ -7554,7 +7554,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “SMBClient.exe” process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).
+                                            Evidence that the "SMBClient.exe" process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).
                                         </p>
                                             [1]
                                             <br>
@@ -7682,7 +7682,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “sftp-server.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the "sftp-server.exe" process. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -7746,7 +7746,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -7757,7 +7757,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”).
+                                            Evidence that the newly created files from the extraction of "RSLINX_install.zip" in the Temp Rockwell RSLINX directory are not legitimate ("RSLINX.exe" and "LogixMap.exe").
                                         </p>
                                             [1]
                                             <br>
@@ -8153,7 +8153,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Device Type” attribute (instance 0x01, class 0x01) of the control PLC (10.0.100.110).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Device Type" attribute (instance 0x01, class 0x01) of the control PLC (10.0.100.110).
                                         </p>
                                     </div>
                                 </div>
@@ -8189,7 +8189,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Status” attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Status" attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).
                                         </p>
                                             [1]
                                             <br>
@@ -8303,7 +8303,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the "mstsc.exe" process as RDP. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -8353,7 +8353,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the “mstsc.exe” process as RDP. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the "mstsc.exe" process as RDP. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -8364,7 +8364,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”).
+                                            Evidence that the newly created files from the extraction of "RSLINX_install.zip" in the Temp Rockwell RSLINX directory are not legitimate ("RSLINX.exe" and "LogixMap.exe").
                                         </p>
                                     </div>
                                 </div>
@@ -8375,7 +8375,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the “install-csp.ps1” script was executed on the safety EWS (10.0.100.15) via PowerShell (using the bypass execution policy). 
+                                            Evidence that the "install-csp.ps1" script was executed on the safety EWS (10.0.100.15) via PowerShell (using the bypass execution policy).
                                         </p>
                                             [1]
                                             <br>
@@ -8400,7 +8400,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the services “rockwell-csp3” and “csp-agent” are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service).
+                                            Evidence that the services "rockwell-csp3" and "csp-agent" are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service).
                                         </p>
                                             [1]
                                             <br>
@@ -8450,7 +8450,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -8461,7 +8461,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). 
+                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).
                                         </p>
                                             [1]
                                             <br>
@@ -8486,7 +8486,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “scp”. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via "scp". Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -8511,7 +8511,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “RSLINX_install.zip” in the Temp Rockwell RSLINX directory are not legitimate (“RSLINX.exe” and “LogixMap.exe”).
+                                            Evidence that the newly created files from the extraction of "RSLINX_install.zip" in the Temp Rockwell RSLINX directory are not legitimate ("RSLINX.exe" and "LogixMap.exe").
                                         </p>
                                     </div>
                                 </div>
@@ -8547,7 +8547,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -8644,7 +8644,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Device Type” attribute (instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Device Type" attribute (instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
                                         </p>
                                     </div>
                                 </div>
@@ -8680,7 +8680,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Status” attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Status" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
                                         </p>
                                             [1]
                                             <br>
@@ -8783,7 +8783,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the “sftp-server.exe” process. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the "sftp-server.exe" process. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -8833,7 +8833,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “Install_RSLogix.zip” in the Temp Rockwell RSLogix directory are not legitimate (“RSLogix5000.exe”, “RSComms.exe”, etc.)
+                                            Evidence that the newly created files from the extraction of "Install_RSLogix.zip" in the Temp Rockwell RSLogix directory are not legitimate ("RSLogix5000.exe", "RSComms.exe", etc.)
                                         </p>
                                     </div>
                                 </div>
@@ -8844,7 +8844,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) to transfer “Install_GuardLogix.zip” over scp.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) to transfer "Install_GuardLogix.zip" over scp.
                                         </p>
                                     </div>
                                 </div>
@@ -8855,7 +8855,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “scp”. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via "scp". Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -8891,7 +8891,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -8902,7 +8902,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that the newly created files from the extraction of “Install_GuardLogix.zip” in the Temp Rockwell GuardLogix directory are not legitimate (“RSLogix5000.exe”, “RSComms.exe”, “abRSA.exe”, etc.)
+                                            Evidence that the newly created files from the extraction of "Install_GuardLogix.zip" in the Temp Rockwell GuardLogix directory are not legitimate ("RSLogix5000.exe", "RSComms.exe", "abRSA.exe", etc.)
                                         </p>
                                             [1]
                                             <br>
@@ -8952,7 +8952,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Status” attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Status" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
                                         </p>
                                             [1]
                                             <br>
@@ -9002,7 +9002,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). 
+                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).
                                         </p>
                                             [1]
                                             <br>
@@ -9136,7 +9136,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of the modified program “P04_Trips_FO_R00_Trips” to include new function block logic and a “CC” tag for command and control on the safety PLC. 
+                                            Evidence of the modified program "P04_Trips_FO_R00_Trips" to include new function block logic and a "CC" tag for command and control on the safety PLC.
                                         </p>
                                     </div>
                                 </div>
@@ -9172,7 +9172,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated read action of the “CC” tag using the 0x4C CIP service.
+                                            Evidence of an adversary initiated read action of the "CC" tag using the 0x4C CIP service.
                                         </p>
                                             [1]
                                             <br>
@@ -9281,7 +9281,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated write tag action to the “CC” tag using the 0x4D CIP service (a low value of “0” or False was written).
+                                            Evidence of an adversary initiated write tag action to the "CC" tag using the 0x4D CIP service (a low value of "0" or False was written).
                                         </p>
                                     </div>
                                 </div>
@@ -9292,7 +9292,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated write tag action to the “CC” tag using the 0x4D CIP service (a low value of “0” or False was written).
+                                            Evidence of an adversary initiated write tag action to the "CC" tag using the 0x4D CIP service (a low value of "0" or False was written).
                                         </p>
                                             [1]
                                             <br>
@@ -9342,7 +9342,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Status” attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Status" attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).
                                         </p>
                                             [1]
                                             <br>
@@ -9414,7 +9414,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of adversary initiated write tag actions to the “eR01_3ZC2071” and “f3ZC2071_HMI_Enb” tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to “0” [percent open] and HMI_Enb was pulsed to remove cascade control).
+                                            Evidence of adversary initiated write tag actions to the "eR01_3ZC2071" and "f3ZC2071_HMI_Enb" tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to "0" [percent open] and HMI_Enb was pulsed to remove cascade control).
                                         </p>
                                     </div>
                                 </div>
@@ -9436,7 +9436,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of the safety PLC operating mode being switched to Program Mode following adversary CIP request to instance 0x01 of class 0x8E using service 0x07. 
+                                            Evidence of the safety PLC operating mode being switched to Program Mode following adversary CIP request to instance 0x01 of class 0x8E using service 0x07.
                                         </p>
                                     </div>
                                 </div>
@@ -9472,7 +9472,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated program download action on the safety PLC (10.0.100.105) to overwrite the current configuration (requested from the safety EWS [10.0.100.15]). 
+                                            Evidence of an adversary initiated program download action on the safety PLC (10.0.100.105) to overwrite the current configuration (requested from the safety EWS [10.0.100.15]).
                                         </p>
                                             [1]
                                             <br>
@@ -9536,7 +9536,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -9586,7 +9586,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                             [1]
                                             <br>
@@ -9636,7 +9636,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated Get Attribute Single CIP request for the “Status” attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
+                                            Evidence of an adversary initiated Get Attribute Single CIP request for the "Status" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).
                                         </p>
                                             [1]
                                             <br>
@@ -9686,7 +9686,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). 
+                                            Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).
                                         </p>
                                             [1]
                                             <br>
@@ -9806,7 +9806,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of the modified program “P04_Trips_FO_R00_Trips” to include new function block logic and a “CC” tag for command and control on the safety PLC. 
+                                            Evidence of the modified program "P04_Trips_FO_R00_Trips" to include new function block logic and a "CC" tag for command and control on the safety PLC.
                                         </p>
                                     </div>
                                 </div>
@@ -9842,7 +9842,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated read action of the “CC” tag using the 0x4C CIP service.
+                                            Evidence of an adversary initiated read action of the "CC" tag using the 0x4C CIP service.
                                         </p>
                                             [1]
                                             <br>
@@ -9923,7 +9923,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an adversary initiated write tag action to the “CC” tag using the 0x4D CIP service (a low value of “1” or True was written).
+                                            Evidence of an adversary initiated write tag action to the "CC" tag using the 0x4D CIP service (a low value of "1" or True was written).
                                         </p>
                                     </div>
                                 </div>
@@ -9959,7 +9959,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via “csp.exe”[SSHD]. Successful logon as user “Engineer” may be present or as a part of the connection and process creation.
+                                            Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via "csp.exe"[SSHD]. Successful logon as user "Engineer" may be present or as a part of the connection and process creation.
                                         </p>
                                     </div>
                                 </div>
@@ -10006,7 +10006,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of adversary initiated write tag actions to the “eR01_3ZC2071” and “f3ZC2071_HMI_Enb” tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to “0” [percent open] and HMI_Enb was pulsed to remove cascade control).
+                                            Evidence of adversary initiated write tag actions to the "eR01_3ZC2071" and "f3ZC2071_HMI_Enb" tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to "0" [percent open] and HMI_Enb was pulsed to remove cascade control).
                                         </p>
                                     </div>
                                 </div>
@@ -10017,7 +10017,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of the safety HMI (10.0.100.16) writing to the safety PLC (10.0.100.105). Manual trip actions were engaged through onsite access by process operators on the HMI to disable the burner management system. 
+                                            Evidence of the safety HMI (10.0.100.16) writing to the safety PLC (10.0.100.105). Manual trip actions were engaged through onsite access by process operators on the HMI to disable the burner management system.
                                         </p>
                                             [1]
                                             <br>
@@ -10162,7 +10162,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence of write actions occurring on the tags “eR01_3ZC2071” and “f3ZC2071_HMI_Enb” to change setpoints and control actions with the CIP service 0x4D and service 0x51, respectively. HMI_Enb was pulsed to remove cascade control and the air damper setpoint tag was written to “100” [percent open].
+                                            Evidence of write actions occurring on the tags "eR01_3ZC2071" and "f3ZC2071_HMI_Enb" to change setpoints and control actions with the CIP service 0x4D and service 0x51, respectively. HMI_Enb was pulsed to remove cascade control and the air damper setpoint tag was written to "100" [percent open].
                                         </p>
                                     </div>
                                 </div>
@@ -10173,7 +10173,7 @@
                                     <div class="mx-auto bg-white p-3 div_inner_detection_detail">
                                         <p class="p_detection_detail_header"> Criteria </p>
                                         <p class="detection_detail_text">
-                                            Evidence that a privileged write action occurred and actuated all forced points set in the logic (Enable all forces in Allen Bradley) following the adversary request the class 0x69 using service 0x4D. 
+                                            Evidence that a privileged write action occurred and actuated all forced points set in the logic (Enable all forces in Allen Bradley) following the adversary request the class 0x69 using service 0x4D.
                                         </p>
                                     </div>
                                 </div>

@@ -170,7 +170,7 @@
                                     Fortinet: Results
                                 </span>
                                 <br />
-                                Participant Configuration: &nbsp;<a href="/enterprise/participants/Fortinet/Fortinet_carbanak_fin7_configuration"id="carbanak_fin7_config"class="config_link d-none">Carbanak+FIN7</a>
+                                Participant Configuration: &nbsp;<a href="/enterprise/participants/fortinet/fortinet_carbanak_fin7_configuration"id="carbanak_fin7_config"class="config_link d-none">Carbanak+FIN7</a>
                                 <br />
                                 <br />
                             </td>
@@ -283,6 +283,8 @@
             </label>
         </div>
 
+        <p id="p_apt3_disclaimer" style="visibility: hidden;"><em>APT3 Substep numbers were updated on November 11, 2021 to accommodate changes to ATT&CK and updates to the result data structure. No results were modified in this process.</em></p>
+
         <div id="div_detections">
                         <div id="div_carousel_carbanak_fin7_scenario_1" class="container-fluid border border-secondary evals_carousel p-0" style="display: none; width: 85%"> 
                             <div id="carousel_carbanak_fin7_scenario_1_indicators" class="carousel slide evals_carousel" data-interval="0" data-bs-ride="carousel">
@@ -361,8 +363,7 @@
                                 </a>
                             </div>
                         </div>
-                        <br>
-                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4" style="display: none;">
+                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4 pt-3" style="display: none;">
                             <div class="row justify-content-center">
                                 <div class="col-xl-4 mr-4">
                                     <p class="p_strategy">Alerting Strategy</p>
@@ -378,8 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4" style="display: none;">
+                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4 pt-3" style="display: none;">
                             <div class="row justify-content-center">
                                 <div class="col-xl-4 mr-4">
                                     <p class="p_strategy">Alerting Strategy</p>
@@ -6418,8 +6418,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A Technique detection named "Remote Services: Remote Desktop Protocol, T1021.001" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389
-.
+                                                                                A Technique detection named "Remote Services: Remote Desktop Protocol, T1021.001" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_FO_7.B.3_1.png" 
                                                                                         target="_blank"
@@ -13783,8 +13782,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A Technique detection named "Event Triggered Execution: Application Shimming, T1546.011" was generated when sdbinst.exe installed sdbE376.tmp shim database
-.
+                                                                                A Technique detection named "Event Triggered Execution: Application Shimming, T1546.011" was generated when sdbinst.exe installed sdbE376.tmp shim database.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_FO_19.B.5_1.png" 
                                                                                         target="_blank"
@@ -13964,8 +13962,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A Technique detection named "Injected Thread" (malicious) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread
-.
+                                                                                A Technique detection named "Injected Thread" (malicious) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_FO_20.A.2_1.png" 
                                                                                         target="_blank"
@@ -23689,6 +23686,9 @@
         // Set the config links
         document.getElementById(current_adversary + "_config").className = 'd-inline config_link';
         
+        // Set APT3 substeps disclaimer
+        document.getElementById("p_apt3_disclaimer").style = current_adversary === 'apt3' ? '' : 'visibility: hidden';
+
         // Set the radio buttons
         $('label[for="'+ current_adversary_rdo_id +'"]').removeClass('btn-engenuity-purple-unselected').addClass('btn-engenuity-purple')
         document.getElementById(current_scenario_rdo_id).checked = true;
@@ -23770,6 +23770,9 @@
         // Change config link(s)
         Array.from(document.getElementsByClassName("config_link")).forEach(el => el.className = 'd-none config_link');
         document.getElementById(new_adversary + "_config").className = 'd-inline config_link';
+
+        // Show/hide APT3 substeps disclaimer
+        document.getElementById("p_apt3_disclaimer").style = new_adversary === 'apt3' ? '' : 'visibility: hidden';
 
         // Change radio button(s)
         $('label[for="' + current_adversary_rdo_id + '"]').removeClass('btn-engenuity-purple').addClass('btn-engenuity-purple-unselected')

@@ -2742,7 +2742,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -2768,7 +2768,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -2913,7 +2913,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -5137,7 +5137,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are deemed to be related to a suspicious or malicious behavior are assigned appropriate severity values (1-10). These behaviors are also enriched with a short description, related events, and potential mapping(s) to related ATT&CK Tactics and Techniques. Tagged behaviors are aggregated into specific views as well as highlighted (with specific icons and colors) when included as part of other views of system events/data.",
             "Correlation_Strategy": "Campaign Graph and Behavior Graph views highlight potentially associated suspicious or malicious behaviors in an environment. Each detection includes one or more hosts and process tree views which capture correlation between system events and data, such as process lineage or interactions between processes and files or network connections. Campaign Sequence views are also available to provide a timeline of events across multiple hosts.",
             "Detections_By_Step": {
@@ -12434,7 +12433,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A General detection (7) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A General detection (7) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12482,7 +12481,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A General detection (7) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A General detection (7) was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12548,7 +12547,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A General detection (7) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A General detection (7) was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -12583,7 +12582,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"T1546.011 Event Triggered Execution (Application Shimming)\" (7) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"T1546.011 Event Triggered Execution (Application Shimming)\" (7) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

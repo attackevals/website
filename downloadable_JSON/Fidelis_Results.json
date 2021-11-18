@@ -64,7 +64,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are deemed to be related to a suspicious or malicious behavior are assigned appropriate severity values (Low, Medium, High, Critical). These behaviors are also enriched with a short description, related events, and potential mapping(s) to related ATT&CK Tactics and Techniques. Tagged behaviors are aggregated into specific views when included as part of other views of system events/data.",
             "Correlation_Strategy": "Behavior Detail views highlight potentially associated suspicious or malicious behaviors in an environment. Each detection includes one or more hosts, and the data is grouped into categories including alerts, process information, file access information, network connection details, registry details, etc. depending on the actions of the process. Alert views are also available to provide users a search capability to examine the relationships between alerts, endpoints, and other data.",
             "Detections_By_Step": {
@@ -7902,7 +7901,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Behavior: T1138 - Application Shimming - Database Files\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Behavior: T1138 - Application Shimming - Database Files\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -7994,7 +7993,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"T1055 - Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"T1055 - Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change (Detection Logic)"

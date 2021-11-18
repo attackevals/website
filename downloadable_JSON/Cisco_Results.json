@@ -109,7 +109,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Indicators that are deemed to be related to a compromise are assigned appropriate severity values (Minimal, Low, Medium, High, Critical). These compromise-related indicators are also enriched with contextual information, such as a short description and potential mapping(s) to related ATT&CK Tactics and Techniques. Indicators potentially associated with compromise are aggregated into specific views as well as highlighted (with specific icons and fonts) when included as part of other views of system events/data.",
             "Correlation_Strategy": "The Device Trajectory view captures correlation between system events and data, such as process lineage or interactions between processes and files. Each Device Trajectory view focuses on a single host, but Dashboard views exist to provide a wider perspective on events across multiple hosts. Relations Graphs can also be created to visualize connections between various data types. Trajectory views can also be created for other artifacts, such as files.",
             "Detections_By_Step": {
@@ -6253,7 +6252,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Cloud IOC: W32.PowershellEncodedBuffer.ioc\" (Low ) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Cloud IOC: W32.PowershellEncodedBuffer.ioc\" (Low ) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6360,7 +6359,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Cloud IOC: W32.SdbinstShimming.ioc\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Cloud IOC: W32.SdbinstShimming.ioc\" (Medium) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

@@ -92,7 +92,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are identified to be related to a potential threat are alerted through Signals and assigned appropriate severity scores (1-10 or Low, Medium, High). These Signals are also enriched with contextual information, such as a short description and potential mapping(s) to related ATT&CK Tactics and Techniques. Cumulative threat scores from all relevant Signals is calculated and presented for each host.",
             "Correlation_Strategy": "Correlation is captured through Detection views that capture all Alerts in an environment. Detection views can also focus in on a specific host. Each specific Alert within a Detection view contains specific Signals of potential threat activity, which capture evidence and relevant context such as a surrounding process graph. Dashboard views also exist to provide a wider perspective on events across multiple hosts",
             "Detections_By_Step": {
@@ -3300,7 +3299,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Registry Startups entry modification/addition Detected from monitored application\" (4.0/10) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n.",
+                                            "Detection_Note": "A Technique detection named \"Registry Startups entry modification/addition Detected from monitored application\" (4.0/10) was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -6895,7 +6894,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Sdbinst.exe execution detected\" (2.5 / 10) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Sdbinst.exe execution detected\" (2.5 / 10) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -7083,7 +7082,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A General detection named \"Process dropped portable executable file\" (0/10) was generated when rundll32.exe created debug.exe\n.",
+                                            "Detection_Note": "A General detection named \"Process dropped portable executable file\" (0/10) was generated when rundll32.exe created debug.exe.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -7180,7 +7179,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A General detection named \"Process dropped portable executable file\" (0/10) was generated when rundll32.exe created 7za.exe\n.",
+                                            "Detection_Note": "A General detection named \"Process dropped portable executable file\" (0/10) was generated when rundll32.exe created 7za.exe.",
                                             "Detection_Type": "General",
                                             "Modifiers": [],
                                             "Screenshots": [

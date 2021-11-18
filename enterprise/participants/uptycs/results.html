@@ -170,7 +170,7 @@
                                     Uptycs: Results
                                 </span>
                                 <br />
-                                Participant Configuration: &nbsp;<a href="/enterprise/participants/Uptycs/Uptycs_carbanak_fin7_configuration"id="carbanak_fin7_config"class="config_link d-none">Carbanak+FIN7</a>
+                                Participant Configuration: &nbsp;<a href="/enterprise/participants/uptycs/uptycs_carbanak_fin7_configuration"id="carbanak_fin7_config"class="config_link d-none">Carbanak+FIN7</a>
                                 <br />
                                 <br />
                             </td>
@@ -282,6 +282,8 @@
                 Protections
             </label>
         </div>
+
+        <p id="p_apt3_disclaimer" style="visibility: hidden;"><em>APT3 Substep numbers were updated on November 11, 2021 to accommodate changes to ATT&CK and updates to the result data structure. No results were modified in this process.</em></p>
 
         <div id="div_detections">
                         <div id="div_carousel_carbanak_fin7_scenario_1" class="container-fluid border border-secondary evals_carousel p-0" style="display: none; width: 85%"> 
@@ -442,8 +444,7 @@
                                 </a>
                             </div>
                         </div>
-                        <br>
-                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4" style="display: none;">
+                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4 pt-3" style="display: none;">
                             <div class="row justify-content-center">
                                 <div class="col-xl-4 mr-4">
                                     <p class="p_strategy">Alerting Strategy</p>
@@ -459,8 +460,7 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
-                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4" style="display: none;">
+                        <div id="div_strategies_carbanak_fin7" class="container-fluid mt-4 pt-3" style="display: none;">
                             <div class="row justify-content-center">
                                 <div class="col-xl-4 mr-4">
                                     <p class="p_strategy">Alerting Strategy</p>
@@ -6838,8 +6838,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A Technique detection named "Registry Startups entry modification/addition Detected from monitored application" (4.0/10) was generated when Java-Update subkey was added to HKLM\Software\Microsoft\Windows\CurrentVersion\Run
-.
+                                                                                A Technique detection named "Registry Startups entry modification/addition Detected from monitored application" (4.0/10) was generated when Java-Update subkey was added to HKLM\Software\Microsoft\Windows\CurrentVersion\Run.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_UP_7.C.4.png" 
                                                                                         target="_blank"
@@ -13916,8 +13915,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A Technique detection named "Sdbinst.exe execution detected" (2.5 / 10) was generated when sdbinst.exe installed sdbE376.tmp shim database
-.
+                                                                                A Technique detection named "Sdbinst.exe execution detected" (2.5 / 10) was generated when sdbinst.exe installed sdbE376.tmp shim database.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_UP_19.B.5.png" 
                                                                                         target="_blank"
@@ -14302,8 +14300,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-bottom: none; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A General detection named "Process dropped portable executable file" (0/10) was generated when rundll32.exe created debug.exe
-.
+                                                                                A General detection named "Process dropped portable executable file" (0/10) was generated when rundll32.exe created debug.exe.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_UP_20.B.1_1.png" 
                                                                                         target="_blank"
@@ -14480,8 +14477,7 @@
                                                             <td class="tdDetectionNote">
                                                                         <div class="divDetectionNoteCell row" style="border-top: 1px solid lightgray; margin-right: 0px; margin-left: 0px;">
                                                                             <div class="col-11">
-                                                                                A General detection named "Process dropped portable executable file" (0/10) was generated when rundll32.exe created 7za.exe
-.
+                                                                                A General detection named "Process dropped portable executable file" (0/10) was generated when rundll32.exe created 7za.exe.
                                                                                     <a  
                                                                                         href="https://d1zq5d3dtjfcoj.cloudfront.net/Carbanak-FIN7_UP_20.B.3_1.png" 
                                                                                         target="_blank"
@@ -22466,6 +22462,9 @@
         // Set the config links
         document.getElementById(current_adversary + "_config").className = 'd-inline config_link';
         
+        // Set APT3 substeps disclaimer
+        document.getElementById("p_apt3_disclaimer").style = current_adversary === 'apt3' ? '' : 'visibility: hidden';
+
         // Set the radio buttons
         $('label[for="'+ current_adversary_rdo_id +'"]').removeClass('btn-engenuity-purple-unselected').addClass('btn-engenuity-purple')
         document.getElementById(current_scenario_rdo_id).checked = true;
@@ -22547,6 +22546,9 @@
         // Change config link(s)
         Array.from(document.getElementsByClassName("config_link")).forEach(el => el.className = 'd-none config_link');
         document.getElementById(new_adversary + "_config").className = 'd-inline config_link';
+
+        // Show/hide APT3 substeps disclaimer
+        document.getElementById("p_apt3_disclaimer").style = new_adversary === 'apt3' ? '' : 'visibility: hidden';
 
         // Change radio button(s)
         $('label[for="' + current_adversary_rdo_id + '"]').removeClass('btn-engenuity-purple').addClass('btn-engenuity-purple-unselected')

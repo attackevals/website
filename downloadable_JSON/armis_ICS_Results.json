@@ -57,7 +57,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.1.A.1-190.png"
                                             ],
@@ -69,7 +69,7 @@
                                 {
                                     "Substep": "1.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \"mstsc.exe\" process as RDP. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -86,7 +86,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.1.A.2-190.png"
                                             ],
@@ -106,7 +106,7 @@
                                 {
                                     "Substep": "2.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated program upload action of the control PLC (10.0.100.110) to collect the current running configuration (requested from the safety EWS [10.0.100.20]). ",
+                                    "Criteria": "Evidence of an adversary initiated program upload action of the control PLC (10.0.100.110) to collect the current running configuration (requested from the safety EWS [10.0.100.20]).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -123,7 +123,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.2.B.1-177.png"
                                             ],
@@ -141,7 +141,7 @@
                                 {
                                     "Substep": "3.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate (\u201cSMBClient.exe\u201d, \u201cSMB_Sync.xml\u201d, and \u201cSMB_Update.xml\u201d).",
+                                    "Criteria": "Evidence that the newly created files copied from the RDP shared folder into the control EWS Temp SMB directory are not legitimate (\"SMBClient.exe\", \"SMB_Sync.xml\", and \"SMB_Update.xml\").",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -158,7 +158,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.3.A.1-156.png"
                                             ],
@@ -178,7 +178,7 @@
                                 {
                                     "Substep": "4.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the scheduled task \u201cSMB_sync.xml\u201d is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
+                                    "Criteria": "Evidence that the scheduled task \"SMB_sync.xml\" is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -195,7 +195,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.4.A.1-156.png"
                                             ],
@@ -209,7 +209,7 @@
                                 {
                                     "Substep": "4.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201cSMBClient.exe\u201d process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
+                                    "Criteria": "Evidence that the \"SMBClient.exe\" process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -226,7 +226,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.4.B.1-156.png"
                                             ],
@@ -257,7 +257,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.4.B.2-190.png",
                                                 "system-64-AR-D1.4.B.2-190-1.png",
@@ -271,7 +271,7 @@
                                 {
                                     "Substep": "4.C.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \"mstsc.exe\" process. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -288,7 +288,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.4.C.1-190.png"
                                             ],
@@ -308,7 +308,7 @@
                                 {
                                     "Substep": "5.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201ccsp3.zip\u201d in the Temp Rockwell directory are not legitimate (\u201ccsp.exe\u201d, \u201cInstall-csp.ps1\u201d, \u201ccsp-agent.exe\u201d, \u201csftp.exe\u201d, etc.).",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"csp3.zip\" in the Temp Rockwell directory are not legitimate (\"csp.exe\", \"Install-csp.ps1\", \"csp-agent.exe\", \"sftp.exe\", etc.).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -325,7 +325,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -337,7 +337,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -355,7 +355,7 @@
                                 {
                                     "Substep": "6.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201cinstall-csp.ps1\u201d script was executed on the control EWS (10.0.100.20) via PowerShell (using the bypass execution policy). ",
+                                    "Criteria": "Evidence that the \"install-csp.ps1\" script was executed on the control EWS (10.0.100.20) via PowerShell (using the bypass execution policy).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -372,7 +372,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -384,7 +384,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -396,7 +396,7 @@
                                 {
                                     "Substep": "6.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201crockwell-csp3\u201d service is not legitimate (service is spoofed SSDH, created then executed via Start-Service).",
+                                    "Criteria": "Evidence that the \"rockwell-csp3\" service is not legitimate (service is spoofed SSDH, created then executed via Start-Service).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -413,7 +413,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.6.B.1-156.png"
                                             ],
@@ -427,7 +427,7 @@
                                 {
                                     "Substep": "6.C.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201ccsp-agent\u201d service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service).",
+                                    "Criteria": "Evidence that the \"csp-agent\" service is not legitimate (service is spoofed ssh-agent, created then executed via Start-Service).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -444,7 +444,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.6.C.1-156.png"
                                             ],
@@ -458,7 +458,7 @@
                                 {
                                     "Substep": "6.D.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the scheduled task \u201cSMB_update.xml\u201d is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
+                                    "Criteria": "Evidence that the scheduled task \"SMB_update.xml\" is not legitimate and was imported into Task Scheduler (the task executes a spoofed plink executable to initiate a reverse shell tunnel).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -475,7 +475,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.6.D.1-156.png"
                                             ],
@@ -487,7 +487,7 @@
                                 {
                                     "Substep": "6.E.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201cSMBClient.exe\u201d process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
+                                    "Criteria": "Evidence that the \"SMBClient.exe\" process is not legitimate (binary is spoofed plink.exe used to create a SSH tunnel and redirect ports).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -504,7 +504,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.6.E.1-156.png"
                                             ],
@@ -535,7 +535,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D1.6.E.2-190.png"
                                             ],
@@ -570,7 +570,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "TRITON_AR_D2.7.A.1.png"
                                             ],
@@ -582,7 +582,7 @@
                                 {
                                     "Substep": "7.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201csftp-server.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \"sftp-server.exe\" process. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -599,7 +599,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.7.A.2-190.png"
                                             ],
@@ -630,7 +630,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.7.B.1-190.png",
                                                 "system-64-AR-D2.7.B.1-190-1.png"
@@ -643,7 +643,7 @@
                                 {
                                     "Substep": "7.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -660,7 +660,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.7.B.2-190.png"
                                             ],
@@ -680,7 +680,7 @@
                                 {
                                     "Substep": "8.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"RSLINX_install.zip\" in the Temp Rockwell RSLINX directory are not legitimate (\"RSLINX.exe\" and \"LogixMap.exe\").",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -697,14 +697,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -744,14 +744,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -785,14 +785,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -825,7 +825,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -837,7 +837,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -866,7 +866,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -878,7 +878,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -905,14 +905,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -929,7 +929,7 @@
                                 {
                                     "Substep": "9.C.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cDevice Type\u201d attribute (instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Device Type\" attribute (instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0102",
                                         "Tactic_Name": "Discovery"
@@ -946,7 +946,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.9.C.2-193.png",
                                                 "system-64-AR-D2.9.C.2-193-1.png"
@@ -956,7 +956,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -983,14 +983,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1007,7 +1007,7 @@
                                 {
                                     "Substep": "9.D.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Status\" attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0100",
                                         "Tactic_Name": "Collection"
@@ -1024,7 +1024,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.9.D.2-174.png",
                                                 "system-64-AR-D2.9.D.2-174-1.png"
@@ -1034,7 +1034,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1061,7 +1061,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1073,7 +1073,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1102,7 +1102,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D2.9.E.2-177.png"
                                             ],
@@ -1137,14 +1137,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation",
                                                 "Configuration Change"
                                             ],
@@ -1160,7 +1160,7 @@
                                 {
                                     "Substep": "10.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \"mstsc.exe\" process as RDP. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1177,7 +1177,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.10.A.2-190.png"
                                             ],
@@ -1208,7 +1208,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1218,7 +1218,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the \u201cmstsc.exe\u201d process as RDP. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 3389 between the control EWS(10.0.100.20) and the safety EWS (10.0.100.15) via the \"mstsc.exe\" process as RDP. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1235,7 +1235,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.10.B.2-190.png"
                                             ],
@@ -1255,7 +1255,7 @@
                                 {
                                     "Substep": "11.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"RSLINX_install.zip\" in the Temp Rockwell RSLINX directory are not legitimate (\"RSLINX.exe\" and \"LogixMap.exe\").",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -1272,14 +1272,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1297,7 +1297,7 @@
                                 {
                                     "Substep": "11.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the \u201cinstall-csp.ps1\u201d script was executed on the safety EWS (10.0.100.15) via PowerShell (using the bypass execution policy). ",
+                                    "Criteria": "Evidence that the \"install-csp.ps1\" script was executed on the safety EWS (10.0.100.15) via PowerShell (using the bypass execution policy).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -1314,14 +1314,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1338,7 +1338,7 @@
                                 {
                                     "Substep": "11.C.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the services \u201crockwell-csp3\u201d and \u201ccsp-agent\u201d are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service).",
+                                    "Criteria": "Evidence that the services \"rockwell-csp3\" and \"csp-agent\" are not legitimate (service is spoofed SSDH and ssh-agent underlying, created then executed via Start-Service).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -1355,7 +1355,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.11.C.1-156.png",
                                                 "system-64-AR-D3.11.C.1-156-1.png"
@@ -1393,7 +1393,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.12.A.1-190.png",
                                                 "system-64-AR-D3.12.A.1-190-1.png"
@@ -1406,7 +1406,7 @@
                                 {
                                     "Substep": "12.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1423,7 +1423,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1446,7 +1446,7 @@
                                 {
                                     "Substep": "13.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -1463,7 +1463,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.13.A.1-177.png"
                                             ],
@@ -1481,7 +1481,7 @@
                                 {
                                     "Substep": "14.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201cscp\u201d. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \"scp\". Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1498,7 +1498,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1515,7 +1515,7 @@
                                 {
                                     "Substep": "14.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201cRSLINX_install.zip\u201d in the Temp Rockwell RSLINX directory are not legitimate (\u201cRSLINX.exe\u201d and \u201cLogixMap.exe\u201d).",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"RSLINX_install.zip\" in the Temp Rockwell RSLINX directory are not legitimate (\"RSLINX.exe\" and \"LogixMap.exe\").",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -1532,7 +1532,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1544,7 +1544,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1579,7 +1579,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.15.A.1-190.png",
                                                 "system-64-AR-D3.15.A.1-190-1.png"
@@ -1589,7 +1589,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1599,7 +1599,7 @@
                                 {
                                     "Substep": "15.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1616,7 +1616,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1656,7 +1656,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1668,7 +1668,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1697,14 +1697,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D3.16.A.2-153.png",
                                                 "system-64-AR-D3.16.A.2-153-1.png",
@@ -1735,7 +1735,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1747,7 +1747,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1759,7 +1759,7 @@
                                 {
                                     "Substep": "16.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cDevice Type\u201d attribute (instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Device Type\" attribute (instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0102",
                                         "Tactic_Name": "Discovery"
@@ -1776,7 +1776,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1803,7 +1803,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1815,7 +1815,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1827,7 +1827,7 @@
                                 {
                                     "Substep": "16.C.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Status\" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0100",
                                         "Tactic_Name": "Collection"
@@ -1844,7 +1844,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1871,14 +1871,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -1912,7 +1912,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -1928,7 +1928,7 @@
                                 {
                                     "Substep": "17.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \u201csftp-server.exe\u201d process. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via the \"sftp-server.exe\" process. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -1945,7 +1945,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.17.A.1-190.png"
                                             ],
@@ -1976,14 +1976,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation",
                                                 "Configuration Change"
                                             ],
@@ -1999,7 +1999,7 @@
                                 {
                                     "Substep": "17.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201cInstall_RSLogix.zip\u201d in the Temp Rockwell RSLogix directory are not legitimate (\u201cRSLogix5000.exe\u201d, \u201cRSComms.exe\u201d, etc.)",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"Install_RSLogix.zip\" in the Temp Rockwell RSLogix directory are not legitimate (\"RSLogix5000.exe\", \"RSComms.exe\", etc.)",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -2016,7 +2016,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "General",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2029,7 +2029,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2047,7 +2047,7 @@
                                 {
                                     "Substep": "18.A.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) to transfer \u201cInstall_GuardLogix.zip\u201d over scp.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) to transfer \"Install_GuardLogix.zip\" over scp.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -2064,7 +2064,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "General",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.18.A.1-190.png"
                                             ],
@@ -2073,7 +2073,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2083,7 +2083,7 @@
                                 {
                                     "Substep": "18.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201cscp\u201d. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \"scp\". Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -2100,7 +2100,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.18.A.2-190.png"
                                             ],
@@ -2137,14 +2137,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2160,7 +2160,7 @@
                                 {
                                     "Substep": "19.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -2177,7 +2177,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.19.A.2-190.png",
                                                 "system-64-AR-D4.19.A.2-190-1.png"
@@ -2192,7 +2192,7 @@
                                 {
                                     "Substep": "19.B.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that the newly created files from the extraction of \u201cInstall_GuardLogix.zip\u201d in the Temp Rockwell GuardLogix directory are not legitimate (\u201cRSLogix5000.exe\u201d, \u201cRSComms.exe\u201d, \u201cabRSA.exe\u201d, etc.)",
+                                    "Criteria": "Evidence that the newly created files from the extraction of \"Install_GuardLogix.zip\" in the Temp Rockwell GuardLogix directory are not legitimate (\"RSLogix5000.exe\", \"RSComms.exe\", \"abRSA.exe\", etc.)",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -2209,7 +2209,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2221,7 +2221,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2256,14 +2256,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2280,7 +2280,7 @@
                                 {
                                     "Substep": "20.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Status\" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0100",
                                         "Tactic_Name": "Collection"
@@ -2297,7 +2297,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.20.A.2-174.png"
                                             ],
@@ -2326,14 +2326,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2350,7 +2350,7 @@
                                 {
                                     "Substep": "20.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -2367,7 +2367,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Configuration Change"
                                             ],
                                             "Screenshots": [
@@ -2398,7 +2398,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2408,7 +2408,7 @@
                                 {
                                     "Substep": "20.B.4",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of the modified program \u201cP04_Trips_FO_R00_Trips\u201d to include new function block logic and a \u201cCC\u201d tag for command and control on the safety PLC. ",
+                                    "Criteria": "Evidence of the modified program \"P04_Trips_FO_R00_Trips\" to include new function block logic and a \"CC\" tag for command and control on the safety PLC.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0110",
                                         "Tactic_Name": "Persistence"
@@ -2425,7 +2425,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "N/A",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2454,7 +2454,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2467,7 +2467,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2479,7 +2479,7 @@
                                 {
                                     "Substep": "20.C.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated read action of the \u201cCC\u201d tag using the 0x4C CIP service.",
+                                    "Criteria": "Evidence of an adversary initiated read action of the \"CC\" tag using the 0x4C CIP service.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -2496,7 +2496,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2506,7 +2506,7 @@
                                 {
                                     "Substep": "20.C.3",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated write tag action to the \u201cCC\u201d tag using the 0x4D CIP service (a low value of \u201c0\u201d or False was written).",
+                                    "Criteria": "Evidence of an adversary initiated write tag action to the \"CC\" tag using the 0x4D CIP service (a low value of \"0\" or False was written).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -2523,7 +2523,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.20.C.3-177.png"
                                             ],
@@ -2552,14 +2552,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2575,7 +2575,7 @@
                                 {
                                     "Substep": "20.D.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Status\" attribute (attribute 0x05, instance 0x01, class 0x01) of the control PLC (10.0.100.110).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0100",
                                         "Tactic_Name": "Collection"
@@ -2592,7 +2592,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.20.D.2-174.png",
                                                 "system-64-AR-D4.20.D.2-174-1.png"
@@ -2602,7 +2602,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2635,14 +2635,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2675,7 +2675,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2702,14 +2702,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2725,7 +2725,7 @@
                                 {
                                     "Substep": "21.F.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of adversary initiated write tag actions to the \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \u201c0\u201d [percent open] and HMI_Enb was pulsed to remove cascade control).",
+                                    "Criteria": "Evidence of adversary initiated write tag actions to the \"eR01_3ZC2071\" and \"f3ZC2071_HMI_Enb\" tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \"0\" [percent open] and HMI_Enb was pulsed to remove cascade control).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -2742,7 +2742,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.21.F.2-177.png"
                                             ],
@@ -2777,7 +2777,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2789,7 +2789,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2801,7 +2801,7 @@
                                 {
                                     "Substep": "22.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of the safety PLC operating mode being switched to Program Mode following adversary CIP request to instance 0x01 of class 0x8E using service 0x07. ",
+                                    "Criteria": "Evidence of the safety PLC operating mode being switched to Program Mode following adversary CIP request to instance 0x01 of class 0x8E using service 0x07.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0103",
                                         "Tactic_Name": "Evasion"
@@ -2818,14 +2818,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.22.A.2-165.png",
                                                 "system-64-AR-D4.22.A.2-165-1.png"
@@ -2855,7 +2855,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -2868,7 +2868,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -2880,7 +2880,7 @@
                                 {
                                     "Substep": "22.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated program download action on the safety PLC (10.0.100.105) to overwrite the current configuration (requested from the safety EWS [10.0.100.15]). ",
+                                    "Criteria": "Evidence of an adversary initiated program download action on the safety PLC (10.0.100.105) to overwrite the current configuration (requested from the safety EWS [10.0.100.15]).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0109",
                                         "Tactic_Name": "Lateral Movement"
@@ -2897,14 +2897,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D4.22.B.2-150.png",
                                                 "system-64-AR-D4.22.B.2-150-1.png",
@@ -2942,14 +2942,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "General",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.23.A.1-190.png"
                                             ],
@@ -2961,7 +2961,7 @@
                                 {
                                     "Substep": "23.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -2978,14 +2978,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "General",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3019,14 +3019,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.23.B.1-190.png",
                                                 "system-64-AR-D5.23.B.1-190-1.png",
@@ -3040,7 +3040,7 @@
                                 {
                                     "Substep": "23.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 2223 between the control EWS (10.0.100.20) and the safety EWS (10.0.100.15) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -3057,7 +3057,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "General",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3069,7 +3069,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3104,7 +3104,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3117,7 +3117,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3129,7 +3129,7 @@
                                 {
                                     "Substep": "24.A.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \u201cStatus\u201d attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
+                                    "Criteria": "Evidence of an adversary initiated Get Attribute Single CIP request for the \"Status\" attribute (attribute 0x05, instance 0x01, class 0x01) of the safety PLC (10.0.100.105).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0100",
                                         "Tactic_Name": "Collection"
@@ -3146,14 +3146,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.24.A.2-174.png",
                                                 "system-64-AR-D5.24.A.2-174-1.png"
@@ -3183,14 +3183,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3208,7 +3208,7 @@
                                 {
                                     "Substep": "24.B.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]). ",
+                                    "Criteria": "Evidence of an adversary initiated program upload action of the safety PLC (10.0.100.105) to collect the current running configuration (requested from the safety EWS [10.0.100.15]).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -3225,7 +3225,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.24.B.2-177.png"
                                             ],
@@ -3254,14 +3254,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.24.B.3-150.png",
                                                 "system-64-AR-D5.24.B.3-150-1.png"
@@ -3274,7 +3274,7 @@
                                 {
                                     "Substep": "24.B.4",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of the modified program \u201cP04_Trips_FO_R00_Trips\u201d to include new function block logic and a \u201cCC\u201d tag for command and control on the safety PLC. ",
+                                    "Criteria": "Evidence of the modified program \"P04_Trips_FO_R00_Trips\" to include new function block logic and a \"CC\" tag for command and control on the safety PLC.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0110",
                                         "Tactic_Name": "Persistence"
@@ -3291,7 +3291,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "N/A",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3320,7 +3320,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3332,7 +3332,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3344,7 +3344,7 @@
                                 {
                                     "Substep": "24.C.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated read action of the \u201cCC\u201d tag using the 0x4C CIP service.",
+                                    "Criteria": "Evidence of an adversary initiated read action of the \"CC\" tag using the 0x4C CIP service.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -3361,7 +3361,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.24.C.2-177.png"
                                             ],
@@ -3373,7 +3373,7 @@
                                 {
                                     "Substep": "24.C.3",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an adversary initiated write tag action to the \u201cCC\u201d tag using the 0x4D CIP service (a low value of \u201c1\u201d or True was written).",
+                                    "Criteria": "Evidence of an adversary initiated write tag action to the \"CC\" tag using the 0x4D CIP service (a low value of \"1\" or True was written).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -3390,7 +3390,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.24.C.3-177.png"
                                             ],
@@ -3425,7 +3425,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3437,7 +3437,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3447,7 +3447,7 @@
                                 {
                                     "Substep": "25.D.2",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \u201ccsp.exe\u201d[SSHD]. Successful logon as user \u201cEngineer\u201d may be present or as a part of the connection and process creation.",
+                                    "Criteria": "Evidence of an established network connection over TCP port 445 between the adversary machine (10.0.100.1) and the control EWS (10.0.100.20) via \"csp.exe\"[SSHD]. Successful logon as user \"Engineer\" may be present or as a part of the connection and process creation.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0101",
                                         "Tactic_Name": "Command and Control"
@@ -3464,7 +3464,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "TRITON_AR_D5.25.D.2.png"
                                             ],
@@ -3495,14 +3495,14 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         },
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3535,7 +3535,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3545,7 +3545,7 @@
                                 {
                                     "Substep": "25.E.3",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of adversary initiated write tag actions to the \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \u201c0\u201d [percent open] and HMI_Enb was pulsed to remove cascade control).",
+                                    "Criteria": "Evidence of adversary initiated write tag actions to the \"eR01_3ZC2071\" and \"f3ZC2071_HMI_Enb\" tags to change setpoints and control actions using the 0x4D and 0x51 CIP services (the air damper setpoint tag was written to \"0\" [percent open] and HMI_Enb was pulsed to remove cascade control).",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -3562,7 +3562,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.25.E.3-177.png"
                                             ],
@@ -3574,7 +3574,7 @@
                                 {
                                     "Substep": "25.F.1",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of the safety HMI (10.0.100.16) writing to the safety PLC (10.0.100.105). Manual trip actions were engaged through onsite access by process operators on the HMI to disable the burner management system. ",
+                                    "Criteria": "Evidence of the safety HMI (10.0.100.16) writing to the safety PLC (10.0.100.105). Manual trip actions were engaged through onsite access by process operators on the HMI to disable the burner management system.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0105",
                                         "Tactic_Name": "Impact"
@@ -3591,7 +3591,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.25.F.1-185.png"
                                             ],
@@ -3620,7 +3620,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Technique",
-                                            "Modifier": [
+                                            "Modifiers": [
                                                 "Correlation"
                                             ],
                                             "Screenshots": [
@@ -3632,7 +3632,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3661,7 +3661,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }
@@ -3671,7 +3671,7 @@
                                 {
                                     "Substep": "25.G.3",
                                     "Procedure": "",
-                                    "Criteria": "Evidence of write actions occurring on the tags \u201ceR01_3ZC2071\u201d and \u201cf3ZC2071_HMI_Enb\u201d to change setpoints and control actions with the CIP service 0x4D and service 0x51, respectively. HMI_Enb was pulsed to remove cascade control and the air damper setpoint tag was written to \u201c100\u201d [percent open].",
+                                    "Criteria": "Evidence of write actions occurring on the tags \"eR01_3ZC2071\" and \"f3ZC2071_HMI_Enb\" to change setpoints and control actions with the CIP service 0x4D and service 0x51, respectively. HMI_Enb was pulsed to remove cascade control and the air damper setpoint tag was written to \"100\" [percent open].",
                                     "Tactic": {
                                         "Tactic_Id": "TA0104",
                                         "Tactic_Name": "Execution"
@@ -3688,7 +3688,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "Telemetry",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [
                                                 "system-64-AR-D5.25.G.3-177.png"
                                             ],
@@ -3700,7 +3700,7 @@
                                 {
                                     "Substep": "25.G.4",
                                     "Procedure": "",
-                                    "Criteria": "Evidence that a privileged write action occurred and actuated all forced points set in the logic (Enable all forces in Allen Bradley) following the adversary request the class 0x69 using service 0x4D. ",
+                                    "Criteria": "Evidence that a privileged write action occurred and actuated all forced points set in the logic (Enable all forces in Allen Bradley) following the adversary request the class 0x69 using service 0x4D.",
                                     "Tactic": {
                                         "Tactic_Id": "TA0106",
                                         "Tactic_Name": "Impair Process Control"
@@ -3717,7 +3717,7 @@
                                         {
                                             "Detection_Note": "",
                                             "Detection_Type": "None",
-                                            "Modifier": [],
+                                            "Modifiers": [],
                                             "Screenshots": [],
                                             "Footnotes": []
                                         }

@@ -69,7 +69,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "A dashboard is utilized to summarize malicious activity in the environment. The alerts themselves are accessed via an \"Alerts\" tab in the user interface. Each alert contains high level descriptors, such as ATT&CK mappings, as well as severity (high, medium, low) identified by a signal strength icon. The activity that was deemed malicious is highlighted with icons that describe the relationship, a detailed description that includes related telemetry, and the corresponding process tree. The underlying data can then be retrieved in a forensic view.",
             "Correlation_Strategy": "The home dashboard provides a high level view of how events are connected across the environment, summarizing number of alerts, process, etc. The incident view provides a middle-level view of correlation, attempting to capture the chain of alerts, connecting different tactic and technique level descriptions into a single visualization. Within the alert view, correlation is shown by highlighting the specific type of activity that caused the alert to fire, as well as the process tree that displays the full lineage of the suspecting process.",
             "Detections_By_Step": {
@@ -7391,7 +7390,7 @@
                                             "Indicator_Name": "PowerShell, Lateral Tool Transfer"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" (High) was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information\" (High) was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [
                                                 "Configuration Change"
@@ -7555,7 +7554,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (High) was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" (High) was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -7570,7 +7569,7 @@
                                             "Indicator_Name": "Application Shimming"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Application Shimming\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Application Shimming\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -7678,7 +7677,7 @@
                                             "Indicator_Name": "Process Injection"
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Process Injection\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [

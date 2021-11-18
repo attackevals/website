@@ -79,7 +79,7 @@
                             "Step_Name": "Initial Compromise",
                             "Substeps": [
                                 {
-                                    "Substep": "1.A.1",
+                                    "Substep": "1.A.1.1",
                                     "Procedure": "Legitimate user Debbie clicked and executed malicious self-extracting archive (Resume Viewer.exe) on 10.0.1.6 (Nimda)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -137,7 +137,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "1.A.1",
+                                    "Substep": "1.A.1.2",
                                     "Procedure": "Previously executed batch file (pdfhelper.cmd) launched a DLL payload (update.dat) using Rundll32",
                                     "Criteria": "",
                                     "Tactic": {
@@ -197,7 +197,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "1.A.1",
+                                    "Substep": "1.A.1.3",
                                     "Procedure": "Previously executed self-extracting archive (Resume Viewer.exe) launched an embedded batch file (pdfhelper.cmd)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -258,7 +258,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "1.C.1",
+                                    "Substep": "1.C.1.1",
                                     "Procedure": "Cobalt Strike: C2 channel established using port 53",
                                     "Criteria": "",
                                     "Tactic": {
@@ -286,7 +286,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "1.C.1",
+                                    "Substep": "1.C.1.2",
                                     "Procedure": "Cobalt Strike: C2 channel established using DNS traffic to freegoogleadsenseinfo.com",
                                     "Criteria": "",
                                     "Tactic": {
@@ -317,7 +317,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "1.C.1",
+                                    "Substep": "1.C.1.3",
                                     "Procedure": "Cobalt Strike: C2 channel established using both NetBIOS and base64 encoding",
                                     "Criteria": "",
                                     "Tactic": {
@@ -930,7 +930,7 @@
                             "Step_Name": "Privilege Escalation",
                             "Substeps": [
                                 {
-                                    "Substep": "3.A.1",
+                                    "Substep": "3.A.1.1",
                                     "Procedure": "Cobalt Strike: Built-in UAC bypass token duplication capability executed to elevate process integrity level",
                                     "Criteria": "",
                                     "Tactic": {
@@ -961,7 +961,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "3.A.1",
+                                    "Substep": "3.A.1.2",
                                     "Procedure": "Cobalt Strike: Built-in UAC bypass token duplication capability executed to modify current process token",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1227,7 +1227,7 @@
                             "Step_Name": "Credential Access",
                             "Substeps": [
                                 {
-                                    "Substep": "5.A.1",
+                                    "Substep": "5.A.1.1",
                                     "Procedure": "Cobalt Strike: Built-in Mimikatz credential dump capability executed",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1255,7 +1255,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "5.A.1",
+                                    "Substep": "5.A.1.2",
                                     "Procedure": "Cobalt Strike: Credential dump capability involved process injection into lsass",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1284,7 +1284,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "5.A.2",
+                                    "Substep": "5.A.2.1",
                                     "Procedure": "Cobalt Strike: Built-in hash dump capability executed",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1316,7 +1316,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "5.A.2",
+                                    "Substep": "5.A.2.2",
                                     "Procedure": "Cobalt Strike: Hash dump capability involved process injection into lsass.exe",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1412,7 +1412,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "6.B.1",
+                                    "Substep": "6.B.1.1",
                                     "Procedure": "Cobalt Strike: C2 channel modified to use port 80",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1455,7 +1455,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "6.B.1",
+                                    "Substep": "6.B.1.2",
                                     "Procedure": "Cobalt Strike: C2 channel modified to use HTTP traffic to freegoogleadsenseinfo.com",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1487,7 +1487,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "6.B.1",
+                                    "Substep": "6.B.1.3",
                                     "Procedure": "Cobalt Strike: C2 channel modified to split communications between both HTTP and DNS",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1555,7 +1555,7 @@
                             "Step_Name": "Persistence",
                             "Substeps": [
                                 {
-                                    "Substep": "7.A.1",
+                                    "Substep": "7.A.1.1",
                                     "Procedure": "Added user Jesse to Conficker (10.0.0.5) through RDP connection",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1583,7 +1583,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "7.A.1",
+                                    "Substep": "7.A.1.2",
                                     "Procedure": "Microsoft Management Console (Local Users and Groups snap-in) GUI utility used to add new user through RDP connection",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1611,7 +1611,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "7.A.1",
+                                    "Substep": "7.A.1.3",
                                     "Procedure": "Microsoft Management Console (Local Users and Groups snap-in) GUI utility displayed user account information",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1823,7 +1823,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "8.C.1",
+                                    "Substep": "8.C.1.1",
                                     "Procedure": "Cobalt Strike: Built-in keylogging capability executed to capture keystrokes of user Debbie",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1854,7 +1854,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "8.C.1",
+                                    "Substep": "8.C.1.2",
                                     "Procedure": "Cobalt Strike: Keylogging capability included residual enumeration of application windows",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1880,7 +1880,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "8.D.1",
+                                    "Substep": "8.D.1.1",
                                     "Procedure": "Cobalt Strike: Built-in screen capture capability executed to capture screenshot of current window of user Debbie",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1909,7 +1909,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "8.D.1",
+                                    "Substep": "8.D.1.2",
                                     "Procedure": "Cobalt Strike: Screen capture capability involved process injection into explorer.exe",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1970,7 +1970,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "9.B.1",
+                                    "Substep": "9.B.1.1",
                                     "Procedure": "Cobalt Strike: Built-in download capability executed to a collect file (Shockwave_rackb_diagram.vsdx) from a network shared drive (Wormshare) on Conficker (10.0.0.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -1998,7 +1998,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "9.B.1",
+                                    "Substep": "9.B.1.2",
                                     "Procedure": "Cobalt Strike: Download capability exfiltrated data through existing C2 channel",
                                     "Criteria": "",
                                     "Tactic": {
@@ -2094,7 +2094,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "10.B.1",
+                                    "Substep": "10.B.1.1",
                                     "Procedure": "RDP connection to Conficker (10.0.0.5) authenticated using previously added user Jesse",
                                     "Criteria": "",
                                     "Tactic": {
@@ -2122,7 +2122,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "10.B.1",
+                                    "Substep": "10.B.1.2",
                                     "Procedure": "RDP connection made to Conficker (10.0.0.5) as part of execution of persistence mechanism",
                                     "Criteria": "",
                                     "Tactic": {
@@ -2209,7 +2209,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "11.B.1",
+                                    "Substep": "11.B.1.1",
                                     "Procedure": "Empire: C2 channel established using port 443",
                                     "Criteria": "",
                                     "Tactic": {
@@ -2254,7 +2254,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "11.B.1",
+                                    "Substep": "11.B.1.2",
                                     "Procedure": "Empire: C2 channel established using HTTPS traffic to freegoogleadsenseinfo.com",
                                     "Criteria": "",
                                     "Tactic": {
@@ -2285,7 +2285,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "11.B.1",
+                                    "Substep": "11.B.1.3",
                                     "Procedure": "Empire: Encrypted C2 channel established using HTTPS",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3343,7 +3343,7 @@
                             "Step_Name": "Privilege Escalation",
                             "Substeps": [
                                 {
-                                    "Substep": "14.A.1",
+                                    "Substep": "14.A.1.1",
                                     "Procedure": "Empire: Built-in UAC bypass token duplication module executed to launch new callback with elevated process integrity level",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3375,7 +3375,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "14.A.1",
+                                    "Substep": "14.A.1.2",
                                     "Procedure": "Empire: UAC bypass module downloaded and wrote a new Empire stager (wdbypass) to disk",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3406,7 +3406,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "14.A.1",
+                                    "Substep": "14.A.1.3",
                                     "Procedure": "Empire: UAC bypass module downloaded a new Empire stager (wdbypass) over HTTP",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3437,7 +3437,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "14.A.1",
+                                    "Substep": "14.A.1.4",
                                     "Procedure": "Empire: UAC bypass module downloaded a new Empire stager (wdbypass) over port 8080",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3486,7 +3486,7 @@
                             "Step_Name": "Credential Access",
                             "Substeps": [
                                 {
-                                    "Substep": "15.A.1",
+                                    "Substep": "15.A.1.1",
                                     "Procedure": "Empire: Built-in keylogging module executed to capture keystrokes of user Bob",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3525,7 +3525,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "15.A.1",
+                                    "Substep": "15.A.1.2",
                                     "Procedure": "Empire: Built-in keylogging module included residual enumeration of application windows",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3583,7 +3583,7 @@
                             "Step_Name": "Lateral Movement",
                             "Substeps": [
                                 {
-                                    "Substep": "16.A.1",
+                                    "Substep": "16.A.1.1",
                                     "Procedure": "Empire: 'net use' via PowerShell to brute force password spraying authentication attempts to Morris (10.0.1.4) and Nimda (10.0.1.6) targeting credentials of usersKmitnick, Bob, and Frieda",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3632,7 +3632,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.A.1",
+                                    "Substep": "16.A.1.2",
                                     "Procedure": "Empire: Brute force password spraying attempts targeted Windows admin shares on Morris (10.0.1.4) and Nimda (10.0.1.6)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3681,7 +3681,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.B.1",
+                                    "Substep": "16.B.1.1",
                                     "Procedure": "Empire: 'net use' via PowerShell to successfully authenticate to Conficker (10.0.0.5) using credentials of user Kmitnick",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3722,7 +3722,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.B.1",
+                                    "Substep": "16.B.1.2",
                                     "Procedure": "Empire: Successful authentication targeted Windows admin share on Conficker (10.0.0.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3763,7 +3763,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.B.1",
+                                    "Substep": "16.B.1.3",
                                     "Procedure": "Empire: Successful authentication to Conficker (10.0.0.5) using credentials of user Kmitnick as a result of the brute force password spraying",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3845,7 +3845,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.D.1",
+                                    "Substep": "16.D.1.1",
                                     "Procedure": "Empire: Successful authentication targeted Windows admin shares on Conficker (10.0.0.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -3888,7 +3888,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.D.1",
+                                    "Substep": "16.D.1.2",
                                     "Procedure": "Empire: 'net use' via PowerShell to successfully authenticate to Creeper (10.0.0.4) using credentials of user Kmitnick",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4050,7 +4050,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.I.1",
+                                    "Substep": "16.I.1.1",
                                     "Procedure": "Empire: 'sc create' via PowerShell to remotely create a service on Creeper (10.0.0.4)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4091,7 +4091,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "16.I.1",
+                                    "Substep": "16.I.1.2",
                                     "Procedure": "Empire: 'sc description' via PowerShell to remotely disguise a service on Creeper (10.0.0.4)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4214,7 +4214,7 @@
                             "Step_Name": "Persistence",
                             "Substeps": [
                                 {
-                                    "Substep": "17.A.1",
+                                    "Substep": "17.A.1.1",
                                     "Procedure": "Empire: 'reg query' via PowerShell to enumerate a specific Registry key associated with terminal services",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4244,7 +4244,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "17.A.1",
+                                    "Substep": "17.A.1.2",
                                     "Procedure": "Empire: 'reg query' via PowerShell to enumerate a specific Registry key",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4407,7 +4407,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "18.B.1",
+                                    "Substep": "18.B.1.1",
                                     "Procedure": "Empire: 'copy' via PowerShell staged a file (Shockwave_network.vsdx) from a network shared drive (Wormshare) on Conficker (10.0.0.5) in the Recycle Bin (C:\\$Recycle.Bin) on CodeRed (10.0.1.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4437,7 +4437,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "18.B.1",
+                                    "Substep": "18.B.1.2",
                                     "Procedure": "Empire: 'copy' via PowerShell collected a file (Shockwave_network.vsdx) from a network shared drive (Wormshare) on Conficker (10.0.0.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4469,7 +4469,7 @@
                             "Step_Name": "Exfiltration",
                             "Substeps": [
                                 {
-                                    "Substep": "19.A.1",
+                                    "Substep": "19.A.1.1",
                                     "Procedure": "Empire: File dropped to disk is a renamed copy of the WinRAR binary",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4499,7 +4499,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "19.A.1",
+                                    "Substep": "19.A.1.2",
                                     "Procedure": "Empire: Built-in upload module executed to write binary (recycler.exe) to disk on CodeRed (10.0.1.5)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4529,7 +4529,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "19.B.1",
+                                    "Substep": "19.B.1.1",
                                     "Procedure": "Empire: Executed binary (recycler.exe) created compressed archive (old.rar) of previously collected file",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4557,7 +4557,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "19.B.1",
+                                    "Substep": "19.B.1.2",
                                     "Procedure": "Empire: Executed binary (recycler.exe) created encrypted archive (old.rar) of previously collected file",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4585,7 +4585,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "19.B.1",
+                                    "Substep": "19.B.1.3",
                                     "Procedure": "Empire: Executed binary (recycler.exe) is a renamed copy of the WinRAR binary",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4718,7 +4718,7 @@
                             "Step_Name": "Execution of Persistence",
                             "Substeps": [
                                 {
-                                    "Substep": "20.A.1",
+                                    "Substep": "20.A.1.1",
                                     "Procedure": "magnifer.exe previously overwritten by cmd.exe launched through RDP connection made to Creeper (10.0.0.4)",
                                     "Criteria": "",
                                     "Tactic": {
@@ -4759,7 +4759,7 @@
                                     ]
                                 },
                                 {
-                                    "Substep": "20.A.1",
+                                    "Substep": "20.A.1.2",
                                     "Procedure": "RDP connection made to Creeper (10.0.0.4) as part of execution of persistence mechanism",
                                     "Criteria": "",
                                     "Tactic": {
@@ -7389,7 +7389,7 @@
                                 {
                                     "Substep": "10.B.2",
                                     "Procedure": "Executed PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe executing the\nCreateProcessWithToken API",
+                                    "Criteria": "hostui.exe executing the CreateProcessWithToken API",
                                     "Tactic": {
                                         "Tactic_Id": "TA0002",
                                         "Tactic_Name": "Execution"
@@ -7417,7 +7417,7 @@
                                 {
                                     "Substep": "10.B.3",
                                     "Procedure": "Manipulated the token of the PowerShell payload via the CreateProcessWithToken API",
-                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR \npowershell.exe executing with the stolen token of explorer.exe",
+                                    "Criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -7524,7 +7524,7 @@
                                 {
                                     "Substep": "11.A.3",
                                     "Procedure": "Checked that the BIOS version and serial number are not associated with VirtualBox or VMware using PowerShell",
-                                    "Criteria": "powershell.exe executing a Get-WmiObject\nquery for Win32_BIOS",
+                                    "Criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
                                     "Tactic": {
                                         "Tactic_Id": "TA0005",
                                         "Tactic_Name": "Defense Evasion"
@@ -9285,7 +9285,6 @@
                     }
                 ]
             },
-            "Linux_Participant": true,
             "Alerting_Strategy": "Events that are deemed to be malicious will receive a brief description of the activity as well as relevant ATT&CK Tactics and Techniques when applicable. These alerted events are applied directly to processes, connections, and files and aggregated into a centralized view. Opening a specific alert on a process will show timestamps as well as the telemetry data that caused the alert to fire.",
             "Correlation_Strategy": "The process tree captures correlation between processes. Honing in on a specific process within the tree allows users to view specific information about the process such as file writes, network connections, registry modifications, and alerts with corresponding ATT&CK Tactics and Techniques. The broader Malop view provides a wider perspective on events across multiple users and hosts.",
             "Detections_By_Step": {
@@ -17046,7 +17045,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information (T078)\" was generated when powershell.exe executed base64 encoded commands\n.",
+                                            "Detection_Note": "A Technique detection named \"Obfuscated Files or Information (T078)\" was generated when powershell.exe executed base64 encoded commands.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -17095,7 +17094,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when powershell.exe downloaded dll329.dll from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -17162,7 +17161,7 @@
                                             "Indicator_Name": ""
                                         },
                                         {
-                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive\n.",
+                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when powershell.exe downloaded sdbE376.tmp from 192.168.0.4 over RDP mounted network drive.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -17197,7 +17196,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Event Triggered Execution (T1546) | Application Shimming (T1546.011)\" was generated when sdbinst.exe installed sdbE376.tmp shim database\n.",
+                                            "Detection_Note": "A Technique detection named \"Event Triggered Execution (T1546) | Application Shimming (T1546.011)\" was generated when sdbinst.exe installed sdbE376.tmp shim database.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -17286,7 +17285,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Process Injection (T1055)\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread\n.",
+                                            "Detection_Note": "A Technique detection named \"Process Injection (T1055)\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
@@ -17417,7 +17416,7 @@
                                     },
                                     "Detections": [
                                         {
-                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when rundll32.exe downloaded debug.exe from 192.168.0.4\n.",
+                                            "Detection_Note": "A Technique detection named \"Ingress Tool Transfer (T1105)\" was generated when rundll32.exe downloaded debug.exe from 192.168.0.4.",
                                             "Detection_Type": "Technique",
                                             "Modifiers": [],
                                             "Screenshots": [
