@@ -1,12 +1,13 @@
 {
-	"name": "Evals Thus Far II",
+	"name": "OilRig Technique Scope",
+  "version": "2.2",
 	"versions": {
 		"attack": "11",
 		"navigator": "4.6.6",
 		"layer": "4.3"
 	},
 	"domain": "enterprise-attack",
-	"description": "",
+	"description": "OilRig Technique Scope for Managed Services Evaluation",
 	"filters": {
 		"platforms": [
 			"Linux",
